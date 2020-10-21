@@ -521,8 +521,8 @@
                     "ISO Country Code": "PT",
                     "Locality": "Odivelas",
                     "Location": [
-                        38.79123353602886,
-                        -9.18806317272127
+                        38.791229248046875,
+                        -9.188052719343101
                     ],
                     "Name": "Rua Pulido Valente 35\u201339",
                     "Ocean": "N/A",
@@ -548,7 +548,7 @@
                 "attributes": {},
                 "icon": "mdi:cellphone-wireless",
                 "name": "Last Update Trigger",
-                "state": "Launch",
+                "state": "Background Fetch",
                 "type": "sensor",
                 "unique_id": "last_update_trigger",
                 "webhook_id": "93ec1d92bc241ac1b57c0f888f98aad5de97c4763b04601941f4a63d985b14a1"
@@ -668,12 +668,12 @@
                 "attributes": {
                     "Confidence": "High",
                     "Types": [
-                        "Stationary"
+                        "Unknown"
                     ]
                 },
-                "icon": "mdi:human-male",
+                "icon": "mdi:help-circle",
                 "name": "Activity",
-                "state": "Stationary",
+                "state": "Unknown",
                 "type": "sensor",
                 "unique_id": "activity",
                 "webhook_id": "93ec1d92bc241ac1b57c0f888f98aad5de97c4763b04601941f4a63d985b14a1",
