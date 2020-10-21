@@ -1,0 +1,2145 @@
+{
+    "version": 1,
+    "key": "lovelace",
+    "data": {
+        "config": {
+            "title": "Odivelas",
+            "views": [
+                {
+                    "icon": "mdi:home",
+                    "path": "home",
+                    "title": "Home",
+                    "badges": [
+                        {
+                            "entity": "binary_sensor.updater"
+                        },
+                        {
+                            "entity": "binary_sensor.snapshots_stale"
+                        },
+                        {
+                            "entity": "sun.sun"
+                        },
+                        {
+                            "entity": "person.jorge_patriarca"
+                        },
+                        {
+                            "entity": "device_tracker.iphonedeclaudia_2"
+                        },
+                        {
+                            "entity": "device_tracker.redmi8_redmi"
+                        }
+                    ],
+                    "cards": [
+                        {
+                            "entities": [
+                                {
+                                    "entity": "cover.garage_fox_door",
+                                    "secondary_info": "position"
+                                },
+                                {
+                                    "entity": "sensor.garage_fox_door"
+                                },
+                                {
+                                    "entity": "cover.garage_tiguan_door"
+                                },
+                                {
+                                    "entity": "sensor.garage_tiguan_door"
+                                }
+                            ],
+                            "title": "Garage Doors",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "switch.shelly_hall_switch",
+                                    "icon": "mdi:television"
+                                },
+                                {
+                                    "entity": "switch.shelly_living_room_tv_switch"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Plugs",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "switch.shelly_living_room_ceiling_lamp",
+                                    "icon": "mdi:lamp"
+                                },
+                                {
+                                    "entity": "switch.shelly_living_room_desk_lamp"
+                                }
+                            ],
+                            "title": "Lamps",
+                            "type": "entities",
+                            "state_color": true,
+                            "show_header_toggle": false
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.portugal_coronavirus_confirmed"
+                                },
+                                {
+                                    "entity": "sensor.portugal_coronavirus_recovered"
+                                },
+                                {
+                                    "entity": "sensor.portugal_coronavirus_current"
+                                },
+                                {
+                                    "entity": "sensor.portugal_coronavirus_deaths"
+                                }
+                            ],
+                            "title": "Coronavirus",
+                            "type": "entities"
+                        },
+                        {
+                            "type": "entities",
+                            "entities": [
+                                {
+                                    "entity": "cover.shelly_kitchen_blind",
+                                    "type": "custom:slider-entity-row"
+                                },
+                                {
+                                    "entity": "cover.shelly_living_room_big_blind",
+                                    "type": "custom:slider-entity-row"
+                                },
+                                {
+                                    "entity": "cover.shelly_living_room_small_blind",
+                                    "type": "custom:slider-entity-row"
+                                },
+                                {
+                                    "entity": "cover.shelly_carol_bedroom_blind",
+                                    "type": "custom:slider-entity-row"
+                                },
+                                {
+                                    "entity": "cover.shelly_suite_big_blind",
+                                    "type": "custom:slider-entity-row"
+                                },
+                                {
+                                    "entity": "cover.shelly_suite_small_blind",
+                                    "type": "custom:slider-entity-row"
+                                }
+                            ],
+                            "title": "Home Blinds"
+                        }
+                    ]
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "type": "custom:weather-card",
+                            "entity": "weather.home",
+                            "name": "Odivelas",
+                            "number_of_forecasts": "7"
+                        },
+                        {
+                            "type": "vertical-stack",
+                            "cards": [
+                                {
+                                    "type": "entities",
+                                    "entities": [
+                                        {
+                                            "entity": "sensor.netatmo_kitchen_battery_percent"
+                                        },
+                                        {
+                                            "entity": "sensor.netatmo_outdoor_battery_percent"
+                                        },
+                                        {
+                                            "entity": "sensor.netatmo_carol_bedroom_battery_percent"
+                                        },
+                                        {
+                                            "entity": "sensor.netatmo_suite_bedroom_battery_percent"
+                                        }
+                                    ],
+                                    "title": "Netatmo Battery"
+                                },
+                                {
+                                    "type": "entities",
+                                    "entities": [
+                                        {
+                                            "entity": "sensor.netatmo_kitchen_radio"
+                                        },
+                                        {
+                                            "entity": "sensor.netatmo_outdoor_radio"
+                                        },
+                                        {
+                                            "entity": "sensor.netatmo_carol_bedroom_radio"
+                                        },
+                                        {
+                                            "entity": "sensor.netatmo_suite_bedroom_radio"
+                                        }
+                                    ],
+                                    "title": "Netatmo Radio"
+                                },
+                                {
+                                    "type": "entities",
+                                    "entities": [
+                                        {
+                                            "entity": "sensor.netatmo_carol_bedroom_reachability"
+                                        },
+                                        {
+                                            "entity": "sensor.netatmo_kitchen_reachability"
+                                        },
+                                        {
+                                            "entity": "sensor.netatmo_outdoor_reachability"
+                                        },
+                                        {
+                                            "entity": "sensor.netatmo_living_room_reachability"
+                                        },
+                                        {
+                                            "entity": "sensor.netatmo_suite_bedroom_reachability"
+                                        }
+                                    ],
+                                    "title": "Netatmo Reachability"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "vertical-stack",
+                            "cards": [
+                                {
+                                    "type": "custom:mini-graph-card",
+                                    "entities": [
+                                        "sensor.netatmo_outdoor_temperature",
+                                        "sensor.netatmo_living_room_temperature",
+                                        "sensor.netatmo_kitchen_temperature",
+                                        "sensor.netatmo_suite_bedroom_temperature",
+                                        "sensor.netatmo_carol_bedroom_temperature"
+                                    ],
+                                    "aggregate_func": "max",
+                                    "group_by": "hour",
+                                    "points_per_hour": 1,
+                                    "hours_to_show": 24,
+                                    "refresh_interval": 0,
+                                    "hour24": true,
+                                    "show": {
+                                        "extrema": true
+                                    }
+                                },
+                                {
+                                    "type": "custom:mini-graph-card",
+                                    "entities": [
+                                        "sensor.netatmo_living_room_pressure"
+                                    ],
+                                    "aggregate_func": "max",
+                                    "group_by": "hour",
+                                    "points_per_hour": 1,
+                                    "hours_to_show": 24,
+                                    "refresh_interval": 0,
+                                    "hour24": true,
+                                    "show": {
+                                        "extrema": true
+                                    }
+                                },
+                                {
+                                    "type": "custom:mini-graph-card",
+                                    "entities": [
+                                        "sensor.netatmo_outdoor_humidity",
+                                        "sensor.netatmo_living_room_humidity",
+                                        "sensor.netatmo_carol_bedroom_humidity",
+                                        "sensor.netatmo_suite_bedroom_humidity",
+                                        "sensor.netatmo_kitchen_humidity"
+                                    ],
+                                    "aggregate_func": "max",
+                                    "group_by": "hour",
+                                    "points_per_hour": 1,
+                                    "hours_to_show": 24,
+                                    "refresh_interval": 0,
+                                    "hour24": true,
+                                    "show": {
+                                        "extrema": true
+                                    }
+                                },
+                                {
+                                    "type": "custom:mini-graph-card",
+                                    "entities": [
+                                        "sensor.netatmo_living_room_co2",
+                                        "sensor.netatmo_carol_bedroom_co2",
+                                        "sensor.netatmo_suite_bedroom_co2",
+                                        "sensor.netatmo_kitchen_co2"
+                                    ],
+                                    "aggregate_func": "max",
+                                    "group_by": "hour",
+                                    "points_per_hour": 1,
+                                    "hours_to_show": 24,
+                                    "refresh_interval": 0,
+                                    "hour24": true,
+                                    "show": {
+                                        "extrema": true
+                                    }
+                                },
+                                {
+                                    "type": "entities",
+                                    "entities": [
+                                        "sensor.blitzortung_lightning_distance",
+                                        "sensor.blitzortung_lightning_azimuth",
+                                        "sensor.blitzortung_lightning_counter"
+                                    ],
+                                    "title": "Lightning"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "entities",
+                            "entities": [
+                                {
+                                    "entity": "sensor.openweathermap_cloud_coverage"
+                                },
+                                {
+                                    "entity": "sensor.openweathermap_condition"
+                                },
+                                {
+                                    "entity": "sensor.openweathermap_humidity"
+                                },
+                                {
+                                    "entity": "sensor.openweathermap_pressure"
+                                },
+                                {
+                                    "entity": "sensor.openweathermap_rain"
+                                },
+                                {
+                                    "entity": "sensor.openweathermap_temperature"
+                                },
+                                {
+                                    "entity": "sensor.openweathermap_weather"
+                                },
+                                {
+                                    "entity": "sensor.openweathermap_weather_code"
+                                },
+                                {
+                                    "entity": "sensor.openweathermap_wind_bearing"
+                                },
+                                {
+                                    "entity": "sensor.openweathermap_wind_speed"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "custom:mini-graph-card",
+                            "entities": [
+                                {
+                                    "entity": "sensor.netatmo_outdoor_temperature"
+                                },
+                                {
+                                    "entity": "sensor.netatmo_outdoor_humidity",
+                                    "show_state": true,
+                                    "show_fill": false
+                                }
+                            ],
+                            "aggregate_func": "max",
+                            "group_by": "hour",
+                            "points_per_hour": 1,
+                            "hours_to_show": 24,
+                            "refresh_interval": 0,
+                            "show": {
+                                "extrema": true
+                            }
+                        }
+                    ],
+                    "icon": "mdi:cloud",
+                    "path": "",
+                    "title": "Weather"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "cards": [
+                                {
+                                    "entities": [
+                                        "sensor.shelly_kitchen_blind_energy",
+                                        "sensor.shelly_living_room_big_blind_energy",
+                                        "sensor.shelly_living_room_small_blind_energy",
+                                        "sensor.shelly_carol_bedroom_blind_energy",
+                                        "sensor.shelly_suite_big_blind_energy",
+                                        "sensor.shelly_suite_small_blind_energy"
+                                    ],
+                                    "hours_to_show": 24,
+                                    "refresh_interval": 0,
+                                    "type": "custom:mini-graph-card"
+                                },
+                                {
+                                    "entities": [
+                                        "sensor.shelly_hall_switch_energy",
+                                        "sensor.shelly_living_room_tv_switch_energy",
+                                        "sensor.shelly_living_room_ceiling_lamp_energy",
+                                        "sensor.shelly_living_room_desk_lamp_energy"
+                                    ],
+                                    "hours_to_show": 24,
+                                    "icon": "mdi:flash",
+                                    "type": "custom:mini-graph-card",
+                                    "update_interval": 60
+                                }
+                            ],
+                            "type": "vertical-stack"
+                        },
+                        {
+                            "cards": [
+                                {
+                                    "entities": [
+                                        {
+                                            "entity": "sensor.home_voltage"
+                                        }
+                                    ],
+                                    "hours_to_show": 24,
+                                    "refresh_interval": 0,
+                                    "icon": "mdi:sine-wave",
+                                    "type": "custom:mini-graph-card",
+                                    "aggregate_func": "max",
+                                    "group_by": "hour",
+                                    "points_per_hour": 60,
+                                    "hour24": true,
+                                    "show": {
+                                        "extrema": true
+                                    }
+                                },
+                                {
+                                    "entities": [
+                                        {
+                                            "entity": "sensor.shelly_living_room_tv_switch_power"
+                                        }
+                                    ],
+                                    "hours_to_show": 24,
+                                    "name": "Living Room TV Switch Power",
+                                    "refresh_interval": 0,
+                                    "type": "custom:mini-graph-card",
+                                    "aggregate_func": "max",
+                                    "group_by": "hour",
+                                    "points_per_hour": 60,
+                                    "hour24": true,
+                                    "show": {
+                                        "extrema": true
+                                    }
+                                },
+                                {
+                                    "entities": [
+                                        {
+                                            "entity": "sensor.shelly_living_room_desk_lamp_power"
+                                        }
+                                    ],
+                                    "hours_to_show": 24,
+                                    "name": "Living Room Desk Lamp Power",
+                                    "refresh_interval": 0,
+                                    "type": "custom:mini-graph-card",
+                                    "aggregate_func": "max",
+                                    "group_by": "hour",
+                                    "points_per_hour": 60,
+                                    "hour24": true,
+                                    "show": {
+                                        "extrema": true
+                                    }
+                                },
+                                {
+                                    "entities": [
+                                        {
+                                            "entity": "sensor.shelly_hall_switch_power"
+                                        }
+                                    ],
+                                    "hours_to_show": 24,
+                                    "name": "Hall Switch Power",
+                                    "refresh_interval": 0,
+                                    "type": "custom:mini-graph-card",
+                                    "aggregate_func": "max",
+                                    "group_by": "hour",
+                                    "points_per_hour": 60,
+                                    "hour24": true,
+                                    "show": {
+                                        "extrema": true
+                                    }
+                                }
+                            ],
+                            "type": "vertical-stack"
+                        },
+                        {
+                            "cards": [
+                                {
+                                    "entities": [
+                                        {
+                                            "entity": "sensor.hall_plug_daily_energy"
+                                        }
+                                    ],
+                                    "hours_to_show": 24,
+                                    "type": "custom:mini-graph-card",
+                                    "update_interval": 600,
+                                    "aggregate_func": "max",
+                                    "group_by": "hour",
+                                    "points_per_hour": 1,
+                                    "hour24": true
+                                },
+                                {
+                                    "entities": [
+                                        {
+                                            "entity": "sensor.hall_plug_monthly_energy"
+                                        }
+                                    ],
+                                    "type": "custom:mini-graph-card",
+                                    "hours_to_show": 720,
+                                    "update_interval": 600,
+                                    "aggregate_func": "max",
+                                    "group_by": "date",
+                                    "hour24": true
+                                },
+                                {
+                                    "entities": [
+                                        {
+                                            "entity": "sensor.hall_plug_yearly_energy"
+                                        }
+                                    ],
+                                    "hours_to_show": 8760,
+                                    "type": "custom:mini-graph-card",
+                                    "update_interval": 600,
+                                    "aggregate_func": "max",
+                                    "group_by": "date",
+                                    "hour24": true
+                                }
+                            ],
+                            "type": "vertical-stack"
+                        },
+                        {
+                            "type": "vertical-stack",
+                            "cards": [
+                                {
+                                    "type": "custom:mini-graph-card",
+                                    "entities": [
+                                        "sensor.shelly_kitchen_blind_device_temperature",
+                                        "sensor.shelly_living_room_big_blind_device_temperature",
+                                        "sensor.shelly_living_room_small_blind_device_temperature",
+                                        "sensor.shelly_carol_bedroom_blind_device_temperature",
+                                        "sensor.shelly_suite_big_blind_device_temperature",
+                                        "sensor.shelly_suite_small_blind_device_temperature"
+                                    ],
+                                    "hours_to_show": 24,
+                                    "refresh_interval": 0
+                                },
+                                {
+                                    "type": "custom:mini-graph-card",
+                                    "entities": [
+                                        "sensor.shelly_hall_switch_device_temperature",
+                                        "sensor.shelly_living_room_tv_switch_device_temperature",
+                                        "sensor.shelly_living_room_ceiling_lamp_device_temperature",
+                                        "sensor.shelly_living_room_desk_lamp_device_temperature"
+                                    ],
+                                    "hours_to_show": 24,
+                                    "refresh_interval": 0
+                                }
+                            ]
+                        }
+                    ],
+                    "icon": "mdi:flash",
+                    "path": "",
+                    "title": "Energy"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entity": "sensor.jp_iphone_battery_level",
+                            "max": 100,
+                            "min": 0,
+                            "name": "JP iPhone Battery",
+                            "type": "gauge"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.jp_iphone_activity"
+                                },
+                                {
+                                    "entity": "sensor.jp_iphone_average_active_pace"
+                                },
+                                {
+                                    "entity": "sensor.jp_iphone_battery_level"
+                                },
+                                {
+                                    "entity": "sensor.jp_iphone_battery_state"
+                                },
+                                {
+                                    "entity": "sensor.jp_iphone_bssid"
+                                },
+                                {
+                                    "entity": "sensor.jp_iphone_connection_type"
+                                },
+                                {
+                                    "entity": "sensor.jp_iphone_distance"
+                                },
+                                {
+                                    "entity": "sensor.jp_iphone_floors_ascended"
+                                },
+                                {
+                                    "entity": "sensor.jp_iphone_floors_descended"
+                                },
+                                {
+                                    "entity": "sensor.jp_iphone_geocoded_location"
+                                },
+                                {
+                                    "entity": "sensor.jp_iphone_last_update_trigger"
+                                },
+                                {
+                                    "entity": "sensor.jp_iphone_sim_1"
+                                },
+                                {
+                                    "entity": "sensor.jp_iphone_sim_2"
+                                },
+                                {
+                                    "entity": "sensor.jp_iphone_ssid"
+                                },
+                                {
+                                    "entity": "sensor.jp_iphone_steps"
+                                },
+                                {
+                                    "entity": "sensor.jp_iphone_storage"
+                                }
+                            ],
+                            "title": "JP iPhone Status",
+                            "type": "entities"
+                        }
+                    ],
+                    "icon": "mdi:cellphone-iphone",
+                    "path": "cell-phones",
+                    "title": "Cell Phones"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "type": "entities",
+                            "entities": [
+                                {
+                                    "entity": "cover.shelly_living_room_big_blind"
+                                },
+                                {
+                                    "entity": "cover.shelly_living_room_big_blind",
+                                    "type": "custom:slider-entity-row"
+                                },
+                                {
+                                    "entity": "cover.shelly_living_room_small_blind"
+                                },
+                                {
+                                    "entity": "cover.shelly_living_room_small_blind",
+                                    "type": "custom:slider-entity-row"
+                                }
+                            ],
+                            "title": "Living Room Blinds"
+                        },
+                        {
+                            "type": "custom:mini-graph-card",
+                            "entities": [
+                                {
+                                    "entity": "sensor.netatmo_living_room_temperature"
+                                },
+                                {
+                                    "entity": "sensor.netatmo_living_room_humidity",
+                                    "show_state": true,
+                                    "show_fill": false
+                                }
+                            ],
+                            "group_by": "hour",
+                            "points_per_hour": 1,
+                            "hours_to_show": 24,
+                            "refresh_interval": 0,
+                            "hour24": true,
+                            "aggregate_func": "max",
+                            "show": {
+                                "extrema": true
+                            }
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.netatmo_living_room_co2"
+                                },
+                                {
+                                    "entity": "sensor.netatmo_living_room_noise"
+                                }
+                            ],
+                            "title": "Living Room",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "binary_sensor.hp_printer_connectivity"
+                                },
+                                {
+                                    "entity": "sensor.hp_printer_status"
+                                },
+                                {
+                                    "entity": "sensor.hp_printer_printer"
+                                },
+                                {
+                                    "entity": "sensor.hp_printer_inkcartridge_black"
+                                },
+                                {
+                                    "entity": "sensor.hp_printer_inkcartridge_cyanmagentayellow"
+                                }
+                            ],
+                            "type": "glance"
+                        },
+                        {
+                            "entity": "media_player.spotify_jorge_patriarca",
+                            "type": "media-control"
+                        },
+                        {
+                            "entity": "media_player.plex_plex_for_apple_tv_living_room",
+                            "type": "media-control"
+                        },
+                        {
+                            "entity": "media_player.denon_avr_x2500h",
+                            "type": "media-control"
+                        },
+                        {
+                            "entity": "media_player.living_room",
+                            "type": "media-control"
+                        },
+                        {
+                            "entities": [
+                                "remote.living_room"
+                            ],
+                            "type": "entities"
+                        },
+                        {
+                            "entity": "media_player.living_room_tv_2",
+                            "type": "media-control"
+                        }
+                    ],
+                    "icon": "mdi:television",
+                    "path": "living-room",
+                    "title": "Living Room"
+                },
+                {
+                    "path": "kitchen",
+                    "title": "Kitchen",
+                    "icon": "mdi:stove",
+                    "badges": [],
+                    "cards": [
+                        {
+                            "type": "custom:mini-graph-card",
+                            "entities": [
+                                {
+                                    "entity": "sensor.netatmo_kitchen_temperature"
+                                },
+                                {
+                                    "entity": "sensor.netatmo_kitchen_humidity",
+                                    "show_state": true,
+                                    "show_fill": false
+                                }
+                            ],
+                            "group_by": "hour",
+                            "points_per_hour": 1,
+                            "hours_to_show": 24,
+                            "refresh_interval": 0,
+                            "hour24": true,
+                            "aggregate_func": "max",
+                            "show": {
+                                "extrema": true
+                            }
+                        },
+                        {
+                            "type": "entities",
+                            "entities": [
+                                {
+                                    "entity": "cover.shelly_kitchen_blind"
+                                },
+                                {
+                                    "entity": "cover.shelly_kitchen_blind",
+                                    "type": "custom:slider-entity-row"
+                                }
+                            ],
+                            "title": "Kitchen Blinds"
+                        },
+                        {
+                            "type": "custom:mini-graph-card",
+                            "entities": [
+                                "sensor.netatmo_kitchen_co2"
+                            ],
+                            "aggregate_func": "max",
+                            "group_by": "hour",
+                            "points_per_hour": 1,
+                            "hours_to_show": 24,
+                            "refresh_interval": 0,
+                            "hour24": true,
+                            "show": {
+                                "extrema": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "icon": "mdi:bed",
+                    "path": "",
+                    "title": "Carol Room",
+                    "badges": [],
+                    "cards": [
+                        {
+                            "type": "custom:mini-graph-card",
+                            "entities": [
+                                {
+                                    "entity": "sensor.netatmo_carol_bedroom_temperature"
+                                },
+                                {
+                                    "entity": "sensor.netatmo_carol_bedroom_humidity",
+                                    "show_state": true,
+                                    "show_fill": false
+                                }
+                            ],
+                            "aggregate_func": "max",
+                            "group_by": "hour",
+                            "points_per_hour": 1,
+                            "hours_to_show": 24,
+                            "refresh_interval": 0,
+                            "hour24": true,
+                            "show": {
+                                "extrema": true
+                            }
+                        },
+                        {
+                            "type": "entities",
+                            "entities": [
+                                {
+                                    "entity": "cover.shelly_carol_bedroom_blind"
+                                },
+                                {
+                                    "entity": "cover.shelly_carol_bedroom_blind",
+                                    "type": "custom:slider-entity-row"
+                                }
+                            ],
+                            "title": "Carol Room Blinds"
+                        },
+                        {
+                            "type": "custom:mini-graph-card",
+                            "entities": [
+                                "sensor.netatmo_carol_bedroom_co2"
+                            ],
+                            "aggregate_func": "max",
+                            "group_by": "hour",
+                            "points_per_hour": 1,
+                            "hours_to_show": 24,
+                            "refresh_interval": 0,
+                            "hour24": true,
+                            "show": {
+                                "extrema": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "icon": "mdi:bed-king",
+                    "path": "",
+                    "title": "Suite Room",
+                    "badges": [],
+                    "cards": [
+                        {
+                            "type": "entities",
+                            "entities": [
+                                {
+                                    "entity": "cover.shelly_suite_big_blind"
+                                },
+                                {
+                                    "entity": "cover.shelly_suite_big_blind",
+                                    "type": "custom:slider-entity-row"
+                                },
+                                {
+                                    "entity": "cover.shelly_suite_small_blind"
+                                },
+                                {
+                                    "entity": "cover.shelly_suite_small_blind",
+                                    "type": "custom:slider-entity-row"
+                                }
+                            ],
+                            "title": "Suite Room Blinds"
+                        },
+                        {
+                            "type": "custom:mini-graph-card",
+                            "entities": [
+                                {
+                                    "entity": "sensor.netatmo_suite_bedroom_temperature"
+                                },
+                                {
+                                    "entity": "sensor.netatmo_suite_bedroom_humidity",
+                                    "show_state": true,
+                                    "show_fill": false
+                                }
+                            ],
+                            "aggregate_func": "max",
+                            "group_by": "hour",
+                            "points_per_hour": 1,
+                            "hours_to_show": 24,
+                            "refresh_interval": 0,
+                            "hour24": true,
+                            "show": {
+                                "extrema": true
+                            }
+                        },
+                        {
+                            "entities": [
+                                "remote.suite_room"
+                            ],
+                            "type": "entities"
+                        },
+                        {
+                            "entity": "media_player.plex_plex_for_apple_tv_bedroom_suite",
+                            "type": "media-control"
+                        },
+                        {
+                            "type": "custom:mini-graph-card",
+                            "entities": [
+                                "sensor.netatmo_suite_bedroom_co2"
+                            ],
+                            "aggregate_func": "max",
+                            "group_by": "hour",
+                            "points_per_hour": 1,
+                            "hours_to_show": 24,
+                            "refresh_interval": 0,
+                            "hour24": true,
+                            "show": {
+                                "extrema": true
+                            }
+                        },
+                        {
+                            "entity": "media_player.suite_room",
+                            "type": "media-control"
+                        }
+                    ]
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "type": "entities",
+                            "entities": [
+                                {
+                                    "entity": "switch.shelly_garage_rack"
+                                },
+                                {
+                                    "entity": "switch.shelly_garage_rack_fan"
+                                }
+                            ],
+                            "title": "Garage Plugs",
+                            "show_header_toggle": false
+                        },
+                        {
+                            "type": "custom:mini-graph-card",
+                            "entities": [
+                                {
+                                    "entity": "sensor.shelly_garage_rack_fan_power"
+                                }
+                            ],
+                            "aggregate_func": "max",
+                            "group_by": "hour",
+                            "points_per_hour": 1,
+                            "hours_to_show": 24,
+                            "refresh_interval": 0,
+                            "hour24": true,
+                            "show": {
+                                "extrema": true
+                            }
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "cover.garage_fox_door"
+                                },
+                                {
+                                    "entity": "sensor.garage_fox_door"
+                                },
+                                {
+                                    "entity": "cover.garage_tiguan_door"
+                                },
+                                {
+                                    "entity": "sensor.garage_tiguan_door"
+                                }
+                            ],
+                            "title": "Garage Doors",
+                            "type": "entities"
+                        },
+                        {
+                            "type": "custom:mini-graph-card",
+                            "entities": [
+                                {
+                                    "entity": "sensor.garage_rack_temperature"
+                                },
+                                {
+                                    "entity": "sensor.garage_temperature",
+                                    "show_state": true,
+                                    "show_fill": false
+                                }
+                            ],
+                            "aggregate_func": "max",
+                            "group_by": "hour",
+                            "points_per_hour": 1,
+                            "hours_to_show": 24,
+                            "refresh_interval": 0,
+                            "hour24": true,
+                            "show": {
+                                "extrema": true
+                            }
+                        },
+                        {
+                            "type": "vertical-stack",
+                            "cards": [
+                                {
+                                    "entities": [
+                                        {
+                                            "entity": "sensor.shelly_garage_rack_temperature",
+                                            "name": "Shelly Garage Rack Temperature"
+                                        },
+                                        {
+                                            "entity": "sensor.shelly_garage_rack_fan_temperature",
+                                            "name": "Shelly Garage Rack Fan Temperature"
+                                        }
+                                    ],
+                                    "hours_to_show": 24,
+                                    "refresh_interval": 0,
+                                    "type": "custom:mini-graph-card"
+                                },
+                                {
+                                    "entities": [
+                                        {
+                                            "entity": "sensor.shelly_garage_rack_energy"
+                                        },
+                                        {
+                                            "entity": "sensor.shelly_garage_rack_fan_energy"
+                                        }
+                                    ],
+                                    "hours_to_show": 24,
+                                    "refresh_interval": 0,
+                                    "type": "custom:mini-graph-card"
+                                },
+                                {
+                                    "entities": [
+                                        {
+                                            "entity": "sensor.shelly_garage_rack_power"
+                                        },
+                                        {
+                                            "entity": "sensor.shelly_garage_rack_fan_power"
+                                        }
+                                    ],
+                                    "hours_to_show": 24,
+                                    "refresh_interval": 0,
+                                    "type": "custom:mini-graph-card"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "picture-entity",
+                            "entity": "camera.garage",
+                            "camera_image": "camera.garage",
+                            "show_state": true,
+                            "show_name": true,
+                            "hold_action": {
+                                "action": "none"
+                            }
+                        },
+                        {
+                            "type": "entities",
+                            "entities": [
+                                {
+                                    "entity": "sensor.garage_tiguan_sensor_battery"
+                                },
+                                {
+                                    "entity": "sensor.garage_fox_sensor_battery"
+                                },
+                                {
+                                    "entity": "sensor.garage_rack_temperature"
+                                },
+                                {
+                                    "entity": "sensor.garage_rack_humidity"
+                                },
+                                {
+                                    "entity": "sensor.garage_luminosity"
+                                },
+                                {
+                                    "entity": "sensor.garage_temperature"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "entity",
+                            "entity": "binary_sensor.garage_motion"
+                        }
+                    ],
+                    "icon": "mdi:garage",
+                    "path": "garage",
+                    "title": "Garage"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "cards": [
+                                {
+                                    "entity": "sensor.jpnas_cpu_load_total",
+                                    "graph": "line",
+                                    "type": "sensor"
+                                },
+                                {
+                                    "entity": "sensor.jpnas_network_down",
+                                    "graph": "line",
+                                    "type": "sensor"
+                                },
+                                {
+                                    "entity": "sensor.jpnas_network_up",
+                                    "graph": "line",
+                                    "type": "sensor"
+                                },
+                                {
+                                    "entity": "sensor.jpnas_memory_usage_real",
+                                    "graph": "line",
+                                    "type": "sensor"
+                                }
+                            ],
+                            "type": "vertical-stack"
+                        },
+                        {
+                            "cards": [
+                                {
+                                    "entity": "sensor.jpnas_drive_2_status",
+                                    "name": "JPNAS HDD 1",
+                                    "type": "entity"
+                                },
+                                {
+                                    "entity": "sensor.jpnas_drive_2_status",
+                                    "name": "JPNAS HDD 2",
+                                    "type": "entity"
+                                },
+                                {
+                                    "entity": "sensor.jpnas_drive_3_status",
+                                    "name": "JPNAS HDD 3",
+                                    "type": "entity"
+                                },
+                                {
+                                    "entity": "sensor.jpnas_drive_4_status",
+                                    "name": "JPNAS HDD 4",
+                                    "type": "entity"
+                                },
+                                {
+                                    "entity": "sensor.jpnas_drive_5_status",
+                                    "name": "JPNAS HDD 5",
+                                    "type": "entity"
+                                },
+                                {
+                                    "entity": "sensor.jpnas_cache_device_1_1_status",
+                                    "name": "JPNAS Cache SSD 1",
+                                    "type": "entity"
+                                },
+                                {
+                                    "entity": "sensor.jpnas_cache_device_1_2_status",
+                                    "name": "JPNAS Cache SSD 2",
+                                    "type": "entity"
+                                }
+                            ],
+                            "type": "vertical-stack"
+                        },
+                        {
+                            "cards": [
+                                {
+                                    "entity": "sensor.jpnas_drive_1_temperature",
+                                    "name": "JPNAS HDD 1",
+                                    "type": "entity"
+                                },
+                                {
+                                    "entity": "sensor.jpnas_drive_2_temperature",
+                                    "name": "JPNAS HDD 2",
+                                    "type": "entity"
+                                },
+                                {
+                                    "entity": "sensor.jpnas_drive_3_temperature",
+                                    "name": "JPNAS HDD 3",
+                                    "type": "entity"
+                                },
+                                {
+                                    "entity": "sensor.jpnas_drive_4_temperature",
+                                    "name": "JPNAS HDD 4",
+                                    "type": "entity"
+                                },
+                                {
+                                    "entity": "sensor.jpnas_drive_5_temperature",
+                                    "name": "JPNAS HDD 5",
+                                    "type": "entity"
+                                },
+                                {
+                                    "entity": "sensor.jpnas_cache_device_1_2_temperature",
+                                    "name": "JPNAS Cache SSD 1",
+                                    "type": "entity"
+                                },
+                                {
+                                    "entity": "sensor.jpnas_cache_device_1_2_temperature",
+                                    "name": "JPNAS Cache SSD 2",
+                                    "type": "entity"
+                                }
+                            ],
+                            "type": "vertical-stack"
+                        },
+                        {
+                            "cards": [
+                                {
+                                    "entities": [
+                                        {
+                                            "entity": "sensor.pihole_total_ads_blocked_today"
+                                        },
+                                        {
+                                            "entity": "sensor.pihole_total_ads_percentage_blocked_today"
+                                        },
+                                        {
+                                            "entity": "sensor.pihole_total_dns_queries_today"
+                                        }
+                                    ],
+                                    "title": "PiHole Totals",
+                                    "type": "entities"
+                                },
+                                {
+                                    "entities": [
+                                        {
+                                            "entity": "sensor.pihole01_ads_blocked_today"
+                                        },
+                                        {
+                                            "entity": "sensor.pihole01_ads_percentage_blocked_today"
+                                        },
+                                        {
+                                            "entity": "sensor.pihole01_seen_clients"
+                                        },
+                                        {
+                                            "entity": "sensor.pihole01_dns_queries_today"
+                                        }
+                                    ],
+                                    "title": "PiHole01",
+                                    "type": "entities"
+                                },
+                                {
+                                    "entities": [
+                                        {
+                                            "entity": "sensor.pihole02_ads_blocked_today"
+                                        },
+                                        {
+                                            "entity": "sensor.pihole02_ads_percentage_blocked_today"
+                                        },
+                                        {
+                                            "entity": "sensor.pihole02_seen_clients"
+                                        },
+                                        {
+                                            "entity": "sensor.pihole02_dns_queries_today"
+                                        }
+                                    ],
+                                    "title": "PiHole02",
+                                    "type": "entities"
+                                }
+                            ],
+                            "type": "vertical-stack"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.docker_cpu"
+                                },
+                                {
+                                    "entity": "sensor.docker_memory"
+                                },
+                                {
+                                    "entity": "sensor.docker_memory_percent"
+                                },
+                                {
+                                    "entity": "sensor.docker_containers_total"
+                                },
+                                {
+                                    "entity": "sensor.docker_containers_running"
+                                },
+                                {
+                                    "entity": "sensor.docker_version"
+                                }
+                            ],
+                            "title": "Docker",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "switch.docker_bazarr"
+                                },
+                                {
+                                    "entity": "switch.docker_crashplan"
+                                },
+                                {
+                                    "entity": "switch.docker_grafana"
+                                },
+                                {
+                                    "entity": "switch.docker_hydra2"
+                                },
+                                {
+                                    "entity": "switch.docker_influxdb"
+                                },
+                                {
+                                    "entity": "switch.docker_jackett"
+                                },
+                                {
+                                    "entity": "switch.docker_lidarr"
+                                },
+                                {
+                                    "entity": "switch.docker_mosquitto"
+                                },
+                                {
+                                    "entity": "switch.docker_netatmo_poller"
+                                },
+                                {
+                                    "entity": "switch.docker_nzbget"
+                                },
+                                {
+                                    "entity": "switch.docker_observium"
+                                },
+                                {
+                                    "entity": "switch.docker_oscam"
+                                },
+                                {
+                                    "entity": "switch.docker_ouroboros"
+                                },
+                                {
+                                    "entity": "switch.docker_pihole01_poller"
+                                },
+                                {
+                                    "entity": "switch.docker_pihole02_poller"
+                                },
+                                {
+                                    "entity": "switch.docker_portainer"
+                                },
+                                {
+                                    "entity": "switch.docker_qbittorrent"
+                                },
+                                {
+                                    "entity": "switch.docker_radarr"
+                                },
+                                {
+                                    "entity": "switch.docker_sonarr"
+                                },
+                                {
+                                    "entity": "switch.docker_swag"
+                                },
+                                {
+                                    "entity": "switch.docker_tautulli"
+                                },
+                                {
+                                    "entity": "switch.docker_telegraf"
+                                },
+                                {
+                                    "entity": "switch.docker_unifi_poller"
+                                },
+                                {
+                                    "entity": "switch.docker_unifi_video"
+                                }
+                            ],
+                            "title": "Docker Container Switches",
+                            "type": "entities",
+                            "show_header_toggle": false
+                        },
+                        {
+                            "type": "entities",
+                            "entities": [
+                                {
+                                    "entity": "sensor.speedtest_download"
+                                },
+                                {
+                                    "entity": "sensor.speedtest_upload"
+                                },
+                                {
+                                    "entity": "sensor.speedtest_ping"
+                                }
+                            ],
+                            "title": "Speedtest Info"
+                        },
+                        {
+                            "type": "entities",
+                            "entities": [
+                                {
+                                    "entity": "sensor.shelly1_98f4abf32318_rssi"
+                                },
+                                {
+                                    "entity": "sensor.shelly1_98f4abf3243a_rssi"
+                                },
+                                {
+                                    "entity": "sensor.shelly1pm_68c63afad357_rssi"
+                                },
+                                {
+                                    "entity": "sensor.shelly1pm_68c63afad467_rssi"
+                                },
+                                {
+                                    "entity": "sensor.shelly1pm_68c63afae9ff_rssi"
+                                },
+                                {
+                                    "entity": "sensor.shellyswitch25_68c63af99fdd_rssi"
+                                },
+                                {
+                                    "entity": "sensor.shellyswitch25_d8f15b12ff4e_rssi"
+                                },
+                                {
+                                    "entity": "sensor.shellyswitch25_d8f15b13186f_rssi"
+                                },
+                                {
+                                    "entity": "sensor.shellyswitch25_d8f15b1321c4_rssi"
+                                },
+                                {
+                                    "entity": "sensor.shellyswitch25_d8f15b131f36_rssi"
+                                },
+                                {
+                                    "entity": "sensor.shellyswitch25_d8f15b132c1b_rssi"
+                                },
+                                {
+                                    "entity": "sensor.shelly1pm_68c63afadbff_rssi"
+                                },
+                                {
+                                    "entity": "sensor.shelly1pm_68c63afaed87_rssi"
+                                },
+                                {
+                                    "entity": "sensor.shellyplug_s_9779b9_rssi"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "custom:rpi-monitor-card",
+                            "entity": "sensor.rpi_monitor_pihole01",
+                            "card_style": "full"
+                        },
+                        {
+                            "type": "custom:rpi-monitor-card",
+                            "entity": "sensor.rpi_monitor_pihole02",
+                            "card_style": "full"
+                        }
+                    ],
+                    "icon": "mdi:database",
+                    "path": "datacenter",
+                    "title": "DataCenter"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.docker_bazarr_cpu"
+                                },
+                                {
+                                    "entity": "sensor.docker_bazarr_memory"
+                                },
+                                {
+                                    "entity": "sensor.docker_bazarr_memory_percent"
+                                },
+                                {
+                                    "entity": "sensor.docker_bazarr_network_speed_down"
+                                },
+                                {
+                                    "entity": "sensor.docker_bazarr_network_speed_up"
+                                },
+                                {
+                                    "entity": "sensor.docker_bazarr_network_total_down"
+                                },
+                                {
+                                    "entity": "sensor.docker_bazarr_network_total_up"
+                                },
+                                {
+                                    "entity": "sensor.docker_bazarr_status"
+                                }
+                            ],
+                            "title": "Bazarr",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.docker_crashplan_cpu"
+                                },
+                                {
+                                    "entity": "sensor.docker_crashplan_memory"
+                                },
+                                {
+                                    "entity": "sensor.docker_crashplan_memory_percent"
+                                },
+                                {
+                                    "entity": "sensor.docker_crashplan_network_speed_down"
+                                },
+                                {
+                                    "entity": "sensor.docker_crashplan_network_speed_up"
+                                },
+                                {
+                                    "entity": "sensor.docker_crashplan_network_total_down"
+                                },
+                                {
+                                    "entity": "sensor.docker_crashplan_network_total_up"
+                                },
+                                {
+                                    "entity": "sensor.docker_crashplan_status"
+                                }
+                            ],
+                            "title": "Crashplan",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.docker_radarr_cpu"
+                                },
+                                {
+                                    "entity": "sensor.docker_radarr_memory"
+                                },
+                                {
+                                    "entity": "sensor.docker_radarr_memory_percent"
+                                },
+                                {
+                                    "entity": "sensor.docker_radarr_network_speed_down"
+                                },
+                                {
+                                    "entity": "sensor.docker_radarr_network_speed_up"
+                                },
+                                {
+                                    "entity": "sensor.docker_radarr_network_total_down"
+                                },
+                                {
+                                    "entity": "sensor.docker_radarr_network_total_up"
+                                },
+                                {
+                                    "entity": "sensor.docker_radarr_status"
+                                }
+                            ],
+                            "title": "Radarr",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.docker_sonarr_cpu"
+                                },
+                                {
+                                    "entity": "sensor.docker_sonarr_memory"
+                                },
+                                {
+                                    "entity": "sensor.docker_sonarr_memory_percent"
+                                },
+                                {
+                                    "entity": "sensor.docker_sonarr_network_speed_down"
+                                },
+                                {
+                                    "entity": "sensor.docker_sonarr_network_speed_up"
+                                },
+                                {
+                                    "entity": "sensor.docker_sonarr_network_total_down"
+                                },
+                                {
+                                    "entity": "sensor.docker_sonarr_network_total_up"
+                                },
+                                {
+                                    "entity": "sensor.docker_sonarr_status"
+                                }
+                            ],
+                            "title": "Sonarr",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.docker_qbittorrent_cpu"
+                                },
+                                {
+                                    "entity": "sensor.docker_qbittorrent_memory"
+                                },
+                                {
+                                    "entity": "sensor.docker_qbittorrent_memory_percent"
+                                },
+                                {
+                                    "entity": "sensor.docker_qbittorrent_network_speed_down"
+                                },
+                                {
+                                    "entity": "sensor.docker_qbittorrent_network_speed_up"
+                                },
+                                {
+                                    "entity": "sensor.docker_qbittorrent_network_total_down"
+                                },
+                                {
+                                    "entity": "sensor.docker_qbittorrent_network_total_up"
+                                },
+                                {
+                                    "entity": "sensor.docker_qbittorrent_status"
+                                }
+                            ],
+                            "title": "qbittorrent",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.docker_nzbget_cpu"
+                                },
+                                {
+                                    "entity": "sensor.docker_nzbget_memory"
+                                },
+                                {
+                                    "entity": "sensor.docker_nzbget_memory_percent"
+                                },
+                                {
+                                    "entity": "sensor.docker_nzbget_network_speed_down"
+                                },
+                                {
+                                    "entity": "sensor.docker_nzbget_network_speed_up"
+                                },
+                                {
+                                    "entity": "sensor.docker_nzbget_network_total_down"
+                                },
+                                {
+                                    "entity": "sensor.docker_nzbget_network_total_up"
+                                },
+                                {
+                                    "entity": "sensor.docker_nzbget_status"
+                                }
+                            ],
+                            "title": "NZBget",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.docker_observium_cpu"
+                                },
+                                {
+                                    "entity": "sensor.docker_observium_memory"
+                                },
+                                {
+                                    "entity": "sensor.docker_observium_memory_percent"
+                                },
+                                {
+                                    "entity": "sensor.docker_observium_network_speed_down"
+                                },
+                                {
+                                    "entity": "sensor.docker_observium_network_speed_up"
+                                },
+                                {
+                                    "entity": "sensor.docker_observium_network_total_down"
+                                },
+                                {
+                                    "entity": "sensor.docker_observium_network_total_up"
+                                },
+                                {
+                                    "entity": "sensor.docker_observium_status"
+                                }
+                            ],
+                            "title": "Observium",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.docker_grafana_cpu"
+                                },
+                                {
+                                    "entity": "sensor.docker_grafana_memory"
+                                },
+                                {
+                                    "entity": "sensor.docker_grafana_memory_percent"
+                                },
+                                {
+                                    "entity": "sensor.docker_grafana_network_speed_down"
+                                },
+                                {
+                                    "entity": "sensor.docker_grafana_network_speed_up"
+                                },
+                                {
+                                    "entity": "sensor.docker_grafana_network_total_down"
+                                },
+                                {
+                                    "entity": "sensor.docker_grafana_network_total_up"
+                                },
+                                {
+                                    "entity": "sensor.docker_grafana_status"
+                                }
+                            ],
+                            "title": "Grafana",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.docker_hydra2_cpu"
+                                },
+                                {
+                                    "entity": "sensor.docker_hydra2_memory"
+                                },
+                                {
+                                    "entity": "sensor.docker_hydra2_memory_percent"
+                                },
+                                {
+                                    "entity": "sensor.docker_hydra2_network_speed_down"
+                                },
+                                {
+                                    "entity": "sensor.docker_hydra2_network_speed_up"
+                                },
+                                {
+                                    "entity": "sensor.docker_hydra2_network_total_down"
+                                },
+                                {
+                                    "entity": "sensor.docker_hydra2_network_total_up"
+                                },
+                                {
+                                    "entity": "sensor.docker_hydra2_status"
+                                }
+                            ],
+                            "title": "Hydra2",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.docker_influxdb_cpu"
+                                },
+                                {
+                                    "entity": "sensor.docker_influxdb_memory"
+                                },
+                                {
+                                    "entity": "sensor.docker_influxdb_memory_percent"
+                                },
+                                {
+                                    "entity": "sensor.docker_influxdb_network_speed_down"
+                                },
+                                {
+                                    "entity": "sensor.docker_influxdb_network_speed_up"
+                                },
+                                {
+                                    "entity": "sensor.docker_influxdb_network_total_down"
+                                },
+                                {
+                                    "entity": "sensor.docker_influxdb_network_total_up"
+                                },
+                                {
+                                    "entity": "sensor.docker_influxdb_status"
+                                }
+                            ],
+                            "title": "InfluxDB",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.docker_jackett_cpu"
+                                },
+                                {
+                                    "entity": "sensor.docker_jackett_memory"
+                                },
+                                {
+                                    "entity": "sensor.docker_jackett_memory_percent"
+                                },
+                                {
+                                    "entity": "sensor.docker_jackett_network_speed_down"
+                                },
+                                {
+                                    "entity": "sensor.docker_jackett_network_speed_up"
+                                },
+                                {
+                                    "entity": "sensor.docker_jackett_network_total_down"
+                                },
+                                {
+                                    "entity": "sensor.docker_jackett_network_total_up"
+                                },
+                                {
+                                    "entity": "sensor.docker_jackett_status"
+                                }
+                            ],
+                            "title": "Jackett",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.docker_lidarr_cpu"
+                                },
+                                {
+                                    "entity": "sensor.docker_lidarr_memory"
+                                },
+                                {
+                                    "entity": "sensor.docker_lidarr_memory_percent"
+                                },
+                                {
+                                    "entity": "sensor.docker_lidarr_network_speed_down"
+                                },
+                                {
+                                    "entity": "sensor.docker_lidarr_network_speed_up"
+                                },
+                                {
+                                    "entity": "sensor.docker_lidarr_network_total_down"
+                                },
+                                {
+                                    "entity": "sensor.docker_lidarr_network_total_up"
+                                },
+                                {
+                                    "entity": "sensor.docker_lidarr_status"
+                                }
+                            ],
+                            "title": "Lidarr",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.docker_mosquitto_cpu"
+                                },
+                                {
+                                    "entity": "sensor.docker_mosquitto_memory"
+                                },
+                                {
+                                    "entity": "sensor.docker_mosquitto_memory_percent"
+                                },
+                                {
+                                    "entity": "sensor.docker_mosquitto_network_speed_down"
+                                },
+                                {
+                                    "entity": "sensor.docker_mosquitto_network_speed_up"
+                                },
+                                {
+                                    "entity": "sensor.docker_mosquitto_network_total_down"
+                                },
+                                {
+                                    "entity": "sensor.docker_mosquitto_network_total_up"
+                                },
+                                {
+                                    "entity": "sensor.docker_mosquitto_status"
+                                }
+                            ],
+                            "title": "Mosquitto",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.docker_netatmo_poller_cpu"
+                                },
+                                {
+                                    "entity": "sensor.docker_netatmo_poller_memory"
+                                },
+                                {
+                                    "entity": "sensor.docker_netatmo_poller_memory_percent"
+                                },
+                                {
+                                    "entity": "sensor.docker_netatmo_poller_network_speed_down"
+                                },
+                                {
+                                    "entity": "sensor.docker_netatmo_poller_network_speed_up"
+                                },
+                                {
+                                    "entity": "sensor.docker_netatmo_poller_network_total_down"
+                                },
+                                {
+                                    "entity": "sensor.docker_netatmo_poller_network_total_up"
+                                },
+                                {
+                                    "entity": "sensor.docker_netatmo_poller_status"
+                                }
+                            ],
+                            "title": "Netatmo-Poller",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.docker_oscam_cpu"
+                                },
+                                {
+                                    "entity": "sensor.docker_oscam_memory"
+                                },
+                                {
+                                    "entity": "sensor.docker_oscam_memory_percent"
+                                },
+                                {
+                                    "entity": "sensor.docker_oscam_network_speed_down"
+                                },
+                                {
+                                    "entity": "sensor.docker_oscam_network_speed_up"
+                                },
+                                {
+                                    "entity": "sensor.docker_oscam_network_total_down"
+                                },
+                                {
+                                    "entity": "sensor.docker_oscam_network_total_up"
+                                },
+                                {
+                                    "entity": "sensor.docker_oscam_status"
+                                }
+                            ],
+                            "title": "OScam",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.docker_ouroboros_cpu"
+                                },
+                                {
+                                    "entity": "sensor.docker_ouroboros_memory"
+                                },
+                                {
+                                    "entity": "sensor.docker_ouroboros_memory_percent"
+                                },
+                                {
+                                    "entity": "sensor.docker_ouroboros_network_speed_down"
+                                },
+                                {
+                                    "entity": "sensor.docker_ouroboros_network_speed_up"
+                                },
+                                {
+                                    "entity": "sensor.docker_ouroboros_network_total_down"
+                                },
+                                {
+                                    "entity": "sensor.docker_ouroboros_network_total_up"
+                                },
+                                {
+                                    "entity": "sensor.docker_ouroboros_status"
+                                }
+                            ],
+                            "title": "Ouroboros",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.docker_pihole01_poller_cpu"
+                                },
+                                {
+                                    "entity": "sensor.docker_pihole01_poller_memory"
+                                },
+                                {
+                                    "entity": "sensor.docker_pihole01_poller_memory_percent"
+                                },
+                                {
+                                    "entity": "sensor.docker_pihole01_poller_network_speed_down"
+                                },
+                                {
+                                    "entity": "sensor.docker_pihole01_poller_network_speed_up"
+                                },
+                                {
+                                    "entity": "sensor.docker_pihole01_poller_network_total_down"
+                                },
+                                {
+                                    "entity": "sensor.docker_pihole01_poller_network_total_up"
+                                },
+                                {
+                                    "entity": "sensor.docker_pihole01_poller_status"
+                                }
+                            ],
+                            "title": "PiHole01-Poller",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.docker_pihole02_poller_cpu"
+                                },
+                                {
+                                    "entity": "sensor.docker_pihole02_poller_memory"
+                                },
+                                {
+                                    "entity": "sensor.docker_pihole02_poller_memory_percent"
+                                },
+                                {
+                                    "entity": "sensor.docker_pihole02_poller_network_speed_down"
+                                },
+                                {
+                                    "entity": "sensor.docker_pihole02_poller_network_speed_up"
+                                },
+                                {
+                                    "entity": "sensor.docker_pihole02_poller_network_total_down"
+                                },
+                                {
+                                    "entity": "sensor.docker_pihole02_poller_network_total_up"
+                                },
+                                {
+                                    "entity": "sensor.docker_pihole02_poller_status"
+                                }
+                            ],
+                            "title": "PiHole02-Poller",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.docker_portainer_cpu"
+                                },
+                                {
+                                    "entity": "sensor.docker_portainer_memory"
+                                },
+                                {
+                                    "entity": "sensor.docker_portainer_memory_percent"
+                                },
+                                {
+                                    "entity": "sensor.docker_portainer_network_speed_down"
+                                },
+                                {
+                                    "entity": "sensor.docker_portainer_network_speed_up"
+                                },
+                                {
+                                    "entity": "sensor.docker_portainer_network_total_down"
+                                },
+                                {
+                                    "entity": "sensor.docker_portainer_network_total_up"
+                                },
+                                {
+                                    "entity": "sensor.docker_portainer_status"
+                                }
+                            ],
+                            "title": "Portainer",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.docker_swag_cpu"
+                                },
+                                {
+                                    "entity": "sensor.docker_swag_memory"
+                                },
+                                {
+                                    "entity": "sensor.docker_swag_memory_percent"
+                                },
+                                {
+                                    "entity": "sensor.docker_swag_network_speed_down"
+                                },
+                                {
+                                    "entity": "sensor.docker_swag_network_speed_up"
+                                },
+                                {
+                                    "entity": "sensor.docker_swag_network_total_down"
+                                },
+                                {
+                                    "entity": "sensor.docker_swag_network_total_up"
+                                },
+                                {
+                                    "entity": "sensor.docker_swag_status"
+                                }
+                            ],
+                            "title": "Swag",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.docker_tautulli_cpu"
+                                },
+                                {
+                                    "entity": "sensor.docker_tautulli_memory"
+                                },
+                                {
+                                    "entity": "sensor.docker_tautulli_memory_percent"
+                                },
+                                {
+                                    "entity": "sensor.docker_tautulli_network_speed_down"
+                                },
+                                {
+                                    "entity": "sensor.docker_tautulli_network_speed_up"
+                                },
+                                {
+                                    "entity": "sensor.docker_tautulli_network_total_down"
+                                },
+                                {
+                                    "entity": "sensor.docker_tautulli_network_total_up"
+                                },
+                                {
+                                    "entity": "sensor.docker_tautulli_status"
+                                }
+                            ],
+                            "title": "Tautulli",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.docker_telegraf_cpu"
+                                },
+                                {
+                                    "entity": "sensor.docker_telegraf_memory"
+                                },
+                                {
+                                    "entity": "sensor.docker_telegraf_memory_percent"
+                                },
+                                {
+                                    "entity": "sensor.docker_telegraf_network_speed_down"
+                                },
+                                {
+                                    "entity": "sensor.docker_telegraf_network_speed_up"
+                                },
+                                {
+                                    "entity": "sensor.docker_telegraf_network_total_down"
+                                },
+                                {
+                                    "entity": "sensor.docker_telegraf_network_total_up"
+                                },
+                                {
+                                    "entity": "sensor.docker_telegraf_status"
+                                }
+                            ],
+                            "title": "Telegraf",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.docker_unifi_poller_cpu"
+                                },
+                                {
+                                    "entity": "sensor.docker_unifi_poller_memory"
+                                },
+                                {
+                                    "entity": "sensor.docker_unifi_poller_memory_percent"
+                                },
+                                {
+                                    "entity": "sensor.docker_unifi_poller_network_speed_down"
+                                },
+                                {
+                                    "entity": "sensor.docker_unifi_poller_network_speed_up"
+                                },
+                                {
+                                    "entity": "sensor.docker_unifi_poller_network_total_down"
+                                },
+                                {
+                                    "entity": "sensor.docker_unifi_poller_network_total_up"
+                                },
+                                {
+                                    "entity": "sensor.docker_unifi_poller_status"
+                                }
+                            ],
+                            "title": "UniFi-Poller",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.docker_unifi_video_cpu"
+                                },
+                                {
+                                    "entity": "sensor.docker_unifi_video_memory"
+                                },
+                                {
+                                    "entity": "sensor.docker_unifi_video_memory_percent"
+                                },
+                                {
+                                    "entity": "sensor.docker_unifi_video_network_speed_down"
+                                },
+                                {
+                                    "entity": "sensor.docker_unifi_video_network_speed_up"
+                                },
+                                {
+                                    "entity": "sensor.docker_unifi_video_network_total_down"
+                                },
+                                {
+                                    "entity": "sensor.docker_unifi_video_network_total_up"
+                                },
+                                {
+                                    "entity": "sensor.docker_unifi_video_status"
+                                }
+                            ],
+                            "title": "UniFi Video",
+                            "type": "entities"
+                        }
+                    ],
+                    "icon": "mdi:docker",
+                    "path": "docker",
+                    "title": "Docker"
+                }
+            ]
+        }
+    }
+}

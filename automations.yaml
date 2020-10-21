@@ -1,0 +1,127 @@
+- id: '1595358403462'
+  alias: Turn Living Room Desk Lamp on at Sunset or 20:00
+  description: ''
+  trigger:
+  - event: sunset
+    offset: -00:20:00
+    platform: sun
+  - at: '20:00:00'
+    platform: time
+  condition:
+  - after: '17:00:00'
+    before: '21:30:00'
+    condition: time
+  - condition: or
+    conditions:
+    - condition: state
+      entity_id: device_tracker.jp_iphone
+      state: home
+    - condition: state
+      entity_id: device_tracker.iphonedeclaudia
+      state: home
+  action:
+  - type: turn_on
+    device_id: 5999db1bf98f11eaa7fd15e95bbd9c0d
+    entity_id: switch.shelly_living_room_desk_lamp
+    domain: switch
+  mode: single
+- id: '1595359336010'
+  alias: Turn off Living Room Desk light at 01:00
+  description: ''
+  trigger:
+  - at: 01:00:00
+    platform: time
+  condition: []
+  action:
+  - type: turn_off
+    device_id: 5999db1bf98f11eaa7fd15e95bbd9c0d
+    entity_id: switch.shelly_living_room_desk_lamp
+    domain: switch
+  mode: single
+- id: '1595547109688'
+  alias: Turn off Living Room Desk Lamp if no one at home
+  description: ''
+  trigger:
+  - platform: device
+    type: turned_on
+    device_id: 5999db1bf98f11eaa7fd15e95bbd9c0d
+    entity_id: switch.shelly_living_room_desk_lamp
+    domain: switch
+    for:
+      hours: 1
+      minutes: 0
+      seconds: 0
+  condition:
+  - after: '17:00:00'
+    before: 00:00:00
+    condition: time
+  - condition: and
+    conditions:
+    - condition: state
+      entity_id: device_tracker.jp_iphone
+      state: Away
+    - condition: state
+      entity_id: device_tracker.iphonedeclaudia
+      state: Away
+  action:
+  - type: turn_off
+    device_id: 5999db1bf98f11eaa7fd15e95bbd9c0d
+    entity_id: switch.shelly_living_room_desk_lamp
+    domain: switch
+  mode: single
+- id: '1600973987921'
+  alias: Turn on Living Room Desk lamp when we arrive
+  description: ''
+  trigger:
+  - platform: sun
+    event: sunset
+    offset: 00:00:00
+  condition:
+  - condition: or
+    conditions:
+    - condition: state
+      entity_id: device_tracker.jp_iphone
+      state: home
+    - condition: state
+      entity_id: device_tracker.iphonedeclaudia_2
+      state: home
+  - condition: time
+    before: 00:00:00
+    after: '17:00:00'
+  - condition: device
+    type: is_on
+    device_id: 5999db1bf98f11eaa7fd15e95bbd9c0d
+    entity_id: switch.shelly_living_room_desk_lamp
+    domain: switch
+  action:
+  - type: turn_off
+    device_id: 5999db1bf98f11eaa7fd15e95bbd9c0d
+    entity_id: switch.shelly1pm_68c63afad357
+    domain: switch
+  mode: single
+- id: shellies_announce
+  alias: 'Shellies Announce'
+  trigger:
+    - platform: homeassistant
+      event: start
+    - platform: time_pattern
+      hours: "/1"
+  action:
+    service: mqtt.publish
+    data:
+      topic: shellies/command
+      payload: announce
+- id: 'shellies_discovery'
+  alias: 'Shellies Discovery'
+  mode: queued
+  max: 999
+  trigger:
+    platform: mqtt
+    topic: shellies/announce
+  action:
+    service: python_script.shellies_discovery
+    data_template:
+      id: '{{ trigger.payload_json.id }}'
+      mac: '{{ trigger.payload_json.mac }}'
+      fw_ver: '{{ trigger.payload_json.fw_ver }}'
+      model: '{{ trigger.payload_json.model }}'

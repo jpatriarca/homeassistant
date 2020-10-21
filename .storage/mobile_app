@@ -1,0 +1,684 @@
+{
+    "version": 1,
+    "key": "mobile_app",
+    "data": {
+        "binary_sensor": {},
+        "deleted_ids": [
+            "34cacf0d76891488281131b64bc20515a3ccfc717ebd301e353b43c91150934b",
+            "e4f78e951fe4f319055cd3e19461721e3e17e5ce8cce572903f0ef7c814c7da1"
+        ],
+        "sensor": {
+            "2ba803730cfef09189419d22d6db7d1432345f145cb1c95a5fa9d8d8e2a286cb_activity": {
+                "added": true,
+                "attributes": {
+                    "Confidence": "High",
+                    "Types": [
+                        "Stationary"
+                    ]
+                },
+                "icon": "mdi:human-male",
+                "name": "Activity",
+                "state": "Stationary",
+                "type": "sensor",
+                "unique_id": "activity",
+                "webhook_id": "2ba803730cfef09189419d22d6db7d1432345f145cb1c95a5fa9d8d8e2a286cb"
+            },
+            "2ba803730cfef09189419d22d6db7d1432345f145cb1c95a5fa9d8d8e2a286cb_battery_level": {
+                "added": true,
+                "attributes": {
+                    "Battery State": "Not Charging",
+                    "Low Power Mode": false
+                },
+                "device_class": "battery",
+                "icon": "mdi:battery-50",
+                "name": "Battery Level",
+                "state": 53,
+                "type": "sensor",
+                "unique_id": "battery_level",
+                "unit_of_measurement": "%",
+                "webhook_id": "2ba803730cfef09189419d22d6db7d1432345f145cb1c95a5fa9d8d8e2a286cb"
+            },
+            "2ba803730cfef09189419d22d6db7d1432345f145cb1c95a5fa9d8d8e2a286cb_battery_state": {
+                "added": true,
+                "attributes": {
+                    "Battery Level": 53,
+                    "Low Power Mode": false
+                },
+                "device_class": "battery",
+                "icon": "mdi:battery-50",
+                "name": "Battery State",
+                "state": "Not Charging",
+                "type": "sensor",
+                "unique_id": "battery_state",
+                "webhook_id": "2ba803730cfef09189419d22d6db7d1432345f145cb1c95a5fa9d8d8e2a286cb"
+            },
+            "2ba803730cfef09189419d22d6db7d1432345f145cb1c95a5fa9d8d8e2a286cb_connectivity_bssid": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:wifi-star",
+                "name": "BSSID",
+                "state": "b4:fb:e4:2d:1d:20",
+                "type": "sensor",
+                "unique_id": "connectivity_bssid",
+                "webhook_id": "2ba803730cfef09189419d22d6db7d1432345f145cb1c95a5fa9d8d8e2a286cb"
+            },
+            "2ba803730cfef09189419d22d6db7d1432345f145cb1c95a5fa9d8d8e2a286cb_connectivity_connection_type": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:wifi",
+                "name": "Connection Type",
+                "state": "Wi-Fi",
+                "type": "sensor",
+                "unique_id": "connectivity_connection_type",
+                "webhook_id": "2ba803730cfef09189419d22d6db7d1432345f145cb1c95a5fa9d8d8e2a286cb"
+            },
+            "2ba803730cfef09189419d22d6db7d1432345f145cb1c95a5fa9d8d8e2a286cb_connectivity_sim_1": {
+                "added": true,
+                "attributes": {
+                    "Allows VoIP": true,
+                    "Carrier ID": "0000000100000001",
+                    "Carrier Name": "MEO",
+                    "Current Radio Technology": "Long-Term Evolution (LTE)",
+                    "ISO Country Code": "pt",
+                    "Mobile Country Code": "268",
+                    "Mobile Network Code": "06"
+                },
+                "icon": "mdi:sim",
+                "name": "SIM 1",
+                "state": "MEO",
+                "type": "sensor",
+                "unique_id": "connectivity_sim_1",
+                "webhook_id": "2ba803730cfef09189419d22d6db7d1432345f145cb1c95a5fa9d8d8e2a286cb"
+            },
+            "2ba803730cfef09189419d22d6db7d1432345f145cb1c95a5fa9d8d8e2a286cb_connectivity_sim_2": {
+                "added": true,
+                "attributes": {
+                    "Allows VoIP": true,
+                    "Carrier ID": "0000000100000002",
+                    "Carrier Name": "N/A",
+                    "ISO Country Code": "N/A",
+                    "Mobile Country Code": "N/A",
+                    "Mobile Network Code": "N/A"
+                },
+                "icon": "mdi:sim",
+                "name": "SIM 2",
+                "state": "N/A",
+                "type": "sensor",
+                "unique_id": "connectivity_sim_2",
+                "webhook_id": "2ba803730cfef09189419d22d6db7d1432345f145cb1c95a5fa9d8d8e2a286cb"
+            },
+            "2ba803730cfef09189419d22d6db7d1432345f145cb1c95a5fa9d8d8e2a286cb_connectivity_ssid": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:wifi",
+                "name": "SSID",
+                "state": "CJWiFi",
+                "type": "sensor",
+                "unique_id": "connectivity_ssid",
+                "webhook_id": "2ba803730cfef09189419d22d6db7d1432345f145cb1c95a5fa9d8d8e2a286cb"
+            },
+            "2ba803730cfef09189419d22d6db7d1432345f145cb1c95a5fa9d8d8e2a286cb_geocoded_location": {
+                "added": true,
+                "attributes": {
+                    "Administrative Area": "Lisbon",
+                    "Areas Of Interest": "N/A",
+                    "Country": "Portugal",
+                    "Inland Water": "N/A",
+                    "ISO Country Code": "PT",
+                    "Locality": "Odivelas",
+                    "Location": [
+                        38.791168212890625,
+                        -9.188117475445653
+                    ],
+                    "Name": "Rua Pulido Valente 35\u201339",
+                    "Ocean": "N/A",
+                    "Postal Code": "2675",
+                    "Sub Administrative Area": "N/A",
+                    "Sub Locality": "Odivelas",
+                    "Sub Thoroughfare": "35\u201339",
+                    "Thoroughfare": "Rua Pulido Valente",
+                    "Time Zone": "Europe/Lisbon",
+                    "Zones": [
+                        "Home"
+                    ]
+                },
+                "icon": "mdi:map",
+                "name": "Geocoded Location",
+                "state": "Rua Pulido Valente 35\u201339\n2675 Odivelas\nPortugal",
+                "type": "sensor",
+                "unique_id": "geocoded_location",
+                "webhook_id": "2ba803730cfef09189419d22d6db7d1432345f145cb1c95a5fa9d8d8e2a286cb"
+            },
+            "2ba803730cfef09189419d22d6db7d1432345f145cb1c95a5fa9d8d8e2a286cb_last_update_trigger": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:cellphone-wireless",
+                "name": "Last Update Trigger",
+                "state": "Background Fetch",
+                "type": "sensor",
+                "unique_id": "last_update_trigger",
+                "webhook_id": "2ba803730cfef09189419d22d6db7d1432345f145cb1c95a5fa9d8d8e2a286cb"
+            },
+            "2ba803730cfef09189419d22d6db7d1432345f145cb1c95a5fa9d8d8e2a286cb_pedometer_avg_active_pace": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:speedometer",
+                "name": "Average Active Pace",
+                "state": 0,
+                "type": "sensor",
+                "unique_id": "pedometer_avg_active_pace",
+                "unit_of_measurement": "m/s",
+                "webhook_id": "2ba803730cfef09189419d22d6db7d1432345f145cb1c95a5fa9d8d8e2a286cb"
+            },
+            "2ba803730cfef09189419d22d6db7d1432345f145cb1c95a5fa9d8d8e2a286cb_pedometer_distance": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:hiking",
+                "name": "Distance",
+                "state": 1111,
+                "type": "sensor",
+                "unique_id": "pedometer_distance",
+                "unit_of_measurement": "m",
+                "webhook_id": "2ba803730cfef09189419d22d6db7d1432345f145cb1c95a5fa9d8d8e2a286cb"
+            },
+            "2ba803730cfef09189419d22d6db7d1432345f145cb1c95a5fa9d8d8e2a286cb_pedometer_floors_ascended": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:stairs-up",
+                "name": "Floors Ascended",
+                "state": 0,
+                "type": "sensor",
+                "unique_id": "pedometer_floors_ascended",
+                "unit_of_measurement": "floors",
+                "webhook_id": "2ba803730cfef09189419d22d6db7d1432345f145cb1c95a5fa9d8d8e2a286cb"
+            },
+            "2ba803730cfef09189419d22d6db7d1432345f145cb1c95a5fa9d8d8e2a286cb_pedometer_floors_descended": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:stairs-down",
+                "name": "Floors Descended",
+                "state": 0,
+                "type": "sensor",
+                "unique_id": "pedometer_floors_descended",
+                "unit_of_measurement": "floors",
+                "webhook_id": "2ba803730cfef09189419d22d6db7d1432345f145cb1c95a5fa9d8d8e2a286cb"
+            },
+            "2ba803730cfef09189419d22d6db7d1432345f145cb1c95a5fa9d8d8e2a286cb_pedometer_steps": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:walk",
+                "name": "Steps",
+                "state": 1519,
+                "type": "sensor",
+                "unique_id": "pedometer_steps",
+                "unit_of_measurement": "steps",
+                "webhook_id": "2ba803730cfef09189419d22d6db7d1432345f145cb1c95a5fa9d8d8e2a286cb"
+            },
+            "2ba803730cfef09189419d22d6db7d1432345f145cb1c95a5fa9d8d8e2a286cb_storage": {
+                "added": true,
+                "attributes": {
+                    "Available": "100,16 GB",
+                    "Available (Important)": "187,22 GB",
+                    "Available (Opportunistic)": "185,94 GB",
+                    "Total": "255,88 GB"
+                },
+                "icon": "mdi:database",
+                "name": "Storage",
+                "state": "72.67",
+                "type": "sensor",
+                "unique_id": "storage",
+                "unit_of_measurement": "% available",
+                "webhook_id": "2ba803730cfef09189419d22d6db7d1432345f145cb1c95a5fa9d8d8e2a286cb"
+            },
+            "34cacf0d76891488281131b64bc20515a3ccfc717ebd301e353b43c91150934b_activity": {
+                "added": true,
+                "attributes": {
+                    "Confidence": "High",
+                    "Types": [
+                        "Unknown"
+                    ]
+                },
+                "icon": "mdi:help-circle",
+                "name": "Activity",
+                "state": "Unknown",
+                "type": "sensor",
+                "unique_id": "activity",
+                "webhook_id": "34cacf0d76891488281131b64bc20515a3ccfc717ebd301e353b43c91150934b"
+            },
+            "34cacf0d76891488281131b64bc20515a3ccfc717ebd301e353b43c91150934b_battery_level": {
+                "added": true,
+                "attributes": {
+                    "Battery State": "Not Charging",
+                    "Low Power Mode": false
+                },
+                "device_class": "battery",
+                "icon": "mdi:battery-50",
+                "name": "Battery Level",
+                "state": 54,
+                "type": "sensor",
+                "unique_id": "battery_level",
+                "unit_of_measurement": "%",
+                "webhook_id": "34cacf0d76891488281131b64bc20515a3ccfc717ebd301e353b43c91150934b"
+            },
+            "34cacf0d76891488281131b64bc20515a3ccfc717ebd301e353b43c91150934b_battery_state": {
+                "added": true,
+                "attributes": {
+                    "Battery Level": 54,
+                    "Low Power Mode": false
+                },
+                "device_class": "battery",
+                "icon": "mdi:battery-50",
+                "name": "Battery State",
+                "state": "Not Charging",
+                "type": "sensor",
+                "unique_id": "battery_state",
+                "webhook_id": "34cacf0d76891488281131b64bc20515a3ccfc717ebd301e353b43c91150934b"
+            },
+            "34cacf0d76891488281131b64bc20515a3ccfc717ebd301e353b43c91150934b_connectivity_bssid": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:wifi-star",
+                "name": "BSSID",
+                "state": "b4:fb:e4:2d:1d:20",
+                "type": "sensor",
+                "unique_id": "connectivity_bssid",
+                "webhook_id": "34cacf0d76891488281131b64bc20515a3ccfc717ebd301e353b43c91150934b"
+            },
+            "34cacf0d76891488281131b64bc20515a3ccfc717ebd301e353b43c91150934b_connectivity_connection_type": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:wifi",
+                "name": "Connection Type",
+                "state": "Wi-Fi",
+                "type": "sensor",
+                "unique_id": "connectivity_connection_type",
+                "webhook_id": "34cacf0d76891488281131b64bc20515a3ccfc717ebd301e353b43c91150934b"
+            },
+            "34cacf0d76891488281131b64bc20515a3ccfc717ebd301e353b43c91150934b_connectivity_sim_1": {
+                "added": true,
+                "attributes": {
+                    "Allows VoIP": true,
+                    "Carrier ID": "0000000100000001",
+                    "Carrier Name": "MEO",
+                    "Current Radio Technology": "Long-Term Evolution (LTE)",
+                    "ISO Country Code": "pt",
+                    "Mobile Country Code": "268",
+                    "Mobile Network Code": "06"
+                },
+                "icon": "mdi:sim",
+                "name": "SIM 1",
+                "state": "MEO",
+                "type": "sensor",
+                "unique_id": "connectivity_sim_1",
+                "webhook_id": "34cacf0d76891488281131b64bc20515a3ccfc717ebd301e353b43c91150934b"
+            },
+            "34cacf0d76891488281131b64bc20515a3ccfc717ebd301e353b43c91150934b_connectivity_sim_2": {
+                "added": true,
+                "attributes": {
+                    "Allows VoIP": true,
+                    "Carrier ID": "0000000100000002",
+                    "Carrier Name": "N/A",
+                    "ISO Country Code": "N/A",
+                    "Mobile Country Code": "N/A",
+                    "Mobile Network Code": "N/A"
+                },
+                "icon": "mdi:sim",
+                "name": "SIM 2",
+                "state": "N/A",
+                "type": "sensor",
+                "unique_id": "connectivity_sim_2",
+                "webhook_id": "34cacf0d76891488281131b64bc20515a3ccfc717ebd301e353b43c91150934b"
+            },
+            "34cacf0d76891488281131b64bc20515a3ccfc717ebd301e353b43c91150934b_connectivity_ssid": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:wifi",
+                "name": "SSID",
+                "state": "CJWiFi",
+                "type": "sensor",
+                "unique_id": "connectivity_ssid",
+                "webhook_id": "34cacf0d76891488281131b64bc20515a3ccfc717ebd301e353b43c91150934b"
+            },
+            "34cacf0d76891488281131b64bc20515a3ccfc717ebd301e353b43c91150934b_geocoded_location": {
+                "added": true,
+                "attributes": {
+                    "Administrative Area": "Lisbon",
+                    "Areas Of Interest": "N/A",
+                    "Country": "Portugal",
+                    "ISO Country Code": "PT",
+                    "Inland Water": "N/A",
+                    "Locality": "Odivelas",
+                    "Location": [
+                        38.791168212890625,
+                        -9.188129334041513
+                    ],
+                    "Name": "Rua Pulido Valente 35\u201339",
+                    "Ocean": "N/A",
+                    "Postal Code": "2675",
+                    "Sub Administrative Area": "N/A",
+                    "Sub Locality": "Odivelas",
+                    "Sub Thoroughfare": "35\u201339",
+                    "Thoroughfare": "Rua Pulido Valente",
+                    "Time Zone": "Europe/Lisbon",
+                    "Zones": [
+                        "Home"
+                    ]
+                },
+                "icon": "mdi:map",
+                "name": "Geocoded Location",
+                "state": "Rua Pulido Valente 35\u201339\n2675 Odivelas\nPortugal",
+                "type": "sensor",
+                "unique_id": "geocoded_location",
+                "webhook_id": "34cacf0d76891488281131b64bc20515a3ccfc717ebd301e353b43c91150934b"
+            },
+            "34cacf0d76891488281131b64bc20515a3ccfc717ebd301e353b43c91150934b_last_update_trigger": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:cellphone-wireless",
+                "name": "Last Update Trigger",
+                "state": "Background Fetch",
+                "type": "sensor",
+                "unique_id": "last_update_trigger",
+                "webhook_id": "34cacf0d76891488281131b64bc20515a3ccfc717ebd301e353b43c91150934b"
+            },
+            "34cacf0d76891488281131b64bc20515a3ccfc717ebd301e353b43c91150934b_pedometer_avg_active_pace": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:speedometer",
+                "name": "Average Active Pace",
+                "state": 1,
+                "type": "sensor",
+                "unique_id": "pedometer_avg_active_pace",
+                "unit_of_measurement": "m/s",
+                "webhook_id": "34cacf0d76891488281131b64bc20515a3ccfc717ebd301e353b43c91150934b"
+            },
+            "34cacf0d76891488281131b64bc20515a3ccfc717ebd301e353b43c91150934b_pedometer_distance": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:hiking",
+                "name": "Distance",
+                "state": 667,
+                "type": "sensor",
+                "unique_id": "pedometer_distance",
+                "unit_of_measurement": "m",
+                "webhook_id": "34cacf0d76891488281131b64bc20515a3ccfc717ebd301e353b43c91150934b"
+            },
+            "34cacf0d76891488281131b64bc20515a3ccfc717ebd301e353b43c91150934b_pedometer_floors_ascended": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:stairs-up",
+                "name": "Floors Ascended",
+                "state": 2,
+                "type": "sensor",
+                "unique_id": "pedometer_floors_ascended",
+                "unit_of_measurement": "floors",
+                "webhook_id": "34cacf0d76891488281131b64bc20515a3ccfc717ebd301e353b43c91150934b"
+            },
+            "34cacf0d76891488281131b64bc20515a3ccfc717ebd301e353b43c91150934b_pedometer_floors_descended": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:stairs-down",
+                "name": "Floors Descended",
+                "state": 3,
+                "type": "sensor",
+                "unique_id": "pedometer_floors_descended",
+                "unit_of_measurement": "floors",
+                "webhook_id": "34cacf0d76891488281131b64bc20515a3ccfc717ebd301e353b43c91150934b"
+            },
+            "34cacf0d76891488281131b64bc20515a3ccfc717ebd301e353b43c91150934b_pedometer_steps": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:walk",
+                "name": "Steps",
+                "state": 949,
+                "type": "sensor",
+                "unique_id": "pedometer_steps",
+                "unit_of_measurement": "steps",
+                "webhook_id": "34cacf0d76891488281131b64bc20515a3ccfc717ebd301e353b43c91150934b"
+            },
+            "34cacf0d76891488281131b64bc20515a3ccfc717ebd301e353b43c91150934b_storage": {
+                "added": true,
+                "attributes": {
+                    "Available": "99,43 GB",
+                    "Available (Important)": "195,18 GB",
+                    "Available (Opportunistic)": "193,89 GB",
+                    "Total": "255,88 GB"
+                },
+                "icon": "mdi:database",
+                "name": "Storage",
+                "state": "75.77",
+                "type": "sensor",
+                "unique_id": "storage",
+                "unit_of_measurement": "% available",
+                "webhook_id": "34cacf0d76891488281131b64bc20515a3ccfc717ebd301e353b43c91150934b"
+            },
+            "93ec1d92bc241ac1b57c0f888f98aad5de97c4763b04601941f4a63d985b14a1_battery_level": {
+                "added": true,
+                "attributes": {
+                    "Battery State": "Not Charging",
+                    "Low Power Mode": false
+                },
+                "device_class": "battery",
+                "icon": "mdi:battery-40",
+                "name": "Battery Level",
+                "state": 41,
+                "type": "sensor",
+                "unique_id": "battery_level",
+                "unit_of_measurement": "%",
+                "webhook_id": "93ec1d92bc241ac1b57c0f888f98aad5de97c4763b04601941f4a63d985b14a1"
+            },
+            "93ec1d92bc241ac1b57c0f888f98aad5de97c4763b04601941f4a63d985b14a1_battery_state": {
+                "added": true,
+                "attributes": {
+                    "Battery Level": 41,
+                    "Low Power Mode": false
+                },
+                "device_class": "battery",
+                "icon": "mdi:battery-40",
+                "name": "Battery State",
+                "state": "Not Charging",
+                "type": "sensor",
+                "unique_id": "battery_state",
+                "webhook_id": "93ec1d92bc241ac1b57c0f888f98aad5de97c4763b04601941f4a63d985b14a1"
+            },
+            "93ec1d92bc241ac1b57c0f888f98aad5de97c4763b04601941f4a63d985b14a1_connectivity_bssid": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:wifi-star",
+                "name": "BSSID",
+                "state": "b4:fb:e4:2d:1d:20",
+                "type": "sensor",
+                "unique_id": "connectivity_bssid",
+                "webhook_id": "93ec1d92bc241ac1b57c0f888f98aad5de97c4763b04601941f4a63d985b14a1"
+            },
+            "93ec1d92bc241ac1b57c0f888f98aad5de97c4763b04601941f4a63d985b14a1_connectivity_connection_type": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:wifi",
+                "name": "Connection Type",
+                "state": "Wi-Fi",
+                "type": "sensor",
+                "unique_id": "connectivity_connection_type",
+                "webhook_id": "93ec1d92bc241ac1b57c0f888f98aad5de97c4763b04601941f4a63d985b14a1"
+            },
+            "93ec1d92bc241ac1b57c0f888f98aad5de97c4763b04601941f4a63d985b14a1_connectivity_ssid": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:wifi",
+                "name": "SSID",
+                "state": "CJWiFi",
+                "type": "sensor",
+                "unique_id": "connectivity_ssid",
+                "webhook_id": "93ec1d92bc241ac1b57c0f888f98aad5de97c4763b04601941f4a63d985b14a1"
+            },
+            "93ec1d92bc241ac1b57c0f888f98aad5de97c4763b04601941f4a63d985b14a1_geocoded_location": {
+                "added": true,
+                "attributes": {
+                    "Administrative Area": "Lisbon",
+                    "Areas Of Interest": "N/A",
+                    "Country": "Portugal",
+                    "Inland Water": "N/A",
+                    "ISO Country Code": "PT",
+                    "Locality": "Odivelas",
+                    "Location": [
+                        38.79123353602886,
+                        -9.18806317272127
+                    ],
+                    "Name": "Rua Pulido Valente 35\u201339",
+                    "Ocean": "N/A",
+                    "Postal Code": "2675",
+                    "Sub Administrative Area": "N/A",
+                    "Sub Locality": "Odivelas",
+                    "Sub Thoroughfare": "35\u201339",
+                    "Thoroughfare": "Rua Pulido Valente",
+                    "Time Zone": "Europe/Lisbon",
+                    "Zones": [
+                        "Home"
+                    ]
+                },
+                "icon": "mdi:map",
+                "name": "Geocoded Location",
+                "state": "Rua Pulido Valente 35\u201339\n2675 Odivelas\nPortugal",
+                "type": "sensor",
+                "unique_id": "geocoded_location",
+                "webhook_id": "93ec1d92bc241ac1b57c0f888f98aad5de97c4763b04601941f4a63d985b14a1"
+            },
+            "93ec1d92bc241ac1b57c0f888f98aad5de97c4763b04601941f4a63d985b14a1_last_update_trigger": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:cellphone-wireless",
+                "name": "Last Update Trigger",
+                "state": "Launch",
+                "type": "sensor",
+                "unique_id": "last_update_trigger",
+                "webhook_id": "93ec1d92bc241ac1b57c0f888f98aad5de97c4763b04601941f4a63d985b14a1"
+            },
+            "93ec1d92bc241ac1b57c0f888f98aad5de97c4763b04601941f4a63d985b14a1_storage": {
+                "added": true,
+                "attributes": {
+                    "Available": "4,62 GB",
+                    "Available (Important)": "8,84 GB",
+                    "Available (Opportunistic)": "7,56 GB",
+                    "Total": "31,98 GB"
+                },
+                "icon": "mdi:database",
+                "name": "Storage",
+                "state": "23.64",
+                "type": "sensor",
+                "unique_id": "storage",
+                "unit_of_measurement": "% available",
+                "webhook_id": "93ec1d92bc241ac1b57c0f888f98aad5de97c4763b04601941f4a63d985b14a1"
+            },
+            "e4f78e951fe4f319055cd3e19461721e3e17e5ce8cce572903f0ef7c814c7da1_battery_level": {
+                "added": true,
+                "attributes": {
+                    "Battery State": "Not Charging",
+                    "Low Power Mode": false
+                },
+                "device_class": "battery",
+                "icon": "mdi:battery-40",
+                "name": "Battery Level",
+                "state": 40,
+                "type": "sensor",
+                "unique_id": "battery_level",
+                "unit_of_measurement": "%",
+                "webhook_id": "e4f78e951fe4f319055cd3e19461721e3e17e5ce8cce572903f0ef7c814c7da1"
+            },
+            "e4f78e951fe4f319055cd3e19461721e3e17e5ce8cce572903f0ef7c814c7da1_battery_state": {
+                "added": true,
+                "attributes": {
+                    "Battery Level": 40,
+                    "Low Power Mode": false
+                },
+                "device_class": "battery",
+                "icon": "mdi:battery-40",
+                "name": "Battery State",
+                "state": "Not Charging",
+                "type": "sensor",
+                "unique_id": "battery_state",
+                "webhook_id": "e4f78e951fe4f319055cd3e19461721e3e17e5ce8cce572903f0ef7c814c7da1"
+            },
+            "e4f78e951fe4f319055cd3e19461721e3e17e5ce8cce572903f0ef7c814c7da1_connectivity_bssid": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:wifi-off",
+                "name": "BSSID",
+                "state": "Not Connected",
+                "type": "sensor",
+                "unique_id": "connectivity_bssid",
+                "webhook_id": "e4f78e951fe4f319055cd3e19461721e3e17e5ce8cce572903f0ef7c814c7da1"
+            },
+            "e4f78e951fe4f319055cd3e19461721e3e17e5ce8cce572903f0ef7c814c7da1_connectivity_connection_type": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:wifi",
+                "name": "Connection Type",
+                "state": "Wi-Fi",
+                "type": "sensor",
+                "unique_id": "connectivity_connection_type",
+                "webhook_id": "e4f78e951fe4f319055cd3e19461721e3e17e5ce8cce572903f0ef7c814c7da1"
+            },
+            "e4f78e951fe4f319055cd3e19461721e3e17e5ce8cce572903f0ef7c814c7da1_connectivity_ssid": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:wifi-off",
+                "name": "SSID",
+                "state": "Not Connected",
+                "type": "sensor",
+                "unique_id": "connectivity_ssid",
+                "webhook_id": "e4f78e951fe4f319055cd3e19461721e3e17e5ce8cce572903f0ef7c814c7da1"
+            },
+            "e4f78e951fe4f319055cd3e19461721e3e17e5ce8cce572903f0ef7c814c7da1_geocoded_location": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:map",
+                "name": "Geocoded Location",
+                "state": "Unknown",
+                "type": "sensor",
+                "unique_id": "geocoded_location",
+                "webhook_id": "e4f78e951fe4f319055cd3e19461721e3e17e5ce8cce572903f0ef7c814c7da1"
+            },
+            "e4f78e951fe4f319055cd3e19461721e3e17e5ce8cce572903f0ef7c814c7da1_last_update_trigger": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:cellphone-wireless",
+                "name": "Last Update Trigger",
+                "state": "Launch",
+                "type": "sensor",
+                "unique_id": "last_update_trigger",
+                "webhook_id": "e4f78e951fe4f319055cd3e19461721e3e17e5ce8cce572903f0ef7c814c7da1"
+            },
+            "e4f78e951fe4f319055cd3e19461721e3e17e5ce8cce572903f0ef7c814c7da1_storage": {
+                "added": true,
+                "attributes": {
+                    "Available": "5,20 GB",
+                    "Available (Important)": "11,27 GB",
+                    "Available (Opportunistic)": "9,99 GB",
+                    "Total": "31,99 GB"
+                },
+                "icon": "mdi:database",
+                "name": "Storage",
+                "state": "31.22",
+                "type": "sensor",
+                "unique_id": "storage",
+                "unit_of_measurement": "% available",
+                "webhook_id": "e4f78e951fe4f319055cd3e19461721e3e17e5ce8cce572903f0ef7c814c7da1"
+            },
+            "93ec1d92bc241ac1b57c0f888f98aad5de97c4763b04601941f4a63d985b14a1_activity": {
+                "attributes": {
+                    "Confidence": "High",
+                    "Types": [
+                        "Stationary"
+                    ]
+                },
+                "icon": "mdi:human-male",
+                "name": "Activity",
+                "state": "Stationary",
+                "type": "sensor",
+                "unique_id": "activity",
+                "webhook_id": "93ec1d92bc241ac1b57c0f888f98aad5de97c4763b04601941f4a63d985b14a1",
+                "added": true
+            }
+        }
+    }
+}

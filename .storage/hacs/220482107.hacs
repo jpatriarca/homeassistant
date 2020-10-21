@@ -1,0 +1,52 @@
+{
+    "version": "6",
+    "key": "hacs/220482107.hacs",
+    "data": {
+        "archived": false,
+        "authors": [
+            "@elad-bar"
+        ],
+        "category": "integration",
+        "content_in_root": false,
+        "country": [],
+        "config_flow": true,
+        "default_branch": "master",
+        "description": "HP Printer Integration",
+        "domain": "hpprinter",
+        "domains": [],
+        "downloads": 0,
+        "file_name": "",
+        "filename": "",
+        "first_install": false,
+        "fork": false,
+        "full_name": "elad-bar/ha-hpprinter",
+        "hacs": null,
+        "hide": false,
+        "hide_default_branch": false,
+        "homeassistant": null,
+        "id": "220482107",
+        "iot_class": "Local Polling",
+        "installed": true,
+        "installed_commit": "e234160",
+        "installed_version": "v1.0.0",
+        "open_issues": 2,
+        "last_commit": "e234160",
+        "last_version": "v1.0.0",
+        "last_updated": "2020-10-01T20:46:25Z",
+        "manifest_name": "HP Printer",
+        "new": false,
+        "persistent_directory": null,
+        "pushed_at": "2020-10-01T20:46:25",
+        "releases": true,
+        "render_readme": false,
+        "published_tags": [
+            "v1.0.0"
+        ],
+        "selected_tag": null,
+        "show_beta": false,
+        "stargazers_count": 37,
+        "topics": [],
+        "zip_release": false,
+        "full_name_lower": "elad-bar/ha-hpprinter"
+    }
+}

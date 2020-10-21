@@ -1,0 +1,43 @@
+{
+    "version": 1,
+    "key": ".hpprinter.hp_printer",
+    "data": {
+        "Cartridges": {
+            "Inkcartridge Black": {
+                "Color": "Black",
+                "Installed At": "N/A",
+                "Manufactured At": "2020-02-01",
+                "Manufactured By": "HP",
+                "Product Number": "N/A",
+                "Remaining": "100",
+                "Serial Number": "N/A",
+                "Station": "1",
+                "Type": "Inkcartridge",
+                "Warranty Expiration Date": "N/A"
+            },
+            "Inkcartridge CyanMagentaYellow": {
+                "Color": "CyanMagentaYellow",
+                "Installed At": "N/A",
+                "Manufactured At": "2020-04-01",
+                "Manufactured By": "HP",
+                "Product Number": "N/A",
+                "Remaining": "100",
+                "Serial Number": "N/A",
+                "Station": "0",
+                "Type": "Inkcartridge",
+                "Warranty Expiration Date": "N/A"
+            }
+        },
+        "IsOnline": true,
+        "Name": "HP Printer",
+        "Printer": {
+            "Total": "445",
+            "Color": "162",
+            "Monochrome": "0",
+            "Jams": "8",
+            "Cancelled": "2"
+        },
+        "model": "Tango X",
+        "status": "outputBinClosed"
+    }
+}

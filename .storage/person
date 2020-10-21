@@ -1,0 +1,35 @@
+{
+    "version": 2,
+    "key": "person",
+    "data": {
+        "items": [
+            {
+                "device_trackers": [
+                    "device_tracker.jp_iphone"
+                ],
+                "id": "jorge_patriarca",
+                "name": "Jorge Patriarca",
+                "user_id": "d39ca003bd3e4e259a7b58f4fde05048",
+                "picture": null
+            },
+            {
+                "name": "Cl\u00e1udia Ribeiro",
+                "device_trackers": [
+                    "device_tracker.iphonedeclaudia_2"
+                ],
+                "user_id": null,
+                "picture": null,
+                "id": "claudia_ribeiro"
+            },
+            {
+                "name": "Carolina Patriarca",
+                "device_trackers": [
+                    "device_tracker.redmi8_redmi"
+                ],
+                "user_id": null,
+                "picture": null,
+                "id": "carolina_patriarca"
+            }
+        ]
+    }
+}

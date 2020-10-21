@@ -1,0 +1,91 @@
+cover.garage_fox_door:
+  device_class: garage
+cover.garage_tiguan_door:
+  device_class: garage
+sensor.garage_fox_door:
+  device_class: garage
+sensor.garage_tiguan_door:
+  device_class: garage
+#sensor.shelly1_98f4abf32318_rssi:
+#  friendly_name: Fox Garage WiFi
+#  device_class: signal_strength
+#  unit_of_measurement: dB
+#sensor.shelly1_98f4abf3243a_rssi:
+#  friendly_name: Tiguan Garage WiFi
+#  device_class: signal_strength
+#  unit_of_measurement: dB
+#sensor.shelly1pm_68c63afad357_rssi:
+#  friendly_name: Lamp Plug WiFi
+#  device_class: signal_strength
+#  unit_of_measurement: dB
+#sensor.shelly1pm_68c63afad467_rssi:
+#  friendly_name: TV Plug WiFi
+#  device_class: signal_strength
+#  unit_of_measurement: dB
+#sensor.shelly1pm_68c63afae9ff_rssi:
+#  friendly_name: Hall Plug WiFi
+#  device_class: signal_strength
+#  unit_of_measurement: dB
+#sensor.shellyswitch25_68c63af99fdd_rssi:
+#  friendly_name: Blind Kitchen WiFi
+#  device_class: signal_strength
+#  unit_of_measurement: dB
+#sensor.shellyswitch25_d8f15b12ff4e_rssi:
+#  friendly_name: Big Blind Living Room WiFi
+#  device_class: signal_strength
+#  unit_of_measurement: dB
+#sensor.shellyswitch25_d8f15b13186f_rssi:
+#  friendly_name: Small Blind Living Room WiFi
+#  device_class: signal_strength
+#  unit_of_measurement: dB
+#sensor.shellyswitch25_d8f15b131f36_rssi:
+#  friendly_name: Small Blind Suite Room WiFi
+#  device_class: signal_strength
+#  unit_of_measurement: dB
+#sensor.shellyswitch25_d8f15b1321c4_rssi:
+#  friendly_name: Blind Carol Room WiFi
+#  device_class: signal_strength
+#  unit_of_measurement: dB
+#sensor.shellyswitch25_d8f15b132c1b_rssi:
+#  friendly_name: Big Blind Suite Room WiFi
+#  device_class: signal_strength
+#  unit_of_measurement: dB
+#sensor.shelly1pm_68c63afadbff_rssi:
+#  friendly_name: Rack WiFi
+#  device_class: signal_strength
+#  unit_of_measurement: dB
+#sensor.shelly1pm_68c63afaed87_rssi:
+#  friendly_name: Ceiling Lamp WiFi
+#  device_class: signal_strength
+#  unit_of_measurement: dB
+#sensor.shellyplug_s_9779b9_rssi:
+#  friendly_name: Rack Fan WiFi
+#  device_class: signal_strength
+#  unit_of_measurement: dB
+#sensor.home_voltage:
+#  friendly_name: Home Voltage
+#  device_class: voltage
+sensor.hall_plug_daily_energy:
+  friendly_name: Hall Plug Daily Energy
+  device_class: energy
+  unit_of_measurement: Wh
+sensor.hall_plug_monthly_energy:
+  friendly_name: Hall Plug Monthly Energy
+  device_class: energy
+  unit_of_measurement: Wh
+sensor.hall_plug_yearly_energy:
+  friendly_name: Hall Plug Yearly Energy
+  device_class: energy
+  unit_of_measurement: Wh
+sensor.pihole_total_ads_blocked_today:
+  friendly_name: "PiHole Total Ads Blocked Today"
+  unit_of_measurement: 'ads'
+  icon: mdi:close-octagon-outline
+sensor.pihole_total_ads_percentage_blocked_today:
+  friendly_name: "PiHole Total Ads Percentage Blocked Today"
+  unit_of_measurement: '%'
+  icon: mdi:close-octagon-outline
+sensor.pihole_total_dns_queries_today:
+  friendly_name: "PiHole Total DNS Queries Today"
+  unit_of_measurement: 'queries'
+  icon: mdi:comment-question-outline

@@ -1,0 +1,971 @@
+{
+    "version": 1,
+    "key": "core.config_entries",
+    "data": {
+        "entries": [
+            {
+                "entry_id": "b727091d4f48475aa27a74a8663228db",
+                "version": 1,
+                "domain": "ipp",
+                "title": "Ignored",
+                "data": {
+                    "host": "192.168.2.100",
+                    "name": "HP TANGO [FFD42B]"
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "ignore",
+                "connection_class": "local_poll",
+                "unique_id": "754444ee-62aa-5a9f-ad6a-82f8486c17c8"
+            },
+            {
+                "entry_id": "3e424f70398b4121b6fe22b4f9783428",
+                "version": 1,
+                "domain": "upnp",
+                "title": "Ignored",
+                "data": {},
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "ignore",
+                "connection_class": "local_poll",
+                "unique_id": "uuid:e5e92f78-a16f-dc88-a8bd-79fb7f3d8d4::urn:schemas-upnp-org:device:InternetGatewayDevice:1"
+            },
+            {
+                "entry_id": "5a3fa2f4b6974d19966a4ed9ebf1e2cc",
+                "version": 1,
+                "domain": "coronavirus",
+                "title": "Portugal",
+                "data": {
+                    "country": "Portugal"
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "user",
+                "connection_class": "cloud_poll",
+                "unique_id": "Portugal"
+            },
+            {
+                "entry_id": "e3a61d022e9140d48894b53883e0822c",
+                "version": 1,
+                "domain": "pi_hole",
+                "title": "PiHole02",
+                "data": {
+                    "api_key": "94054efec881fcd0e0186600e2ba1d4f855dfcb76ef338b21f9a727752421695",
+                    "host": "pihole02.internal.patriarca.pt:80",
+                    "location": "admin",
+                    "name": "PiHole02",
+                    "ssl": false,
+                    "verify_ssl": false
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "user",
+                "connection_class": "local_poll",
+                "unique_id": null
+            },
+            {
+                "entry_id": "613687e49d384a31bb0061e73868be48",
+                "version": 1,
+                "domain": "pi_hole",
+                "title": "PiHole01",
+                "data": {
+                    "api_key": "94054efec881fcd0e0186600e2ba1d4f855dfcb76ef338b21f9a727752421695",
+                    "host": "pihole01.internal.patriarca.pt:80",
+                    "location": "admin",
+                    "name": "PiHole01",
+                    "ssl": false,
+                    "verify_ssl": false
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "user",
+                "connection_class": "local_poll",
+                "unique_id": null
+            },
+            {
+                "entry_id": "ab349a07f8b54cfab54b5d1eb5a95a9f",
+                "version": 1,
+                "domain": "plex",
+                "title": "JPPlex",
+                "data": {
+                    "server": "JPPlex",
+                    "server_config": {
+                        "client_id": "9197dc0e-02c1-42da-9aeb-3a9794a2a716",
+                        "token": "9Cm9zyosRUKF8GHbExzw",
+                        "url": "https://192-168-1-11.c9ccaeac29924a5f9489019f1bb0f2a2.plex.direct:32400",
+                        "verify_ssl": true,
+                        "server": "JPPlex"
+                    },
+                    "server_id": "da937a5191307d42b733b39d5859ce17ea89c236"
+                },
+                "options": {
+                    "media_player": {}
+                },
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "user",
+                "connection_class": "local_push",
+                "unique_id": "da937a5191307d42b733b39d5859ce17ea89c236"
+            },
+            {
+                "entry_id": "b00a2910b6c44fbf8706a9bc8ca4c36b",
+                "version": 1,
+                "domain": "synology_dsm",
+                "title": "JPNAS",
+                "data": {
+                    "device_token": "tOSpG0K6xS9TFdeJ7ijU6FjaYZDjmSzbzee86JHUsQyO8rQQErxoaHDWjNTjfIRCybIZG490ExV2aOHil7eI3z1G91gnGw60tb6xaNUOB6ThSQdnFEAgAjTfetvT4Ce",
+                    "host": "jpnas.internal.patriarca.pt",
+                    "mac": [
+                        "00-11-32-6E-21-9D",
+                        "00-11-32-6E-21-9F",
+                        "00-11-32-6E-21-A0"
+                    ],
+                    "password": "Underthebridge1#$",
+                    "port": "5001",
+                    "ssl": true,
+                    "username": "admin"
+                },
+                "options": {
+                    "scan_interval": 15,
+                    "timeout": 10
+                },
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "user",
+                "connection_class": "cloud_poll",
+                "unique_id": "1741PJN981600"
+            },
+            {
+                "entry_id": "ad951a5b5a7e4b8c886f2d0eba57f39e",
+                "version": 1,
+                "domain": "homekit_controller",
+                "title": "Ignored",
+                "data": {},
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "ignore",
+                "connection_class": "local_push",
+                "unique_id": "f7:47:42:52:ac:f6"
+            },
+            {
+                "entry_id": "ba4f8f00c54d4e0e8eed6d02beb4ad32",
+                "version": 1,
+                "domain": "hacs",
+                "title": "HACS",
+                "data": {
+                    "token": "363f85802fae29f91e53d67d42d590d5151bf1b5"
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "user",
+                "connection_class": "cloud_poll",
+                "unique_id": null
+            },
+            {
+                "entry_id": "ee491088c7d647a58dabdb79b9a54302",
+                "version": 1,
+                "domain": "hpprinter",
+                "title": "HP Printer",
+                "data": {
+                    "host": "192.168.2.100",
+                    "name": "HP Printer"
+                },
+                "options": {
+                    "log_level": "Default",
+                    "store_data": false,
+                    "update_interval": 60
+                },
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "user",
+                "connection_class": "local_poll",
+                "unique_id": null
+            },
+            {
+                "entry_id": "92866124aa444d1b8171c2b28f2bfa76",
+                "version": 1,
+                "domain": "homekit",
+                "title": "Home Assistant Bridge:51827",
+                "data": {
+                    "name": "Home Assistant Bridge",
+                    "port": 51827
+                },
+                "options": {
+                    "filter": {
+                        "include_entities": [
+                            "cover.shelly_kitchen_blind",
+                            "cover.shelly_living_room_big_blind",
+                            "cover.shelly_living_room_small_blind",
+                            "cover.shelly_carol_bedroom_blind",
+                            "cover.shelly_suite_big_blind",
+                            "cover.shelly_suite_small_blind",
+                            "cover.garage_fox_door",
+                            "cover.garage_tiguan_door",
+                            "switch.shelly_hall_switch",
+                            "switch.shelly_living_room_tv_switch",
+                            "switch.shelly_living_room_ceiling_lamp",
+                            "switch.shelly_living_room_desk_lamp",
+                            "switch.shelly_garage_rack",
+                            "switch.shelly_garage_rack_fan",
+                            "sensor.netatmo_outdoor_temperature",
+                            "sensor.netatmo_living_room_temperature",
+                            "sensor.netatmo_kitchen_temperature",
+                            "sensor.netatmo_suite_bedroom_temperature",
+                            "sensor.netatmo_carol_bedroom_temperature",
+                            "sensor.netatmo_living_room_pressure",
+                            "sensor.netatmo_outdoor_humidity",
+                            "sensor.netatmo_living_room_humidity",
+                            "sensor.netatmo_carol_bedroom_humidity",
+                            "sensor.netatmo_suite_bedroom_humidity",
+                            "sensor.netatmo_kitchen_humidity",
+                            "sensor.netatmo_living_room_co2",
+                            "sensor.netatmo_carol_bedroom_co2",
+                            "sensor.netatmo_suite_bedroom_co2",
+                            "sensor.netatmo_kitchen_co2",
+                            "camera.garage"
+                        ],
+                        "exclude_domains": [],
+                        "include_domains": [],
+                        "exclude_entities": [],
+                        "exclude_entity_globs": [],
+                        "include_entity_globs": []
+                    },
+                    "auto_start": true,
+                    "safe_mode": false,
+                    "entity_config": {
+                        "camera.garage": {
+                            "stream_source": "-rtsp_transport tcp -re -i rtsp://192.168.1.71:7447/5f821691e4b0524e74cb5c8c_0",
+                            "video_codec": "copy",
+                            "support_audio": true,
+                            "max_width": 1920,
+                            "max_height": 1080,
+                            "max_fps": 30,
+                            "linked_motion_sensor": "binary_sensor.garage_motion",
+                            "video_packet_size": 1316,
+                            "audio_map": "0:a:0",
+                            "video_map": "0:v:0",
+                            "audio_packet_size": 188,
+                            "stream_count": 3,
+                            "low_battery_threshold": 20,
+                            "audio_codec": "libopus"
+                        }
+                    }
+                },
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "import",
+                "connection_class": "local_push",
+                "unique_id": null
+            },
+            {
+                "entry_id": "7131b81030ad4c89be096226fc71624f",
+                "version": 1,
+                "domain": "mobile_app",
+                "title": "JP iPhone",
+                "data": {
+                    "app_data": {
+                        "push_token": "eJL1NP-zCkzcrURRCrKtZa:APA91bGpLVFQAev9lOHbjIcOcxbgNbsJ8UEa5nBqG34gqquNlIiZQ9tJDBPJa0OtRiUTcDigqwZPqPG174E1xgauIgnFlIJ6cC9iz_wBnk8YRZ6dbfFTni5g7wbwlXKoCAakW2s_JhvJ",
+                        "push_url": "https://mobile-apps.home-assistant.io/api/sendPushNotification"
+                    },
+                    "app_id": "io.robbie.HomeAssistant",
+                    "app_name": "Home Assistant",
+                    "app_version": "2020.6.2 (1)",
+                    "device_id": "E71640A9-6233-44B6-8A9E-828954CAB899",
+                    "device_name": "JP iPhone",
+                    "manufacturer": "Apple",
+                    "model": "iPhone11,6",
+                    "os_name": "iOS",
+                    "os_version": "14.2",
+                    "secret": "707c519ec0d728f0d53bf6db3c6d982c8e00e6a5161a7952ca5fc4c9bc088a73",
+                    "supports_encryption": true,
+                    "user_id": "d39ca003bd3e4e259a7b58f4fde05048",
+                    "webhook_id": "2ba803730cfef09189419d22d6db7d1432345f145cb1c95a5fa9d8d8e2a286cb"
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "registration",
+                "connection_class": "cloud_push",
+                "unique_id": "io.robbie.HomeAssistant-E71640A9-6233-44B6-8A9E-828954CAB899"
+            },
+            {
+                "entry_id": "fbd279f560534d1eac85faa224f75fe6",
+                "version": 4,
+                "domain": "blitzortung",
+                "title": "Blitzortung",
+                "data": {
+                    "name": "Blitzortung"
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "user",
+                "connection_class": "local_push",
+                "unique_id": "Blitzortung"
+            },
+            {
+                "entry_id": "cf147bf2d0254248b2b46ce03c3f602f",
+                "version": 1,
+                "domain": "mobile_app",
+                "title": "JP iPad",
+                "data": {
+                    "app_data": {
+                        "push_token": "dmrkwxumxkpCuvsNm65oue:APA91bFXnqNqah3-ir2vza8zdJUIZg6UA59wNkMvnm_gNuV5E1qV7vTTy0I77j5gg7yLUQq8Nb00C3_xQiwDrNm_l41RE5HSrBlaK4MUa9VvkCXxshXaZoRlqQm1GITt2y6YTIMK-YTP",
+                        "push_url": "https://mobile-apps.home-assistant.io/api/sendPushNotification"
+                    },
+                    "app_id": "io.robbie.HomeAssistant",
+                    "app_name": "Home Assistant",
+                    "app_version": "2020.6.2 (1)",
+                    "device_id": "2748982A-1662-433C-9811-42A825C55B00",
+                    "device_name": "JP iPad",
+                    "manufacturer": "Apple",
+                    "model": "iPad6,11",
+                    "os_name": "iOS",
+                    "os_version": "14.2",
+                    "secret": "9a86b2b1256037eac155b68f8641abb0a8bdfecafa29344417e46e6f6d838efc",
+                    "supports_encryption": true,
+                    "user_id": "d39ca003bd3e4e259a7b58f4fde05048",
+                    "webhook_id": "93ec1d92bc241ac1b57c0f888f98aad5de97c4763b04601941f4a63d985b14a1"
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "registration",
+                "connection_class": "cloud_push",
+                "unique_id": "io.robbie.HomeAssistant-2748982A-1662-433C-9811-42A825C55B00"
+            },
+            {
+                "entry_id": "891622b04ba345d89d1bdce7ecaef91b",
+                "version": 1,
+                "domain": "apple_tv",
+                "title": "Suite Room",
+                "data": {
+                    "address": "192.168.2.116",
+                    "credentials": {
+                        "2": "55f1ffe0cc8a9c65e25d060d06bcc634a6fbd263633e2bea62bcd99a36424395:0f33f647cfd8925917d4b6df947784317935fc94d532fff1e1f9371b434e3b9d:30326535653936612d386161652d343165352d393565392d626633353536313239333630:63306163363834632d623261382d343065302d626137632d336337306465643365303735"
+                    },
+                    "name": "Suite Room",
+                    "protocol": 2
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "zeroconf",
+                "connection_class": "local_push",
+                "unique_id": "ADD24E5D-AD2D-44FB-857B-1C48BF32D6C6"
+            },
+            {
+                "entry_id": "d8e6711c1c7b4d76a1c8c2bb2216befe",
+                "version": 1,
+                "domain": "apple_tv",
+                "title": "Living Room",
+                "data": {
+                    "address": "192.168.1.102",
+                    "credentials": {
+                        "2": "4d5fbcce9462b6d7cdf547a0cf0b1e009718bd1c0e0e47a306135f6af0dc14ac:0032a8f5d3d806293595d6b88e2633f2f6ec3a5b884ad1739b185b6eec3fae0e:39306135346462382d633235652d343564332d626462312d613337303436636531333831:33393166363438642d623433662d343839632d393132382d353538613333316338636263",
+                        "3": "E2C9E49EA5C110BC:04F8ECE0F0D5DAB9C1FC720F7DB77A2D8CBF40CDC38A1339A9F40C671F19C5CC"
+                    },
+                    "name": "Living Room",
+                    "protocol": 2
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "zeroconf",
+                "connection_class": "local_push",
+                "unique_id": "811E977C-490A-49B0-A98B-634BF05C8877"
+            },
+            {
+                "entry_id": "596a1116f98f11ea83f61b7459ca2597",
+                "version": 1,
+                "domain": "shelly",
+                "title": "192.168.3.117",
+                "data": {
+                    "host": "192.168.3.117"
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "zeroconf",
+                "connection_class": "local_poll",
+                "unique_id": "68C63AFAD357"
+            },
+            {
+                "entry_id": "638d0e85f98f11ea904741744e31570a",
+                "version": 1,
+                "domain": "shelly",
+                "title": "192.168.3.123",
+                "data": {
+                    "host": "192.168.3.123"
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "zeroconf",
+                "connection_class": "local_poll",
+                "unique_id": "98F4ABF32318"
+            },
+            {
+                "entry_id": "858c0d0ff98f11eaacf5edf6a85b1483",
+                "version": 1,
+                "domain": "shelly",
+                "title": "192.168.3.114",
+                "data": {
+                    "host": "192.168.3.114"
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "zeroconf",
+                "connection_class": "local_poll",
+                "unique_id": "D8F15B12FF4E"
+            },
+            {
+                "entry_id": "94d1ec35f98f11eab2b6015f89e8ef9a",
+                "version": 1,
+                "domain": "shelly",
+                "title": "192.168.3.115",
+                "data": {
+                    "host": "192.168.3.115"
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "zeroconf",
+                "connection_class": "local_poll",
+                "unique_id": "68C63AFAD467"
+            },
+            {
+                "entry_id": "a902fb75f98f11ea899e614cd31486c0",
+                "version": 1,
+                "domain": "shelly",
+                "title": "192.168.3.119",
+                "data": {
+                    "host": "192.168.3.119"
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "zeroconf",
+                "connection_class": "local_poll",
+                "unique_id": "68C63AFAE9FF"
+            },
+            {
+                "entry_id": "b1cb384af98f11eaa54a7de3f33f5ea0",
+                "version": 1,
+                "domain": "shelly",
+                "title": "192.168.3.122",
+                "data": {
+                    "host": "192.168.3.122"
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "zeroconf",
+                "connection_class": "local_poll",
+                "unique_id": "98F4ABF3243A"
+            },
+            {
+                "entry_id": "ba8e960df98f11ea9ed9712349a50da2",
+                "version": 1,
+                "domain": "shelly",
+                "title": "192.168.3.118",
+                "data": {
+                    "host": "192.168.3.118"
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "zeroconf",
+                "connection_class": "local_poll",
+                "unique_id": "D8F15B131F36"
+            },
+            {
+                "entry_id": "c35cdfb6f98f11ea8faefb4c7bbaa983",
+                "version": 1,
+                "domain": "shelly",
+                "title": "192.168.3.120",
+                "data": {
+                    "host": "192.168.3.120"
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "zeroconf",
+                "connection_class": "local_poll",
+                "unique_id": "D8F15B132C1B"
+            },
+            {
+                "entry_id": "1cf95402f9c311ea9166713fd37c9c9d",
+                "version": 1,
+                "domain": "spotify",
+                "title": "Jorge Patriarca",
+                "data": {
+                    "auth_implementation": "spotify",
+                    "token": {
+                        "access_token": "BQC8vjTf907FiK8oxLu3hgjQtzDb4S7AtF_dhWyI_CMj2sDiQKutydiOyFk5zYeNpwoPICPUk2PlNbgselUIVPmlo2GFmg7qq9XAJV-RVigNly1_aBQ2p3WWNow5ByXolgwDybFEY3weTFDTHZ2PT7arG5boSvGbft2ZCiz0o_rz9RU7B2FuTHpBpNsYFPz1rcXCVhrDcg",
+                        "token_type": "Bearer",
+                        "expires_in": 3600,
+                        "refresh_token": "AQAX6gZXYNi7iSDFq9ITKe2zu06Q6gSbc0teGslwku5ZyfS4WNgtjLbIZ1XfAePNufmRWNCLqVMwoYR2B0hwKcztCvaJl6jTc6kOem-QnyHNRqrxh51B4A8vmvpD6O37NGA",
+                        "scope": "playlist-read-private playlist-read-collaborative user-modify-playback-state user-library-read user-follow-read user-read-playback-state user-read-recently-played user-read-playback-position user-read-private user-top-read",
+                        "expires_at": 1603314980.3453243
+                    },
+                    "id": "111078106",
+                    "name": "Jorge Patriarca"
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "user",
+                "connection_class": "cloud_poll",
+                "unique_id": "111078106"
+            },
+            {
+                "entry_id": "05445e85fb8511ea9100b5dd101c8d4a",
+                "version": 1,
+                "domain": "shelly",
+                "title": "192.168.3.121",
+                "data": {
+                    "host": "192.168.3.121"
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "zeroconf",
+                "connection_class": "local_poll",
+                "unique_id": "D8F15B13186F"
+            },
+            {
+                "entry_id": "0eca67c0fb8b11ea9f022deb15948d14",
+                "version": 1,
+                "domain": "shelly",
+                "title": "192.168.3.116",
+                "data": {
+                    "host": "192.168.3.116"
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "zeroconf",
+                "connection_class": "local_poll",
+                "unique_id": "68C63AF99FDD"
+            },
+            {
+                "entry_id": "8721f8cdfc1d11ea98077ffbbb5e107c",
+                "version": 1,
+                "domain": "withings",
+                "title": "Jorge Patriarca",
+                "data": {
+                    "auth_implementation": "withings",
+                    "token": {
+                        "access_token": "9754b105074c93331c40c0713c137c7cdeaffd0c",
+                        "expires_in": 10800,
+                        "token_type": "Bearer",
+                        "scope": "user.info,user.metrics,user.activity,user.sleepevents",
+                        "refresh_token": "77c26d95af486bf33b9b855034b44b1d208933db",
+                        "userid": 2026872,
+                        "expires_at": 1603318017.3478885
+                    },
+                    "profile": "Jorge Patriarca",
+                    "use_webhook": false,
+                    "webhook_id": "20812c5c18cd3292819491d5cf9d58273a4d23df3fa08e33330810c5fed40ac9",
+                    "webhook_url": "https://hass.patriarca.pt/api/webhook/20812c5c18cd3292819491d5cf9d58273a4d23df3fa08e33330810c5fed40ac9"
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "user",
+                "connection_class": "cloud_poll",
+                "unique_id": "2026872"
+            },
+            {
+                "entry_id": "8f753b0efc3711ea9115d7e810e9c221",
+                "version": 1,
+                "domain": "shelly",
+                "title": "192.168.3.113",
+                "data": {
+                    "host": "192.168.3.113"
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "user",
+                "connection_class": "local_poll",
+                "unique_id": "D8F15B1321C4"
+            },
+            {
+                "entry_id": "c6a02115ff3611eabe71cb4789d10b7f",
+                "version": 1,
+                "domain": "ipma",
+                "title": "Home",
+                "data": {
+                    "name": "Home",
+                    "latitude": 38.79126389738601,
+                    "longitude": -9.188261032104494,
+                    "mode": "hourly"
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "user",
+                "connection_class": "cloud_poll",
+                "unique_id": null
+            },
+            {
+                "entry_id": "73ac5086ff3711eaaff3e99213af48c9",
+                "version": 1,
+                "domain": "openweathermap",
+                "title": "OpenWeatherMap",
+                "data": {
+                    "name": "OpenWeatherMap",
+                    "mode": "daily",
+                    "language": "en",
+                    "api_key": "d14a3688c71a859f802f78e24b0f3dac",
+                    "latitude": 38.7912,
+                    "longitude": -9.1881
+                },
+                "options": {
+                    "mode": "daily",
+                    "language": "en"
+                },
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "user",
+                "connection_class": "cloud_poll",
+                "unique_id": "38.7912--9.1881"
+            },
+            {
+                "entry_id": "dcee4f9b002311eba37d37473dc38ac8",
+                "version": 1,
+                "domain": "speedtestdotnet",
+                "title": "SpeedTest",
+                "data": {},
+                "options": {
+                    "scan_interval": 60,
+                    "manual": false,
+                    "server_id": ""
+                },
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "user",
+                "connection_class": "local_poll",
+                "unique_id": null
+            },
+            {
+                "entry_id": "0c9e946304a411eba4c727a5c79473f9",
+                "version": 1,
+                "domain": "unifi",
+                "title": "Odivelas",
+                "data": {
+                    "controller": {
+                        "host": "ubnt-adopt.patriarca.pt",
+                        "username": "hass",
+                        "password": "said*LOD1phoo4gim",
+                        "port": 8443,
+                        "verify_ssl": false,
+                        "site": "default"
+                    }
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "user",
+                "connection_class": "local_poll",
+                "unique_id": null
+            },
+            {
+                "entry_id": "9525350a063111eb9b68fb73a0deab07",
+                "version": 1,
+                "domain": "sonarr",
+                "title": "sonarr.patriarca.pt",
+                "data": {
+                    "base_path": "/api",
+                    "port": 443,
+                    "ssl": true,
+                    "verify_ssl": false,
+                    "host": "sonarr.patriarca.pt",
+                    "api_key": "4e24e207c1fe4a13a8c4a011024dbf48"
+                },
+                "options": {
+                    "upcoming_days": 1,
+                    "wanted_max_items": 50
+                },
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "user",
+                "connection_class": "local_poll",
+                "unique_id": null
+            },
+            {
+                "entry_id": "b9f5e87d08d911eba520d3f5ce716882",
+                "version": 1,
+                "domain": "shelly",
+                "title": "192.168.3.170",
+                "data": {
+                    "host": "192.168.3.170"
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "user",
+                "connection_class": "local_poll",
+                "unique_id": "68C63AFAED87"
+            },
+            {
+                "entry_id": "818f28c808e011ebaecd7314bcf77bf2",
+                "version": 1,
+                "domain": "rpi_power",
+                "title": "Raspberry Pi Power Supply Checker",
+                "data": {},
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "user",
+                "connection_class": "local_poll",
+                "unique_id": "rpi_power"
+            },
+            {
+                "entry_id": "1b975e4f08e111eb925a47af49778761",
+                "version": 1,
+                "domain": "heos",
+                "title": "Controller (192.168.2.101)",
+                "data": {
+                    "host": "192.168.2.101"
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "user",
+                "connection_class": "local_push",
+                "unique_id": "heos"
+            },
+            {
+                "entry_id": "87c2a9f90b0411eb9fad315d017027cd",
+                "version": 1,
+                "domain": "netatmo",
+                "title": "Configuration.yaml",
+                "data": {
+                    "auth_implementation": "netatmo",
+                    "token": {
+                        "scope": [
+                            "access_camera",
+                            "access_presence",
+                            "read_camera",
+                            "read_homecoach",
+                            "read_presence",
+                            "read_smokedetector",
+                            "read_station",
+                            "read_thermostat",
+                            "write_camera",
+                            "write_presence",
+                            "write_thermostat"
+                        ],
+                        "access_token": "57b0352667e482451e8b472f|e068c3bdd04a3706de433d394c2fe229",
+                        "refresh_token": "57b0352667e482451e8b472f|16c176cc25000344ec76536756635293",
+                        "expires_in": 10800,
+                        "expire_in": 10800,
+                        "restricted_access_token": "57b0352667e482451e8b472f|dbf25b52784a37d87517fead91bdcc60",
+                        "restricted_refresh_token": "57b0352667e482451e8b472f|7d93b6b180737718a378779b07e3e460",
+                        "expires_at": 1603317857.7996402
+                    },
+                    "webhook_id": "4c72bce17fe5569f2e0c27be09f6b62b8c43aae6f2b26c11472e6a39d46d5bfd"
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "user",
+                "connection_class": "cloud_poll",
+                "unique_id": "netatmo"
+            },
+            {
+                "entry_id": "f90f46900b4011eb9352edc62ba43be1",
+                "version": 1,
+                "domain": "shelly",
+                "title": "192.168.3.172",
+                "data": {
+                    "host": "192.168.3.172"
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "user",
+                "connection_class": "local_poll",
+                "unique_id": "68C63AFADBFF"
+            },
+            {
+                "entry_id": "08f337f80b4111eb8d380d4385ea551d",
+                "version": 1,
+                "domain": "shelly",
+                "title": "192.168.3.171",
+                "data": {
+                    "host": "192.168.3.171"
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "user",
+                "connection_class": "local_poll",
+                "unique_id": "E098069779B9"
+            },
+            {
+                "entry_id": "9768e93a0d6a11ebadfd85f1906282e7",
+                "version": 1,
+                "domain": "shelly",
+                "title": "192.168.3.174",
+                "data": {
+                    "host": "192.168.3.174"
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "user",
+                "connection_class": "local_poll",
+                "unique_id": "E098069DDA6C"
+            },
+            {
+                "entry_id": "b235bec00da111eb8fa42f7af133cdaa",
+                "version": 1,
+                "domain": "shelly",
+                "title": "192.168.3.175",
+                "data": {
+                    "host": "192.168.3.175"
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "zeroconf",
+                "connection_class": "local_poll",
+                "unique_id": "E098069A403A"
+            },
+            {
+                "entry_id": "f74299ad0e4111eb90fa61aa4559fff6",
+                "version": 1,
+                "domain": "shelly",
+                "title": "192.168.3.173",
+                "data": {
+                    "host": "192.168.3.174"
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "zeroconf",
+                "connection_class": "local_poll",
+                "unique_id": "E09806955430"
+            },
+            {
+                "entry_id": "948bdd840f1111eb917b57255b9dada5",
+                "version": 1,
+                "domain": "shelly",
+                "title": "192.168.3.176",
+                "data": {
+                    "host": "192.168.3.173"
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "user",
+                "connection_class": "local_poll",
+                "unique_id": "483FDA81F716"
+            },
+            {
+                "entry_id": "e7fb3f7d106b11eb8476cbe588a0cbcd",
+                "version": 1,
+                "domain": "shelly",
+                "title": "192.168.3.177",
+                "data": {
+                    "host": "192.168.3.177"
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "zeroconf",
+                "connection_class": "local_poll",
+                "unique_id": "483FDA82026E"
+            },
+            {
+                "entry_id": "1d6abfd9119611eb83ed43aa99936fbd",
+                "version": 1,
+                "domain": "mqtt",
+                "title": "configuration.yaml",
+                "data": {
+                    "broker": "192.168.1.66",
+                    "port": 1883,
+                    "username": "mosquitto",
+                    "password": "mosquitto",
+                    "birth_message": {
+                        "topic": "homeassistant/status",
+                        "payload": "online",
+                        "qos": 0,
+                        "retain": false
+                    },
+                    "will_message": {
+                        "topic": "homeassistant/status",
+                        "payload": "offline",
+                        "qos": 0,
+                        "retain": false
+                    },
+                    "discovery": true
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "import",
+                "connection_class": "local_push",
+                "unique_id": null
+            }
+        ]
+    }
+}

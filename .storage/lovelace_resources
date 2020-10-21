@@ -1,0 +1,43 @@
+{
+    "version": 1,
+    "key": "lovelace_resources",
+    "data": {
+        "items": [
+            {
+                "id": "7e4ca422d0b342bd9084bc2f9d8271b3",
+                "type": "module",
+                "url": "/hacsfiles/lovelace-slider-entity-row/slider-entity-row.js"
+            },
+            {
+                "id": "1b5fc97c39ec43acace0070f7f573d96",
+                "type": "module",
+                "url": "/hacsfiles/lovelace-rpi-monitor-card/rpi-monitor-card.js"
+            },
+            {
+                "id": "ed94311d8a934de5b28d3f370843ab40",
+                "type": "module",
+                "url": "/hacsfiles/lovelace-vertical-slider-cover-card/vertical-slider-cover-card.js"
+            },
+            {
+                "id": "42e0e6cc172548f0a644faa1b2bf4555",
+                "type": "module",
+                "url": "/hacsfiles/mini-graph-card/mini-graph-card-bundle.js"
+            },
+            {
+                "id": "85718d655c984340aa664a7ca4b6eadc",
+                "type": "module",
+                "url": "/hacsfiles/mini-media-player/mini-media-player-bundle.js"
+            },
+            {
+                "id": "49b9c8c99524413886c816e5ce2b2207",
+                "type": "module",
+                "url": "/hacsfiles/weather-card/weather-card.js"
+            },
+            {
+                "url": "/hacsfiles/lovelace-battery-entity-row/battery-entity-row.js",
+                "type": "module",
+                "id": "a664ac7d233b41da8507ddda137e1590"
+            }
+        ]
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "version": 1,
+    "key": "core.area_registry",
+    "data": {
+        "areas": [
+            {
+                "name": "Living Room",
+                "id": "f48ad93122c94fa08e805324a06409c4"
+            },
+            {
+                "name": "Kitchen",
+                "id": "6927706f63fc42c581fb84b49a9e3b7a"
+            },
+            {
+                "name": "Datacenter",
+                "id": "d77f3aac80a04181b974e5dba9194e4a"
+            },
+            {
+                "name": "Outdoor",
+                "id": "cfa2245438544776a5fbe2e7fe2abdaa"
+            },
+            {
+                "name": "Carol Bedroom",
+                "id": "e670ae8d17794634ae9fb246e3d4b460"
+            },
+            {
+                "name": "Suite Bedroom",
+                "id": "b4723ec854054fbbb8096ffaa3ec0ab5"
+            },
+            {
+                "name": "Garage",
+                "id": "70d188c1f98f11eaab987137f8f5befd"
+            },
+            {
+                "name": "Hall",
+                "id": "ad942dcff98f11ea8ea76f651e593c25"
+            }
+        ]
+    }
+}

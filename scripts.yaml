@@ -1,0 +1,38 @@
+open_bedroom_blinds:
+  alias: Open Bedrooms Blinds
+  sequence:
+  - device_id: baeba7caf98f11eab282ab426d5ebd3e
+    domain: cover
+    entity_id: cover.shellyswitch25_d8f15b131f36
+    type: set_position
+    position: 60
+  - device_id: 8fd78db8fc3711ea82913d373586f40f
+    domain: cover
+    entity_id: cover.shellyswitch25_d8f15b1321c4
+    type: set_position
+    position: 75
+  - device_id: c3bc62def98f11ea956415a820dde960
+    domain: cover
+    entity_id: cover.shellyswitch25_d8f15b132c1b
+    type: set_position
+    position: 75
+  mode: single
+close_bedroom_blinds:
+  alias: Close Bedrooms Blinds
+  sequence:
+  - device_id: baeba7caf98f11eab282ab426d5ebd3e
+    domain: cover
+    entity_id: cover.shellyswitch25_d8f15b131f36
+    type: set_position
+    position: 0
+  - device_id: 8fd78db8fc3711ea82913d373586f40f
+    domain: cover
+    entity_id: cover.shellyswitch25_d8f15b1321c4
+    type: set_position
+    position: 0
+  - device_id: c3bc62def98f11ea956415a820dde960
+    domain: cover
+    entity_id: cover.shellyswitch25_d8f15b132c1b
+    type: set_position
+    position: 0
+  mode: single

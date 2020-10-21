@@ -1,0 +1,522 @@
+
+# Configure a default setup of Home Assistant (frontend, api, etc)
+default_config:
+
+# Logger configuration for HASS
+
+logger:
+  default: info
+#  logs:
+#    homeassistant.components.shelly: debug
+
+# HASS recorder configuration for MariaDB (Logbook and History)
+recorder:
+  db_url: mysql://homeassistant:homeassistant@core-mariadb/homeassistant?charset=utf8
+
+# Text to speech
+tts:
+  - platform: google_translate
+
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+
+# Frontend Configuration
+frontend:
+  themes: !include_dir_merge_named themes
+
+# Homeassist Configuration
+homeassistant:
+  customize: !include customize.yaml
+
+# Python Scripts - Shelly Automatic Integration
+python_script:
+
+# Apple HomeKit
+homekit:
+  filter:
+    include_entities:
+      - cover.shelly_kitchen_blind
+      - cover.shelly_living_room_big_blind
+      - cover.shelly_living_room_small_blind
+      - cover.shelly_carol_bedroom_blind
+      - cover.shelly_suite_big_blind
+      - cover.shelly_suite_small_blind
+      - cover.garage_fox_door
+      - cover.garage_tiguan_door
+      - switch.shelly_hall_switch
+      - switch.shelly_living_room_tv_switch
+      - switch.shelly_living_room_ceiling_lamp
+      - switch.shelly_living_room_desk_lamp
+      - switch.shelly_garage_rack
+      - switch.shelly_garage_rack_fan
+      - sensor.netatmo_outdoor_temperature
+      - sensor.netatmo_living_room_temperature
+      - sensor.netatmo_kitchen_temperature
+      - sensor.netatmo_suite_bedroom_temperature
+      - sensor.netatmo_carol_bedroom_temperature
+      - sensor.netatmo_living_room_pressure
+      - sensor.netatmo_outdoor_humidity
+      - sensor.netatmo_living_room_humidity
+      - sensor.netatmo_carol_bedroom_humidity
+      - sensor.netatmo_suite_bedroom_humidity
+      - sensor.netatmo_kitchen_humidity
+      - sensor.netatmo_living_room_co2
+      - sensor.netatmo_carol_bedroom_co2
+      - sensor.netatmo_suite_bedroom_co2
+      - sensor.netatmo_kitchen_co2
+      - camera.garage
+
+  entity_config:
+    camera.garage:
+      stream_source: "-rtsp_transport tcp -re -i rtsp://192.168.1.71:7447/5f821691e4b0524e74cb5c8c_0"
+      video_codec: copy
+      support_audio: True
+      max_width: 1920
+      max_height: 1080
+      max_fps: 30
+      linked_motion_sensor: binary_sensor.garage_motion
+
+# Netatmo Integration Configuration
+netatmo:
+  client_id: !secret netatmo_clientid
+  client_secret: !secret netatmo_clientsecret
+
+# LG WebOS
+webostv:
+  host: 192.168.2.119
+  name: Living Room TV
+  customize:
+    sources:
+      - Home Cinema
+      - Netflix
+      - YouTube
+      - meoBox
+      - Amazon Prime Video
+  turn_on_action:
+    service: persistent_notification.create
+    data:
+      message: "Turn on action"
+
+media_player:
+
+notify:
+
+# InfluxDB Integration Configuration
+influxdb:
+  host: influxdb.internal.patriarca.pt
+  database: hass
+
+# Spotify integration
+spotify:
+  client_id: !secret spotify_clientid
+  client_secret: !secret spotify_clientsecret
+
+# Withings integration
+withings:
+  client_id: !secret withings_clientid
+  client_secret: !secret withings_clientsecret
+
+# UniFi Video integration
+camera:
+  - platform: uvc
+    nvr: 192.168.1.71
+    key: !secret unifivideo_api
+    password: !secret unifivideo_password
+
+#Nginx Configuration
+http:
+  use_x_forwarded_for: true
+  trusted_proxies:
+    - 192.168.1.75
+    - 2001:8a0:7132:5c01:192:168:1:10a
+
+# MQTT Broker configuration
+mqtt:
+  broker: 192.168.1.66
+  port: 1883
+  username: !secret mosquitto_username
+  password: !secret mosquitto_password
+
+# Covers configurations
+cover:
+
+# Shelly 1 Tiguan Garage MQTT cover configuration
+  - platform: mqtt
+    name: "Garage Tiguan Door"
+    state_topic: "shellies/shellydw2-483FDA82026E/sensor/state"
+    command_topic: "shellies/shelly1-98F4ABF3243A/relay/0/command"
+    retain: false
+    payload_open: "on"
+    payload_close: "on"
+    payload_stop: "on"
+    state_open: "open"
+    state_closed: "close"
+    payload_available: "true"
+    payload_not_available: "false"
+    optimistic: false
+
+# Shelly 1 Fox Garage MQTT cover configuration
+  - platform: mqtt
+    name: "Garage Fox Door"
+    state_topic: "shellies/shellydw2-483FDA81F716/sensor/state"
+    command_topic: "shellies/shelly1-98F4ABF32318/relay/0/command"
+    retain: false
+    payload_open: "on"
+    payload_close: "on"
+    payload_stop: "on"
+    state_open: "open"
+    state_closed: "close"
+    payload_available: "true"
+    payload_not_available: "false"
+    optimistic: false
+
+# Switch Configuration
+switch:
+
+# Sensor configuration
+sensor:
+  - platform: template
+    sensors:
+     pihole_total_ads_blocked_today:
+#       friendly_name: "PiHole Total Ads Blocked Today"
+#       unit_of_measurement: 'ads'
+       value_template: "{{ (states('sensor.pihole01_ads_blocked_today') | round(0)) + (states('sensor.pihole02_ads_blocked_today') | round(0)) }}"
+#       icon: mdi:close-octagon-outline
+     pihole_total_ads_percentage_blocked_today:
+#       friendly_name: "PiHole Total Ads Percentage Blocked Today"
+#       unit_of_measurement: '%'
+       value_template: "{{ (states('sensor.pihole01_ads_percentage_blocked_today') | float + states('sensor.pihole02_ads_percentage_blocked_today') | float)|round(2)}}"
+#       icon: mdi:close-octagon-outline
+     pihole_total_dns_queries_today:
+#       friendly_name: "PiHole Total DNS Queries Today"
+#       unit_of_measurement: 'queries'
+       value_template: "{{ (states('sensor.pihole01_dns_queries_today') | round(0)) + (states('sensor.pihole02_dns_queries_today') | round(0)) }}"
+#       icon: mdi:comment-question-outline
+
+# Fox Garage MQTT sensor configuration
+  - platform: mqtt
+    name: "Garage Fox Door"
+    state_topic: "shellies/shellydw2-483FDA81F716/sensor/state"
+    value_template: >
+      {% if value == "open" %}
+        Open
+      {% else %}
+        Close
+      {% endif %}
+    expire_after: 86400
+    force_update: true
+    json_attributes_topic: "shellies/shellydw2-483FDA81F716/sensor/state"
+
+# Tiguan Garage MQTT sensor configuration
+  - platform: mqtt
+    name: "Garage Tiguan Door"
+    state_topic: "shellies/shellydw2-483FDA82026E/sensor/state"
+    value_template: >
+      {% if value == "open" %}
+        Open
+      {% else %}
+        Close
+      {% endif %}
+    expire_after: 86400
+    force_update: true
+    json_attributes_topic: "shellies/shellydw2-483FDA82026E/sensor/state"
+
+# Garage Rack Temperature & Humidity Sensors
+  - platform: mqtt
+    name: "Garage Rack Temperature"
+    device_class: temperature
+    unit_of_measurement: '°C'
+    state_topic: "shellies/shellyht-955430/sensor/temperature"
+    expire_after: 86400
+    force_update: true
+    json_attributes_topic: "shellies/shellyht-955430/sensor/temperature"
+
+  - platform: mqtt
+    name: "Garage Rack Humidity"
+    device_class: humidity
+    unit_of_measurement: '%'
+    state_topic: "shellies/shellyht-955430/sensor/humidity"
+    expire_after: 86400
+    force_update: true
+    json_attributes_topic: "shellies/shellyht-955430/sensor/humidity"
+
+# Garage Doors Sensors Battery
+  - platform: mqtt
+    name: "Garage Fox Sensor Battery"
+    device_class: battery
+    state_topic: "shellies/shellydw2-483FDA81F716/sensor/battery"
+    expire_after: 86400
+    force_update: true
+    json_attributes_topic: "shellies/shellydw2-483FDA81F716/sensor/battery"
+      
+  - platform: mqtt
+    name: "Garage Tiguan Sensor Battery"
+    device_class: battery
+    state_topic: "shellies/shellydw2-483FDA82026E/sensor/battery"
+    expire_after: 86400
+    force_update: true
+    json_attributes_topic: "shellies/shellydw2-483FDA82026E/sensor/battery"
+
+# Garage Doors Sensors Luminosity & Temperature
+  - platform: mqtt
+    name: "Garage Luminosity"
+    device_class: illuminance
+    state_topic: "shellies/shellydw2-483FDA81F716/sensor/lux"
+    expire_after: 86400
+    force_update: true
+    json_attributes_topic: "shellies/shellydw2-483FDA81F716/sensor/lux"
+  
+  - platform: mqtt
+    name: "Garage Temperature"
+    device_class: temperature
+    state_topic: "shellies/shellydw2-483FDA81F716/sensor/temperature"
+    expire_after: 86400
+    force_update: true
+    json_attributes_topic: "shellies/shellydw2-483FDA81F716/sensor/temperature"
+
+# Voltage Sensor
+
+  - platform: rest
+    name: "Home Voltage"
+    resource: http://192.168.3.116/status
+    value_template: '{{ value_json.voltage }}'
+    scan_interval: 120
+    device_class: voltage
+
+# Shelly WiFi rssi Sensors
+
+  - platform: rest
+    name: "Shelly Carol Room Blinds rssi"
+    resource: http://192.168.3.113/status
+    value_template: '{{ value_json.wifi_sta.rssi }}'
+    scan_interval: 300
+    device_class: signal_strength
+
+  - platform: rest
+    name: "Shelly Living Room Big Blinds rssi"
+    resource: http://192.168.3.114/status
+    value_template: '{{ value_json.wifi_sta.rssi }}'
+    scan_interval: 300
+    device_class: signal_strength
+
+  - platform: rest
+    name: "Shelly Living Room TV Plug rssi"
+    resource: http://192.168.3.115/status
+    value_template: '{{ value_json.wifi_sta.rssi }}'
+    scan_interval: 300
+    device_class: signal_strength
+
+  - platform: rest
+    name: "Shelly Kitchen Blind rssi"
+    resource: http://192.168.3.116/status
+    value_template: '{{ value_json.wifi_sta.rssi }}'
+    scan_interval: 300
+    device_class: signal_strength
+
+  - platform: rest
+    name: "Shelly Living Room Lamp Plug rssi"
+    resource: http://192.168.3.117/status
+    value_template: '{{ value_json.wifi_sta.rssi }}'
+    scan_interval: 300
+    device_class: signal_strength
+
+  - platform: rest
+    name: "Shelly Suite Small Blinds rssi"
+    resource: http://192.168.3.118/status
+    value_template: '{{ value_json.wifi_sta.rssi }}'
+    scan_interval: 300
+    device_class: signal_strength
+
+  - platform: rest
+    name: "Shelly Hall Plug rssi"
+    resource: http://192.168.3.119/status
+    value_template: '{{ value_json.wifi_sta.rssi }}'
+    scan_interval: 300
+    device_class: signal_strength
+
+  - platform: rest
+    name: "Shelly Suite Big Blinds rssi"
+    resource: http://192.168.3.120/status
+    value_template: '{{ value_json.wifi_sta.rssi }}'
+    scan_interval: 300
+    device_class: signal_strength
+
+  - platform: rest
+    name: "Shelly Living Room Small Blinds rssi"
+    resource: http://192.168.3.121/status
+    value_template: '{{ value_json.wifi_sta.rssi }}'
+    scan_interval: 300
+    device_class: signal_strength
+
+  - platform: rest
+    name: "Shelly Garage Tiguan rssi"
+    resource: http://192.168.3.122/status
+    value_template: '{{ value_json.wifi_sta.rssi }}'
+    scan_interval: 300
+    device_class: signal_strength
+
+  - platform: rest
+    name: "Shelly Garage Fox rssi"
+    resource: http://192.168.3.123/status
+    value_template: '{{ value_json.wifi_sta.rssi }}'
+    scan_interval: 300
+    device_class: signal_strength
+
+  - platform: rest
+    name: "Shelly Ceiling Lamp rssi"
+    resource: http://192.168.3.170/status
+    value_template: '{{ value_json.wifi_sta.rssi }}'
+    scan_interval: 300
+    device_class: signal_strength
+
+  - platform: rest
+    name: "Shelly Rack Fan rssi"
+    resource: http://192.168.3.171/status
+    value_template: '{{ value_json.wifi_sta.rssi }}'
+    scan_interval: 300
+    device_class: signal_strength
+
+  - platform: rest
+    name: "Shelly Garage Rack rssi"
+    resource: http://192.168.3.172/status
+    value_template: '{{ value_json.wifi_sta.rssi }}'
+    scan_interval: 300
+    device_class: signal_strength
+
+  - platform: rest
+    name: "Shelly Garage Rack HT rssi"
+    resource: http://192.168.3.173/status
+    value_template: '{{ value_json.wifi_sta.rssi }}'
+    scan_interval: 300
+    device_class: signal_strength
+
+  - platform: rest
+    name: "Shelly Mobile Plug 1 rssi"
+    resource: http://192.168.3.174/status
+    value_template: '{{ value_json.wifi_sta.rssi }}'
+    scan_interval: 300
+    device_class: signal_strength
+
+  - platform: rest
+    name: "Shelly Mobile Plug 2 rssi"
+    resource: http://192.168.3.175/status
+    value_template: '{{ value_json.wifi_sta.rssi }}'
+    scan_interval: 300
+    device_class: signal_strength
+
+  - platform: rest
+    name: "Shelly Garage Fox Sensor rssi"
+    resource: http://192.168.3.176/status
+    value_template: '{{ value_json.wifi_sta.rssi }}'
+    scan_interval: 60
+    device_class: signal_strength
+
+  - platform: rest
+    name: "Shelly Garage Tiguan Sensor rssi"
+    resource: http://192.168.3.177/status
+    value_template: '{{ value_json.wifi_sta.rssi }}'
+    scan_interval: 60
+    device_class: signal_strength
+
+# Binary Sensor configuration
+
+binary_sensor:
+  - platform: mqtt
+    name: Garage Motion
+    state_topic: "camera/motion/Garage"
+    payload_on: "ON"
+    payload_off: "OFF"
+    device_class: motion
+
+# Utility Meter configuration
+
+utility_meter:
+  hall_plug_daily_energy:
+    source: sensor.shelly_hall_switch_power
+    cycle: daily
+  hall_plug_monthly_energy:
+    source: sensor.shelly_hall_switch_power
+    cycle: monthly
+  hall_plug_yearly_energy:
+    source: sensor.shelly_hall_switch_power
+    cycle: yearly
+
+# Docker Monitoring Integration Configuration
+monitor_docker:
+  - name: Docker
+    url: tcp://192.168.1.11:2375
+    containers:
+      - hass
+      - hydra2
+      - ombi
+      - radarr
+      - jackett
+      - grafana
+      - swag
+      - sonarr
+      - radarr
+      - bazarr
+      - lidarr
+      - nzbget
+      - netatmo-poller
+      - mosquitto
+      - qbittorrent
+      - unifi-poller
+      - oscam
+      - telegraf
+      - influxdb
+      - ouroboros
+      - crashplan
+      - pihole01-poller
+      - pihole02-poller
+      - observium
+      - tautulli
+      - unifi-video
+      - unifi-video-mqtt
+      - portainer
+    rename:
+      hass: HomeAssist
+      hydra2: Hydra2
+      ombi: Ombi
+      radarr: Radarr
+      jackett: Jackett
+      grafana: Grafana
+      swag: Swag
+      sonarr: Sonarr
+      bazarr: Bazarr
+      lidarr: Lidarr
+      nzbget: NZBget
+      netatmo-poller: "Netatmo-Poller"
+      mosquitto: Mosquitto
+      qbittorrent: qBitTorrent
+      unifi-poller: "UniFi-Poller"
+      oscam: OScam
+      telegraf: Telegraf
+      influxdb: InfluxDB
+      ouroboros: Ouroboros
+      crashplan: CrashPlan
+      pihole01-poller: "PiHole01-Poller"
+      pihole02-poller: "PiHole02-Poller"
+      observium: Observium
+      tautulli: Tautulli
+      unifi-video: "UniFi Video"
+      unifi-video-mqtt: "UniFi Video MQTT"
+      portainer: "Portainer"
+    monitored_conditions:
+      - version
+      - containers_running
+      - containers_total
+      - status
+      - memory
+      - containers_cpu_percentage
+      - containers_memory
+      - containers_memory_percentage
+      - cpu_percentage
+      - memory
+      - memory_percentage
+      - network_speed_up
+      - network_speed_down
+      - network_total_up
+      - network_total_down

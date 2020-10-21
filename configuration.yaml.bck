@@ -1,0 +1,770 @@
+
+# Configure a default setup of Home Assistant (frontend, api, etc)
+default_config:
+
+# Logger configuration for HASS
+
+logger:
+  default: info
+#  logs:
+#    homeassistant.components.shelly: debug
+
+# HASS recorder configuration for MariaDB (Logbook and History)
+recorder:
+  db_url: mysql://homeassistant:homeassistant@core-mariadb/homeassistant?charset=utf8
+
+# Text to speech
+tts:
+  - platform: google_translate
+
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+
+# Frontend Configuration
+frontend:
+  themes: !include_dir_merge_named themes
+
+# Homeassist Configuration
+homeassistant:
+  customize: !include customize.yaml
+
+# Python Scripts - Shelly Automatic Integration
+python_script:
+
+# Apple HomeKit
+homekit:
+  filter:
+    include_entities:
+      - cover.shellyswitch25_68c63af99fdd
+      - cover.shellyswitch25_d8f15b13186f
+      - cover.shellyswitch25_d8f15b12ff4e
+      - cover.shellyswitch25_d8f15b132c1b
+      - cover.shellyswitch25_d8f15b131f36
+      - cover.shellyswitch25_d8f15b1321c4
+      - cover.fox_garage_door
+      - cover.tiguan_garage_door
+      - switch.shelly1pm_68c63afad357
+      - switch.shelly1pm_68c63afad467
+      - switch.shelly1pm_68c63afaed87
+      - sensor.netatmo_outdoor_temperature
+      - sensor.netatmo_living_room_temperature
+      - sensor.netatmo_kitchen_temperature
+      - sensor.netatmo_suite_bedroom_temperature
+      - sensor.netatmo_carol_bedroom_temperature
+      - sensor.netatmo_living_room_pressure
+      - sensor.netatmo_outdoor_humidity
+      - sensor.netatmo_living_room_humidity
+      - sensor.netatmo_carol_bedroom_humidity
+      - sensor.netatmo_suite_bedroom_humidity
+      - sensor.netatmo_kitchen_humidity
+      - sensor.netatmo_living_room_co2
+      - sensor.netatmo_carol_bedroom_co2
+      - sensor.netatmo_suite_bedroom_co2
+      - sensor.netatmo_kitchen_co2
+      - camera.garage
+
+  entity_config:
+    camera.garage:
+      stream_source: "-rtsp_transport tcp -re -i rtsp://192.168.1.71:7447/5f821691e4b0524e74cb5c8c_0"
+      video_codec: copy
+      support_audio: True
+      max_width: 1920
+      max_height: 1080
+      max_fps: 30
+      linked_motion_sensor: binary_sensor.garage_motion
+
+# Netatmo Integration Configuration
+netatmo:
+  client_id: !secret netatmo_clientid
+  client_secret: !secret netatmo_clientsecret
+
+# LG WebOS
+webostv:
+  host: 192.168.2.119
+  name: Living Room TV
+  customize:
+    sources:
+      - Home Cinema
+      - Netflix
+      - YouTube
+      - meoBox
+      - Amazon Prime Video
+  turn_on_action:
+    service: persistent_notification.create
+    data:
+      message: "Turn on action"
+
+media_player:
+
+notify:
+
+# InfluxDB Integration Configuration
+influxdb:
+  host: influxdb.internal.patriarca.pt
+  database: hass
+
+# Spotify integration
+spotify:
+  client_id: !secret spotify_clientid
+  client_secret: !secret spotify_clientsecret
+
+# Withings integration
+withings:
+  client_id: !secret withings_clientid
+  client_secret: !secret withings_clientsecret
+
+# UniFi Video integration
+camera:
+  - platform: uvc
+    nvr: 192.168.1.71
+    key: !secret unifivideo_api
+    password: !secret unifivideo_password
+
+#Nginx Configuration
+http:
+  use_x_forwarded_for: true
+  trusted_proxies:
+    - 192.168.1.75
+    - 2001:8a0:7132:5c01:192:168:1:10a
+
+# MQTT Broker configuration
+mqtt:
+  broker: 192.168.1.66
+  port: 1883
+  username: !secret mosquitto_username
+  password: !secret mosquitto_password
+
+# Covers configurations
+cover:
+
+# Shelly 2.5 Kitchen Blinds MQTT cover configuration
+#  - platform: mqtt
+#    name: "Kitchen Blinds"
+#    state_topic: "shellies/shellyswitch25-68C63AF99FDD/roller/0"
+#    command_topic: "shellies/shellyswitch25-68C63AF99FDD/roller/0/command"
+#    position_topic: "shellies/shellyswitch25-68C63AF99FDD/roller/0/pos"
+#    set_position_topic: "shellies/shellyswitch25-68C63AF99FDD/roller/0/command/pos"
+#    payload_available: "true"
+#    payload_not_available: "false"
+#    qos: 1
+#    retain: false
+#    payload_open: "open"
+#    payload_close: "close"
+#    payload_stop: "stop"
+#    position_open: 100
+#    position_closed: 0
+#    optimistic: false
+
+# Shelly 2.5 Living Room Big Blinds MQTT cover configuration
+#  - platform: mqtt
+#    name: "Living Room Big Blinds"
+#    state_topic: "shellies/shellyswitch25-D8F15B12FF4E/roller/0"
+#    command_topic: "shellies/shellyswitch25-D8F15B12FF4E/roller/0/command"
+#    position_topic: "shellies/shellyswitch25-D8F15B12FF4E/roller/0/pos"
+#    set_position_topic: "shellies/shellyswitch25-D8F15B12FF4E/roller/0/command/pos"
+#    payload_available: "true"
+#    payload_not_available: "false"
+#    qos: 1
+#    retain: false
+#    payload_open: "open"
+#    payload_close: "close"
+#    payload_stop: "stop"
+#    position_open: 100
+#    position_closed: 0
+#    optimistic: false
+
+# Shelly 2.5 Living Room Small Blinds MQTT cover configuration
+#  - platform: mqtt
+#    name: "Living Room Small Blinds"
+#    state_topic: "shellies/shellyswitch25-D8F15B13186F/roller/0"
+#    command_topic: "shellies/shellyswitch25-D8F15B13186F/roller/0/command"
+#    position_topic: "shellies/shellyswitch25-D8F15B13186F/roller/0/pos"
+#    set_position_topic: "shellies/shellyswitch25-D8F15B13186F/roller/0/command/pos"
+#    payload_available: "true"
+#    payload_not_available: "false"
+#    qos: 1
+#    retain: false
+#    payload_open: "open"
+#    payload_close: "close"
+#    payload_stop: "stop"
+#    position_open: 100
+#    position_closed: 0
+#    optimistic: false
+
+# Shelly 2.5 Suite Room Small Blinds MQTT cover configuration
+#  - platform: mqtt
+#    name: "Suite Room Small Blinds"
+#    state_topic: "shellies/shellyswitch25-D8F15B131F36/roller/0"
+#    command_topic: "shellies/shellyswitch25-D8F15B131F36/roller/0/command"
+#    position_topic: "shellies/shellyswitch25-D8F15B131F36/roller/0/pos"
+#    set_position_topic: "shellies/shellyswitch25-D8F15B131F36/roller/0/command/pos"
+#    payload_available: "true"
+#    payload_not_available: "false"
+#    qos: 1
+#    retain: false
+#    payload_open: "open"
+#    payload_close: "close"
+#    payload_stop: "stop"
+#    position_open: 100
+#    position_closed: 0
+#    optimistic: false
+
+# Shelly 2.5 Suite Room Big Blinds MQTT cover configuration
+#  - platform: mqtt
+#    name: "Suite Room Big Blinds"
+#    state_topic: "shellies/shellyswitch25-D8F15B1321C4/roller/0"
+#    command_topic: "shellies/shellyswitch25-D8F15B1321C4/roller/0/command"
+#    position_topic: "shellies/shellyswitch25-D8F15B1321C4/roller/0/pos"
+#    set_position_topic: "shellies/shellyswitch25-D8F15B1321C4/roller/0/command/pos"
+#    payload_available: "true"
+#    payload_not_available: "false"
+#    qos: 1
+#    retain: false
+#    payload_open: "open"
+#    payload_close: "close"
+#    payload_stop: "stop"
+#    position_open: 100
+#    position_closed: 0
+#    optimistic: false
+
+# Shelly 2.5 Carol Room Blinds MQTT cover configuration
+#  - platform: mqtt
+#    name: "Carol Room Blinds"
+#    state_topic: "shellies/shellyswitch25-D8F15B132C1B/roller/0"
+#    command_topic: "shellies/shellyswitch25-D8F15B132C1B/roller/0/command"
+#    position_topic: "shellies/shellyswitch25-D8F15B132C1B/roller/0/pos"
+#    set_position_topic: "shellies/shellyswitch25-D8F15B132C1B/roller/0/command/pos"
+#    payload_available: "true"
+#    payload_not_available: "false"
+#    qos: 1
+#    retain: false
+#    payload_open: "open"
+#    payload_close: "close"
+#    payload_stop: "stop"
+#    position_open: 100
+#    position_closed: 0
+#    optimistic: false
+
+# Shelly 1 Tiguan Garage MQTT cover configuration
+  - platform: mqtt
+    name: "Tiguan Garage Door"
+    state_topic: "shellies/shelly1-98F4ABF3243A/relay/0"
+    command_topic: "shellies/shelly1-98F4ABF3243A/relay/0/command"
+    position_topic: "shellies/shelly1-98F4ABF3243A/input/0"
+    retain: false
+    payload_open: "on"
+    payload_close: "on"
+    payload_stop: "on"
+    position_open: 1
+    position_closed: 0
+    payload_available: "true"
+    payload_not_available: "false"
+    optimistic: false
+
+# Shelly 1 Fox Garage MQTT cover configuration
+  - platform: mqtt
+    name: "Fox Garage Door"
+    state_topic: "shellies/shelly1-98F4ABF32318/relay/0"
+    command_topic: "shellies/shelly1-98F4ABF32318/relay/0/command"
+    position_topic: "shellies/shelly1-98F4ABF32318/input/0"
+    retain: false
+    payload_open: "on"
+    payload_close: "on"
+    payload_stop: "on"
+    position_open: 1
+    position_closed: 0
+    payload_available: "true"
+    payload_not_available: "false"
+    optimistic: false
+
+# Switch Configuration
+switch:
+
+# Shelly 1 Hall Plug MQTT switch configuration
+#  - platform: mqtt
+#    name: "Hall Switch Plug"
+#    state_topic: "shellies/shelly1pm-68C63AFAE9FF/relay/0"
+#    command_topic: "shellies/shelly1pm-68C63AFAE9FF/relay/0/command"
+#    payload_on: "on"
+#    payload_off: "off"
+#    retain: false
+
+#  - platform: mqtt
+#    name: "Living Room Lamp Plug"
+#    state_topic: "shellies/shelly1pm-68C63AFAD357/relay/0"
+#    command_topic: "shellies/shelly1pm-68C63AFAD357/relay/0/command"
+#    payload_on: "on"
+#    payload_off: "off"
+#    retain: false
+
+#  - platform: mqtt
+#    name: "Living Room TV Plug"
+#    state_topic: "shellies/shelly1pm-68C63AFAD467/relay/0"
+#    command_topic: "shellies/shelly1pm-68C63AFAD467/relay/0/command"
+#    payload_on: "on"
+#    payload_off: "off"
+#    retain: false
+
+# Sensor configuration
+sensor:
+  - platform: template
+    sensors:
+     pihole_total_ads_blocked_today:
+#       friendly_name: "PiHole Total Ads Blocked Today"
+#       unit_of_measurement: 'ads'
+       value_template: "{{ (states('sensor.pihole01_ads_blocked_today') | round(0)) + (states('sensor.pihole02_ads_blocked_today') | round(0)) }}"
+#       icon: mdi:close-octagon-outline
+     pihole_total_ads_percentage_blocked_today:
+#       friendly_name: "PiHole Total Ads Percentage Blocked Today"
+#       unit_of_measurement: '%'
+       value_template: "{{ (states('sensor.pihole01_ads_percentage_blocked_today') | float + states('sensor.pihole02_ads_percentage_blocked_today') | float)|round(2)}}"
+#       icon: mdi:close-octagon-outline
+     pihole_total_dns_queries_today:
+#       friendly_name: "PiHole Total DNS Queries Today"
+#       unit_of_measurement: 'queries'
+       value_template: "{{ (states('sensor.pihole01_dns_queries_today') | round(0)) + (states('sensor.pihole02_dns_queries_today') | round(0)) }}"
+#       icon: mdi:comment-question-outline
+
+# Fox Garage MQTT sensor configuration
+  - platform: mqtt
+    name: "Fox Garage Door"
+    icon: mdi:garage
+    state_topic: "shellies/shelly1-98F4ABF32318/input/0"
+    value_template: >
+      {% if value == "1" %}
+        Open
+      {% else %}
+        Close
+      {% endif %}
+
+# Tiguan Garage MQTT sensor configuration
+  - platform: mqtt
+    name: "Tiguan Garage Door"
+    icon: mdi:garage
+    state_topic: "shellies/shelly1-98F4ABF3243A/input/0"
+    value_template: >
+      {% if value == "1" %}
+        Open
+      {% else %}
+        Close
+      {% endif %}
+
+# Kitchen Blinds sensors
+#  - platform: mqtt
+#    name: "Kitchen Blinds Power"
+#    state_topic: "shellies/shellyswitch25-68C63AF99FDD/relay/power"
+#    value_template: '{{ value|round(1) }}'
+#    qos: 1
+#    unit_of_measurement: "W"
+
+#  - platform: mqtt
+#    name: "Kitchen Blinds Energy"
+#    state_topic: "shellies/shellyswitch25-68C63AF99FDD/relay/energy"
+#    value_template: '{{ (value | float /1000)|round(3) }}'
+#    qos: 1
+#    unit_of_measurement: "kWh"
+
+#  - platform: mqtt
+#    name: "Kitchen Blinds Temperature"
+#    state_topic: "shellies/shellyswitch25-68C63AF99FDD/temperature"
+#    qos: 1
+#    unit_of_measurement: "C"
+
+# Living Room Small Blinds sensors
+#  - platform: mqtt
+#    name: "Living Room Small Blinds Power"
+#    state_topic: "shellies/shellyswitch25-D8F15B13186F/relay/power"
+#    value_template: '{{ value|round(1) }}'
+#    qos: 1
+#    unit_of_measurement: "W"
+
+#  - platform: mqtt
+#    name: "Living Room Small Blinds Energy"
+#    state_topic: "shellies/shellyswitch25-D8F15B13186F/relay/energy"
+#    value_template: '{{ (value | float /1000)|round(3) }}'    
+#    qos: 1
+#    unit_of_measurement: "kWh"
+
+#  - platform: mqtt
+#    name: "Living Room Small Blinds Temperature"
+#    state_topic: "shellies/shellyswitch25-D8F15B13186F/temperature"
+#    qos: 1
+#    unit_of_measurement: "C"
+
+# Living Room Big Blinds sensors
+#  - platform: mqtt
+#    name: "Living Room Big Blinds Power"
+#    state_topic: "shellies/shellyswitch25-D8F15B12FF4E/relay/power"
+#    value_template: '{{ value|round(1) }}'
+#    qos: 1
+#    unit_of_measurement: "W"
+
+#  - platform: mqtt
+#    name: "Living Room Big Blinds Energy"
+#    state_topic: "shellies/shellyswitch25-D8F15B12FF4E/relay/energy"
+#    value_template: '{{ (value | float /1000)|round(3) }}'
+#    qos: 1
+#    unit_of_measurement: "kWh"
+
+#  - platform: mqtt
+#    name: "Living Room Big Blinds Temperature"
+#    state_topic: "shellies/shellyswitch25-D8F15B12FF4E/temperature"
+#    qos: 1
+#    unit_of_measurement: "C"
+
+# Carol Room Blinds sensors
+#  - platform: mqtt
+#    name: "Carol Room Blinds Power"
+#    state_topic: "shellies/shellyswitch25-D8F15B132C1B/relay/power"
+#    value_template: '{{ value|round(1) }}'
+#    qos: 1
+#    unit_of_measurement: "W"
+
+#  - platform: mqtt
+#    name: "Carol Room Blinds Energy"
+#    state_topic: "shellies/shellyswitch25-D8F15B132C1B/relay/energy"
+#    value_template: '{{ (value | float /1000)|round(3) }}'
+#    qos: 1
+#    unit_of_measurement: "kWh"
+
+#  - platform: mqtt
+#    name: "Carol Room Blinds Temperature"
+#    state_topic: "shellies/shellyswitch25-D8F15B132C1B/temperature"
+#    qos: 1
+#    unit_of_measurement: "C"
+
+# Suite Room Small Blinds sensors
+#  - platform: mqtt
+#    name: "Suite Room Small Power"
+#    state_topic: "shellies/shellyswitch25-D8F15B131F36/relay/power"
+#    value_template: '{{ value|round(1) }}'
+#    qos: 1
+#    unit_of_measurement: "W"
+
+#  - platform: mqtt
+#    name: "Suite Room Small Blinds Energy"
+#    state_topic: "shellies/shellyswitch25-D8F15B131F36/relay/energy"
+#    value_template: '{{ (value | float /1000)|round(3) }}'
+#    qos: 1
+#    unit_of_measurement: "kWh"
+
+#  - platform: mqtt
+#    name: "Suite Room Small Blinds Temperature"
+#    state_topic: "shellies/shellyswitch25-D8F15B131F36/temperature"
+#    qos: 1
+#    unit_of_measurement: "C"
+
+# Suite Room Big Blinds sensors
+#  - platform: mqtt
+#    name: "Suite Room Big Power"
+#    state_topic: "shellies/shellyswitch25-D8F15B1321C4/relay/power"
+#    value_template: '{{ value|round(1) }}'
+#    qos: 1
+#    unit_of_measurement: "W"
+
+#  - platform: mqtt
+#    name: "Suite Room Big Blinds Energy"
+#    state_topic: "shellies/shellyswitch25-D8F15B1321C4/relay/energy"
+#    value_template: '{{ (value | float /1000)|round(3) }}'
+#    qos: 1
+#    unit_of_measurement: "kWh"
+
+#  - platform: mqtt
+#    name: "Suite Room Big Blinds Temperature"
+#    state_topic: "shellies/shellyswitch25-D8F15B1321C4/temperature"
+#    qos: 1
+#    unit_of_measurement: "C"
+
+# Hall Plug sensors
+#  - platform: mqtt
+#    name: "Hall Plug Power"
+#    state_topic: "shellies/shelly1pm-68C63AFAE9FF/relay/0/power"
+#    value_template: '{{ value|round(1) }}'
+#    qos: 1
+#    unit_of_measurement: "W"
+
+#  - platform: mqtt
+#    name: "Hall Plug Energy"
+#    state_topic: "shellies/shelly1pm-68C63AFAE9FF/relay/0/energy"
+#    value_template: '{{ (value | float /1000)|round(3) }}'
+#    qos: 1
+#    unit_of_measurement: "kWh"
+
+#  - platform: mqtt
+#    name: "Hall Plug Temperature"
+#    state_topic: "shellies/shelly1pm-68C63AFAE9FF/temperature"
+#    qos: 1
+#    unit_of_measurement: "C"
+
+# Living Room Lamp Plug sensors
+#  - platform: mqtt
+#    name: "Living Room Lamp Plug Power"
+#    state_topic: "shellies/shelly1pm-68C63AFAD357/relay/0/power"
+#    value_template: '{{ value|round(1) }}'
+#    qos: 1
+#    unit_of_measurement: "W"
+
+#  - platform: mqtt
+#    name: "Living Room Lamp Plug Energy"
+#    state_topic: "shellies/shelly1pm-68C63AFAD357/relay/0/energy"
+#    value_template: '{{ (value | float /1000)|round(3) }}'
+#    qos: 1
+#    unit_of_measurement: "kWh"
+
+#  - platform: mqtt
+#    name: "Living Room Lamp Plug Temperature"
+#    state_topic: "shellies/shelly1pm-68C63AFAD357/temperature"
+#    qos: 1
+#    unit_of_measurement: "C"
+
+# Living Room TV Plug sensors
+#  - platform: mqtt
+#    name: "Living Room TV Plug Power"
+#    state_topic: "shellies/shelly1pm-68C63AFAD467/relay/0/power"
+#    value_template: '{{ value|round(1) }}'
+#    qos: 1
+#    unit_of_measurement: "W"
+
+#  - platform: mqtt
+#    name: "Living Room TV Plug Energy"
+#    state_topic: "shellies/shelly1pm-68C63AFAD467/relay/0/energy"
+#    value_template: '{{ (value | float /1000)|round(3) }}'
+#    qos: 1
+#    unit_of_measurement: "kWh"
+
+#  - platform: mqtt
+#    name: "Living Room TV Plug Temperature"
+#    state_topic: "shellies/shelly1pm-68C63AFAD467/temperature"
+#    qos: 1
+#    unit_of_measurement: "C"
+
+# Voltage Sensor
+
+  - platform: rest
+    name: "Home Voltage"
+    resource: http://192.168.3.116/status
+    value_template: '{{ value_json.voltage }}'
+    scan_interval: 300
+    unit_of_measurement: V
+
+# Shelly WiFi rssi Sensors
+
+  - platform: rest
+    name: "shellyswitch25-D8F15B1321C4 rssi"
+    resource: http://192.168.3.113/status
+    value_template: '{{ value_json.wifi_sta.rssi }}'
+    scan_interval: 300
+    unit_of_measurement: dB
+
+  - platform: rest
+    name: "shellyswitch25-D8F15B12FF4E rssi"
+    resource: http://192.168.3.114/status
+    value_template: '{{ value_json.wifi_sta.rssi }}'
+    scan_interval: 300
+    unit_of_measurement: dB
+
+  - platform: rest
+    name: "shelly1pm-68C63AFAD467 rssi"
+    resource: http://192.168.3.115/status
+    value_template: '{{ value_json.wifi_sta.rssi }}'
+    scan_interval: 300
+    unit_of_measurement: dB
+
+  - platform: rest
+    name: "shellyswitch25-68C63AF99FDD rssi"
+    resource: http://192.168.3.116/status
+    value_template: '{{ value_json.wifi_sta.rssi }}'
+    scan_interval: 300
+    unit_of_measurement: dB
+
+  - platform: rest
+    name: "shelly1pm-68C63AFAD357 rssi"
+    resource: http://192.168.3.117/status
+    value_template: '{{ value_json.wifi_sta.rssi }}'
+    scan_interval: 300
+    unit_of_measurement: dB
+
+  - platform: rest
+    name: "shellyswitch25-D8F15B131F36 rssi"
+    resource: http://192.168.3.118/status
+    value_template: '{{ value_json.wifi_sta.rssi }}'
+    scan_interval: 300
+    unit_of_measurement: dB
+
+  - platform: rest
+    name: "shelly1pm-68C63AFAE9FF rssi"
+    resource: http://192.168.3.119/status
+    value_template: '{{ value_json.wifi_sta.rssi }}'
+    scan_interval: 300
+    unit_of_measurement: dB
+
+  - platform: rest
+    name: "shellyswitch25-D8F15B132C1B rssi"
+    resource: http://192.168.3.120/status
+    value_template: '{{ value_json.wifi_sta.rssi }}'
+    scan_interval: 300
+    unit_of_measurement: dB
+
+  - platform: rest
+    name: "shellyswitch25-D8F15B13186F rssi"
+    resource: http://192.168.3.121/status
+    value_template: '{{ value_json.wifi_sta.rssi }}'
+    scan_interval: 300
+    unit_of_measurement: dB
+
+  - platform: rest
+    name: "shelly1-98F4ABF3243A rssi"
+    resource: http://192.168.3.122/status
+    value_template: '{{ value_json.wifi_sta.rssi }}'
+    scan_interval: 300
+    unit_of_measurement: dB
+
+  - platform: rest
+    name: "shelly1-98F4ABF32318 rssi"
+    resource: http://192.168.3.123/status
+    value_template: '{{ value_json.wifi_sta.rssi }}'
+    scan_interval: 300
+    unit_of_measurement: dB
+
+  - platform: rest
+    name: "shelly1pm-68C63AFAED87 rssi"
+    resource: http://192.168.3.170/status
+    value_template: '{{ value_json.wifi_sta.rssi }}'
+    scan_interval: 300
+    unit_of_measurement: dB
+
+  - platform: rest
+    name: "shellyplug-s-9779B9 rssi"
+    resource: http://192.168.3.171/status
+    value_template: '{{ value_json.wifi_sta.rssi }}'
+    scan_interval: 300
+    unit_of_measurement: dB
+
+  - platform: rest
+    name: "shelly1pm-68C63AFADBFF rssi"
+    resource: http://192.168.3.172/status
+    value_template: '{{ value_json.wifi_sta.rssi }}'
+    scan_interval: 300
+    unit_of_measurement: dB
+
+# Binary Sensor configuration
+
+binary_sensor:
+  - platform: mqtt
+    name: Garage Motion
+    state_topic: "camera/motion/Garage"
+    payload_on: "ON"
+    payload_off: "OFF"
+    device_class: motion
+
+# Utility Meter configuration
+
+utility_meter:
+  hall_plug_daily_energy:
+    source: sensor.shelly1pm_68c63afae9ff_power
+    cycle: daily
+  hall_plug_monthly_energy:
+    source: sensor.shelly1pm_68c63afae9ff_power
+    cycle: monthly
+  hall_plug_yearly_energy:
+    source: sensor.shelly1pm_68c63afae9ff_power
+    cycle: yearly
+
+# UniFi AP Integration configuration
+# device_tracker:
+#  - platform: unifi_direct
+#    host: 192.168.1.251
+#    username: admin
+#    password: Underthebridge2#$
+#    new_device_defaults:
+#      track_new_devices: false
+#  - platform: unifi_direct
+#    host: 192.168.1.250
+#    username: admin
+#    password: Underthebridge2#$
+#    new_device_defaults:
+#      track_new_devices: false
+#  - platform: unifi_direct
+#    host: 192.168.1.249
+#    username: admin
+#    password: Underthebridge2#$
+#    new_device_defaults:
+#      track_new_devices: false
+
+# Docker Monitoring Integration Configuration
+monitor_docker:
+  - name: Docker
+    url: tcp://192.168.1.11:2375
+    containers:
+      - hass
+      - hydra2
+      - ombi
+      - radarr
+      - jackett
+      - grafana
+      - swag
+      - sonarr
+      - radarr
+      - bazarr
+      - lidarr
+      - nzbget
+      - netatmo-poller
+      - mosquitto
+      - qbittorrent
+      - unifi-poller
+      - oscam
+      - telegraf
+      - influxdb
+      - ouroboros
+      - crashplan
+      - pihole01-poller
+      - pihole02-poller
+      - observium
+      - tautulli
+      - unifi-video
+      - unifi-video-mqtt
+    rename:
+      hass: HomeAssist
+      hydra2: Hydra2
+      ombi: Ombi
+      radarr: Radarr
+      jackett: Jackett
+      grafana: Grafana
+      swag: Swag
+      sonarr: Sonarr
+      bazarr: Bazarr
+      lidarr: Lidarr
+      nzbget: NZBget
+      netatmo-poller: "Netatmo-Poller"
+      mosquitto: Mosquitto
+      qbittorrent: qBitTorrent
+      unifi-poller: "UniFi-Poller"
+      oscam: OScam
+      telegraf: Telegraf
+      influxdb: InfluxDB
+      ouroboros: Ouroboros
+      crashplan: CrashPlan
+      pihole01-poller: "PiHole01-Poller"
+      pihole02-poller: "PiHole02-Poller"
+      observium: Observium
+      tautulli: Tautulli
+      unifi-video: "UniFi Video"
+      unifi-video-mqtt: "UniFi Video MQTT"
+    monitored_conditions:
+      - version
+      - containers_running
+      - containers_total
+      - status
+      - memory
+      - containers_cpu_percentage
+      - containers_memory
+      - containers_memory_percentage
+      - cpu_percentage
+      - memory
+      - memory_percentage
+      - network_speed_up
+      - network_speed_down
+      - network_total_up
+      - network_total_down

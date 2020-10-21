@@ -1,0 +1,209 @@
+{
+    "version": 1,
+    "key": "auth",
+    "data": {
+        "users": [
+            {
+                "id": "5ff89b3c2f6c4957831671bc870dd46b",
+                "group_ids": [
+                    "system-admin"
+                ],
+                "is_owner": false,
+                "is_active": true,
+                "name": "Hass.io",
+                "system_generated": true
+            },
+            {
+                "id": "d39ca003bd3e4e259a7b58f4fde05048",
+                "group_ids": [
+                    "system-admin"
+                ],
+                "is_owner": true,
+                "is_active": true,
+                "name": "Jorge Patriarca",
+                "system_generated": false
+            }
+        ],
+        "groups": [
+            {
+                "id": "system-admin",
+                "name": "Administrators"
+            },
+            {
+                "id": "system-users",
+                "name": "Users"
+            },
+            {
+                "id": "system-read-only",
+                "name": "Read Only"
+            }
+        ],
+        "credentials": [
+            {
+                "id": "f34e683b89204eb3be5cec59bf1f1b45",
+                "user_id": "d39ca003bd3e4e259a7b58f4fde05048",
+                "auth_provider_type": "homeassistant",
+                "auth_provider_id": null,
+                "data": {
+                    "username": "jpatriarca"
+                }
+            }
+        ],
+        "refresh_tokens": [
+            {
+                "id": "864806eacf024f03b2a5155a4e3a8c0d",
+                "user_id": "5ff89b3c2f6c4957831671bc870dd46b",
+                "client_id": null,
+                "client_name": null,
+                "client_icon": null,
+                "token_type": "system",
+                "created_at": "2020-08-12T17:57:57.892705+00:00",
+                "access_token_expiration": 1800.0,
+                "token": "b4a2ff5f488efa4eaee328c5e628e5fde7bf9e04dba006d8f40f910e3f3717bde37aa2a92f8e85de4c7723c72c5bab89adbb3e46bcf322519602b8ead3af861c",
+                "jwt_key": "fd1f95e29c303de1b472b03021920f4201e9f7b39b82435b3486cad07293b6595d03470a63cf33e0aa9566b37499e07ac150b9e5cb44507f8ae405870eea220b",
+                "last_used_at": "2020-10-21T20:39:32.332363+00:00",
+                "last_used_ip": "172.30.32.2"
+            },
+            {
+                "id": "6d769d0ae7b44146803ed6db830c15c5",
+                "user_id": "d39ca003bd3e4e259a7b58f4fde05048",
+                "client_id": "http://192.168.1.14:8123/",
+                "client_name": null,
+                "client_icon": null,
+                "token_type": "normal",
+                "created_at": "2020-08-12T18:18:21.321746+00:00",
+                "access_token_expiration": 1800.0,
+                "token": "b0605ff249795baa367decafb2c96f2050c751428b2809a5aefd7344997c47525463e8c2644e1c809ed00b896730b39fa81a392656e0713d15c7adf8de5fe4d0",
+                "jwt_key": "371ea018ea67f887495f4292f2e518854598b17e8364223ccfa49a8d9b598d4f21f3ff3f9ec2df43f79c19dfe34a7ff1bc8f288b7014cd2ed998d82b898e4a31",
+                "last_used_at": "2020-08-13T15:05:46.731068+00:00",
+                "last_used_ip": "192.168.2.107"
+            },
+            {
+                "id": "a3363e3554a54e5c967e88e7df362f16",
+                "user_id": "d39ca003bd3e4e259a7b58f4fde05048",
+                "client_id": "https://hass2.patriarca.pt/",
+                "client_name": null,
+                "client_icon": null,
+                "token_type": "normal",
+                "created_at": "2020-08-13T08:23:24.311919+00:00",
+                "access_token_expiration": 1800.0,
+                "token": "dc14bc17a1004d0c31c775c9e1d1de483a8e41c46ce0cb942660139875dfaf6ec8983dfdb45284bcbb3b94562ece58bd3f2bf6dd95fe2a23b5610e2723a18e64",
+                "jwt_key": "105fa0c1cff407fdb4ef9b238612537894e0bf1307030fda24cdbbb6bf0344e3dd9b11b020f31fc46141b3b0b105821f22a9d73b498755c44f6fc78382b84af2",
+                "last_used_at": "2020-08-13T16:18:41.098599+00:00",
+                "last_used_ip": "172.68.102.154"
+            },
+            {
+                "id": "eed5a197ddcd4996aa1c72925f270b77",
+                "user_id": "d39ca003bd3e4e259a7b58f4fde05048",
+                "client_id": "https://hass.patriarca.pt/",
+                "client_name": null,
+                "client_icon": null,
+                "token_type": "normal",
+                "created_at": "2020-08-13T16:40:50.448683+00:00",
+                "access_token_expiration": 1800.0,
+                "token": "95baaf2c2de2be807bcf1af1bdcbcda2d86cda7b9eba847c71950c07227ddf91c0cd1a4415c8f0aa1873e1e887ec304c58809bf11b4ccdb588e10fab2f15e804",
+                "jwt_key": "4da15575df3d3e0e4e985ae35bdcc75becec5b5c60bbf41051f1caeafe2b75293b30aefd19d716ccecf5b7a0d384655ff0c38809a632ca37dd1f5dfc22ee7248",
+                "last_used_at": "2020-09-01T12:06:08.423702+00:00",
+                "last_used_ip": "192.168.2.110"
+            },
+            {
+                "id": "2e5996d42140465585dbf6a44919d21f",
+                "user_id": "d39ca003bd3e4e259a7b58f4fde05048",
+                "client_id": "http://hass.internal.patriarca.pt:8123/",
+                "client_name": null,
+                "client_icon": null,
+                "token_type": "normal",
+                "created_at": "2020-08-13T16:43:37.830149+00:00",
+                "access_token_expiration": 1800.0,
+                "token": "7e230dc0e407bb5ca33fc65d3712d863ab3522b793c52b05cd6facea70dfc170115323ffc38dcdba061b852890f188169ff70d68ed27784b3a7283e3e697c927",
+                "jwt_key": "303ecaa5595efb11ee7b25f059b0d9241bbb11dc9b171ab746fdcc301d59e3ec9a0aa4e7f4dc41c705a9c82ae9f729fc3ecf525cf8472e26201480d9d0998bc9",
+                "last_used_at": "2020-08-14T09:30:47.312585+00:00",
+                "last_used_ip": "192.168.2.107"
+            },
+            {
+                "id": "7477ce27071543a683b214110930ccc6",
+                "user_id": "d39ca003bd3e4e259a7b58f4fde05048",
+                "client_id": "https://hass.patriarca.pt/",
+                "client_name": null,
+                "client_icon": null,
+                "token_type": "normal",
+                "created_at": "2020-08-13T17:44:47.263783+00:00",
+                "access_token_expiration": 1800.0,
+                "token": "8129344891f044ef11da42f31562dc756cc14d340182f1456d83ec7862a2b52f1541f426544413de10ac071a232becac0f0ccfde3ca061bf7317dd081a53e8e2",
+                "jwt_key": "8f4ccd7d519f18c6c38b732b92b8cb2c511adb63e2b57d7d84f4984ba0ff7c14b58a719f521f2328ddf716571b4a143a700ce5bfb5ae20866e1157b5009383cb",
+                "last_used_at": "2020-08-13T17:44:47.264274+00:00",
+                "last_used_ip": "172.68.102.150"
+            },
+            {
+                "id": "f55aeb96214b4630845ef59b1869026e",
+                "user_id": "d39ca003bd3e4e259a7b58f4fde05048",
+                "client_id": "https://home-assistant.io/iOS",
+                "client_name": null,
+                "client_icon": null,
+                "token_type": "normal",
+                "created_at": "2020-08-13T17:46:06.848394+00:00",
+                "access_token_expiration": 1800.0,
+                "token": "9d3a89d5d77ce49fc9bc39395dca0ff0ed37db5d1a139bc26261a73b0ca5088246fc5a136f4b529b2d0ee5308a2550fb33e360cf14f168f83fcd5eae1391df7e",
+                "jwt_key": "54fdd72e7dc5fd27e5dc40257cebeb6df1286cb21e1ca05d21a9b953e80ae8a226a23ef922e28718850e646145481289daca7f8955c8a998363523f4fe92de92",
+                "last_used_at": "2020-10-21T19:55:25.686366+00:00",
+                "last_used_ip": "172.68.102.150"
+            },
+            {
+                "id": "ab08ca5a7f3444519ce416c9ca06ed0d",
+                "user_id": "d39ca003bd3e4e259a7b58f4fde05048",
+                "client_id": "https://home-assistant.io/iOS",
+                "client_name": null,
+                "client_icon": null,
+                "token_type": "normal",
+                "created_at": "2020-09-05T09:27:16.673903+00:00",
+                "access_token_expiration": 1800.0,
+                "token": "7b5080dcd195bd409459cecc66c49244dcee8c98121efb9dc36b3cba9b8098381af251a06b981d9551138cf9ff44913bd5db76ca36f67efc72887ffbe4f65621",
+                "jwt_key": "37e3e7cdfacd1870be408922f67b26c69e9ea3eb7c8b6343a518c2f6e2f1c4a036b4dcd95bacc68687b8e497dd3f35c6cabe223edc5241e231723a8d874b5272",
+                "last_used_at": "2020-09-07T20:28:26.395367+00:00",
+                "last_used_ip": "192.168.2.106"
+            },
+            {
+                "id": "bb931a8981f748628159419f179da6ac",
+                "user_id": "d39ca003bd3e4e259a7b58f4fde05048",
+                "client_id": "https://hass.patriarca.pt/",
+                "client_name": null,
+                "client_icon": null,
+                "token_type": "normal",
+                "created_at": "2020-09-06T16:41:29.374738+00:00",
+                "access_token_expiration": 1800.0,
+                "token": "9497c27408d2b0672205a1f692182370e9c5ae3df2284143b7d0816098b6a61add71a4f786a7c2c6e314de36d430d483d381a4ff2b967076dd0852b8f7afce94",
+                "jwt_key": "021705314ebccebfb28207ad10b16b8623b75cf9173f2b8caeded287b87ce882d4fcfd37f69504376228312b1289a39a1bbf072af66a291b939abb96793acb1e",
+                "last_used_at": "2020-10-21T15:36:15.863125+00:00",
+                "last_used_ip": "192.168.2.128"
+            },
+            {
+                "id": "0a1447d210954b79840d78a954367f25",
+                "user_id": "d39ca003bd3e4e259a7b58f4fde05048",
+                "client_id": "https://home-assistant.io/iOS",
+                "client_name": null,
+                "client_icon": null,
+                "token_type": "normal",
+                "created_at": "2020-09-07T20:30:57.405713+00:00",
+                "access_token_expiration": 1800.0,
+                "token": "5bb5f649d97eb2880f4225ba8be1fa89f74b3ecfae0163f3e804c4b57e2f61642e53baf41d83328af6870a6f812fc177d66217c93a843b25a34f47b11dd84017",
+                "jwt_key": "66f4e2d5131d234734940fdc7be6ef6f9ae5ce42846e1283ae2847b8a779b513b3a09487d9cd17566204dd619e2d7ded7db9219b26506dca41245d1db455c516",
+                "last_used_at": "2020-10-21T20:41:48.763111+00:00",
+                "last_used_ip": "172.68.102.156"
+            },
+            {
+                "id": "bcede34a94654b8981d97be083c717be",
+                "user_id": "d39ca003bd3e4e259a7b58f4fde05048",
+                "client_id": "https://hass.patriarca.pt/",
+                "client_name": null,
+                "client_icon": null,
+                "token_type": "normal",
+                "created_at": "2020-09-26T16:41:37.404107+00:00",
+                "access_token_expiration": 1800.0,
+                "token": "735a5e85eca21d0376d416f4c9a64200643978b5f5b6442229c1210c8326fd45449d40eabb4eb2f3a8f95f26a866c0cb74708171acae8bf5a5096dcc243602c8",
+                "jwt_key": "8440790bc9d4ecbadb28ca8cf81aff5b11baf0bf96500e0ebcfaca868a99cf9ea0b1535f0889c3700b3fe1629327df797549fcee084efa5ea5d0c0d7873de10a",
+                "last_used_at": "2020-10-21T17:58:44.638054+00:00",
+                "last_used_ip": "192.168.2.124"
+            }
+        ]
+    }
+}

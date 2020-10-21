@@ -1,0 +1,71 @@
+{
+    "version": "6",
+    "key": "hacs/230199787.hacs",
+    "data": {
+        "archived": false,
+        "authors": [
+            "@briis"
+        ],
+        "category": "integration",
+        "content_in_root": false,
+        "country": [],
+        "config_flow": true,
+        "default_branch": "master",
+        "description": "Control and monitor your Unifi Protect Cameras from Home Assistant",
+        "domain": "unifiprotect",
+        "domains": [
+            "binary_sensor",
+            "sensor",
+            "camera",
+            "switch"
+        ],
+        "downloads": 0,
+        "file_name": "",
+        "filename": "",
+        "first_install": false,
+        "fork": false,
+        "full_name": "briis/unifiprotect",
+        "hacs": null,
+        "hide": false,
+        "hide_default_branch": false,
+        "homeassistant": null,
+        "id": "230199787",
+        "iot_class": "Local Polling",
+        "installed": true,
+        "installed_commit": "58d6abe",
+        "installed_version": "v0.5.6",
+        "open_issues": 15,
+        "last_commit": "8a84e7d",
+        "last_version": "v0.5.6",
+        "last_updated": "2020-10-21T09:22:33Z",
+        "manifest_name": "Unifi Protect",
+        "new": false,
+        "persistent_directory": null,
+        "pushed_at": "2020-10-21T09:22:33",
+        "releases": true,
+        "render_readme": false,
+        "published_tags": [
+            "v0.5.6",
+            "v0.5.5",
+            "0.5.4",
+            "v0.5.3",
+            "v0.5.2"
+        ],
+        "selected_tag": null,
+        "show_beta": false,
+        "stargazers_count": 187,
+        "topics": [
+            "cloudkey",
+            "home-assistant",
+            "homeassistant",
+            "protect",
+            "python",
+            "ubiquiti",
+            "unifi",
+            "unifi-protect",
+            "unifi-protect-server"
+        ],
+        "zip_release": false,
+        "full_name_lower": "briis/unifiprotect"
+    }
+}
