@@ -1,0 +1,59 @@
+{
+    "version": "6",
+    "key": "hacs/192782243.hacs",
+    "data": {
+        "archived": false,
+        "authors": [
+            "@pnbruckner"
+        ],
+        "category": "integration",
+        "content_in_root": false,
+        "country": [],
+        "config_flow": false,
+        "default_branch": "master",
+        "description": "Home Assistant Sun2 Sensor",
+        "domain": "sun2",
+        "domains": [],
+        "downloads": 0,
+        "file_name": "",
+        "filename": "",
+        "first_install": false,
+        "fork": false,
+        "full_name": "pnbruckner/ha-sun2",
+        "hacs": null,
+        "hide": false,
+        "hide_default_branch": false,
+        "homeassistant": null,
+        "id": "192782243",
+        "iot_class": null,
+        "installed": true,
+        "installed_commit": "f2b710d",
+        "installed_version": "1.8.1",
+        "open_issues": 3,
+        "last_commit": "f2b710d",
+        "last_version": "1.8.1",
+        "last_updated": "2020-06-17T14:38:11Z",
+        "manifest_name": "Sun2",
+        "new": false,
+        "persistent_directory": null,
+        "pushed_at": "2020-06-17T14:38:11",
+        "releases": true,
+        "render_readme": false,
+        "published_tags": [
+            "1.8.1",
+            "1.8.0",
+            "1.7.0",
+            "1.6.0",
+            "1.5.0"
+        ],
+        "selected_tag": null,
+        "show_beta": false,
+        "stargazers_count": 34,
+        "topics": [
+            "sensor",
+            "sun"
+        ],
+        "zip_release": false,
+        "full_name_lower": "pnbruckner/ha-sun2"
+    }
+}

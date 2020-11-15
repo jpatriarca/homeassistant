@@ -25,7 +25,7 @@
         "id": "144899700",
         "iot_class": null,
         "installed": true,
-        "installed_commit": "5026d7d",
+        "installed_commit": "a0748e1",
         "installed_version": "16",
         "open_issues": 20,
         "last_commit": "a0748e1",
@@ -46,7 +46,7 @@
         ],
         "selected_tag": null,
         "show_beta": false,
-        "stargazers_count": 362,
+        "stargazers_count": 372,
         "topics": [],
         "zip_release": false,
         "full_name_lower": "thomasloven/lovelace-slider-entity-row"

@@ -59,207 +59,10 @@
                 "manufacturer": "Plex",
                 "model": "Plex Media Server",
                 "name": "Activity Sensor",
-                "sw_version": "1.20.3.3437-f1f08d65b",
+                "sw_version": "1.20.5.3583-309e93364",
                 "entry_type": null,
                 "id": "33e3ed2f3c5d4ae6a590a60b57c4b7f8",
                 "via_device_id": null,
-                "area_id": "d77f3aac80a04181b974e5dba9194e4a",
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "b00a2910b6c44fbf8706a9bc8ca4c36b"
-                ],
-                "connections": [],
-                "identifiers": [
-                    [
-                        "synology_dsm",
-                        "1741PJN981600"
-                    ]
-                ],
-                "manufacturer": "Synology",
-                "model": "DS1517+",
-                "name": "Synology NAS",
-                "sw_version": "DSM 6.2.3-25426 Update 2",
-                "entry_type": null,
-                "id": "e6520bf2d5ea419bbbc201720e22a8b3",
-                "via_device_id": null,
-                "area_id": "d77f3aac80a04181b974e5dba9194e4a",
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "b00a2910b6c44fbf8706a9bc8ca4c36b"
-                ],
-                "connections": [],
-                "identifiers": [
-                    [
-                        "synology_dsm",
-                        "1741PJN981600",
-                        "sda"
-                    ]
-                ],
-                "manufacturer": "Seagate",
-                "model": "ST12000VN0007-2GS116",
-                "name": "Synology NAS (Drive 1 - SATA)",
-                "sw_version": "SC60",
-                "entry_type": null,
-                "id": "88fc066332f14303bff45e6c5fb4a579",
-                "via_device_id": "e6520bf2d5ea419bbbc201720e22a8b3",
-                "area_id": "d77f3aac80a04181b974e5dba9194e4a",
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "b00a2910b6c44fbf8706a9bc8ca4c36b"
-                ],
-                "connections": [],
-                "identifiers": [
-                    [
-                        "synology_dsm",
-                        "1741PJN981600",
-                        "sdb"
-                    ]
-                ],
-                "manufacturer": "Seagate",
-                "model": "ST12000VN0007-2GS116",
-                "name": "Synology NAS (Drive 2 - SATA)",
-                "sw_version": "SC60",
-                "entry_type": null,
-                "id": "5b46638582d94cc284e63e1a9f15cbac",
-                "via_device_id": "e6520bf2d5ea419bbbc201720e22a8b3",
-                "area_id": "d77f3aac80a04181b974e5dba9194e4a",
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "b00a2910b6c44fbf8706a9bc8ca4c36b"
-                ],
-                "connections": [],
-                "identifiers": [
-                    [
-                        "synology_dsm",
-                        "1741PJN981600",
-                        "sdc"
-                    ]
-                ],
-                "manufacturer": "Seagate",
-                "model": "ST12000VN0008-2JH101",
-                "name": "Synology NAS (Drive 3 - SATA)",
-                "sw_version": "SC60",
-                "entry_type": null,
-                "id": "68f8bd44bb984acf93a463112f089812",
-                "via_device_id": "e6520bf2d5ea419bbbc201720e22a8b3",
-                "area_id": "d77f3aac80a04181b974e5dba9194e4a",
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "b00a2910b6c44fbf8706a9bc8ca4c36b"
-                ],
-                "connections": [],
-                "identifiers": [
-                    [
-                        "synology_dsm",
-                        "1741PJN981600",
-                        "sdd"
-                    ]
-                ],
-                "manufacturer": "Seagate",
-                "model": "ST12000VN0008-2JH101",
-                "name": "Synology NAS (Drive 4 - SATA)",
-                "sw_version": "SC60",
-                "entry_type": null,
-                "id": "1944e3f6b40c40d0833a4bd06a2baf20",
-                "via_device_id": "e6520bf2d5ea419bbbc201720e22a8b3",
-                "area_id": "d77f3aac80a04181b974e5dba9194e4a",
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "b00a2910b6c44fbf8706a9bc8ca4c36b"
-                ],
-                "connections": [],
-                "identifiers": [
-                    [
-                        "synology_dsm",
-                        "1741PJN981600",
-                        "sde"
-                    ]
-                ],
-                "manufacturer": "WDC     ",
-                "model": "WD60EFRX-68L0BN1",
-                "name": "Synology NAS (Drive 5 - SATA)",
-                "sw_version": "82.00A82",
-                "entry_type": null,
-                "id": "b05efaff3c0449de8c18ca453cccfa94",
-                "via_device_id": "e6520bf2d5ea419bbbc201720e22a8b3",
-                "area_id": "d77f3aac80a04181b974e5dba9194e4a",
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "b00a2910b6c44fbf8706a9bc8ca4c36b"
-                ],
-                "connections": [],
-                "identifiers": [
-                    [
-                        "synology_dsm",
-                        "1741PJN981600",
-                        "nvc1"
-                    ]
-                ],
-                "manufacturer": "WDC     ",
-                "model": "WDC  WDS500G2B0B-00YS70",
-                "name": "Synology NAS (Cache device 1-1 - SATA)",
-                "sw_version": "411040WD",
-                "entry_type": null,
-                "id": "66429d74917d48249cee110b7c609baa",
-                "via_device_id": "e6520bf2d5ea419bbbc201720e22a8b3",
-                "area_id": "d77f3aac80a04181b974e5dba9194e4a",
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "b00a2910b6c44fbf8706a9bc8ca4c36b"
-                ],
-                "connections": [],
-                "identifiers": [
-                    [
-                        "synology_dsm",
-                        "1741PJN981600",
-                        "nvc2"
-                    ]
-                ],
-                "manufacturer": "WDC     ",
-                "model": "WDC  WDS500G2B0B-00YS70",
-                "name": "Synology NAS (Cache device 1-2 - SATA)",
-                "sw_version": "411040WD",
-                "entry_type": null,
-                "id": "621e6f77b3a34d1e9dc22e6200e28d80",
-                "via_device_id": "e6520bf2d5ea419bbbc201720e22a8b3",
-                "area_id": "d77f3aac80a04181b974e5dba9194e4a",
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "b00a2910b6c44fbf8706a9bc8ca4c36b"
-                ],
-                "connections": [],
-                "identifiers": [
-                    [
-                        "synology_dsm",
-                        "1741PJN981600",
-                        "volume_1"
-                    ]
-                ],
-                "manufacturer": "Synology",
-                "model": "DS1517+",
-                "name": "Synology NAS (Volume 1 - SHR with 1 disk protect)",
-                "sw_version": "DSM 6.2.3-25426 Update 2",
-                "entry_type": null,
-                "id": "78b5e9cf94b648179f07a03f171f4f30",
-                "via_device_id": "e6520bf2d5ea419bbbc201720e22a8b3",
                 "area_id": "d77f3aac80a04181b974e5dba9194e4a",
                 "name_by_user": null
             },
@@ -277,7 +80,7 @@
                 "manufacturer": "hacs.xyz",
                 "model": "",
                 "name": "HACS",
-                "sw_version": "1.6.0",
+                "sw_version": "1.6.2",
                 "entry_type": "service",
                 "id": "0f54dcb21ec74f87b25cee77ab0d8f2a",
                 "via_device_id": null,
@@ -297,8 +100,8 @@
                 ],
                 "manufacturer": "tvOS",
                 "model": "Plex for Apple TV",
-                "name": "Plex (Plex for Apple TV - Suite Room)",
-                "sw_version": "7.7",
+                "name": "Plex (Plex for Apple TV - Suite Bedroom)",
+                "sw_version": "7.9",
                 "entry_type": null,
                 "id": "68c11066ea2841738656de73336d03df",
                 "via_device_id": "33e3ed2f3c5d4ae6a590a60b57c4b7f8",
@@ -367,7 +170,7 @@
                 "manufacturer": "Apple",
                 "model": "iPhone11,6",
                 "name": "JP iPhone",
-                "sw_version": "14.2",
+                "sw_version": "14.3",
                 "entry_type": null,
                 "id": "e94e04eac49c4155a9c8379bca9ab9b9",
                 "via_device_id": null,
@@ -493,7 +296,7 @@
                 "manufacturer": "Apple",
                 "model": "iPad6,11",
                 "name": "JP iPad",
-                "sw_version": "14.2",
+                "sw_version": "14.3",
                 "entry_type": null,
                 "id": "c146a475c97f423d8fb123de4b867261",
                 "via_device_id": null,
@@ -556,7 +359,7 @@
                 "manufacturer": "iOS",
                 "model": "Plexamp",
                 "name": "Plex (Plexamp - JP iPhone)",
-                "sw_version": "3.2.1",
+                "sw_version": "3.2.2",
                 "entry_type": null,
                 "id": "b1895b625cea45c3a60d67631587856b",
                 "via_device_id": "33e3ed2f3c5d4ae6a590a60b57c4b7f8",
@@ -577,7 +380,7 @@
                 "manufacturer": "Apple",
                 "model": "Apple TV 4",
                 "name": "Suite Room",
-                "sw_version": "14.x",
+                "sw_version": "14.2",
                 "entry_type": null,
                 "id": "d9cb3edcd77b45788cc266fe0853b71e",
                 "via_device_id": "d9cb3edcd77b45788cc266fe0853b71e",
@@ -607,7 +410,7 @@
             },
             {
                 "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9",
+                    "64fbf7a601970a45960f44315a93b427",
                     "596a1116f98f11ea83f61b7459ca2597"
                 ],
                 "connections": [
@@ -634,7 +437,7 @@
             },
             {
                 "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9",
+                    "64fbf7a601970a45960f44315a93b427",
                     "638d0e85f98f11ea904741744e31570a"
                 ],
                 "connections": [
@@ -661,8 +464,8 @@
             },
             {
                 "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9",
-                    "858c0d0ff98f11eaacf5edf6a85b1483"
+                    "858c0d0ff98f11eaacf5edf6a85b1483",
+                    "64fbf7a601970a45960f44315a93b427"
                 ],
                 "connections": [
                     [
@@ -689,7 +492,7 @@
             {
                 "config_entries": [
                     "94d1ec35f98f11eab2b6015f89e8ef9a",
-                    "0c9e946304a411eba4c727a5c79473f9"
+                    "64fbf7a601970a45960f44315a93b427"
                 ],
                 "connections": [
                     [
@@ -715,8 +518,8 @@
             },
             {
                 "config_entries": [
-                    "a902fb75f98f11ea899e614cd31486c0",
-                    "0c9e946304a411eba4c727a5c79473f9"
+                    "64fbf7a601970a45960f44315a93b427",
+                    "a902fb75f98f11ea899e614cd31486c0"
                 ],
                 "connections": [
                     [
@@ -742,34 +545,7 @@
             },
             {
                 "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9",
-                    "b1cb384af98f11eaa54a7de3f33f5ea0"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "98:f4:ab:f3:24:3a"
-                    ]
-                ],
-                "identifiers": [
-                    [
-                        "shelly",
-                        "98F4ABF3243A"
-                    ]
-                ],
-                "manufacturer": "Shelly",
-                "model": "Shelly 1",
-                "name": "shelly1-98F4ABF3243A",
-                "sw_version": "20200827-065344/v1.8.3@4a8bc427",
-                "entry_type": null,
-                "id": "b1f730a2f98f11ea93b863f4e0966403",
-                "via_device_id": null,
-                "area_id": "70d188c1f98f11eaab987137f8f5befd",
-                "name_by_user": "Shelly Garage Tiguan"
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9",
+                    "64fbf7a601970a45960f44315a93b427",
                     "ba8e960df98f11ea9ed9712349a50da2"
                 ],
                 "connections": [
@@ -796,8 +572,8 @@
             },
             {
                 "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9",
-                    "c35cdfb6f98f11ea8faefb4c7bbaa983"
+                    "c35cdfb6f98f11ea8faefb4c7bbaa983",
+                    "64fbf7a601970a45960f44315a93b427"
                 ],
                 "connections": [
                     [
@@ -844,62 +620,8 @@
             },
             {
                 "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9",
-                    "05445e85fb8511ea9100b5dd101c8d4a"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "d8:f1:5b:13:18:6f"
-                    ]
-                ],
-                "identifiers": [
-                    [
-                        "shelly",
-                        "D8F15B13186F"
-                    ]
-                ],
-                "manufacturer": "Shelly",
-                "model": "Shelly 2.5",
-                "name": "shellyswitch25-D8F15B13186F",
-                "sw_version": "20200827-065456/v1.8.3@4a8bc427",
-                "entry_type": null,
-                "id": "05ac04cffb8511ea89962306f5d9f014",
-                "via_device_id": null,
-                "area_id": "f48ad93122c94fa08e805324a06409c4",
-                "name_by_user": "Shelly Living Room Small Blind"
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9",
-                    "0eca67c0fb8b11ea9f022deb15948d14"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "68:c6:3a:f9:9f:dd"
-                    ]
-                ],
-                "identifiers": [
-                    [
-                        "shelly",
-                        "68C63AF99FDD"
-                    ]
-                ],
-                "manufacturer": "Shelly",
-                "model": "Shelly 2.5",
-                "name": "shellyswitch25-68C63AF99FDD",
-                "sw_version": "20200827-065456/v1.8.3@4a8bc427",
-                "entry_type": null,
-                "id": "0f32f7b9fb8b11eab25055bf8305ef98",
-                "via_device_id": null,
-                "area_id": "6927706f63fc42c581fb84b49a9e3b7a",
-                "name_by_user": "Shelly Kitchen Blind"
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9",
-                    "8f753b0efc3711ea9115d7e810e9c221"
+                    "8f753b0efc3711ea9115d7e810e9c221",
+                    "64fbf7a601970a45960f44315a93b427"
                 ],
                 "connections": [
                     [
@@ -925,1350 +647,6 @@
             },
             {
                 "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "34:41:5d:81:3c:ab"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "0d8875dd04a411ebb07e99dead71bb2d",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "e0:89:7e:65:23:c3"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "0d88eea004a411ebbf133d22ef2b27e1",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "02:42:c0:a8:01:46"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "0d894ebb04a411eb975ea57c55f212d7",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "3c:52:82:ff:d4:2b"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "0d8a367904a411ebb856c98ce36c2db5",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "dc:a6:32:45:2f:9b"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "0d8adc7404a411eb9cd4a5457d8087ff",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "f2:fd:e5:ec:7b:ba"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "0d8b344204a411ebb145b3ad10fe6b37",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "02:42:c0:a8:01:4e"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "0d8c179904a411eb8d71755c41084b67",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "9c:28:f7:63:1c:70"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "0d8cab5304a411eb9206793d147284b8",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "02:42:c0:a8:01:53"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "0d8d513604a411eb8a15c9d381d11bfa",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "e4:70:b8:82:de:8a"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "0d8db54204a411eb81e8b34940036680",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "00:06:91:ef:86:1f"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "0d8e2ac304a411eb8e90fded4477db14",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "00:0d:b9:47:19:9d"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "0d8e9bc304a411ebbc8e23444d40bf0a",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "00:0d:b9:47:19:9e"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "0d8f4fc604a411eb8c420bcbd755885b",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "d8:37:be:fd:f0:b8"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "0d8fb68b04a411eb80a0d9af9481275f",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "aa:59:16:da:2e:4e"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "0d90c84f04a411ebbbbbef4c07ef989f",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "02:42:c0:a8:01:48"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "0d91e84b04a411eb843d2dd7a09b139b",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "02:42:c0:a8:01:52"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "0d9291ea04a411eba6c707df516cc90f",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "02:42:c0:a8:01:55"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "0d930e0a04a411eb98928f6748361a50",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "02:42:c0:a8:01:57"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "0d93a38f04a411eb9d48cbc62bb23389",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "fc:2a:9c:84:6c:5e"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "0d9556ba04a411ebb82d114d5b55bd48",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "dc:a6:32:b6:16:91"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "0d9631f004a411ebb53441e0669a1fb0",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "02:42:c0:a8:01:4f"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "0d96854e04a411eb90e70b9e36f5deec",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "90:dd:5d:93:10:62"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "0d96ee8304a411eb9b3fb35c07be404a",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "c4:6e:1f:3a:ce:3a"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "0d97517704a411eba059f14e14c2bfe4",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "02:65:84:2a:08:29"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "0d97e84104a411ebb98a75b460297285",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "00:18:dd:41:07:06"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "0d98511504a411ebb00a3d48dbbb8e44",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "fc:2a:9c:91:5a:6f"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "0d9971c004a411eba76e0da96d0e2392",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "02:42:c0:a8:01:4a"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "0d9aa7ad04a411ebbafc33d5b2c5a340",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "00:0d:b9:47:19:9c"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "0d9b0f5604a411ebbef185c6bdd0c920",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "b8:27:eb:46:c3:0b"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "0d9b85ea04a411eb9559918d52ede479",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "02:42:c0:a8:01:42"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "0d9bf0fe04a411ebb49f79078ea54f74",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "02:42:c0:a8:01:41"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "0d9d983804a411eba8c121d930fa7b60",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "00:05:cd:c5:06:1a"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "0d9e4d9e04a411ebbb83416a94ed3e03",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "94:c6:91:ae:4e:17"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "0d9f149f04a411eba9eb2b5b88c2794f",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "02:42:c0:a8:01:4d"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "0d9fb04604a411eb98f8e916ddc63296",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "18:80:f5:3c:fb:ef"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "0da09ce404a411eb96b927f73c4a38c8",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "02:42:c0:a8:01:49"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "0da105b904a411eb9f0079a9dbfc5ac7",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "68:8a:b5:01:10:25"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "0da18d9a04a411eba3adc78bc62a1b39",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "02:42:c0:a8:01:51"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "0da1f1cf04a411eb844bd932ece021ff",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "00:11:32:6e:21:9e"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "0da248da04a411eb82875580d4863e76",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "02:42:c0:a8:01:4b"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "0da2b2b504a411ebb951d99a4171b24f",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "dc:a6:32:44:2b:d8"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "0da38ca504a411eb9108f34efa423167",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "02:42:c0:a8:01:44"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "0da4547704a411eb9bc875ce4368833f",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "00:03:fa:00:00:01"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "0da53b7e04a411eb8f137764de30713f",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "fc:01:7c:e2:de:d3"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "0da5be1604a411eb8df6e3d064f71212",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "02:42:c0:a8:01:56"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "0da65e9904a411ebaeac2923dc7e9d12",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "00:11:32:6e:21:9d"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "0da72fc004a411eb87a8a74cd8b52998",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "b4:fb:e4:2d:1d:1e"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": "Ubiquiti Networks",
-                "model": "U7HD",
-                "name": "cjwifi-sala",
-                "sw_version": "5.39.3.12325",
-                "entry_type": null,
-                "id": "0da78f1004a411ebb65639bb97ea9913",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "fc:ec:da:a3:f4:13"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": "Ubiquiti Networks",
-                "model": "U7LT",
-                "name": "cjwifi-garage",
-                "sw_version": "5.39.3.12325",
-                "entry_type": null,
-                "id": "0da8458904a411eba2bab369b872c6ac",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "e0:63:da:2d:0d:9e"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": "Ubiquiti Networks",
-                "model": "USL24P",
-                "name": "jpswitch-core",
-                "sw_version": "5.39.3.12325",
-                "entry_type": null,
-                "id": "0da8ae5404a411eba74e23507a52f022",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "b4:fb:e4:b4:ff:08"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": "Ubiquiti Networks",
-                "model": "US8P150",
-                "name": "jpswitch-apart",
-                "sw_version": "5.39.3.12325",
-                "entry_type": null,
-                "id": "0da957a604a411ebac08375efa48ae4d",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "78:8a:20:48:c0:5f"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": "Ubiquiti Networks",
-                "model": "U7PG2",
-                "name": "cjwifi-suite",
-                "sw_version": "5.39.3.12325",
-                "entry_type": null,
-                "id": "0da9b6d804a411ebb856a5286a78086f",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "70:ee:50:1c:7d:74"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "341c2ec704a811ebae7301e1896a7bfe",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "02:42:c0:a8:01:4c"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "9656f8ae04b411eb8e6e6ba408b0e015",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "02:42:c0:a8:01:45"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "b0f237f004bd11eb973f53eb6e3a644a",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "48:f0:7b:40:a9:07"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "16fc80eb04ca11eb86c5bb022d94af7d",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "02:42:c0:a8:01:43"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "4a461b0204cc11eba4218b6453ef93d3",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "00:24:e4:75:16:b8"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "17aaae0804f311ebba501f2e12656672",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "98:0c:82:ff:31:ce"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "69faa07c04f911ebb627c5339c925fb1",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "2c:2b:f9:b4:d5:66"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "66457647054d11eb8fc653a31ee32c38",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "00:24:e4:4c:cc:4c"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "1b2a7936056b11eb9363635e06522897",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "02:42:c0:a8:01:50"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "0172516f058211eb8d3893d4e321fdc1",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "00:13:43:45:46:a6"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "cae00ec705a211eba977e14448280214",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "70:81:eb:5d:31:9d"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "ced01f89062d11eb9c24c92f3b0a1fcb",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
                     "9525350a063111eb9b68fb73a0deab07"
                 ],
                 "connections": [],
@@ -2281,7 +659,7 @@
                 "manufacturer": "Sonarr",
                 "model": null,
                 "name": "Activity Sensor",
-                "sw_version": "3.0.4.986",
+                "sw_version": "3.0.4.1000",
                 "entry_type": "service",
                 "id": "95abde2f063111eb8b54594d4948aea9",
                 "via_device_id": null,
@@ -2290,49 +668,7 @@
             },
             {
                 "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "34:ab:37:ee:b7:2b"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "aaebe5bc064011eba74a63944c7acf65",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "02:42:c0:a8:01:54"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "22c1a971068711eb9c0d9d941d7b37e9",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9",
+                    "64fbf7a601970a45960f44315a93b427",
                     "b9f5e87d08d911eba520d3f5ce716882"
                 ],
                 "connections": [
@@ -2356,69 +692,6 @@
                 "via_device_id": null,
                 "area_id": "f48ad93122c94fa08e805324a06409c4",
                 "name_by_user": "Shelly Living Room Ceiling Lamp"
-            },
-            {
-                "config_entries": [
-                    "1b975e4f08e111eb925a47af49778761"
-                ],
-                "connections": [],
-                "identifiers": [
-                    [
-                        "heos",
-                        -1052736224
-                    ]
-                ],
-                "manufacturer": "HEOS",
-                "model": "Denon AVR-X2500H",
-                "name": "Denon AVR-X2500H",
-                "sw_version": "1.562.281",
-                "entry_type": null,
-                "id": "1ba2edac08e111ebbd760dbaa1b9d197",
-                "via_device_id": null,
-                "area_id": "f48ad93122c94fa08e805324a06409c4",
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "02:42:c0:a8:01:47"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "398ddfc30a4a11eb880ceb5c534e42be",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "d8:fc:93:ca:5d:e6"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "bc85e9fc0ae511eba7e7b9bb5ac72eeb",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
             },
             {
                 "config_entries": [
@@ -2527,50 +800,8 @@
             },
             {
                 "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "5a:75:97:42:fe:9d"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "8146b35c0b1111ebb1e56d31765e2cac",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "74:83:c2:8f:ef:a0"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "d9ff19ed0b1b11eb9a7ab5337e617167",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
                     "08f337f80b4111eb8d380d4385ea551d",
-                    "0c9e946304a411eba4c727a5c79473f9"
+                    "64fbf7a601970a45960f44315a93b427"
                 ],
                 "connections": [
                     [
@@ -2592,39 +823,11 @@
                 "id": "52203c6f0b1f11eb88ded56d1e0fd899",
                 "via_device_id": null,
                 "area_id": "70d188c1f98f11eaab987137f8f5befd",
-                "name_by_user": "Shelly Garage Rack Fan"
+                "name_by_user": "Shelly Datacenter Rack Fan"
             },
             {
                 "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9",
-                    "9768e93a0d6a11ebadfd85f1906282e7",
-                    "f74299ad0e4111eb90fa61aa4559fff6"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "e0:98:06:95:54:30"
-                    ]
-                ],
-                "identifiers": [
-                    [
-                        "shelly",
-                        "E09806955430"
-                    ]
-                ],
-                "manufacturer": "Shelly",
-                "model": "Shelly H&T",
-                "name": "shellyht-955430",
-                "sw_version": "20200812-091311/v1.8.0@8acf41b0",
-                "entry_type": null,
-                "id": "81cf6ea80b1f11ebae368d737ed103f2",
-                "via_device_id": null,
-                "area_id": "d77f3aac80a04181b974e5dba9194e4a",
-                "name_by_user": "Shelly HT Rack"
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9",
+                    "64fbf7a601970a45960f44315a93b427",
                     "f90f46900b4011eb9352edc62ba43be1"
                 ],
                 "connections": [
@@ -2647,151 +850,12 @@
                 "id": "9ca1c9470b1f11ebbeba5b553ff75ab5",
                 "via_device_id": null,
                 "area_id": "70d188c1f98f11eaab987137f8f5befd",
-                "name_by_user": "Shelly Garage Rack"
+                "name_by_user": "Shelly Datacenter Rack"
             },
             {
                 "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "02:42:c0:a8:01:58"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "bcbd92e90cd511eba5908b55a1eca2e0",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "e4:2d:1d:20:34:41"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "82eba59c0cf811ebb82be98197a08f6f",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "48:e1:e9:00:35:9f"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "3fa1e8b90d6711eb9b6c91312e062730",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9",
-                    "9768e93a0d6a11ebadfd85f1906282e7"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "e0:98:06:9d:da:6c"
-                    ]
-                ],
-                "identifiers": [
-                    [
-                        "shelly",
-                        "E098069DDA6C"
-                    ]
-                ],
-                "manufacturer": "Shelly",
-                "model": "Shelly Plug S",
-                "name": "shellyplug-s-9DDA6C",
-                "sw_version": "20200827-070306/v1.8.3@4a8bc427",
-                "entry_type": null,
-                "id": "5ac2ab180d6811ebadd985a6653ee6a4",
-                "via_device_id": null,
-                "area_id": "f48ad93122c94fa08e805324a06409c4",
-                "name_by_user": "Shelly Mobile Plug 1"
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9",
-                    "b235bec00da111eb8fa42f7af133cdaa"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "e0:98:06:9a:40:3a"
-                    ]
-                ],
-                "identifiers": [
-                    [
-                        "shelly",
-                        "E098069A403A"
-                    ]
-                ],
-                "manufacturer": "Shelly",
-                "model": "Shelly Plug S",
-                "name": "shellyplug-s-9A403A",
-                "sw_version": "20200827-070306/v1.8.3@4a8bc427",
-                "entry_type": null,
-                "id": "58b805050d6b11ebb0f6098abda38308",
-                "via_device_id": null,
-                "area_id": "f48ad93122c94fa08e805324a06409c4",
-                "name_by_user": "Shelly Mobile Plug 2"
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "9e:af:e4:dd:f6:f7"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "07f565370ee211eb8bfc45d61ee39551",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9",
                     "948bdd840f1111eb917b57255b9dada5",
-                    "f74299ad0e4111eb90fa61aa4559fff6"
+                    "64fbf7a601970a45960f44315a93b427"
                 ],
                 "connections": [
                     [
@@ -2817,9 +881,7 @@
             },
             {
                 "config_entries": [
-                    "e7fb3f7d106b11eb8476cbe588a0cbcd",
-                    "0c9e946304a411eba4c727a5c79473f9",
-                    "b235bec00da111eb8fa42f7af133cdaa"
+                    "e7fb3f7d106b11eb8476cbe588a0cbcd"
                 ],
                 "connections": [
                     [
@@ -2845,111 +907,6 @@
             },
             {
                 "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "04:72:95:3f:53:ac"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "8e178f510fdd11eba88b5512f70c31c2",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "f8:95:ea:2b:71:2b"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "abeca39a0fdd11eb92872d9bcb2cf21e",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "9c:64:8b:2e:56:8e"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "bacbe8bf0fdd11eb85e957a6a27f7a25",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "fa:fd:2f:82:9a:03"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "c7f0ead80fe111eb9b51fd7f6dc6ec20",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "02:42:c0:a8:01:59"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "bc332882115311ebb8110d76dacd1192",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
                     "1d6abfd9119611eb83ed43aa99936fbd"
                 ],
                 "connections": [],
@@ -2966,8 +923,8 @@
                 "entry_type": null,
                 "id": "38aa5a69119611eb9efa914d2e51fa72",
                 "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
+                "area_id": "f48ad93122c94fa08e805324a06409c4",
+                "name_by_user": "MQTT Shelly Living Room Desk Lamp"
             },
             {
                 "config_entries": [
@@ -2987,8 +944,8 @@
                 "entry_type": null,
                 "id": "38abf06a119611eb80ab8934313b648e",
                 "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
+                "area_id": "f48ad93122c94fa08e805324a06409c4",
+                "name_by_user": "MQTT Shelly Living Room TV Switch"
             },
             {
                 "config_entries": [
@@ -3008,8 +965,8 @@
                 "entry_type": null,
                 "id": "38adcbee119611eb9857cfa0fbbe2640",
                 "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
+                "area_id": "ad942dcff98f11ea8ea76f651e593c25",
+                "name_by_user": "MQTT Shelly Hall Switch"
             },
             {
                 "config_entries": [
@@ -3029,8 +986,8 @@
                 "entry_type": null,
                 "id": "38af0e12119611eb87d61b56f8b54d30",
                 "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
+                "area_id": "b4723ec854054fbbb8096ffaa3ec0ab5",
+                "name_by_user": "MQTT Shelly Suite Small Blind"
             },
             {
                 "config_entries": [
@@ -3050,8 +1007,8 @@
                 "entry_type": null,
                 "id": "38b1ab8e119611ebbeea7d8b8ca326fb",
                 "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
+                "area_id": "f48ad93122c94fa08e805324a06409c4",
+                "name_by_user": "MQTT Shelly Living Room Big Blind"
             },
             {
                 "config_entries": [
@@ -3071,8 +1028,8 @@
                 "entry_type": null,
                 "id": "38b30c63119611eb9e6d1d5e60eaab89",
                 "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
+                "area_id": "70d188c1f98f11eaab987137f8f5befd",
+                "name_by_user": "MQTT Shelly Garage Tiguan"
             },
             {
                 "config_entries": [
@@ -3092,8 +1049,8 @@
                 "entry_type": null,
                 "id": "38b3c437119611eb8cbd2da41e9169c7",
                 "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
+                "area_id": "b4723ec854054fbbb8096ffaa3ec0ab5",
+                "name_by_user": "MQTT Shelly Suite Big Blind"
             },
             {
                 "config_entries": [
@@ -3113,8 +1070,8 @@
                 "entry_type": null,
                 "id": "38b6d439119611ebac7b2702ffab1bb6",
                 "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
+                "area_id": "6927706f63fc42c581fb84b49a9e3b7a",
+                "name_by_user": "MQTT Shelly Kitchen Blind"
             },
             {
                 "config_entries": [
@@ -3134,8 +1091,8 @@
                 "entry_type": null,
                 "id": "38ba4d8a119611eb8c4601960f63e2b3",
                 "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
+                "area_id": "f48ad93122c94fa08e805324a06409c4",
+                "name_by_user": "MQTT Shelly Living Room Small Blind"
             },
             {
                 "config_entries": [
@@ -3155,8 +1112,8 @@
                 "entry_type": null,
                 "id": "38bf07e2119611eb82efc9c6fff5ed95",
                 "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
+                "area_id": "70d188c1f98f11eaab987137f8f5befd",
+                "name_by_user": "MQTT Shelly Garage Fox"
             },
             {
                 "config_entries": [
@@ -3176,8 +1133,8 @@
                 "entry_type": null,
                 "id": "38c28ae6119611eb95d4c9a52c0337ec",
                 "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
+                "area_id": "e670ae8d17794634ae9fb246e3d4b460",
+                "name_by_user": "MQTT Shelly Carol Bedroom Blind"
             },
             {
                 "config_entries": [
@@ -3197,8 +1154,8 @@
                 "entry_type": null,
                 "id": "38c57764119611eb80907b5ca2b104eb",
                 "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
+                "area_id": "f48ad93122c94fa08e805324a06409c4",
+                "name_by_user": "MQTT Shelly Living Room Ceiling Lamp"
             },
             {
                 "config_entries": [
@@ -3218,8 +1175,8 @@
                 "entry_type": null,
                 "id": "38c6a7b3119611eba2a8d919998ec6ba",
                 "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
+                "area_id": "70d188c1f98f11eaab987137f8f5befd",
+                "name_by_user": "MQTT Shelly Garage Rack Fan"
             },
             {
                 "config_entries": [
@@ -3239,8 +1196,8 @@
                 "entry_type": null,
                 "id": "38c8f9e9119611eb853c97f3323025d1",
                 "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
+                "area_id": "70d188c1f98f11eaab987137f8f5befd",
+                "name_by_user": "MQTT Shelly Garage Rack"
             },
             {
                 "config_entries": [
@@ -3260,8 +1217,8 @@
                 "entry_type": null,
                 "id": "5bdcb51c11a611eb9a60a1a253fb57f0",
                 "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
+                "area_id": "70d188c1f98f11eaab987137f8f5befd",
+                "name_by_user": "MQTT Shelly Garage Tiguan Sensor"
             },
             {
                 "config_entries": [
@@ -3281,29 +1238,8 @@
                 "entry_type": null,
                 "id": "d040876f11ad11eb974fadc66156b8bf",
                 "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
-            },
-            {
-                "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "90:dd:5d:8c:a7:14"
-                    ]
-                ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
-                "entry_type": null,
-                "id": "163f95a7121111eb8505b98bff22e9a7",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
+                "area_id": "70d188c1f98f11eaab987137f8f5befd",
+                "name_by_user": "MQTT Shelly Garage Fox Sensor"
             },
             {
                 "config_entries": [
@@ -3323,8 +1259,8 @@
                 "entry_type": null,
                 "id": "b9a2dbc1122c11eb89f5079c9ec54263",
                 "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null
+                "area_id": "70d188c1f98f11eaab987137f8f5befd",
+                "name_by_user": "MQTT Shelly Garage Rack HT"
             },
             {
                 "config_entries": [
@@ -3370,49 +1306,954 @@
             },
             {
                 "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
+                    "770c8535baa6fa92f308fe478c1033a2"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "xbox",
+                        "xbox_live"
+                    ]
+                ],
+                "manufacturer": "Microsoft",
+                "model": "Xbox Live",
+                "name": "Xbox Live",
+                "sw_version": null,
+                "entry_type": "service",
+                "id": "3e39996959148461e9214fe87c94c52b",
+                "via_device_id": null,
+                "area_id": "f48ad93122c94fa08e805324a06409c4",
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "1d6abfd9119611eb83ed43aa99936fbd"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "e098069a403a"
+                    ]
+                ],
+                "manufacturer": "Allterco Robotics",
+                "model": "Shelly Plug S",
+                "name": "Shelly Plug S 9A403A",
+                "sw_version": "20200827-070306/v1.8.3@4a8bc427",
+                "entry_type": null,
+                "id": "8d59223d4f6e416ffdbaa65601f3aab2",
+                "via_device_id": null,
+                "area_id": "e670ae8d17794634ae9fb246e3d4b460",
+                "name_by_user": "MQTT Shelly Carol Plug"
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427",
+                    "fe9dc0500c70b915e6fd3d705b9a4b7f"
                 ],
                 "connections": [
                     [
                         "mac",
-                        "ca:4d:ea:5d:35:4a"
+                        "74:83:c2:8f:ef:a0"
                     ]
                 ],
                 "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
+                "manufacturer": "Ubiquiti",
+                "model": "camera",
+                "name": "Garage",
+                "sw_version": "4.30.8",
+                "entry_type": null,
+                "id": "7ddc826e9fec7c7e2c843803b0fa3a0a",
+                "via_device_id": "68ef44f085c76ffbf86038efdd9f9cab",
+                "area_id": "70d188c1f98f11eaab987137f8f5befd",
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "3a2bb55f29a35cae38764337db7bb075"
+                ],
+                "connections": [
+                    [
+                        "upnp",
+                        "uuid:29c1992e-ac96-4c36-a193-8c390747ae47"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "upnp",
+                        "uuid:29c1992e-ac96-4c36-a193-8c390747ae47"
+                    ]
+                ],
+                "manufacturer": "Ubiquiti Networks",
+                "model": "UDM-Pro",
+                "name": "UniFi Dream Machine",
                 "sw_version": null,
                 "entry_type": null,
-                "id": "c9fd2591123711ebbf7857d5fc199311",
+                "id": "dc9e5f85c512f519d70f9b5d0b0c43a3",
                 "via_device_id": null,
                 "area_id": null,
                 "name_by_user": null
             },
             {
                 "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
+                    "a6030ad5de8839683c3cd3f53834316f"
                 ],
-                "connections": [
+                "connections": [],
+                "identifiers": [
                     [
-                        "mac",
-                        "0c:7a:15:70:63:22"
+                        "synology_dsm",
+                        "1741PJN981600"
                     ]
                 ],
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
-                "sw_version": null,
+                "manufacturer": "Synology",
+                "model": "DS1517+",
+                "name": "Synology NAS",
+                "sw_version": "DSM 6.2.3-25426 Update 2",
                 "entry_type": null,
-                "id": "7a3d17b512e911eb8a758d62acb837eb",
+                "id": "331bf6c54ee8d13cf475610b16d95488",
                 "via_device_id": null,
                 "area_id": null,
                 "name_by_user": null
             },
             {
                 "config_entries": [
-                    "0c9e946304a411eba4c727a5c79473f9"
+                    "a6030ad5de8839683c3cd3f53834316f"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "synology_dsm",
+                        "1741PJN981600",
+                        "sda"
+                    ]
+                ],
+                "manufacturer": "Seagate",
+                "model": "ST12000VN0007-2GS116",
+                "name": "Synology NAS (Drive 1 - SATA)",
+                "sw_version": "SC60",
+                "entry_type": null,
+                "id": "69767c82d30c19fdbd2e8aa142eaf691",
+                "via_device_id": "331bf6c54ee8d13cf475610b16d95488",
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "a6030ad5de8839683c3cd3f53834316f"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "synology_dsm",
+                        "1741PJN981600",
+                        "sdb"
+                    ]
+                ],
+                "manufacturer": "Seagate",
+                "model": "ST12000VN0007-2GS116",
+                "name": "Synology NAS (Drive 2 - SATA)",
+                "sw_version": "SC60",
+                "entry_type": null,
+                "id": "27279b8370894eeb4e8afc381f8b48af",
+                "via_device_id": "331bf6c54ee8d13cf475610b16d95488",
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "a6030ad5de8839683c3cd3f53834316f"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "synology_dsm",
+                        "1741PJN981600",
+                        "sdc"
+                    ]
+                ],
+                "manufacturer": "Seagate",
+                "model": "ST12000VN0008-2JH101",
+                "name": "Synology NAS (Drive 3 - SATA)",
+                "sw_version": "SC60",
+                "entry_type": null,
+                "id": "ece5d10d768fb129759c0ac708009ea4",
+                "via_device_id": "331bf6c54ee8d13cf475610b16d95488",
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "a6030ad5de8839683c3cd3f53834316f"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "synology_dsm",
+                        "1741PJN981600",
+                        "sdd"
+                    ]
+                ],
+                "manufacturer": "Seagate",
+                "model": "ST12000VN0008-2JH101",
+                "name": "Synology NAS (Drive 4 - SATA)",
+                "sw_version": "SC60",
+                "entry_type": null,
+                "id": "cb9e7a5f1d51e00aa8434fa51b2e1fe3",
+                "via_device_id": "331bf6c54ee8d13cf475610b16d95488",
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "a6030ad5de8839683c3cd3f53834316f"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "synology_dsm",
+                        "1741PJN981600",
+                        "sde"
+                    ]
+                ],
+                "manufacturer": "WDC     ",
+                "model": "WD60EFRX-68L0BN1",
+                "name": "Synology NAS (Drive 5 - SATA)",
+                "sw_version": "82.00A82",
+                "entry_type": null,
+                "id": "09ce4f9b1038d0673160ac87a60d1236",
+                "via_device_id": "331bf6c54ee8d13cf475610b16d95488",
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "a6030ad5de8839683c3cd3f53834316f"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "synology_dsm",
+                        "1741PJN981600",
+                        "nvc1"
+                    ]
+                ],
+                "manufacturer": "WDC     ",
+                "model": "WDC  WDS500G2B0B-00YS70",
+                "name": "Synology NAS (Cache device 1-1 - SATA)",
+                "sw_version": "411040WD",
+                "entry_type": null,
+                "id": "45335e77fd901dabc88eeb1fb905de7e",
+                "via_device_id": "331bf6c54ee8d13cf475610b16d95488",
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "a6030ad5de8839683c3cd3f53834316f"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "synology_dsm",
+                        "1741PJN981600",
+                        "nvc2"
+                    ]
+                ],
+                "manufacturer": "WDC     ",
+                "model": "WDC  WDS500G2B0B-00YS70",
+                "name": "Synology NAS (Cache device 1-2 - SATA)",
+                "sw_version": "411040WD",
+                "entry_type": null,
+                "id": "4860a5cc0d8954d4959c90bacab33fb4",
+                "via_device_id": "331bf6c54ee8d13cf475610b16d95488",
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "a6030ad5de8839683c3cd3f53834316f"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "synology_dsm",
+                        "1741PJN981600",
+                        "volume_1"
+                    ]
+                ],
+                "manufacturer": "Synology",
+                "model": "DS1517+",
+                "name": "Synology NAS (Volume 1 - SHR with 1 disk protect)",
+                "sw_version": "DSM 6.2.3-25426 Update 2",
+                "entry_type": null,
+                "id": "7a08dd2fe5c8f5ea783d5372429c2125",
+                "via_device_id": "331bf6c54ee8d13cf475610b16d95488",
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427",
+                    "fe9dc0500c70b915e6fd3d705b9a4b7f"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "74:ac:b9:35:16:b1"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "unifiprotect",
+                        "74ACB93516B1"
+                    ]
+                ],
+                "manufacturer": "Ubiquiti Networks",
+                "model": "UDMPRO",
+                "name": "JPFW",
+                "sw_version": "1.8.3-2.2939",
+                "entry_type": null,
+                "id": "68ef44f085c76ffbf86038efdd9f9cab",
+                "via_device_id": null,
+                "area_id": "d77f3aac80a04181b974e5dba9194e4a",
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "cf6fb719b7f0c2dff886de40e8646b6d",
+                    "64fbf7a601970a45960f44315a93b427"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "68:c6:3a:f9:9f:dd"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "shelly",
+                        "68C63AF99FDD"
+                    ]
+                ],
+                "manufacturer": "Shelly",
+                "model": "Shelly 2.5",
+                "name": "shellyswitch25-68C63AF99FDD",
+                "sw_version": "20200827-065456/v1.8.3@4a8bc427",
+                "entry_type": null,
+                "id": "b7d1c40973d666f20daf1178b968fcd6",
+                "via_device_id": null,
+                "area_id": "6927706f63fc42c581fb84b49a9e3b7a",
+                "name_by_user": "Shelly Kitchen Blind"
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427",
+                    "842983a8afdc66539dded0da2c0cdfbd"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "e0:98:06:9a:40:3a"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "shelly",
+                        "E098069A403A"
+                    ]
+                ],
+                "manufacturer": "Shelly",
+                "model": "Shelly Plug S",
+                "name": "shellyplug-s-9A403A",
+                "sw_version": "20200827-070306/v1.8.3@4a8bc427",
+                "entry_type": null,
+                "id": "a640b5a120c4965fe43bb1df1ad38e1c",
+                "via_device_id": null,
+                "area_id": "e670ae8d17794634ae9fb246e3d4b460",
+                "name_by_user": "Shelly Carol Room Lights"
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427",
+                    "0dd5b59883d2805ae40b53a4297a49bf"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "98:f4:ab:f3:24:3a"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "shelly",
+                        "98F4ABF3243A"
+                    ]
+                ],
+                "manufacturer": "Shelly",
+                "model": "Shelly 1",
+                "name": "shelly1-98F4ABF3243A",
+                "sw_version": "20200827-065344/v1.8.3@4a8bc427",
+                "entry_type": null,
+                "id": "0eabe8199f307239bfa56fa688a7edc6",
+                "via_device_id": null,
+                "area_id": "70d188c1f98f11eaab987137f8f5befd",
+                "name_by_user": "Shelly Garage Tiguan"
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427",
+                    "2112bcc9b662697bd2cce6539874f89f"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "d8:f1:5b:13:18:6f"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "shelly",
+                        "D8F15B13186F"
+                    ]
+                ],
+                "manufacturer": "Shelly",
+                "model": "Shelly 2.5",
+                "name": "shellyswitch25-D8F15B13186F",
+                "sw_version": "20200827-065456/v1.8.3@4a8bc427",
+                "entry_type": null,
+                "id": "2b26254b1c08eaacff487952a7e693f9",
+                "via_device_id": null,
+                "area_id": "f48ad93122c94fa08e805324a06409c4",
+                "name_by_user": "Shelly Living Room Small Blind"
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "34:41:5d:81:3c:ab"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "IntelCor",
+                "model": null,
+                "name": "PT-LIS-LPT0158",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "9c3e57fe781cb3dcdb22053281f99ab4",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "e0:89:7e:65:23:c3"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "Apple",
+                "model": null,
+                "name": "Suite-Bedroom",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "c300b06152cad8ade6511be20e4abc02",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "02:42:c0:a8:01:46"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "",
+                "model": null,
+                "name": "lidarr",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "2a0f450d2c98661b824ca3ae0c87b519",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "3c:52:82:ff:d4:2b"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "HewlettP",
+                "model": null,
+                "name": "HP Printer",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "66ae92832ffe91666726366242cbb3b3",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "dc:a6:32:45:2f:9b"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "Raspberr",
+                "model": null,
+                "name": "pihole02",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "94351fbc838ef1955717085e8b860664",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "f2:fd:e5:ec:7b:ba"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "",
+                "model": null,
+                "name": "JP-iPad",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "fa204993701cdac218277362c4b9cf0a",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "02:42:c0:a8:01:4e"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "",
+                "model": null,
+                "name": "hydra2",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "f88a888a936ce2bd47b4ab9019b6e78e",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "9c:28:f7:63:1c:70"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "",
+                "model": null,
+                "name": "Redmi8-Redmi",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "2d2919687162b7b32ed03a4ea9783718",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "02:42:c0:a8:01:53"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "",
+                "model": null,
+                "name": "unifi-poller",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "5ea52b3f6b5807b6477dcaef5c985843",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "00:06:91:ef:86:1f"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "PtInovac",
+                "model": null,
+                "name": "",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "e49723145e9c07aefecc685ac7615b80",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "d8:37:be:fd:f0:b8"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "Shenzhen",
+                "model": null,
+                "name": "SamKnows",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "d76bd598fdedc95863da9e57a2858ae6",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "aa:59:16:da:2e:4e"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "",
+                "model": null,
+                "name": "iPhonedCRibeiro",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "da62cc097e2075fe4824bdcde1663fd4",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "02:42:c0:a8:01:48"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "",
+                "model": null,
+                "name": "observium",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "294f35b60b3a028b7a7af28b0e14e06b",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "02:42:c0:a8:01:52"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "",
+                "model": null,
+                "name": "radarr",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "e4088927f115e84e027ecf47bfb96fbe",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "02:42:c0:a8:01:55"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "",
+                "model": null,
+                "name": "pihole01-poller",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "a0130c7d3f931d34b92da9e9a88f6503",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "02:42:c0:a8:01:57"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "",
+                "model": null,
+                "name": "qbittorrent",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "1a05996f82d17e5a9a425f04b12f63e3",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "dc:a6:32:b6:16:91"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "Raspberr",
+                "model": null,
+                "name": "hass",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "f51e678e5993def451ff069825ddb8f0",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "02:42:c0:a8:01:4f"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "",
+                "model": null,
+                "name": "netatmo-poller",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "599a8ba20876e3fea7e220764a149dba",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "70:ee:50:1c:7d:74"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "Netatmo",
+                "model": null,
+                "name": "Netatmo-Personal-Weather-Station",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "42e928445118b4080cd85ed047becb82",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "90:dd:5d:93:10:62"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "Apple",
+                "model": null,
+                "name": "Living-Room",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "920c09f1b71b2070898a4a65e43bdf7a",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "c4:6e:1f:3a:ce:3a"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "Tp-LinkT",
+                "model": null,
+                "name": "RIPE Atlas",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "0e2b6826ebf9228f3f5ff3cac88df0cb",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "00:18:dd:41:07:06"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "Silicond",
+                "model": null,
+                "name": "HDHR-1410706E",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "4beffa60f17005e869694cbf4a1225ed",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "02:42:c0:a8:01:5a"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "",
+                "model": null,
+                "name": "",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "968f95845ca8a3f20b03f3a7a898143c",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "fc:2a:9c:91:5a:6f"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "Apple",
+                "model": null,
+                "name": "JP-iPhone",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "1b623f283635b872e35a4e26565fbca5",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "02:42:c0:a8:01:4a"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "",
+                "model": null,
+                "name": "",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "1929ae94aef57983a83a8f9d2e37b945",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427"
                 ],
                 "connections": [
                     [
@@ -3421,14 +2262,803 @@
                     ]
                 ],
                 "identifiers": [],
-                "manufacturer": null,
+                "manufacturer": "Raspberr",
                 "model": null,
-                "name": null,
+                "name": "BalenaSound",
                 "sw_version": null,
                 "entry_type": null,
-                "id": "e5abb98813c211eb84d15d9c7340bab0",
+                "id": "7e37720327fa65c6cbf3051bed49717c",
                 "via_device_id": null,
                 "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "b8:27:eb:46:c3:0b"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "Raspberr",
+                "model": null,
+                "name": "fr24",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "d9134a8c2a1f797d86484e0104261034",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "02:42:c0:a8:01:42"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "",
+                "model": null,
+                "name": "mosquitto",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "4fa48d1a7048ae047a1403acb0f7bdec",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427",
+                    "026fa048641f136eaedf5ff89eb89ce2"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "e0:98:06:95:54:30"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "shelly",
+                        "E09806955430"
+                    ]
+                ],
+                "manufacturer": "Shelly",
+                "model": "Shelly H&T",
+                "name": "shellyht-955430",
+                "sw_version": "20200812-091311/v1.8.0@8acf41b0",
+                "entry_type": null,
+                "id": "0cda9aa41cae0c2484dd808ace64eeaa",
+                "via_device_id": null,
+                "area_id": "d77f3aac80a04181b974e5dba9194e4a",
+                "name_by_user": "Shelly Garage Rack HT"
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "02:42:c0:a8:01:41"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "",
+                "model": null,
+                "name": "Jackett",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "328a95bb3a7c5c3c57ec9fbee72c3a02",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "00:05:cd:c5:06:1a"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "D&MHoldi",
+                "model": null,
+                "name": "Denon-AVR-X2500H",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "10e8248d6daf7391e54670a26d955f2b",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "ae:f1:dc:58:36:ec"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "",
+                "model": null,
+                "name": "",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "1cdd104a1697e9c41391fb1337a9ee2f",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "94:c6:91:ae:4e:17"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "Elitegro",
+                "model": null,
+                "name": "jpserver",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "db871ceab7cd9f67ecd3a18b3fdb212e",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "02:42:c0:a8:01:4d"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "",
+                "model": null,
+                "name": "sonarr",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "f46c82306afe1eec3c1c09439c88236f",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "18:80:f5:3c:fb:ef"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "Alcatel-",
+                "model": null,
+                "name": "",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "7dbd42cf56c3ca00eb6e5dc0a61116e1",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "68:8a:b5:01:10:25"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "EdpServi",
+                "model": null,
+                "name": "",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "0959bf7db6cfee8a62d8836ecaac0b8f",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "d8:fc:93:ca:5d:e6"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "IntelCor",
+                "model": null,
+                "name": "jplinux",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "08fe291106c4e9067d95fcfa9571015b",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "02:42:c0:a8:01:51"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "",
+                "model": null,
+                "name": "grafana",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "4d663ef55a4de85891ad526e65b366ac",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "00:11:32:6e:21:9e"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "Synology",
+                "model": null,
+                "name": "JPNAS",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "51b4171e4d001c8e398fa9ccb29482e9",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "02:42:c0:a8:01:4b"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "",
+                "model": null,
+                "name": "swag",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "1e785d48827b9fec32e25a4cf60b795a",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "dc:a6:32:44:2b:d8"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "Raspberr",
+                "model": null,
+                "name": "pihole01",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "29c3a094eb88aab9628c8941f28e157e",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "02:42:c0:a8:01:44"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "",
+                "model": null,
+                "name": "crashplan",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "f0211854605ec4ba52e9dbe6ac3ca43f",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "0a:1a:0a:b9:1c:c3"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "",
+                "model": null,
+                "name": "iPhonedeClaudia",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "0e545627f6dbd80d6a1fea73263a1bac",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "00:03:fa:00:00:01"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "TimetraN",
+                "model": null,
+                "name": "",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "dc07c6948e8e390cbb6beb57a47a4045",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "02:42:c0:a8:01:56"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "",
+                "model": null,
+                "name": "pihole02-poller",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "9744fd7b4e886a5e17a395d7302be49b",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "fc:01:7c:e2:de:d3"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "HonHaiPr",
+                "model": null,
+                "name": "JPPS4",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "f7ccd696003509510d6a44b736058746",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "2c:2b:f9:b4:d5:66"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "LgInnote",
+                "model": null,
+                "name": "LGwebOSTV",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "dfd4fb24ac3adcf46b5666c825a155b8",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "00:11:32:6e:21:9d"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "Synology",
+                "model": null,
+                "name": "JPNAS",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "ff1f7c95585e3f9286ca19bb2f1fe30c",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "b4:fb:e4:2d:1d:1e"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "Ubiquiti Networks",
+                "model": "U7HD",
+                "name": "cjwifi-livingroom",
+                "sw_version": "5.43.6.12437",
+                "entry_type": null,
+                "id": "85e23ad824957e513bc36b9d9184b8ea",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "fc:ec:da:a3:f4:13"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "Ubiquiti Networks",
+                "model": "U7LT",
+                "name": "cjwifi-garage",
+                "sw_version": "5.43.6.12437",
+                "entry_type": null,
+                "id": "0b8a51ae9539b514e0f20e56a3d0c33d",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "e0:63:da:2d:0d:9e"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "Ubiquiti Networks",
+                "model": "USL24P",
+                "name": "jpswitch-core",
+                "sw_version": "5.43.6.12437",
+                "entry_type": null,
+                "id": "539c34bc6fea7dbcedb4219599c3d5a5",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "b4:fb:e4:b4:ff:08"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "Ubiquiti Networks",
+                "model": "US8P150",
+                "name": "jpswitch-apartment",
+                "sw_version": "5.43.6.12437",
+                "entry_type": null,
+                "id": "94fafbeed80bcf80919806d39d5c4c0d",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "78:8a:20:48:c0:5f"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "Ubiquiti Networks",
+                "model": "U7PG2",
+                "name": "cjwifi-suite",
+                "sw_version": "5.43.6.12437",
+                "entry_type": null,
+                "id": "7b2cfe3daf8458289224ee63fbcdbc37",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "1d6abfd9119611eb83ed43aa99936fbd"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "e098069dda6c"
+                    ]
+                ],
+                "manufacturer": "Allterco Robotics",
+                "model": "Shelly Plug S",
+                "name": "Shelly Plug S 9DDA6C",
+                "sw_version": "20200827-070306/v1.8.3@4a8bc427",
+                "entry_type": null,
+                "id": "65730eee0b7f63e90a4a351caae361ee",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "a746f5b9b2bf0c465c7c414ef849d61a",
+                    "64fbf7a601970a45960f44315a93b427"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "e0:98:06:9d:da:6c"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "shelly",
+                        "E098069DDA6C"
+                    ]
+                ],
+                "manufacturer": "Shelly",
+                "model": "Shelly Plug S",
+                "name": "shellyplug-s-9DDA6C",
+                "sw_version": "20200827-070306/v1.8.3@4a8bc427",
+                "entry_type": null,
+                "id": "f477b9a91f23c06ac46b11d97f1b4abf",
+                "via_device_id": null,
+                "area_id": "f48ad93122c94fa08e805324a06409c4",
+                "name_by_user": "Shelly Mobile Plug 1"
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "00:24:e4:4c:cc:4c"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "Withings",
+                "model": null,
+                "name": "",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "13a74cc7f95aec661e71a0e941c7a367",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "02:42:c0:a8:01:4c"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "",
+                "model": null,
+                "name": "bazarr",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "8eb97859e9fdf0ef9ba7f60cfcee956a",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "02:42:c0:a8:01:45"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "",
+                "model": null,
+                "name": "",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "6b8ff2ab4a1baa08cae9a0277745262d",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "02:42:c0:a8:01:43"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "",
+                "model": null,
+                "name": "",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "9064b01abea256194bdd3636631f7cd8",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "00:13:43:45:46:a6"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "Matsushi",
+                "model": null,
+                "name": "thermomix-4546a6",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "e4ce8aca4bcf85be00586b62ab9b2978",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "00:24:e4:75:16:b8"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "Withings",
+                "model": null,
+                "name": "Netatmo-Personal-Weather-Station",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "93f406bb2b7edcbd8a54d653f656b28a",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "64fbf7a601970a45960f44315a93b427"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "98:0c:82:ff:31:ce"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "SamsungE",
+                "model": null,
+                "name": "Tv Suite",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "d1671236c0e4d5d3268ff3ea31c8695c",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "d30ea505bc656097fc2293d48a629a6c"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "heos",
+                        -1052736224
+                    ]
+                ],
+                "manufacturer": "HEOS",
+                "model": "Denon AVR-X2500H",
+                "name": "Denon AVR-X2500H",
+                "sw_version": "1.583.161",
+                "entry_type": null,
+                "id": "ea036cf84dcf6546447f41189e2cda20",
+                "via_device_id": null,
+                "area_id": "f48ad93122c94fa08e805324a06409c4",
                 "name_by_user": null
             }
         ],

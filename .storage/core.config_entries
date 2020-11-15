@@ -9,7 +9,7 @@
                 "domain": "ipp",
                 "title": "Ignored",
                 "data": {
-                    "host": "192.168.2.100",
+                    "host": "192.168.2.152",
                     "name": "HP TANGO [FFD42B]"
                 },
                 "options": {},
@@ -119,35 +119,6 @@
                 "unique_id": "da937a5191307d42b733b39d5859ce17ea89c236"
             },
             {
-                "entry_id": "b00a2910b6c44fbf8706a9bc8ca4c36b",
-                "version": 1,
-                "domain": "synology_dsm",
-                "title": "JPNAS",
-                "data": {
-                    "device_token": "tOSpG0K6xS9TFdeJ7ijU6FjaYZDjmSzbzee86JHUsQyO8rQQErxoaHDWjNTjfIRCybIZG490ExV2aOHil7eI3z1G91gnGw60tb6xaNUOB6ThSQdnFEAgAjTfetvT4Ce",
-                    "host": "jpnas.internal.patriarca.pt",
-                    "mac": [
-                        "00-11-32-6E-21-9D",
-                        "00-11-32-6E-21-9F",
-                        "00-11-32-6E-21-A0"
-                    ],
-                    "password": "Underthebridge1#$",
-                    "port": "5001",
-                    "ssl": true,
-                    "username": "admin"
-                },
-                "options": {
-                    "scan_interval": 15,
-                    "timeout": 10
-                },
-                "system_options": {
-                    "disable_new_entities": false
-                },
-                "source": "user",
-                "connection_class": "cloud_poll",
-                "unique_id": "1741PJN981600"
-            },
-            {
                 "entry_id": "ad951a5b5a7e4b8c886f2d0eba57f39e",
                 "version": 1,
                 "domain": "homekit_controller",
@@ -183,7 +154,7 @@
                 "domain": "hpprinter",
                 "title": "HP Printer",
                 "data": {
-                    "host": "192.168.2.100",
+                    "host": "192.168.2.152",
                     "name": "HP Printer"
                 },
                 "options": {
@@ -242,31 +213,35 @@
                             "camera.garage"
                         ],
                         "exclude_domains": [],
+                        "exclude_entity_globs": [],
                         "include_domains": [],
                         "exclude_entities": [],
-                        "exclude_entity_globs": [],
                         "include_entity_globs": []
                     },
                     "auto_start": true,
                     "safe_mode": false,
                     "entity_config": {
                         "camera.garage": {
-                            "stream_source": "-rtsp_transport tcp -re -i rtsp://192.168.1.71:7447/5f821691e4b0524e74cb5c8c_0",
+                            "stream_source": "-rtsp_transport tcp -re -i rtsp://192.168.1.1:7447/zNuN4mXCvIGZ6gdp",
                             "video_codec": "copy",
                             "support_audio": true,
                             "max_width": 1920,
                             "max_height": 1080,
                             "max_fps": 30,
                             "linked_motion_sensor": "binary_sensor.garage_motion",
-                            "video_packet_size": 1316,
-                            "audio_map": "0:a:0",
-                            "video_map": "0:v:0",
-                            "audio_packet_size": 188,
-                            "stream_count": 3,
                             "low_battery_threshold": 20,
-                            "audio_codec": "libopus"
+                            "video_map": "0:v:0",
+                            "audio_map": "0:a:0",
+                            "audio_packet_size": 188,
+                            "audio_codec": "libopus",
+                            "stream_count": 3,
+                            "video_packet_size": 1316,
+                            "manufacturer": "Ubiquiti",
+                            "model": "camera",
+                            "sw_version": "4.30.8"
                         }
-                    }
+                    },
+                    "mode": "bridge"
                 },
                 "system_options": {
                     "disable_new_entities": false
@@ -287,13 +262,13 @@
                     },
                     "app_id": "io.robbie.HomeAssistant",
                     "app_name": "Home Assistant",
-                    "app_version": "2020.6.2 (1)",
+                    "app_version": "2020.7 (11)",
                     "device_id": "E71640A9-6233-44B6-8A9E-828954CAB899",
                     "device_name": "JP iPhone",
                     "manufacturer": "Apple",
                     "model": "iPhone11,6",
                     "os_name": "iOS",
-                    "os_version": "14.2",
+                    "os_version": "14.3",
                     "secret": "707c519ec0d728f0d53bf6db3c6d982c8e00e6a5161a7952ca5fc4c9bc088a73",
                     "supports_encryption": true,
                     "user_id": "d39ca003bd3e4e259a7b58f4fde05048",
@@ -335,13 +310,13 @@
                     },
                     "app_id": "io.robbie.HomeAssistant",
                     "app_name": "Home Assistant",
-                    "app_version": "2020.6.2 (1)",
+                    "app_version": "2020.7 (11)",
                     "device_id": "2748982A-1662-433C-9811-42A825C55B00",
                     "device_name": "JP iPad",
                     "manufacturer": "Apple",
                     "model": "iPad6,11",
                     "os_name": "iOS",
-                    "os_version": "14.2",
+                    "os_version": "14.3",
                     "secret": "9a86b2b1256037eac155b68f8641abb0a8bdfecafa29344417e46e6f6d838efc",
                     "supports_encryption": true,
                     "user_id": "d39ca003bd3e4e259a7b58f4fde05048",
@@ -361,7 +336,7 @@
                 "domain": "apple_tv",
                 "title": "Suite Room",
                 "data": {
-                    "address": "192.168.2.116",
+                    "address": "192.168.2.174",
                     "credentials": {
                         "2": "55f1ffe0cc8a9c65e25d060d06bcc634a6fbd263633e2bea62bcd99a36424395:0f33f647cfd8925917d4b6df947784317935fc94d532fff1e1f9371b434e3b9d:30326535653936612d386161652d343165352d393565392d626633353536313239333630:63306163363834632d623261382d343065302d626137632d336337306465643365303735"
                     },
@@ -382,7 +357,7 @@
                 "domain": "apple_tv",
                 "title": "Living Room",
                 "data": {
-                    "address": "192.168.1.102",
+                    "address": "192.168.1.189",
                     "credentials": {
                         "2": "4d5fbcce9462b6d7cdf547a0cf0b1e009718bd1c0e0e47a306135f6af0dc14ac:0032a8f5d3d806293595d6b88e2633f2f6ec3a5b884ad1739b185b6eec3fae0e:39306135346462382d633235652d343564332d626462312d613337303436636531333831:33393166363438642d623433662d343839632d393132382d353538613333316338636263",
                         "3": "E2C9E49EA5C110BC:04F8ECE0F0D5DAB9C1FC720F7DB77A2D8CBF40CDC38A1339A9F40C671F19C5CC"
@@ -402,9 +377,9 @@
                 "entry_id": "596a1116f98f11ea83f61b7459ca2597",
                 "version": 1,
                 "domain": "shelly",
-                "title": "192.168.3.117",
+                "title": "Shelly Living Room Desk Lamp",
                 "data": {
-                    "host": "192.168.3.117"
+                    "host": "192.168.3.188"
                 },
                 "options": {},
                 "system_options": {
@@ -418,9 +393,9 @@
                 "entry_id": "638d0e85f98f11ea904741744e31570a",
                 "version": 1,
                 "domain": "shelly",
-                "title": "192.168.3.123",
+                "title": "Shelly Garage Fox",
                 "data": {
-                    "host": "192.168.3.123"
+                    "host": "192.168.3.108"
                 },
                 "options": {},
                 "system_options": {
@@ -434,9 +409,9 @@
                 "entry_id": "858c0d0ff98f11eaacf5edf6a85b1483",
                 "version": 1,
                 "domain": "shelly",
-                "title": "192.168.3.114",
+                "title": "Shelly Living Room Big Blind",
                 "data": {
-                    "host": "192.168.3.114"
+                    "host": "192.168.3.121"
                 },
                 "options": {},
                 "system_options": {
@@ -450,9 +425,9 @@
                 "entry_id": "94d1ec35f98f11eab2b6015f89e8ef9a",
                 "version": 1,
                 "domain": "shelly",
-                "title": "192.168.3.115",
+                "title": "Shelly Living Room TV Switch",
                 "data": {
-                    "host": "192.168.3.115"
+                    "host": "192.168.3.153"
                 },
                 "options": {},
                 "system_options": {
@@ -466,9 +441,9 @@
                 "entry_id": "a902fb75f98f11ea899e614cd31486c0",
                 "version": 1,
                 "domain": "shelly",
-                "title": "192.168.3.119",
+                "title": "Shelly Hall Switch",
                 "data": {
-                    "host": "192.168.3.119"
+                    "host": "192.168.3.143"
                 },
                 "options": {},
                 "system_options": {
@@ -479,28 +454,12 @@
                 "unique_id": "68C63AFAE9FF"
             },
             {
-                "entry_id": "b1cb384af98f11eaa54a7de3f33f5ea0",
-                "version": 1,
-                "domain": "shelly",
-                "title": "192.168.3.122",
-                "data": {
-                    "host": "192.168.3.122"
-                },
-                "options": {},
-                "system_options": {
-                    "disable_new_entities": false
-                },
-                "source": "zeroconf",
-                "connection_class": "local_poll",
-                "unique_id": "98F4ABF3243A"
-            },
-            {
                 "entry_id": "ba8e960df98f11ea9ed9712349a50da2",
                 "version": 1,
                 "domain": "shelly",
-                "title": "192.168.3.118",
+                "title": "Shelly Suite Small Blind",
                 "data": {
-                    "host": "192.168.3.118"
+                    "host": "192.168.3.116"
                 },
                 "options": {},
                 "system_options": {
@@ -514,9 +473,9 @@
                 "entry_id": "c35cdfb6f98f11ea8faefb4c7bbaa983",
                 "version": 1,
                 "domain": "shelly",
-                "title": "192.168.3.120",
+                "title": "Shelly Carol Bedroom Blind",
                 "data": {
-                    "host": "192.168.3.120"
+                    "host": "192.168.3.133"
                 },
                 "options": {},
                 "system_options": {
@@ -534,12 +493,12 @@
                 "data": {
                     "auth_implementation": "spotify",
                     "token": {
-                        "access_token": "BQC8vjTf907FiK8oxLu3hgjQtzDb4S7AtF_dhWyI_CMj2sDiQKutydiOyFk5zYeNpwoPICPUk2PlNbgselUIVPmlo2GFmg7qq9XAJV-RVigNly1_aBQ2p3WWNow5ByXolgwDybFEY3weTFDTHZ2PT7arG5boSvGbft2ZCiz0o_rz9RU7B2FuTHpBpNsYFPz1rcXCVhrDcg",
+                        "access_token": "BQAKSlAm9gNILP-eRxmX919evi8Un5-OT3aUIiMvADNVETIV_remc4qPlIP59g-0cbX7xsxpziyDXSKgBem3WAJVOl_tEysPdC0JCm7wGFldjLdE3rtpxIP_1-OYsTcKRMZQBbK1qqKmFC4k5SfaMnAEExU5JYcG5mzg1NuDIdNZuOTZgzR9SeltSta4Hlbjef_q7V9Bkg",
                         "token_type": "Bearer",
                         "expires_in": 3600,
                         "refresh_token": "AQAX6gZXYNi7iSDFq9ITKe2zu06Q6gSbc0teGslwku5ZyfS4WNgtjLbIZ1XfAePNufmRWNCLqVMwoYR2B0hwKcztCvaJl6jTc6kOem-QnyHNRqrxh51B4A8vmvpD6O37NGA",
                         "scope": "playlist-read-private playlist-read-collaborative user-modify-playback-state user-library-read user-follow-read user-read-playback-state user-read-recently-played user-read-playback-position user-read-private user-top-read",
-                        "expires_at": 1603314980.3453243
+                        "expires_at": 1605475957.932543
                     },
                     "id": "111078106",
                     "name": "Jorge Patriarca"
@@ -553,73 +512,12 @@
                 "unique_id": "111078106"
             },
             {
-                "entry_id": "05445e85fb8511ea9100b5dd101c8d4a",
-                "version": 1,
-                "domain": "shelly",
-                "title": "192.168.3.121",
-                "data": {
-                    "host": "192.168.3.121"
-                },
-                "options": {},
-                "system_options": {
-                    "disable_new_entities": false
-                },
-                "source": "zeroconf",
-                "connection_class": "local_poll",
-                "unique_id": "D8F15B13186F"
-            },
-            {
-                "entry_id": "0eca67c0fb8b11ea9f022deb15948d14",
-                "version": 1,
-                "domain": "shelly",
-                "title": "192.168.3.116",
-                "data": {
-                    "host": "192.168.3.116"
-                },
-                "options": {},
-                "system_options": {
-                    "disable_new_entities": false
-                },
-                "source": "zeroconf",
-                "connection_class": "local_poll",
-                "unique_id": "68C63AF99FDD"
-            },
-            {
-                "entry_id": "8721f8cdfc1d11ea98077ffbbb5e107c",
-                "version": 1,
-                "domain": "withings",
-                "title": "Jorge Patriarca",
-                "data": {
-                    "auth_implementation": "withings",
-                    "token": {
-                        "access_token": "9754b105074c93331c40c0713c137c7cdeaffd0c",
-                        "expires_in": 10800,
-                        "token_type": "Bearer",
-                        "scope": "user.info,user.metrics,user.activity,user.sleepevents",
-                        "refresh_token": "77c26d95af486bf33b9b855034b44b1d208933db",
-                        "userid": 2026872,
-                        "expires_at": 1603318017.3478885
-                    },
-                    "profile": "Jorge Patriarca",
-                    "use_webhook": false,
-                    "webhook_id": "20812c5c18cd3292819491d5cf9d58273a4d23df3fa08e33330810c5fed40ac9",
-                    "webhook_url": "https://hass.patriarca.pt/api/webhook/20812c5c18cd3292819491d5cf9d58273a4d23df3fa08e33330810c5fed40ac9"
-                },
-                "options": {},
-                "system_options": {
-                    "disable_new_entities": false
-                },
-                "source": "user",
-                "connection_class": "cloud_poll",
-                "unique_id": "2026872"
-            },
-            {
                 "entry_id": "8f753b0efc3711ea9115d7e810e9c221",
                 "version": 1,
                 "domain": "shelly",
-                "title": "192.168.3.113",
+                "title": "Shelly Suite Big Blind",
                 "data": {
-                    "host": "192.168.3.113"
+                    "host": "192.168.3.156"
                 },
                 "options": {},
                 "system_options": {
@@ -649,30 +547,6 @@
                 "unique_id": null
             },
             {
-                "entry_id": "73ac5086ff3711eaaff3e99213af48c9",
-                "version": 1,
-                "domain": "openweathermap",
-                "title": "OpenWeatherMap",
-                "data": {
-                    "name": "OpenWeatherMap",
-                    "mode": "daily",
-                    "language": "en",
-                    "api_key": "d14a3688c71a859f802f78e24b0f3dac",
-                    "latitude": 38.7912,
-                    "longitude": -9.1881
-                },
-                "options": {
-                    "mode": "daily",
-                    "language": "en"
-                },
-                "system_options": {
-                    "disable_new_entities": false
-                },
-                "source": "user",
-                "connection_class": "cloud_poll",
-                "unique_id": "38.7912--9.1881"
-            },
-            {
                 "entry_id": "dcee4f9b002311eba37d37473dc38ac8",
                 "version": 1,
                 "domain": "speedtestdotnet",
@@ -683,29 +557,6 @@
                     "manual": false,
                     "server_id": ""
                 },
-                "system_options": {
-                    "disable_new_entities": false
-                },
-                "source": "user",
-                "connection_class": "local_poll",
-                "unique_id": null
-            },
-            {
-                "entry_id": "0c9e946304a411eba4c727a5c79473f9",
-                "version": 1,
-                "domain": "unifi",
-                "title": "Odivelas",
-                "data": {
-                    "controller": {
-                        "host": "ubnt-adopt.patriarca.pt",
-                        "username": "hass",
-                        "password": "said*LOD1phoo4gim",
-                        "port": 8443,
-                        "verify_ssl": false,
-                        "site": "default"
-                    }
-                },
-                "options": {},
                 "system_options": {
                     "disable_new_entities": false
                 },
@@ -741,9 +592,9 @@
                 "entry_id": "b9f5e87d08d911eba520d3f5ce716882",
                 "version": 1,
                 "domain": "shelly",
-                "title": "192.168.3.170",
+                "title": "Shelly Living Room Ceiling Lamp",
                 "data": {
-                    "host": "192.168.3.170"
+                    "host": "192.168.3.122"
                 },
                 "options": {},
                 "system_options": {
@@ -768,22 +619,6 @@
                 "unique_id": "rpi_power"
             },
             {
-                "entry_id": "1b975e4f08e111eb925a47af49778761",
-                "version": 1,
-                "domain": "heos",
-                "title": "Controller (192.168.2.101)",
-                "data": {
-                    "host": "192.168.2.101"
-                },
-                "options": {},
-                "system_options": {
-                    "disable_new_entities": false
-                },
-                "source": "user",
-                "connection_class": "local_push",
-                "unique_id": "heos"
-            },
-            {
                 "entry_id": "87c2a9f90b0411eb9fad315d017027cd",
                 "version": 1,
                 "domain": "netatmo",
@@ -804,13 +639,13 @@
                             "write_presence",
                             "write_thermostat"
                         ],
-                        "access_token": "57b0352667e482451e8b472f|e068c3bdd04a3706de433d394c2fe229",
+                        "access_token": "57b0352667e482451e8b472f|7e412634337980cc7b5d587c3a71cbdc",
                         "refresh_token": "57b0352667e482451e8b472f|16c176cc25000344ec76536756635293",
                         "expires_in": 10800,
                         "expire_in": 10800,
                         "restricted_access_token": "57b0352667e482451e8b472f|dbf25b52784a37d87517fead91bdcc60",
                         "restricted_refresh_token": "57b0352667e482451e8b472f|7d93b6b180737718a378779b07e3e460",
-                        "expires_at": 1603317857.7996402
+                        "expires_at": 1605476940.9135523
                     },
                     "webhook_id": "4c72bce17fe5569f2e0c27be09f6b62b8c43aae6f2b26c11472e6a39d46d5bfd"
                 },
@@ -826,9 +661,9 @@
                 "entry_id": "f90f46900b4011eb9352edc62ba43be1",
                 "version": 1,
                 "domain": "shelly",
-                "title": "192.168.3.172",
+                "title": "Shelly Datacenter Rack",
                 "data": {
-                    "host": "192.168.3.172"
+                    "host": "192.168.3.150"
                 },
                 "options": {},
                 "system_options": {
@@ -842,9 +677,9 @@
                 "entry_id": "08f337f80b4111eb8d380d4385ea551d",
                 "version": 1,
                 "domain": "shelly",
-                "title": "192.168.3.171",
+                "title": "Shelly Datacenter Rack Fan",
                 "data": {
-                    "host": "192.168.3.171"
+                    "host": "192.168.3.131"
                 },
                 "options": {},
                 "system_options": {
@@ -855,60 +690,12 @@
                 "unique_id": "E098069779B9"
             },
             {
-                "entry_id": "9768e93a0d6a11ebadfd85f1906282e7",
-                "version": 1,
-                "domain": "shelly",
-                "title": "192.168.3.174",
-                "data": {
-                    "host": "192.168.3.174"
-                },
-                "options": {},
-                "system_options": {
-                    "disable_new_entities": false
-                },
-                "source": "user",
-                "connection_class": "local_poll",
-                "unique_id": "E098069DDA6C"
-            },
-            {
-                "entry_id": "b235bec00da111eb8fa42f7af133cdaa",
-                "version": 1,
-                "domain": "shelly",
-                "title": "192.168.3.175",
-                "data": {
-                    "host": "192.168.3.175"
-                },
-                "options": {},
-                "system_options": {
-                    "disable_new_entities": false
-                },
-                "source": "zeroconf",
-                "connection_class": "local_poll",
-                "unique_id": "E098069A403A"
-            },
-            {
-                "entry_id": "f74299ad0e4111eb90fa61aa4559fff6",
-                "version": 1,
-                "domain": "shelly",
-                "title": "192.168.3.173",
-                "data": {
-                    "host": "192.168.3.174"
-                },
-                "options": {},
-                "system_options": {
-                    "disable_new_entities": false
-                },
-                "source": "zeroconf",
-                "connection_class": "local_poll",
-                "unique_id": "E09806955430"
-            },
-            {
                 "entry_id": "948bdd840f1111eb917b57255b9dada5",
                 "version": 1,
                 "domain": "shelly",
-                "title": "192.168.3.176",
+                "title": "Shelly Garage Fox Sensor",
                 "data": {
-                    "host": "192.168.3.173"
+                    "host": "192.168.3.140"
                 },
                 "options": {},
                 "system_options": {
@@ -922,9 +709,9 @@
                 "entry_id": "e7fb3f7d106b11eb8476cbe588a0cbcd",
                 "version": 1,
                 "domain": "shelly",
-                "title": "192.168.3.177",
+                "title": "Shelly Garage Tiguan Sensor",
                 "data": {
-                    "host": "192.168.3.177"
+                    "host": "192.168.3.106"
                 },
                 "options": {},
                 "system_options": {
@@ -965,6 +752,288 @@
                 "source": "import",
                 "connection_class": "local_push",
                 "unique_id": null
+            },
+            {
+                "entry_id": "770c8535baa6fa92f308fe478c1033a2",
+                "version": 1,
+                "domain": "xbox",
+                "title": "Home Assistant Cloud",
+                "data": {
+                    "auth_implementation": "cloud",
+                    "token": {
+                        "token_type": "bearer",
+                        "expires_in": 3600,
+                        "scope": "XboxLive.signin XboxLive.offline_access",
+                        "access_token": "EwBAA+pvBAAUKods63Ys1fGlwiccIFJ+qE1hANsAAdEPInsfpzHXH4MWPrZQRg4W6cL00xCSWbmWstPSMIq/MM5V+ckcxx1B6LxA7eg5qhlefMz+Tq443wWVKe4Jeqf4ojHYoAZ3OtYVR5SMdysY571YYuIXNbaUZJiuWvT1F/X99UYnrOBNljz7UjnsyjXRfvfosGTpM3OxuRiY6xS9L7HQfB3J9KcjZ8JrARneliDVK3ALk8ZR1yAII1tUwwCnSSZ6buTQs2MXMTIIrvaeonjWKQIvZOaj7mDYmsGn/tbxCM4zenpggu71AABIWnGYob/lsq3a8jmfHSCSUHLSYnBojbbFev7nIDFWj9WgdFr3w5Z2zbhG+FgZKhhIjw4DZgAACLLl+44ownXjEALsiehkm70+F8fF+XHechmULlGUkUciwUfSPYl0FIelKMEIyzBkxP1sbju7i+GTSFNoGwfRm2WLJ9+RSYII1/XdwDcwdwl3tR2HZJzKyYaQNs71BkvhkjB9mRjYwz/I0GN5YSwRxYBDImdcsHrTp3Do0IpgWCR9XpbWnQdVzUAIW9rtSv2sv/OPzAjnZVOZCVzKEgWF0xOeDxP1dHWseC1JaaJitmhql6/TBzGC/RIJZ5iVccsPp/ZLp4+icudpRzpM2mLouw6omVvjw3axA+ihGH+mCc2ULoUNsO1CGfmdIklCqwopSUVlCN7M5u1Nebkmzis6I2wQ/Ur2wU7/jad0iT/tFM49TtcoJ7jYF4VqYTZiGVBttP2X6Mvv7G/7Ggo5bIWJj5PfhM+KdTA4Uo9jLeWn75wVvF1EWAglv4zY4I8FdD1HQQfel7jXxPWJW0qo8bKP0CpCYrX8OyPmoUykX5YAMLz82IUeobnhww+SOKtFFgKyktOuSW3gA3fCwuLAftA2RXEKtvzpjIoPHlEagK7EXUAFsrCa7f8nczXmwqOI2nlXU3OKAc9CEwG0nEt5OmJEX/DJLH2QLqy/p+wi+mf13CZpVPmPMyQUjfc+P3siqsrdztu/ckRaoKQZvb9nRgQrzug8n+ZLuffpca8tJQI3M7VX8oR15BTipV32CQkLx0iAr4P7gvc7kKRQkL8uAg==",
+                        "refresh_token": "M.R3_BL2.CV8RC5ShSoO06Hg0seonPKcTNdz6zuTQRMLZu1CxiV7f3mUohX!h59vHMwhMMUWHjA!WC!Df3BzfrbJUzsf34xxu8eiUOmTe6H4BbNz8UKdFeN1F59OzvHlR3RWPWHWmA3cC!99ZerS2tKBkTYZXC*6qSk*JmLS3rCmJTRKz*TgIBSXqWBlVtaEm*iiiL6yJ0nNyWHfr8rzYLDCjsEvBgKEJQqq5XWTafFm0lXHSEwKLVWRHZdW1pHOw*g6aMcfF213C1Uqs*oU2sit9Br3r8v0P3lsMtyox2OPGqERnfYuNRqsEjpjpIMOZRSzW3v6Qz5iVw4Ex5G*edunVMLsp4PAIRFzbFTBgeFOjZctUXXDjdD!9I2uzozlPWb0o8dxj8CSpvYm7yVdFZZkNXKk4j!E$",
+                        "user_id": "AAAAAAAAAAAAAAAAAAAAAC9UPdkIqHt1_V346QkwY-E",
+                        "service": "xbox",
+                        "expires_at": 1605475533.8244972
+                    }
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "user",
+                "connection_class": "cloud_poll",
+                "unique_id": "xbox"
+            },
+            {
+                "entry_id": "df5d12ab6d52ce8f782fcaeef08b69c3",
+                "version": 1,
+                "domain": "withings",
+                "title": "Jorge",
+                "data": {
+                    "auth_implementation": "withings",
+                    "token": {
+                        "access_token": "2f0bf8796236b58a084aff519b2a2d7706a8a7c6",
+                        "expires_in": 10800,
+                        "token_type": "Bearer",
+                        "scope": "user.info,user.metrics,user.activity,user.sleepevents",
+                        "refresh_token": "202936bdbc754b15dd6498b46157bb831c647f35",
+                        "userid": 2026872,
+                        "expires_at": 1605477261.6702578
+                    },
+                    "profile": "Jorge",
+                    "use_webhook": false,
+                    "webhook_id": "af3e65a123f204823900227fa4408de0eca8a0822430d850821f8cfbf74fd1a0",
+                    "webhook_url": "https://hass.patriarca.pt/api/webhook/af3e65a123f204823900227fa4408de0eca8a0822430d850821f8cfbf74fd1a0"
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "user",
+                "connection_class": "cloud_poll",
+                "unique_id": "2026872"
+            },
+            {
+                "entry_id": "a6030ad5de8839683c3cd3f53834316f",
+                "version": 1,
+                "domain": "synology_dsm",
+                "title": "JPNAS",
+                "data": {
+                    "host": "jpnas.internal.patriarca.pt",
+                    "port": "5001",
+                    "ssl": true,
+                    "username": "admin",
+                    "password": "Underthebridge1#$",
+                    "mac": [
+                        "00-11-32-6E-21-9D",
+                        "00-11-32-6E-21-9F",
+                        "00-11-32-6E-21-A0"
+                    ],
+                    "device_token": "oS4qR1OHXjQyp6p79a2G8JQgZf3dZb3wHl96iqrBmu7tM0rth8NyJFuHqApXZYaMg0EHqgtxCDBOxdda7kJTkBGLwSlvF59AfeXkzQ4EfdzeAR8oASpY4roVWNWeAlg",
+                    "verify_ssl": false
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "user",
+                "connection_class": "cloud_poll",
+                "unique_id": "1741PJN981600"
+            },
+            {
+                "entry_id": "3a2bb55f29a35cae38764337db7bb075",
+                "version": 1,
+                "domain": "upnp",
+                "title": "UniFi Dream Machine",
+                "data": {
+                    "udn": "uuid:29c1992e-ac96-4c36-a193-8c390747ae47",
+                    "st": "urn:schemas-upnp-org:device:InternetGatewayDevice:1"
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "ssdp",
+                "connection_class": "local_poll",
+                "unique_id": "uuid:29c1992e-ac96-4c36-a193-8c390747ae47::urn:schemas-upnp-org:device:InternetGatewayDevice:1"
+            },
+            {
+                "entry_id": "fe9dc0500c70b915e6fd3d705b9a4b7f",
+                "version": 1,
+                "domain": "unifiprotect",
+                "title": "JPFW",
+                "data": {
+                    "id": "JPFW",
+                    "host": "192.168.1.1",
+                    "port": 443,
+                    "username": "hass",
+                    "password": "said*LOD1phoo4gim",
+                    "scan_interval": 2,
+                    "snapshot_direct": false,
+                    "ir_on": "auto",
+                    "ir_off": "always_off"
+                },
+                "options": {
+                    "scan_interval": 2,
+                    "snapshot_direct": false
+                },
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "user",
+                "connection_class": "local_poll",
+                "unique_id": null
+            },
+            {
+                "entry_id": "9854f50c74debf8c51e1997666bdd661",
+                "version": 2,
+                "domain": "openweathermap",
+                "title": "OpenWeatherMap",
+                "data": {
+                    "name": "OpenWeatherMap",
+                    "latitude": 38.79126389738601,
+                    "longitude": -9.188261032104494,
+                    "mode": "onecall_hourly",
+                    "language": "en",
+                    "api_key": "d14a3688c71a859f802f78e24b0f3dac"
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "user",
+                "connection_class": "cloud_poll",
+                "unique_id": "38.79126389738601--9.188261032104494"
+            },
+            {
+                "entry_id": "cf6fb719b7f0c2dff886de40e8646b6d",
+                "version": 1,
+                "domain": "shelly",
+                "title": "Shelly Kitchen Blind",
+                "data": {
+                    "host": "192.168.3.138"
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "zeroconf",
+                "connection_class": "local_poll",
+                "unique_id": "68C63AF99FDD"
+            },
+            {
+                "entry_id": "842983a8afdc66539dded0da2c0cdfbd",
+                "version": 1,
+                "domain": "shelly",
+                "title": "Shelly Carol Room Lights",
+                "data": {
+                    "host": "192.168.3.107"
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "zeroconf",
+                "connection_class": "local_poll",
+                "unique_id": "E098069A403A"
+            },
+            {
+                "entry_id": "0dd5b59883d2805ae40b53a4297a49bf",
+                "version": 1,
+                "domain": "shelly",
+                "title": "Shelly Garage Tiguan",
+                "data": {
+                    "host": "192.168.3.192"
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "zeroconf",
+                "connection_class": "local_poll",
+                "unique_id": "98F4ABF3243A"
+            },
+            {
+                "entry_id": "2112bcc9b662697bd2cce6539874f89f",
+                "version": 1,
+                "domain": "shelly",
+                "title": "Shelly Living Room Small Blind",
+                "data": {
+                    "host": "192.168.3.126"
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "zeroconf",
+                "connection_class": "local_poll",
+                "unique_id": "D8F15B13186F"
+            },
+            {
+                "entry_id": "64fbf7a601970a45960f44315a93b427",
+                "version": 1,
+                "domain": "unifi",
+                "title": "Default",
+                "data": {
+                    "controller": {
+                        "host": "192.168.1.1",
+                        "username": "hass",
+                        "password": "said*LOD1phoo4gim",
+                        "port": 443,
+                        "verify_ssl": false,
+                        "site": "default"
+                    }
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "user",
+                "connection_class": "local_poll",
+                "unique_id": null
+            },
+            {
+                "entry_id": "a746f5b9b2bf0c465c7c414ef849d61a",
+                "version": 1,
+                "domain": "shelly",
+                "title": "shellyplug-s-9DDA6C",
+                "data": {
+                    "host": "192.168.3.104"
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "zeroconf",
+                "connection_class": "local_poll",
+                "unique_id": "E098069DDA6C"
+            },
+            {
+                "entry_id": "026fa048641f136eaedf5ff89eb89ce2",
+                "version": 1,
+                "domain": "shelly",
+                "title": "Shelly Garage Rack HT",
+                "data": {
+                    "host": "192.168.3.148"
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "zeroconf",
+                "connection_class": "local_poll",
+                "unique_id": "E09806955430"
+            },
+            {
+                "entry_id": "d30ea505bc656097fc2293d48a629a6c",
+                "version": 1,
+                "domain": "heos",
+                "title": "Controller (192.168.2.135)",
+                "data": {
+                    "host": "192.168.2.135"
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "user",
+                "connection_class": "local_push",
+                "unique_id": "heos"
             }
         ]
     }

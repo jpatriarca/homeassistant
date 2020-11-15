@@ -44,7 +44,8 @@
             "shelly.switch.68C63AFAE9FF-relay_0": 629994887,
             "shelly.switch.E098069779B9-relay_0": 410200764,
             "cover.garage_tiguan_door": 3540776369,
-            "cover.garage_fox_door": 421969158
+            "cover.garage_fox_door": 421969158,
+            "unifiprotect.camera.5fa1548f02456a03870003eb_7483C28FEFA0": 1800984928
         }
     }
 }

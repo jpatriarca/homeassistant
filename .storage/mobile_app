@@ -30,9 +30,9 @@
                     "Low Power Mode": false
                 },
                 "device_class": "battery",
-                "icon": "mdi:battery-50",
+                "icon": "mdi:battery-40",
                 "name": "Battery Level",
-                "state": 53,
+                "state": 41,
                 "type": "sensor",
                 "unique_id": "battery_level",
                 "unit_of_measurement": "%",
@@ -41,11 +41,11 @@
             "2ba803730cfef09189419d22d6db7d1432345f145cb1c95a5fa9d8d8e2a286cb_battery_state": {
                 "added": true,
                 "attributes": {
-                    "Battery Level": 53,
+                    "Battery Level": 41,
                     "Low Power Mode": false
                 },
                 "device_class": "battery",
-                "icon": "mdi:battery-50",
+                "icon": "mdi:battery-40",
                 "name": "Battery State",
                 "state": "Not Charging",
                 "type": "sensor",
@@ -127,8 +127,8 @@
                     "ISO Country Code": "PT",
                     "Locality": "Odivelas",
                     "Location": [
-                        38.791168212890625,
-                        -9.188117475445653
+                        38.791229248046875,
+                        -9.18811133940114
                     ],
                     "Name": "Rua Pulido Valente 35\u201339",
                     "Ocean": "N/A",
@@ -175,7 +175,7 @@
                 "attributes": {},
                 "icon": "mdi:hiking",
                 "name": "Distance",
-                "state": 1111,
+                "state": 791,
                 "type": "sensor",
                 "unique_id": "pedometer_distance",
                 "unit_of_measurement": "m",
@@ -186,7 +186,7 @@
                 "attributes": {},
                 "icon": "mdi:stairs-up",
                 "name": "Floors Ascended",
-                "state": 0,
+                "state": 2,
                 "type": "sensor",
                 "unique_id": "pedometer_floors_ascended",
                 "unit_of_measurement": "floors",
@@ -197,7 +197,7 @@
                 "attributes": {},
                 "icon": "mdi:stairs-down",
                 "name": "Floors Descended",
-                "state": 0,
+                "state": 3,
                 "type": "sensor",
                 "unique_id": "pedometer_floors_descended",
                 "unit_of_measurement": "floors",
@@ -208,7 +208,7 @@
                 "attributes": {},
                 "icon": "mdi:walk",
                 "name": "Steps",
-                "state": 1519,
+                "state": 986,
                 "type": "sensor",
                 "unique_id": "pedometer_steps",
                 "unit_of_measurement": "steps",
@@ -217,14 +217,14 @@
             "2ba803730cfef09189419d22d6db7d1432345f145cb1c95a5fa9d8d8e2a286cb_storage": {
                 "added": true,
                 "attributes": {
-                    "Available": "100,16 GB",
-                    "Available (Important)": "187,22 GB",
-                    "Available (Opportunistic)": "185,94 GB",
+                    "Available": "98,74 GB",
+                    "Available (Important)": "185,49 GB",
+                    "Available (Opportunistic)": "184,21 GB",
                     "Total": "255,88 GB"
                 },
                 "icon": "mdi:database",
                 "name": "Storage",
-                "state": "72.67",
+                "state": "71.99",
                 "type": "sensor",
                 "unique_id": "storage",
                 "unit_of_measurement": "% available",
@@ -459,9 +459,9 @@
                     "Low Power Mode": false
                 },
                 "device_class": "battery",
-                "icon": "mdi:battery-40",
+                "icon": "mdi:battery-80",
                 "name": "Battery Level",
-                "state": 41,
+                "state": 85,
                 "type": "sensor",
                 "unique_id": "battery_level",
                 "unit_of_measurement": "%",
@@ -470,11 +470,11 @@
             "93ec1d92bc241ac1b57c0f888f98aad5de97c4763b04601941f4a63d985b14a1_battery_state": {
                 "added": true,
                 "attributes": {
-                    "Battery Level": 41,
+                    "Battery Level": 85,
                     "Low Power Mode": false
                 },
                 "device_class": "battery",
-                "icon": "mdi:battery-40",
+                "icon": "mdi:battery-80",
                 "name": "Battery State",
                 "state": "Not Charging",
                 "type": "sensor",
@@ -521,8 +521,8 @@
                     "ISO Country Code": "PT",
                     "Locality": "Odivelas",
                     "Location": [
-                        38.791229248046875,
-                        -9.188052719343101
+                        38.7912032716964,
+                        -9.188095398202108
                     ],
                     "Name": "Rua Pulido Valente 35\u201339",
                     "Ocean": "N/A",
@@ -556,14 +556,14 @@
             "93ec1d92bc241ac1b57c0f888f98aad5de97c4763b04601941f4a63d985b14a1_storage": {
                 "added": true,
                 "attributes": {
-                    "Available": "4,62 GB",
-                    "Available (Important)": "8,84 GB",
-                    "Available (Opportunistic)": "7,56 GB",
+                    "Available": "6,22 GB",
+                    "Available (Important)": "6,45 GB",
+                    "Available (Opportunistic)": "5,17 GB",
                     "Total": "31,98 GB"
                 },
                 "icon": "mdi:database",
                 "name": "Storage",
-                "state": "23.64",
+                "state": "16.16",
                 "type": "sensor",
                 "unique_id": "storage",
                 "unit_of_measurement": "% available",
@@ -668,12 +668,12 @@
                 "attributes": {
                     "Confidence": "High",
                     "Types": [
-                        "Unknown"
+                        "Stationary"
                     ]
                 },
-                "icon": "mdi:help-circle",
+                "icon": "mdi:human-male",
                 "name": "Activity",
-                "state": "Unknown",
+                "state": "Stationary",
                 "type": "sensor",
                 "unique_id": "activity",
                 "webhook_id": "93ec1d92bc241ac1b57c0f888f98aad5de97c4763b04601941f4a63d985b14a1",

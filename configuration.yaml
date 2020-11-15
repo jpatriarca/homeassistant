@@ -49,8 +49,9 @@ homekit:
       - switch.shelly_living_room_tv_switch
       - switch.shelly_living_room_ceiling_lamp
       - switch.shelly_living_room_desk_lamp
-      - switch.shelly_garage_rack
-      - switch.shelly_garage_rack_fan
+      - switch.shelly_datacenter_rack
+      - switch.shelly_datacenter_rack_fan
+      - switch.shelly_carol_room_lights
       - sensor.netatmo_outdoor_temperature
       - sensor.netatmo_living_room_temperature
       - sensor.netatmo_kitchen_temperature
@@ -70,7 +71,7 @@ homekit:
 
   entity_config:
     camera.garage:
-      stream_source: "-rtsp_transport tcp -re -i rtsp://192.168.1.71:7447/5f821691e4b0524e74cb5c8c_0"
+      stream_source: "-rtsp_transport tcp -re -i rtsp://192.168.1.1:7447/zNuN4mXCvIGZ6gdp"
       video_codec: copy
       support_audio: True
       max_width: 1920
@@ -117,13 +118,14 @@ spotify:
 withings:
   client_id: !secret withings_clientid
   client_secret: !secret withings_clientsecret
+  use_webhook: true
 
 # UniFi Video integration
-camera:
-  - platform: uvc
-    nvr: 192.168.1.71
-    key: !secret unifivideo_api
-    password: !secret unifivideo_password
+#camera:
+#  - platform: uvc
+#    nvr: 192.168.1.71
+#    key: !secret unifivideo_api
+#    password: !secret unifivideo_password
 
 #Nginx Configuration
 http:
@@ -180,22 +182,37 @@ sensor:
   - platform: template
     sensors:
      pihole_total_ads_blocked_today:
-#       friendly_name: "PiHole Total Ads Blocked Today"
-#       unit_of_measurement: 'ads'
        value_template: "{{ (states('sensor.pihole01_ads_blocked_today') | round(0)) + (states('sensor.pihole02_ads_blocked_today') | round(0)) }}"
-#       icon: mdi:close-octagon-outline
      pihole_total_ads_percentage_blocked_today:
-#       friendly_name: "PiHole Total Ads Percentage Blocked Today"
-#       unit_of_measurement: '%'
        value_template: "{{ (states('sensor.pihole01_ads_percentage_blocked_today') | float + states('sensor.pihole02_ads_percentage_blocked_today') | float)|round(2)}}"
-#       icon: mdi:close-octagon-outline
      pihole_total_dns_queries_today:
-#       friendly_name: "PiHole Total DNS Queries Today"
-#       unit_of_measurement: 'queries'
        value_template: "{{ (states('sensor.pihole01_dns_queries_today') | round(0)) + (states('sensor.pihole02_dns_queries_today') | round(0)) }}"
-#       icon: mdi:comment-question-outline
+  
+  - platform: sun2
+    monitored_conditions:
+      - solar_midnight
+      - astronomical_dawn
+      - nautical_dawn
+      - dawn
+      - sunrise
+      - solar_noon
+      - sunset
+      - dusk
+      - nautical_dusk
+      - astronomical_dusk
+      - daylight
+      - civil_daylight
+      - nautical_daylight
+      - astronomical_daylight
+      - night
+      - civil_night
+      - nautical_night
+      - astronomical_night
+      - elevation
+      - min_elevation
+      - max_elevation
 
-# Fox Garage MQTT sensor configuration
+       # Fox Garage MQTT sensor configuration
   - platform: mqtt
     name: "Garage Fox Door"
     state_topic: "shellies/shellydw2-483FDA81F716/sensor/state"
@@ -223,59 +240,6 @@ sensor:
     force_update: true
     json_attributes_topic: "shellies/shellydw2-483FDA82026E/sensor/state"
 
-# Garage Rack Temperature & Humidity Sensors
-  - platform: mqtt
-    name: "Garage Rack Temperature"
-    device_class: temperature
-    unit_of_measurement: '°C'
-    state_topic: "shellies/shellyht-955430/sensor/temperature"
-    expire_after: 86400
-    force_update: true
-    json_attributes_topic: "shellies/shellyht-955430/sensor/temperature"
-
-  - platform: mqtt
-    name: "Garage Rack Humidity"
-    device_class: humidity
-    unit_of_measurement: '%'
-    state_topic: "shellies/shellyht-955430/sensor/humidity"
-    expire_after: 86400
-    force_update: true
-    json_attributes_topic: "shellies/shellyht-955430/sensor/humidity"
-
-# Garage Doors Sensors Battery
-  - platform: mqtt
-    name: "Garage Fox Sensor Battery"
-    device_class: battery
-    state_topic: "shellies/shellydw2-483FDA81F716/sensor/battery"
-    expire_after: 86400
-    force_update: true
-    json_attributes_topic: "shellies/shellydw2-483FDA81F716/sensor/battery"
-      
-  - platform: mqtt
-    name: "Garage Tiguan Sensor Battery"
-    device_class: battery
-    state_topic: "shellies/shellydw2-483FDA82026E/sensor/battery"
-    expire_after: 86400
-    force_update: true
-    json_attributes_topic: "shellies/shellydw2-483FDA82026E/sensor/battery"
-
-# Garage Doors Sensors Luminosity & Temperature
-  - platform: mqtt
-    name: "Garage Luminosity"
-    device_class: illuminance
-    state_topic: "shellies/shellydw2-483FDA81F716/sensor/lux"
-    expire_after: 86400
-    force_update: true
-    json_attributes_topic: "shellies/shellydw2-483FDA81F716/sensor/lux"
-  
-  - platform: mqtt
-    name: "Garage Temperature"
-    device_class: temperature
-    state_topic: "shellies/shellydw2-483FDA81F716/sensor/temperature"
-    expire_after: 86400
-    force_update: true
-    json_attributes_topic: "shellies/shellydw2-483FDA81F716/sensor/temperature"
-
 # Voltage Sensor
 
   - platform: rest
@@ -285,151 +249,16 @@ sensor:
     scan_interval: 120
     device_class: voltage
 
-# Shelly WiFi rssi Sensors
-
-  - platform: rest
-    name: "Shelly Carol Room Blinds rssi"
-    resource: http://192.168.3.113/status
-    value_template: '{{ value_json.wifi_sta.rssi }}'
-    scan_interval: 300
-    device_class: signal_strength
-
-  - platform: rest
-    name: "Shelly Living Room Big Blinds rssi"
-    resource: http://192.168.3.114/status
-    value_template: '{{ value_json.wifi_sta.rssi }}'
-    scan_interval: 300
-    device_class: signal_strength
-
-  - platform: rest
-    name: "Shelly Living Room TV Plug rssi"
-    resource: http://192.168.3.115/status
-    value_template: '{{ value_json.wifi_sta.rssi }}'
-    scan_interval: 300
-    device_class: signal_strength
-
-  - platform: rest
-    name: "Shelly Kitchen Blind rssi"
-    resource: http://192.168.3.116/status
-    value_template: '{{ value_json.wifi_sta.rssi }}'
-    scan_interval: 300
-    device_class: signal_strength
-
-  - platform: rest
-    name: "Shelly Living Room Lamp Plug rssi"
-    resource: http://192.168.3.117/status
-    value_template: '{{ value_json.wifi_sta.rssi }}'
-    scan_interval: 300
-    device_class: signal_strength
-
-  - platform: rest
-    name: "Shelly Suite Small Blinds rssi"
-    resource: http://192.168.3.118/status
-    value_template: '{{ value_json.wifi_sta.rssi }}'
-    scan_interval: 300
-    device_class: signal_strength
-
-  - platform: rest
-    name: "Shelly Hall Plug rssi"
-    resource: http://192.168.3.119/status
-    value_template: '{{ value_json.wifi_sta.rssi }}'
-    scan_interval: 300
-    device_class: signal_strength
-
-  - platform: rest
-    name: "Shelly Suite Big Blinds rssi"
-    resource: http://192.168.3.120/status
-    value_template: '{{ value_json.wifi_sta.rssi }}'
-    scan_interval: 300
-    device_class: signal_strength
-
-  - platform: rest
-    name: "Shelly Living Room Small Blinds rssi"
-    resource: http://192.168.3.121/status
-    value_template: '{{ value_json.wifi_sta.rssi }}'
-    scan_interval: 300
-    device_class: signal_strength
-
-  - platform: rest
-    name: "Shelly Garage Tiguan rssi"
-    resource: http://192.168.3.122/status
-    value_template: '{{ value_json.wifi_sta.rssi }}'
-    scan_interval: 300
-    device_class: signal_strength
-
-  - platform: rest
-    name: "Shelly Garage Fox rssi"
-    resource: http://192.168.3.123/status
-    value_template: '{{ value_json.wifi_sta.rssi }}'
-    scan_interval: 300
-    device_class: signal_strength
-
-  - platform: rest
-    name: "Shelly Ceiling Lamp rssi"
-    resource: http://192.168.3.170/status
-    value_template: '{{ value_json.wifi_sta.rssi }}'
-    scan_interval: 300
-    device_class: signal_strength
-
-  - platform: rest
-    name: "Shelly Rack Fan rssi"
-    resource: http://192.168.3.171/status
-    value_template: '{{ value_json.wifi_sta.rssi }}'
-    scan_interval: 300
-    device_class: signal_strength
-
-  - platform: rest
-    name: "Shelly Garage Rack rssi"
-    resource: http://192.168.3.172/status
-    value_template: '{{ value_json.wifi_sta.rssi }}'
-    scan_interval: 300
-    device_class: signal_strength
-
-  - platform: rest
-    name: "Shelly Garage Rack HT rssi"
-    resource: http://192.168.3.173/status
-    value_template: '{{ value_json.wifi_sta.rssi }}'
-    scan_interval: 300
-    device_class: signal_strength
-
-  - platform: rest
-    name: "Shelly Mobile Plug 1 rssi"
-    resource: http://192.168.3.174/status
-    value_template: '{{ value_json.wifi_sta.rssi }}'
-    scan_interval: 300
-    device_class: signal_strength
-
-  - platform: rest
-    name: "Shelly Mobile Plug 2 rssi"
-    resource: http://192.168.3.175/status
-    value_template: '{{ value_json.wifi_sta.rssi }}'
-    scan_interval: 300
-    device_class: signal_strength
-
-  - platform: rest
-    name: "Shelly Garage Fox Sensor rssi"
-    resource: http://192.168.3.176/status
-    value_template: '{{ value_json.wifi_sta.rssi }}'
-    scan_interval: 60
-    device_class: signal_strength
-
-  - platform: rest
-    name: "Shelly Garage Tiguan Sensor rssi"
-    resource: http://192.168.3.177/status
-    value_template: '{{ value_json.wifi_sta.rssi }}'
-    scan_interval: 60
-    device_class: signal_strength
-
 # Binary Sensor configuration
 
-binary_sensor:
-  - platform: mqtt
-    name: Garage Motion
-    state_topic: "camera/motion/Garage"
-    payload_on: "ON"
-    payload_off: "OFF"
-    device_class: motion
-
+#binary_sensor:
+#  - platform: mqtt
+#    name: Garage Motion
+#    state_topic: "camera/motion/Garage"
+#    payload_on: "ON"
+#    payload_off: "OFF"
+#    device_class: motion
+  
 # Utility Meter configuration
 
 utility_meter:

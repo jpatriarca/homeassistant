@@ -14,18 +14,14 @@
             },
             {
                 "name": "Cl\u00e1udia Ribeiro",
-                "device_trackers": [
-                    "device_tracker.iphonedeclaudia_2"
-                ],
+                "device_trackers": [],
                 "user_id": null,
                 "picture": null,
                 "id": "claudia_ribeiro"
             },
             {
                 "name": "Carolina Patriarca",
-                "device_trackers": [
-                    "device_tracker.redmi8_redmi"
-                ],
+                "device_trackers": [],
                 "user_id": null,
                 "picture": null,
                 "id": "carolina_patriarca"

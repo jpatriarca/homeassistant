@@ -21,7 +21,7 @@
                 "Manufactured At": "2020-04-01",
                 "Manufactured By": "HP",
                 "Product Number": "N/A",
-                "Remaining": "100",
+                "Remaining": "80",
                 "Serial Number": "N/A",
                 "Station": "0",
                 "Type": "Inkcartridge",
@@ -31,11 +31,11 @@
         "IsOnline": true,
         "Name": "HP Printer",
         "Printer": {
-            "Total": "445",
-            "Color": "162",
+            "Total": "461",
+            "Color": "173",
             "Monochrome": "0",
             "Jams": "8",
-            "Cancelled": "2"
+            "Cancelled": "3"
         },
         "model": "Tango X",
         "status": "outputBinClosed"

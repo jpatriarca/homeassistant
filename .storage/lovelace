@@ -11,19 +11,19 @@
                     "title": "Home",
                     "badges": [
                         {
+                            "entity": "sun.sun"
+                        },
+                        {
                             "entity": "binary_sensor.updater"
                         },
                         {
                             "entity": "binary_sensor.snapshots_stale"
                         },
                         {
-                            "entity": "sun.sun"
-                        },
-                        {
                             "entity": "person.jorge_patriarca"
                         },
                         {
-                            "entity": "device_tracker.iphonedeclaudia_2"
+                            "entity": "device_tracker.iphonedeclaudia"
                         },
                         {
                             "entity": "device_tracker.redmi8_redmi"
@@ -47,20 +47,6 @@
                                 }
                             ],
                             "title": "Garage Doors",
-                            "type": "entities"
-                        },
-                        {
-                            "entities": [
-                                {
-                                    "entity": "switch.shelly_hall_switch",
-                                    "icon": "mdi:television"
-                                },
-                                {
-                                    "entity": "switch.shelly_living_room_tv_switch"
-                                }
-                            ],
-                            "show_header_toggle": false,
-                            "title": "Plugs",
                             "type": "entities"
                         },
                         {
@@ -132,70 +118,28 @@
                     "badges": [],
                     "cards": [
                         {
-                            "type": "custom:weather-card",
-                            "entity": "weather.home",
-                            "name": "Odivelas",
-                            "number_of_forecasts": "7"
-                        },
-                        {
                             "type": "vertical-stack",
                             "cards": [
                                 {
-                                    "type": "entities",
-                                    "entities": [
-                                        {
-                                            "entity": "sensor.netatmo_kitchen_battery_percent"
-                                        },
-                                        {
-                                            "entity": "sensor.netatmo_outdoor_battery_percent"
-                                        },
-                                        {
-                                            "entity": "sensor.netatmo_carol_bedroom_battery_percent"
-                                        },
-                                        {
-                                            "entity": "sensor.netatmo_suite_bedroom_battery_percent"
-                                        }
-                                    ],
-                                    "title": "Netatmo Battery"
+                                    "type": "custom:weather-card",
+                                    "entity": "weather.home",
+                                    "number_of_forecasts": "5",
+                                    "name": "Odivelas"
                                 },
                                 {
                                     "type": "entities",
                                     "entities": [
-                                        {
-                                            "entity": "sensor.netatmo_kitchen_radio"
-                                        },
-                                        {
-                                            "entity": "sensor.netatmo_outdoor_radio"
-                                        },
-                                        {
-                                            "entity": "sensor.netatmo_carol_bedroom_radio"
-                                        },
-                                        {
-                                            "entity": "sensor.netatmo_suite_bedroom_radio"
-                                        }
-                                    ],
-                                    "title": "Netatmo Radio"
-                                },
-                                {
-                                    "type": "entities",
-                                    "entities": [
-                                        {
-                                            "entity": "sensor.netatmo_carol_bedroom_reachability"
-                                        },
-                                        {
-                                            "entity": "sensor.netatmo_kitchen_reachability"
-                                        },
-                                        {
-                                            "entity": "sensor.netatmo_outdoor_reachability"
-                                        },
-                                        {
-                                            "entity": "sensor.netatmo_living_room_reachability"
-                                        },
-                                        {
-                                            "entity": "sensor.netatmo_suite_bedroom_reachability"
-                                        }
-                                    ],
-                                    "title": "Netatmo Reachability"
+                                        "sensor.openweathermap_cloud_coverage",
+                                        "sensor.openweathermap_condition",
+                                        "sensor.openweathermap_humidity",
+                                        "sensor.openweathermap_pressure",
+                                        "sensor.openweathermap_rain",
+                                        "sensor.openweathermap_temperature",
+                                        "sensor.openweathermap_weather",
+                                        "sensor.openweathermap_weather_code",
+                                        "sensor.openweathermap_wind_bearing",
+                                        "sensor.openweathermap_wind_speed"
+                                    ]
                                 }
                             ]
                         },
@@ -205,7 +149,94 @@
                                 {
                                     "type": "custom:mini-graph-card",
                                     "entities": [
-                                        "sensor.netatmo_outdoor_temperature",
+                                        {
+                                            "entity": "sensor.netatmo_outdoor_temperature"
+                                        },
+                                        {
+                                            "entity": "sensor.netatmo_outdoor_humidity",
+                                            "show_state": true,
+                                            "show_fill": false
+                                        }
+                                    ],
+                                    "aggregate_func": "max",
+                                    "group_by": "hour",
+                                    "points_per_hour": 1,
+                                    "hours_to_show": 24,
+                                    "refresh_interval": 0,
+                                    "show": {
+                                        "extrema": true
+                                    }
+                                },
+                                {
+                                    "type": "custom:mini-graph-card",
+                                    "entities": [
+                                        "sensor.netatmo_living_room_pressure"
+                                    ],
+                                    "aggregate_func": "max",
+                                    "group_by": "hour",
+                                    "points_per_hour": 1,
+                                    "hours_to_show": 24,
+                                    "refresh_interval": 0,
+                                    "hour24": true,
+                                    "name": "Outdoor Pressure",
+                                    "show": {
+                                        "extrema": true
+                                    }
+                                },
+                                {
+                                    "type": "entities",
+                                    "entities": [
+                                        "sensor.blitzortung_lightning_distance",
+                                        "sensor.blitzortung_lightning_azimuth",
+                                        "sensor.blitzortung_lightning_counter"
+                                    ]
+                                },
+                                {
+                                    "type": "entities",
+                                    "entities": [
+                                        {
+                                            "entity": "sensor.daylight"
+                                        },
+                                        {
+                                            "entity": "sensor.night"
+                                        },
+                                        {
+                                            "entity": "sensor.sunrise"
+                                        },
+                                        {
+                                            "entity": "sensor.sunset"
+                                        },
+                                        {
+                                            "entity": "sensor.solar_noon"
+                                        },
+                                        {
+                                            "entity": "sensor.solar_midnight"
+                                        },
+                                        {
+                                            "entity": "sensor.civil_daylight"
+                                        },
+                                        {
+                                            "entity": "sensor.civil_night"
+                                        },
+                                        {
+                                            "entity": "sensor.min_elevation"
+                                        },
+                                        {
+                                            "entity": "sensor.elevation"
+                                        },
+                                        {
+                                            "entity": "sensor.max_elevation"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "vertical-stack",
+                            "cards": [
+                                {
+                                    "type": "custom:mini-graph-card",
+                                    "entities": [
                                         "sensor.netatmo_living_room_temperature",
                                         "sensor.netatmo_kitchen_temperature",
                                         "sensor.netatmo_suite_bedroom_temperature",
@@ -224,22 +255,6 @@
                                 {
                                     "type": "custom:mini-graph-card",
                                     "entities": [
-                                        "sensor.netatmo_living_room_pressure"
-                                    ],
-                                    "aggregate_func": "max",
-                                    "group_by": "hour",
-                                    "points_per_hour": 1,
-                                    "hours_to_show": 24,
-                                    "refresh_interval": 0,
-                                    "hour24": true,
-                                    "show": {
-                                        "extrema": true
-                                    }
-                                },
-                                {
-                                    "type": "custom:mini-graph-card",
-                                    "entities": [
-                                        "sensor.netatmo_outdoor_humidity",
                                         "sensor.netatmo_living_room_humidity",
                                         "sensor.netatmo_carol_bedroom_humidity",
                                         "sensor.netatmo_suite_bedroom_humidity",
@@ -272,73 +287,8 @@
                                     "show": {
                                         "extrema": true
                                     }
-                                },
-                                {
-                                    "type": "entities",
-                                    "entities": [
-                                        "sensor.blitzortung_lightning_distance",
-                                        "sensor.blitzortung_lightning_azimuth",
-                                        "sensor.blitzortung_lightning_counter"
-                                    ],
-                                    "title": "Lightning"
                                 }
                             ]
-                        },
-                        {
-                            "type": "entities",
-                            "entities": [
-                                {
-                                    "entity": "sensor.openweathermap_cloud_coverage"
-                                },
-                                {
-                                    "entity": "sensor.openweathermap_condition"
-                                },
-                                {
-                                    "entity": "sensor.openweathermap_humidity"
-                                },
-                                {
-                                    "entity": "sensor.openweathermap_pressure"
-                                },
-                                {
-                                    "entity": "sensor.openweathermap_rain"
-                                },
-                                {
-                                    "entity": "sensor.openweathermap_temperature"
-                                },
-                                {
-                                    "entity": "sensor.openweathermap_weather"
-                                },
-                                {
-                                    "entity": "sensor.openweathermap_weather_code"
-                                },
-                                {
-                                    "entity": "sensor.openweathermap_wind_bearing"
-                                },
-                                {
-                                    "entity": "sensor.openweathermap_wind_speed"
-                                }
-                            ]
-                        },
-                        {
-                            "type": "custom:mini-graph-card",
-                            "entities": [
-                                {
-                                    "entity": "sensor.netatmo_outdoor_temperature"
-                                },
-                                {
-                                    "entity": "sensor.netatmo_outdoor_humidity",
-                                    "show_state": true,
-                                    "show_fill": false
-                                }
-                            ],
-                            "aggregate_func": "max",
-                            "group_by": "hour",
-                            "points_per_hour": 1,
-                            "hours_to_show": 24,
-                            "refresh_interval": 0,
-                            "show": {
-                                "extrema": true
-                            }
                         }
                     ],
                     "icon": "mdi:cloud",
@@ -504,28 +454,45 @@
                             "type": "vertical-stack",
                             "cards": [
                                 {
-                                    "type": "custom:mini-graph-card",
                                     "entities": [
-                                        "sensor.shelly_kitchen_blind_device_temperature",
-                                        "sensor.shelly_living_room_big_blind_device_temperature",
-                                        "sensor.shelly_living_room_small_blind_device_temperature",
-                                        "sensor.shelly_carol_bedroom_blind_device_temperature",
-                                        "sensor.shelly_suite_big_blind_device_temperature",
-                                        "sensor.shelly_suite_small_blind_device_temperature"
+                                        {
+                                            "entity": "sensor.shelly_garage_rack_temperature",
+                                            "name": "Shelly Garage Rack Temperature"
+                                        },
+                                        {
+                                            "entity": "sensor.shelly_garage_rack_fan_temperature",
+                                            "name": "Shelly Garage Rack Fan Temperature"
+                                        }
                                     ],
                                     "hours_to_show": 24,
-                                    "refresh_interval": 0
+                                    "refresh_interval": 0,
+                                    "type": "custom:mini-graph-card"
                                 },
                                 {
-                                    "type": "custom:mini-graph-card",
                                     "entities": [
-                                        "sensor.shelly_hall_switch_device_temperature",
-                                        "sensor.shelly_living_room_tv_switch_device_temperature",
-                                        "sensor.shelly_living_room_ceiling_lamp_device_temperature",
-                                        "sensor.shelly_living_room_desk_lamp_device_temperature"
+                                        {
+                                            "entity": "sensor.shelly_garage_rack_energy"
+                                        },
+                                        {
+                                            "entity": "sensor.shelly_garage_rack_fan_energy"
+                                        }
                                     ],
                                     "hours_to_show": 24,
-                                    "refresh_interval": 0
+                                    "refresh_interval": 0,
+                                    "type": "custom:mini-graph-card"
+                                },
+                                {
+                                    "entities": [
+                                        {
+                                            "entity": "sensor.shelly_garage_rack_power"
+                                        },
+                                        {
+                                            "entity": "sensor.shelly_garage_rack_fan_power"
+                                        }
+                                    ],
+                                    "hours_to_show": 24,
+                                    "refresh_interval": 0,
+                                    "type": "custom:mini-graph-card"
                                 }
                             ]
                         }
@@ -607,104 +574,159 @@
                     "badges": [],
                     "cards": [
                         {
-                            "type": "entities",
-                            "entities": [
+                            "type": "vertical-stack",
+                            "cards": [
                                 {
-                                    "entity": "cover.shelly_living_room_big_blind"
+                                    "type": "custom:mini-graph-card",
+                                    "entities": [
+                                        {
+                                            "entity": "sensor.netatmo_living_room_temperature"
+                                        },
+                                        {
+                                            "entity": "sensor.netatmo_living_room_humidity",
+                                            "show_state": true,
+                                            "show_fill": false
+                                        }
+                                    ],
+                                    "group_by": "hour",
+                                    "points_per_hour": 1,
+                                    "hours_to_show": 24,
+                                    "refresh_interval": 0,
+                                    "hour24": true,
+                                    "aggregate_func": "max",
+                                    "show": {
+                                        "extrema": true
+                                    }
                                 },
                                 {
-                                    "entity": "cover.shelly_living_room_big_blind",
-                                    "type": "custom:slider-entity-row"
+                                    "type": "custom:mini-graph-card",
+                                    "entities": [
+                                        {
+                                            "entity": "sensor.netatmo_living_room_co2",
+                                            "show_state": true,
+                                            "show_fill": false
+                                        }
+                                    ],
+                                    "group_by": "hour",
+                                    "points_per_hour": 1,
+                                    "hours_to_show": 24,
+                                    "refresh_interval": 0,
+                                    "hour24": true,
+                                    "aggregate_func": "max",
+                                    "show": {
+                                        "extrema": true
+                                    }
                                 },
                                 {
-                                    "entity": "cover.shelly_living_room_small_blind"
-                                },
-                                {
-                                    "entity": "cover.shelly_living_room_small_blind",
-                                    "type": "custom:slider-entity-row"
+                                    "type": "custom:mini-graph-card",
+                                    "entities": [
+                                        {
+                                            "entity": "sensor.netatmo_living_room_noise",
+                                            "show_state": true,
+                                            "show_fill": false
+                                        }
+                                    ],
+                                    "group_by": "hour",
+                                    "points_per_hour": 1,
+                                    "hours_to_show": 24,
+                                    "refresh_interval": 0,
+                                    "hour24": true,
+                                    "aggregate_func": "max",
+                                    "show": {
+                                        "extrema": true
+                                    }
                                 }
-                            ],
-                            "title": "Living Room Blinds"
+                            ]
                         },
                         {
-                            "type": "custom:mini-graph-card",
-                            "entities": [
+                            "type": "vertical-stack",
+                            "cards": [
                                 {
-                                    "entity": "sensor.netatmo_living_room_temperature"
+                                    "type": "entities",
+                                    "entities": [
+                                        {
+                                            "entity": "cover.shelly_living_room_big_blind"
+                                        },
+                                        {
+                                            "entity": "cover.shelly_living_room_big_blind",
+                                            "type": "custom:slider-entity-row"
+                                        },
+                                        {
+                                            "entity": "cover.shelly_living_room_small_blind"
+                                        },
+                                        {
+                                            "entity": "cover.shelly_living_room_small_blind",
+                                            "type": "custom:slider-entity-row"
+                                        }
+                                    ],
+                                    "title": "Living Room Blinds"
                                 },
                                 {
-                                    "entity": "sensor.netatmo_living_room_humidity",
-                                    "show_state": true,
-                                    "show_fill": false
+                                    "entities": [
+                                        {
+                                            "entity": "binary_sensor.hp_printer_connectivity"
+                                        },
+                                        {
+                                            "entity": "sensor.hp_printer_status"
+                                        },
+                                        {
+                                            "entity": "sensor.hp_printer_printer"
+                                        },
+                                        {
+                                            "entity": "sensor.hp_printer_inkcartridge_black"
+                                        },
+                                        {
+                                            "entity": "sensor.hp_printer_inkcartridge_cyanmagentayellow"
+                                        }
+                                    ],
+                                    "type": "glance"
+                                },
+                                {
+                                    "entity": "media_player.spotify_jorge_patriarca",
+                                    "type": "media-control"
                                 }
-                            ],
-                            "group_by": "hour",
-                            "points_per_hour": 1,
-                            "hours_to_show": 24,
-                            "refresh_interval": 0,
-                            "hour24": true,
-                            "aggregate_func": "max",
-                            "show": {
-                                "extrema": true
-                            }
+                            ]
+                        },
+                        {
+                            "type": "vertical-stack",
+                            "cards": [
+                                {
+                                    "entity": "media_player.living_room_tv_2",
+                                    "type": "media-control"
+                                },
+                                {
+                                    "entity": "media_player.denon_avr_x2500h",
+                                    "type": "media-control"
+                                },
+                                {
+                                    "entity": "media_player.living_room",
+                                    "type": "media-control"
+                                },
+                                {
+                                    "entities": [
+                                        "remote.living_room"
+                                    ],
+                                    "type": "entities"
+                                },
+                                {
+                                    "entity": "media_player.plex_plex_for_apple_tv_living_room",
+                                    "type": "media-control"
+                                }
+                            ]
                         },
                         {
                             "entities": [
                                 {
-                                    "entity": "sensor.netatmo_living_room_co2"
+                                    "entity": "switch.shelly_hall_switch",
+                                    "icon": "mdi:television"
                                 },
                                 {
-                                    "entity": "sensor.netatmo_living_room_noise"
+                                    "entity": "switch.shelly_living_room_tv_switch"
                                 }
                             ],
-                            "title": "Living Room",
+                            "show_header_toggle": false,
+                            "title": "Plugs",
                             "type": "entities"
-                        },
-                        {
-                            "entities": [
-                                {
-                                    "entity": "binary_sensor.hp_printer_connectivity"
-                                },
-                                {
-                                    "entity": "sensor.hp_printer_status"
-                                },
-                                {
-                                    "entity": "sensor.hp_printer_printer"
-                                },
-                                {
-                                    "entity": "sensor.hp_printer_inkcartridge_black"
-                                },
-                                {
-                                    "entity": "sensor.hp_printer_inkcartridge_cyanmagentayellow"
-                                }
-                            ],
-                            "type": "glance"
-                        },
-                        {
-                            "entity": "media_player.spotify_jorge_patriarca",
-                            "type": "media-control"
-                        },
-                        {
-                            "entity": "media_player.plex_plex_for_apple_tv_living_room",
-                            "type": "media-control"
-                        },
-                        {
-                            "entity": "media_player.denon_avr_x2500h",
-                            "type": "media-control"
-                        },
-                        {
-                            "entity": "media_player.living_room",
-                            "type": "media-control"
-                        },
-                        {
-                            "entities": [
-                                "remote.living_room"
-                            ],
-                            "type": "entities"
-                        },
-                        {
-                            "entity": "media_player.living_room_tv_2",
-                            "type": "media-control"
                         }
                     ],
                     "icon": "mdi:television",
@@ -718,54 +740,64 @@
                     "badges": [],
                     "cards": [
                         {
-                            "type": "custom:mini-graph-card",
-                            "entities": [
+                            "type": "vertical-stack",
+                            "cards": [
                                 {
-                                    "entity": "sensor.netatmo_kitchen_temperature"
+                                    "type": "custom:mini-graph-card",
+                                    "entities": [
+                                        {
+                                            "entity": "sensor.netatmo_kitchen_temperature"
+                                        },
+                                        {
+                                            "entity": "sensor.netatmo_kitchen_humidity",
+                                            "show_state": true,
+                                            "show_fill": false
+                                        }
+                                    ],
+                                    "group_by": "hour",
+                                    "points_per_hour": 1,
+                                    "hours_to_show": 24,
+                                    "refresh_interval": 0,
+                                    "hour24": true,
+                                    "aggregate_func": "max",
+                                    "show": {
+                                        "extrema": true
+                                    }
                                 },
                                 {
-                                    "entity": "sensor.netatmo_kitchen_humidity",
-                                    "show_state": true,
-                                    "show_fill": false
+                                    "type": "custom:mini-graph-card",
+                                    "entities": [
+                                        "sensor.netatmo_kitchen_co2"
+                                    ],
+                                    "aggregate_func": "max",
+                                    "group_by": "hour",
+                                    "points_per_hour": 1,
+                                    "hours_to_show": 24,
+                                    "refresh_interval": 0,
+                                    "hour24": true,
+                                    "show": {
+                                        "extrema": true
+                                    }
                                 }
-                            ],
-                            "group_by": "hour",
-                            "points_per_hour": 1,
-                            "hours_to_show": 24,
-                            "refresh_interval": 0,
-                            "hour24": true,
-                            "aggregate_func": "max",
-                            "show": {
-                                "extrema": true
-                            }
+                            ]
                         },
                         {
-                            "type": "entities",
-                            "entities": [
+                            "type": "vertical-stack",
+                            "cards": [
                                 {
-                                    "entity": "cover.shelly_kitchen_blind"
-                                },
-                                {
-                                    "entity": "cover.shelly_kitchen_blind",
-                                    "type": "custom:slider-entity-row"
+                                    "type": "entities",
+                                    "entities": [
+                                        {
+                                            "entity": "cover.shelly_kitchen_blind"
+                                        },
+                                        {
+                                            "entity": "cover.shelly_kitchen_blind",
+                                            "type": "custom:slider-entity-row"
+                                        }
+                                    ],
+                                    "title": "Kitchen Blinds"
                                 }
-                            ],
-                            "title": "Kitchen Blinds"
-                        },
-                        {
-                            "type": "custom:mini-graph-card",
-                            "entities": [
-                                "sensor.netatmo_kitchen_co2"
-                            ],
-                            "aggregate_func": "max",
-                            "group_by": "hour",
-                            "points_per_hour": 1,
-                            "hours_to_show": 24,
-                            "refresh_interval": 0,
-                            "hour24": true,
-                            "show": {
-                                "extrema": true
-                            }
+                            ]
                         }
                     ]
                 },
@@ -776,54 +808,72 @@
                     "badges": [],
                     "cards": [
                         {
-                            "type": "custom:mini-graph-card",
-                            "entities": [
+                            "type": "vertical-stack",
+                            "cards": [
                                 {
-                                    "entity": "sensor.netatmo_carol_bedroom_temperature"
+                                    "type": "custom:mini-graph-card",
+                                    "entities": [
+                                        {
+                                            "entity": "sensor.netatmo_carol_bedroom_temperature"
+                                        },
+                                        {
+                                            "entity": "sensor.netatmo_carol_bedroom_humidity",
+                                            "show_state": true,
+                                            "show_fill": false
+                                        }
+                                    ],
+                                    "aggregate_func": "max",
+                                    "group_by": "hour",
+                                    "points_per_hour": 1,
+                                    "hours_to_show": 24,
+                                    "refresh_interval": 0,
+                                    "hour24": true,
+                                    "show": {
+                                        "extrema": true
+                                    }
                                 },
                                 {
-                                    "entity": "sensor.netatmo_carol_bedroom_humidity",
-                                    "show_state": true,
-                                    "show_fill": false
+                                    "type": "custom:mini-graph-card",
+                                    "entities": [
+                                        "sensor.netatmo_carol_bedroom_co2"
+                                    ],
+                                    "aggregate_func": "max",
+                                    "group_by": "hour",
+                                    "points_per_hour": 1,
+                                    "hours_to_show": 24,
+                                    "refresh_interval": 0,
+                                    "hour24": true,
+                                    "show": {
+                                        "extrema": true
+                                    }
                                 }
-                            ],
-                            "aggregate_func": "max",
-                            "group_by": "hour",
-                            "points_per_hour": 1,
-                            "hours_to_show": 24,
-                            "refresh_interval": 0,
-                            "hour24": true,
-                            "show": {
-                                "extrema": true
-                            }
+                            ]
                         },
                         {
-                            "type": "entities",
-                            "entities": [
+                            "type": "vertical-stack",
+                            "cards": [
                                 {
-                                    "entity": "cover.shelly_carol_bedroom_blind"
+                                    "type": "entities",
+                                    "entities": [
+                                        {
+                                            "entity": "cover.shelly_carol_bedroom_blind"
+                                        },
+                                        {
+                                            "entity": "cover.shelly_carol_bedroom_blind",
+                                            "type": "custom:slider-entity-row"
+                                        }
+                                    ],
+                                    "title": "Carol Room Blinds"
                                 },
                                 {
-                                    "entity": "cover.shelly_carol_bedroom_blind",
-                                    "type": "custom:slider-entity-row"
+                                    "type": "entities",
+                                    "entities": [
+                                        {
+                                            "entity": "switch.shelly_carol_room_lights"
+                                        }
+                                    ]
                                 }
-                            ],
-                            "title": "Carol Room Blinds"
-                        },
-                        {
-                            "type": "custom:mini-graph-card",
-                            "entities": [
-                                "sensor.netatmo_carol_bedroom_co2"
-                            ],
-                            "aggregate_func": "max",
-                            "group_by": "hour",
-                            "points_per_hour": 1,
-                            "hours_to_show": 24,
-                            "refresh_interval": 0,
-                            "hour24": true,
-                            "show": {
-                                "extrema": true
-                            }
+                            ]
                         }
                     ]
                 },
@@ -833,6 +883,48 @@
                     "title": "Suite Room",
                     "badges": [],
                     "cards": [
+                        {
+                            "type": "vertical-stack",
+                            "cards": [
+                                {
+                                    "type": "custom:mini-graph-card",
+                                    "entities": [
+                                        {
+                                            "entity": "sensor.netatmo_suite_bedroom_temperature"
+                                        },
+                                        {
+                                            "entity": "sensor.netatmo_suite_bedroom_humidity",
+                                            "show_state": true,
+                                            "show_fill": false
+                                        }
+                                    ],
+                                    "aggregate_func": "max",
+                                    "group_by": "hour",
+                                    "points_per_hour": 1,
+                                    "hours_to_show": 24,
+                                    "refresh_interval": 0,
+                                    "hour24": true,
+                                    "show": {
+                                        "extrema": true
+                                    }
+                                },
+                                {
+                                    "type": "custom:mini-graph-card",
+                                    "entities": [
+                                        "sensor.netatmo_suite_bedroom_co2"
+                                    ],
+                                    "aggregate_func": "max",
+                                    "group_by": "hour",
+                                    "points_per_hour": 1,
+                                    "hours_to_show": 24,
+                                    "refresh_interval": 0,
+                                    "hour24": true,
+                                    "show": {
+                                        "extrema": true
+                                    }
+                                }
+                            ]
+                        },
                         {
                             "type": "entities",
                             "entities": [
@@ -854,55 +946,23 @@
                             "title": "Suite Room Blinds"
                         },
                         {
-                            "type": "custom:mini-graph-card",
-                            "entities": [
+                            "type": "vertical-stack",
+                            "cards": [
                                 {
-                                    "entity": "sensor.netatmo_suite_bedroom_temperature"
+                                    "entity": "media_player.plex_plex_for_apple_tv_bedroom_suite",
+                                    "type": "media-control"
                                 },
                                 {
-                                    "entity": "sensor.netatmo_suite_bedroom_humidity",
-                                    "show_state": true,
-                                    "show_fill": false
+                                    "entities": [
+                                        "remote.suite_room"
+                                    ],
+                                    "type": "entities"
+                                },
+                                {
+                                    "entity": "media_player.suite_room",
+                                    "type": "media-control"
                                 }
-                            ],
-                            "aggregate_func": "max",
-                            "group_by": "hour",
-                            "points_per_hour": 1,
-                            "hours_to_show": 24,
-                            "refresh_interval": 0,
-                            "hour24": true,
-                            "show": {
-                                "extrema": true
-                            }
-                        },
-                        {
-                            "entities": [
-                                "remote.suite_room"
-                            ],
-                            "type": "entities"
-                        },
-                        {
-                            "entity": "media_player.plex_plex_for_apple_tv_bedroom_suite",
-                            "type": "media-control"
-                        },
-                        {
-                            "type": "custom:mini-graph-card",
-                            "entities": [
-                                "sensor.netatmo_suite_bedroom_co2"
-                            ],
-                            "aggregate_func": "max",
-                            "group_by": "hour",
-                            "points_per_hour": 1,
-                            "hours_to_show": 24,
-                            "refresh_interval": 0,
-                            "hour24": true,
-                            "show": {
-                                "extrema": true
-                            }
-                        },
-                        {
-                            "entity": "media_player.suite_room",
-                            "type": "media-control"
+                            ]
                         }
                     ]
                 },
@@ -910,74 +970,61 @@
                     "badges": [],
                     "cards": [
                         {
-                            "type": "entities",
-                            "entities": [
+                            "type": "vertical-stack",
+                            "cards": [
                                 {
-                                    "entity": "switch.shelly_garage_rack"
+                                    "type": "entities",
+                                    "entities": [
+                                        {
+                                            "entity": "switch.shelly_garage_rack"
+                                        },
+                                        {
+                                            "entity": "switch.shelly_garage_rack_fan"
+                                        }
+                                    ],
+                                    "title": "Garage Plugs",
+                                    "show_header_toggle": false
                                 },
                                 {
-                                    "entity": "switch.shelly_garage_rack_fan"
+                                    "type": "custom:mini-graph-card",
+                                    "entities": [
+                                        {
+                                            "entity": "sensor.mqtt_shelly_garage_fox_sensor_temperature"
+                                        },
+                                        {
+                                            "entity": "sensor.mqtt_shelly_garage_rack_ht_humidity",
+                                            "show_state": true,
+                                            "show_fill": false
+                                        }
+                                    ],
+                                    "aggregate_func": "max",
+                                    "group_by": "hour",
+                                    "points_per_hour": 1,
+                                    "hours_to_show": 24,
+                                    "refresh_interval": 0,
+                                    "hour24": true,
+                                    "show": {
+                                        "extrema": true
+                                    }
+                                },
+                                {
+                                    "type": "custom:mini-graph-card",
+                                    "entities": [
+                                        {
+                                            "entity": "sensor.shelly_garage_rack_fan_power"
+                                        }
+                                    ],
+                                    "aggregate_func": "max",
+                                    "group_by": "hour",
+                                    "points_per_hour": 1,
+                                    "hours_to_show": 24,
+                                    "refresh_interval": 0,
+                                    "hour24": true,
+                                    "show": {
+                                        "extrema": true
+                                    }
                                 }
-                            ],
-                            "title": "Garage Plugs",
-                            "show_header_toggle": false
-                        },
-                        {
-                            "type": "custom:mini-graph-card",
-                            "entities": [
-                                {
-                                    "entity": "sensor.shelly_garage_rack_fan_power"
-                                }
-                            ],
-                            "aggregate_func": "max",
-                            "group_by": "hour",
-                            "points_per_hour": 1,
-                            "hours_to_show": 24,
-                            "refresh_interval": 0,
-                            "hour24": true,
-                            "show": {
-                                "extrema": true
-                            }
-                        },
-                        {
-                            "entities": [
-                                {
-                                    "entity": "cover.garage_fox_door"
-                                },
-                                {
-                                    "entity": "sensor.garage_fox_door"
-                                },
-                                {
-                                    "entity": "cover.garage_tiguan_door"
-                                },
-                                {
-                                    "entity": "sensor.garage_tiguan_door"
-                                }
-                            ],
-                            "title": "Garage Doors",
-                            "type": "entities"
-                        },
-                        {
-                            "type": "custom:mini-graph-card",
-                            "entities": [
-                                {
-                                    "entity": "sensor.garage_rack_temperature"
-                                },
-                                {
-                                    "entity": "sensor.garage_temperature",
-                                    "show_state": true,
-                                    "show_fill": false
-                                }
-                            ],
-                            "aggregate_func": "max",
-                            "group_by": "hour",
-                            "points_per_hour": 1,
-                            "hours_to_show": 24,
-                            "refresh_interval": 0,
-                            "hour24": true,
-                            "show": {
-                                "extrema": true
-                            }
+                            ]
                         },
                         {
                             "type": "vertical-stack",
@@ -985,82 +1032,65 @@
                                 {
                                     "entities": [
                                         {
-                                            "entity": "sensor.shelly_garage_rack_temperature",
-                                            "name": "Shelly Garage Rack Temperature"
+                                            "entity": "cover.garage_fox_door"
                                         },
                                         {
-                                            "entity": "sensor.shelly_garage_rack_fan_temperature",
-                                            "name": "Shelly Garage Rack Fan Temperature"
+                                            "entity": "sensor.garage_fox_door"
+                                        },
+                                        {
+                                            "entity": "cover.garage_tiguan_door"
+                                        },
+                                        {
+                                            "entity": "sensor.garage_tiguan_door"
                                         }
                                     ],
-                                    "hours_to_show": 24,
-                                    "refresh_interval": 0,
-                                    "type": "custom:mini-graph-card"
+                                    "title": "Garage Doors",
+                                    "type": "entities"
                                 },
                                 {
+                                    "type": "entities",
                                     "entities": [
                                         {
-                                            "entity": "sensor.shelly_garage_rack_energy"
+                                            "entity": "sensor.mqtt_shelly_garage_fox_sensor_battery"
                                         },
                                         {
-                                            "entity": "sensor.shelly_garage_rack_fan_energy"
-                                        }
-                                    ],
-                                    "hours_to_show": 24,
-                                    "refresh_interval": 0,
-                                    "type": "custom:mini-graph-card"
-                                },
-                                {
-                                    "entities": [
-                                        {
-                                            "entity": "sensor.shelly_garage_rack_power"
+                                            "entity": "sensor.mqtt_shelly_garage_tiguan_sensor_battery"
                                         },
                                         {
-                                            "entity": "sensor.shelly_garage_rack_fan_power"
+                                            "entity": "sensor.mqtt_shelly_garage_fox_sensor_lux"
+                                        },
+                                        {
+                                            "entity": "sensor.mqtt_shelly_garage_tiguan_sensor_lux"
+                                        },
+                                        {
+                                            "entity": "sensor.mqtt_shelly_garage_fox_sensor_temperature"
+                                        },
+                                        {
+                                            "entity": "sensor.mqtt_shelly_garage_tiguan_sensor_temperature"
                                         }
                                     ],
-                                    "hours_to_show": 24,
-                                    "refresh_interval": 0,
-                                    "type": "custom:mini-graph-card"
+                                    "title": "Shelly Garage Door Sensors"
                                 }
                             ]
                         },
                         {
-                            "type": "picture-entity",
-                            "entity": "camera.garage",
-                            "camera_image": "camera.garage",
-                            "show_state": true,
-                            "show_name": true,
-                            "hold_action": {
-                                "action": "none"
-                            }
-                        },
-                        {
-                            "type": "entities",
-                            "entities": [
+                            "type": "vertical-stack",
+                            "cards": [
                                 {
-                                    "entity": "sensor.garage_tiguan_sensor_battery"
+                                    "type": "picture-entity",
+                                    "entity": "camera.garage",
+                                    "camera_image": "camera.garage",
+                                    "show_state": true,
+                                    "show_name": true,
+                                    "hold_action": {
+                                        "action": "none"
+                                    }
                                 },
                                 {
-                                    "entity": "sensor.garage_fox_sensor_battery"
-                                },
-                                {
-                                    "entity": "sensor.garage_rack_temperature"
-                                },
-                                {
-                                    "entity": "sensor.garage_rack_humidity"
-                                },
-                                {
-                                    "entity": "sensor.garage_luminosity"
-                                },
-                                {
-                                    "entity": "sensor.garage_temperature"
+                                    "type": "entity",
+                                    "entity": "binary_sensor.motion_garage"
                                 }
                             ]
-                        },
-                        {
-                            "type": "entity",
-                            "entity": "binary_sensor.garage_motion"
                         }
                     ],
                     "icon": "mdi:garage",
@@ -1350,60 +1380,8 @@
                             "title": "Speedtest Info"
                         },
                         {
-                            "type": "entities",
-                            "entities": [
-                                {
-                                    "entity": "sensor.shelly1_98f4abf32318_rssi"
-                                },
-                                {
-                                    "entity": "sensor.shelly1_98f4abf3243a_rssi"
-                                },
-                                {
-                                    "entity": "sensor.shelly1pm_68c63afad357_rssi"
-                                },
-                                {
-                                    "entity": "sensor.shelly1pm_68c63afad467_rssi"
-                                },
-                                {
-                                    "entity": "sensor.shelly1pm_68c63afae9ff_rssi"
-                                },
-                                {
-                                    "entity": "sensor.shellyswitch25_68c63af99fdd_rssi"
-                                },
-                                {
-                                    "entity": "sensor.shellyswitch25_d8f15b12ff4e_rssi"
-                                },
-                                {
-                                    "entity": "sensor.shellyswitch25_d8f15b13186f_rssi"
-                                },
-                                {
-                                    "entity": "sensor.shellyswitch25_d8f15b1321c4_rssi"
-                                },
-                                {
-                                    "entity": "sensor.shellyswitch25_d8f15b131f36_rssi"
-                                },
-                                {
-                                    "entity": "sensor.shellyswitch25_d8f15b132c1b_rssi"
-                                },
-                                {
-                                    "entity": "sensor.shelly1pm_68c63afadbff_rssi"
-                                },
-                                {
-                                    "entity": "sensor.shelly1pm_68c63afaed87_rssi"
-                                },
-                                {
-                                    "entity": "sensor.shellyplug_s_9779b9_rssi"
-                                }
-                            ]
-                        },
-                        {
                             "type": "custom:rpi-monitor-card",
                             "entity": "sensor.rpi_monitor_pihole01",
-                            "card_style": "full"
-                        },
-                        {
-                            "type": "custom:rpi-monitor-card",
-                            "entity": "sensor.rpi_monitor_pihole02",
                             "card_style": "full"
                         }
                     ],
@@ -2138,6 +2116,236 @@
                     "icon": "mdi:docker",
                     "path": "docker",
                     "title": "Docker"
+                },
+                {
+                    "title": "Tech",
+                    "path": "tech",
+                    "badges": [],
+                    "cards": [
+                        {
+                            "type": "vertical-stack",
+                            "cards": [
+                                {
+                                    "type": "entities",
+                                    "entities": [
+                                        {
+                                            "type": "custom:battery-entity-row",
+                                            "entity": "sensor.netatmo_kitchen_battery_percent",
+                                            "secondary_info": "last-changed",
+                                            "warning": 25,
+                                            "critical": 10
+                                        },
+                                        {
+                                            "type": "custom:battery-entity-row",
+                                            "entity": "sensor.netatmo_outdoor_battery_percent",
+                                            "secondary_info": "last-changed",
+                                            "warning": 25,
+                                            "critical": 10
+                                        },
+                                        {
+                                            "type": "custom:battery-entity-row",
+                                            "entity": "sensor.netatmo_carol_bedroom_battery_percent",
+                                            "secondary_info": "last-changed",
+                                            "warning": 25,
+                                            "critical": 10
+                                        },
+                                        {
+                                            "type": "custom:battery-entity-row",
+                                            "entity": "sensor.netatmo_suite_bedroom_battery_percent",
+                                            "secondary_info": "last-changed",
+                                            "warning": 25,
+                                            "critical": 10
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "entities",
+                                    "entities": [
+                                        {
+                                            "entity": "sensor.netatmo_kitchen_radio"
+                                        },
+                                        {
+                                            "entity": "sensor.netatmo_outdoor_radio"
+                                        },
+                                        {
+                                            "entity": "sensor.netatmo_carol_bedroom_radio"
+                                        },
+                                        {
+                                            "entity": "sensor.netatmo_suite_bedroom_radio"
+                                        }
+                                    ],
+                                    "title": "Netatmo Radio"
+                                },
+                                {
+                                    "type": "entities",
+                                    "entities": [
+                                        {
+                                            "entity": "sensor.netatmo_carol_bedroom_reachability"
+                                        },
+                                        {
+                                            "entity": "sensor.netatmo_kitchen_reachability"
+                                        },
+                                        {
+                                            "entity": "sensor.netatmo_outdoor_reachability"
+                                        },
+                                        {
+                                            "entity": "sensor.netatmo_living_room_reachability"
+                                        },
+                                        {
+                                            "entity": "sensor.netatmo_suite_bedroom_reachability"
+                                        }
+                                    ],
+                                    "title": "Netatmo Reachability"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "vertical-stack",
+                            "cards": [
+                                {
+                                    "type": "custom:mini-graph-card",
+                                    "entities": [
+                                        "sensor.shelly_kitchen_blind_device_temperature",
+                                        "sensor.shelly_living_room_big_blind_device_temperature",
+                                        "sensor.shelly_living_room_small_blind_device_temperature",
+                                        "sensor.shelly_carol_bedroom_blind_device_temperature",
+                                        "sensor.shelly_suite_big_blind_device_temperature",
+                                        "sensor.shelly_suite_small_blind_device_temperature"
+                                    ],
+                                    "hours_to_show": 24,
+                                    "refresh_interval": 0
+                                },
+                                {
+                                    "type": "custom:mini-graph-card",
+                                    "entities": [
+                                        "sensor.shelly_hall_switch_device_temperature",
+                                        "sensor.shelly_living_room_tv_switch_device_temperature",
+                                        "sensor.shelly_living_room_ceiling_lamp_device_temperature",
+                                        "sensor.shelly_living_room_desk_lamp_device_temperature",
+                                        "sensor.shelly_garage_rack_temperature",
+                                        "sensor.shelly_garage_rack_fan_temperature"
+                                    ],
+                                    "hours_to_show": 24,
+                                    "refresh_interval": 0
+                                }
+                            ]
+                        },
+                        {
+                            "type": "vertical-stack",
+                            "cards": [
+                                {
+                                    "type": "entities",
+                                    "entities": [
+                                        {
+                                            "entity": "sensor.mqtt_shelly_garage_fox_rssi"
+                                        },
+                                        {
+                                            "entity": "sensor.mqtt_shelly_garage_tiguan_rssi"
+                                        },
+                                        {
+                                            "entity": "sensor.mqtt_shelly_garage_rack_rssi"
+                                        },
+                                        {
+                                            "entity": "sensor.mqtt_shelly_garage_rack_fan_rssi"
+                                        },
+                                        {
+                                            "entity": "sensor.mqtt_shelly_hall_switch_rssi"
+                                        },
+                                        {
+                                            "entity": "sensor.mqtt_shelly_living_room_big_blind_rssi"
+                                        },
+                                        {
+                                            "entity": "sensor.mqtt_shelly_living_room_small_blind_rssi"
+                                        },
+                                        {
+                                            "entity": "sensor.mqtt_shelly_living_room_ceiling_lamp_rssi"
+                                        },
+                                        {
+                                            "entity": "sensor.mqtt_shelly_living_room_desk_lamp_rssi"
+                                        },
+                                        {
+                                            "entity": "sensor.mqtt_shelly_living_room_tv_switch_rssi"
+                                        },
+                                        {
+                                            "entity": "sensor.mqtt_shelly_kitchen_blind_rssi"
+                                        },
+                                        {
+                                            "entity": "sensor.mqtt_shelly_carol_bedroom_blind_rssi"
+                                        },
+                                        {
+                                            "entity": "sensor.mqtt_shelly_suite_big_blind_rssi"
+                                        },
+                                        {
+                                            "entity": "sensor.mqtt_shelly_suite_small_blind_rssi"
+                                        }
+                                    ],
+                                    "title": "Shellies WiFi RSSI"
+                                },
+                                {
+                                    "type": "entities",
+                                    "entities": [
+                                        {
+                                            "entity": "binary_sensor.mqtt_shelly_carol_bedroom_blind_firmware_update"
+                                        },
+                                        {
+                                            "entity": "binary_sensor.mqtt_shelly_garage_fox_firmware_update"
+                                        },
+                                        {
+                                            "entity": "binary_sensor.mqtt_shelly_garage_fox_sensor_firmware_update"
+                                        },
+                                        {
+                                            "entity": "binary_sensor.mqtt_shelly_garage_rack_fan_firmware_update"
+                                        },
+                                        {
+                                            "entity": "binary_sensor.mqtt_shelly_garage_rack_firmware_update"
+                                        },
+                                        {
+                                            "entity": "binary_sensor.mqtt_shelly_garage_rack_ht_firmware_update"
+                                        },
+                                        {
+                                            "entity": "binary_sensor.mqtt_shelly_garage_tiguan_firmware_update"
+                                        },
+                                        {
+                                            "entity": "binary_sensor.mqtt_shelly_garage_tiguan_sensor_firmware_update"
+                                        },
+                                        {
+                                            "entity": "binary_sensor.mqtt_shelly_hall_switch_firmware_update"
+                                        },
+                                        {
+                                            "entity": "binary_sensor.mqtt_shelly_kitchen_blind_firmware_update"
+                                        },
+                                        {
+                                            "entity": "binary_sensor.mqtt_shelly_living_room_big_blind_firmware_update"
+                                        },
+                                        {
+                                            "entity": "binary_sensor.mqtt_shelly_living_room_ceiling_lamp_firmware_update"
+                                        },
+                                        {
+                                            "entity": "binary_sensor.mqtt_shelly_living_room_desk_lamp_firmware_update"
+                                        },
+                                        {
+                                            "entity": "binary_sensor.mqtt_shelly_living_room_desk_lamp_firmware_update"
+                                        },
+                                        {
+                                            "entity": "binary_sensor.mqtt_shelly_living_room_small_blind_firmware_update"
+                                        },
+                                        {
+                                            "entity": "binary_sensor.mqtt_shelly_living_room_tv_switch_firmware_update"
+                                        },
+                                        {
+                                            "entity": "binary_sensor.mqtt_shelly_suite_big_blind_firmware_update"
+                                        },
+                                        {
+                                            "entity": "binary_sensor.mqtt_shelly_suite_small_blind_firmware_update"
+                                        },
+                                        {
+                                            "entity": "binary_sensor.shelly_plug_s_9a403a_firmware_update"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         }

@@ -9,244 +9,186 @@
                 "attributes": {
                     "editable": true,
                     "id": "jorge_patriarca",
-                    "latitude": 38.791168212890625,
-                    "longitude": -9.188117475445653,
+                    "latitude": 38.791229248046875,
+                    "longitude": -9.18811133940114,
                     "gps_accuracy": 65,
                     "source": "device_tracker.jp_iphone",
                     "user_id": "d39ca003bd3e4e259a7b58f4fde05048",
                     "friendly_name": "Jorge Patriarca"
                 },
-                "last_changed": "2020-10-21T16:53:16.646382+00:00",
-                "last_updated": "2020-10-21T20:02:55.646547+00:00",
+                "last_changed": "2020-11-15T17:53:48.187184+00:00",
+                "last_updated": "2020-11-15T21:02:29.184171+00:00",
                 "context": {
-                    "id": "68c3e3da13d811eb8deedf35a724da90",
+                    "id": "af34f0e1485000ec24fba73f506dc761",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2020-10-21T20:46:16.303500+00:00"
+            "last_seen": "2020-11-15T21:09:13.295590+00:00"
         },
         {
             "state": {
                 "entity_id": "person.claudia_ribeiro",
-                "state": "home",
+                "state": "unknown",
                 "attributes": {
                     "editable": true,
                     "id": "claudia_ribeiro",
-                    "source": "device_tracker.iphonedeclaudia_2",
                     "friendly_name": "Cl\u00e1udia Ribeiro"
                 },
-                "last_changed": "2020-10-21T20:25:16.557402+00:00",
-                "last_updated": "2020-10-21T20:25:16.557402+00:00",
+                "last_changed": "2020-11-15T17:53:48.188242+00:00",
+                "last_updated": "2020-11-15T17:54:13.297628+00:00",
                 "context": {
-                    "id": "8802a5cf13db11eba55db973a7f55a87",
+                    "id": "73d79af20aef4f2621cb953f90a2b061",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2020-10-21T20:46:16.303500+00:00"
+            "last_seen": "2020-11-15T21:09:13.295590+00:00"
         },
         {
             "state": {
                 "entity_id": "person.carolina_patriarca",
-                "state": "not_home",
+                "state": "unknown",
                 "attributes": {
                     "editable": true,
                     "id": "carolina_patriarca",
-                    "source": "device_tracker.redmi8_redmi",
                     "friendly_name": "Carolina Patriarca"
                 },
-                "last_changed": "2020-10-20T14:20:50.124142+00:00",
-                "last_updated": "2020-10-20T14:20:50.124142+00:00",
+                "last_changed": "2020-11-15T17:53:48.188795+00:00",
+                "last_updated": "2020-11-15T17:54:13.297775+00:00",
                 "context": {
-                    "id": "742ff86f12df11eba1ba9b6833d7b80d",
+                    "id": "a91edc47f3378a8a77cfa96e7c9d48d9",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2020-10-21T20:46:16.303500+00:00"
+            "last_seen": "2020-11-15T21:09:13.295590+00:00"
         },
         {
             "state": {
-                "entity_id": "automation.turn_living_room_lamp_on_at_sunset_or_20_00",
-                "state": "on",
+                "entity_id": "sensor.speedtest_ping",
+                "state": "5.251",
                 "attributes": {
-                    "last_triggered": "2020-10-21T19:00:00.007451+00:00",
-                    "mode": "single",
-                    "current": 0,
-                    "id": "1595358403462",
-                    "friendly_name": "Turn Living Room Desk Lamp on at Sunset or 20:00"
+                    "attribution": "Data retrieved from Speedtest.net by Ookla",
+                    "server_name": "Lisbon",
+                    "server_country": "Portugal",
+                    "server_id": "32773",
+                    "unit_of_measurement": "ms",
+                    "friendly_name": "SpeedTest Ping",
+                    "icon": "mdi:speedometer"
                 },
-                "last_changed": "2020-10-19T22:30:50.928068+00:00",
-                "last_updated": "2020-10-21T19:00:00.248063+00:00",
+                "last_changed": "2020-11-15T20:55:40.238205+00:00",
+                "last_updated": "2020-11-15T20:55:40.238205+00:00",
                 "context": {
-                    "id": "9e4efe7813cf11ebb63e8f204bdc550a",
+                    "id": "9a0985e45af9a9d27a69516428e70624",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2020-10-21T20:46:16.303500+00:00"
+            "last_seen": "2020-11-15T21:09:13.295590+00:00"
         },
         {
             "state": {
-                "entity_id": "automation.turn_off_living_room_light_at_01_00",
-                "state": "on",
+                "entity_id": "sensor.speedtest_download",
+                "state": "422.22",
                 "attributes": {
-                    "last_triggered": "2020-10-21T00:00:00.012087+00:00",
-                    "mode": "single",
-                    "current": 0,
-                    "id": "1595359336010",
-                    "friendly_name": "Turn off Living Room Desk light at 01:00"
+                    "attribution": "Data retrieved from Speedtest.net by Ookla",
+                    "server_name": "Lisbon",
+                    "server_country": "Portugal",
+                    "server_id": "32773",
+                    "bytes_received": 409373932,
+                    "unit_of_measurement": "Mbit/s",
+                    "friendly_name": "SpeedTest Download",
+                    "icon": "mdi:speedometer"
                 },
-                "last_changed": "2020-10-19T22:30:50.928950+00:00",
-                "last_updated": "2020-10-21T00:00:00.445242+00:00",
+                "last_changed": "2020-11-15T20:55:40.238448+00:00",
+                "last_updated": "2020-11-15T20:55:40.238448+00:00",
                 "context": {
-                    "id": "5cbc0829133011eba86eb31e205aeb05",
+                    "id": "3f7dd269c154409ad4cf913640c54987",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2020-10-21T20:46:16.303500+00:00"
+            "last_seen": "2020-11-15T21:09:13.295590+00:00"
         },
         {
             "state": {
-                "entity_id": "automation.turn_off_living_room_lamp_if_no_one_at_home",
-                "state": "on",
+                "entity_id": "sensor.speedtest_upload",
+                "state": "104.24",
                 "attributes": {
-                    "last_triggered": "2020-10-02T22:01:49.285594+00:00",
-                    "mode": "single",
-                    "current": 0,
-                    "id": "1595547109688",
-                    "friendly_name": "Turn off Living Room Desk Lamp if no one at home"
+                    "attribution": "Data retrieved from Speedtest.net by Ookla",
+                    "server_name": "Lisbon",
+                    "server_country": "Portugal",
+                    "server_id": "32773",
+                    "bytes_sent": 131678208,
+                    "unit_of_measurement": "Mbit/s",
+                    "friendly_name": "SpeedTest Upload",
+                    "icon": "mdi:speedometer"
                 },
-                "last_changed": "2020-10-19T22:30:50.929601+00:00",
-                "last_updated": "2020-10-19T22:30:50.929601+00:00",
+                "last_changed": "2020-11-15T20:55:40.238711+00:00",
+                "last_updated": "2020-11-15T20:55:40.238711+00:00",
                 "context": {
-                    "id": "be051f10125a11eb9d134b415ccf88ed",
+                    "id": "b2ea6c0de36fb7e791203a043fd6337c",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2020-10-21T20:46:16.303500+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "automation.turn_on_living_room_lamp_when_we_arrive",
-                "state": "on",
-                "attributes": {
-                    "last_triggered": "2020-10-21T17:51:13.017942+00:00",
-                    "mode": "single",
-                    "current": 0,
-                    "id": "1600973987921",
-                    "friendly_name": "Turn on Living Room Desk lamp when we arrive"
-                },
-                "last_changed": "2020-10-19T22:30:50.930240+00:00",
-                "last_updated": "2020-10-21T17:51:13.035154+00:00",
-                "context": {
-                    "id": "026e678813c611eb9eae1bab9bc66a86",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2020-10-21T20:46:16.303500+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "automation.shellies_announce",
-                "state": "on",
-                "attributes": {
-                    "last_triggered": "2020-10-21T20:00:00.012992+00:00",
-                    "mode": "single",
-                    "current": 0,
-                    "id": "shellies_announce",
-                    "friendly_name": "Shellies Announce"
-                },
-                "last_changed": "2020-10-19T22:30:50.930801+00:00",
-                "last_updated": "2020-10-21T20:00:00.054161+00:00",
-                "context": {
-                    "id": "00144c3c13d811ebb11859db2611af10",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2020-10-21T20:46:16.303500+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "automation.shellies_discovery",
-                "state": "on",
-                "attributes": {
-                    "last_triggered": "2020-10-21T20:43:44.781048+00:00",
-                    "mode": "queued",
-                    "current": 0,
-                    "max": 999,
-                    "id": "shellies_discovery",
-                    "friendly_name": "Shellies Discovery"
-                },
-                "last_changed": "2020-10-19T22:30:50.931937+00:00",
-                "last_updated": "2020-10-21T20:43:45.252070+00:00",
-                "context": {
-                    "id": "1c90209713de11eb8e4e3b0293b722eb",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2020-10-21T20:46:16.303500+00:00"
+            "last_seen": "2020-11-15T21:09:13.295590+00:00"
         },
         {
             "state": {
                 "entity_id": "sensor.hall_plug_daily_energy",
-                "state": "2233.2",
+                "state": "245.1",
                 "attributes": {
                     "source": "sensor.shelly_hall_switch_power",
                     "status": "collecting",
-                    "last_period": "2188.0",
-                    "last_reset": "2020-10-21T00:00:00.006829+01:00",
+                    "last_period": "212.1",
+                    "last_reset": "2020-11-15T00:00:00.021801+00:00",
                     "meter_period": "daily",
                     "unit_of_measurement": "Wh",
                     "friendly_name": "Hall Plug Daily Energy",
                     "icon": "mdi:counter",
                     "device_class": "energy"
                 },
-                "last_changed": "2020-10-21T20:46:11.089093+00:00",
-                "last_updated": "2020-10-21T20:46:11.089093+00:00",
+                "last_changed": "2020-11-15T21:08:33.028475+00:00",
+                "last_updated": "2020-11-15T21:08:33.028475+00:00",
                 "context": {
-                    "id": "73c5002713de11eb82bcad6330aa3d2b",
+                    "id": "5e94cf1d8c0221a35f1ba04387ac371d",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2020-10-21T20:46:16.303500+00:00"
+            "last_seen": "2020-11-15T21:09:13.295590+00:00"
         },
         {
             "state": {
                 "entity_id": "sensor.hall_plug_monthly_energy",
-                "state": "39333.2",
+                "state": "20248.5",
                 "attributes": {
                     "source": "sensor.shelly_hall_switch_power",
                     "status": "collecting",
-                    "last_period": "31644.8",
-                    "last_reset": "2020-10-01T00:00:00.008243+01:00",
+                    "last_period": "56145.2",
+                    "last_reset": "2020-11-01T00:00:00.024570+00:00",
                     "meter_period": "monthly",
                     "unit_of_measurement": "Wh",
                     "friendly_name": "Hall Plug Monthly Energy",
                     "icon": "mdi:counter",
                     "device_class": "energy"
                 },
-                "last_changed": "2020-10-21T20:46:11.089765+00:00",
-                "last_updated": "2020-10-21T20:46:11.089765+00:00",
+                "last_changed": "2020-11-15T21:08:33.028709+00:00",
+                "last_updated": "2020-11-15T21:08:33.028709+00:00",
                 "context": {
-                    "id": "73c51af813de11ebad37b5423f6ac663",
+                    "id": "14a471fe1a6f114a70cf813004cf6a6d",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2020-10-21T20:46:16.303500+00:00"
+            "last_seen": "2020-11-15T21:09:13.295590+00:00"
         },
         {
             "state": {
                 "entity_id": "sensor.hall_plug_yearly_energy",
-                "state": "77164.1",
+                "state": "114224.6",
                 "attributes": {
                     "source": "sensor.shelly_hall_switch_power",
                     "status": "collecting",
@@ -258,86 +200,15 @@
                     "icon": "mdi:counter",
                     "device_class": "energy"
                 },
-                "last_changed": "2020-10-21T20:46:11.090287+00:00",
-                "last_updated": "2020-10-21T20:46:11.090287+00:00",
+                "last_changed": "2020-11-15T21:08:33.028876+00:00",
+                "last_updated": "2020-11-15T21:08:33.028876+00:00",
                 "context": {
-                    "id": "73c52fb813de11eb9f5e8f607c6fabcc",
+                    "id": "a38ffb5436617ce48db93b0603428f72",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2020-10-21T20:46:16.303500+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "sensor.speedtest_ping",
-                "state": "13.365",
-                "attributes": {
-                    "attribution": "Data retrieved from Speedtest.net by Ookla",
-                    "server_name": "Lisbon",
-                    "server_country": "Portugal",
-                    "server_id": "8160",
-                    "unit_of_measurement": "ms",
-                    "friendly_name": "SpeedTest Ping",
-                    "icon": "mdi:speedometer"
-                },
-                "last_changed": "2020-10-21T19:46:42.754524+00:00",
-                "last_updated": "2020-10-21T19:46:42.754524+00:00",
-                "context": {
-                    "id": "24e05af913d611eb961bf57497e2d7dd",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2020-10-21T20:46:16.303500+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "sensor.speedtest_download",
-                "state": "447.56",
-                "attributes": {
-                    "attribution": "Data retrieved from Speedtest.net by Ookla",
-                    "server_name": "Lisbon",
-                    "server_country": "Portugal",
-                    "server_id": "8160",
-                    "bytes_received": 409373932,
-                    "unit_of_measurement": "Mbit/s",
-                    "friendly_name": "SpeedTest Download",
-                    "icon": "mdi:speedometer"
-                },
-                "last_changed": "2020-10-21T19:46:42.755487+00:00",
-                "last_updated": "2020-10-21T19:46:42.755487+00:00",
-                "context": {
-                    "id": "24e07e4b13d611ebb62c2bb4edfd55ed",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2020-10-21T20:46:16.303500+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "sensor.speedtest_upload",
-                "state": "105.12",
-                "attributes": {
-                    "attribution": "Data retrieved from Speedtest.net by Ookla",
-                    "server_name": "Lisbon",
-                    "server_country": "Portugal",
-                    "server_id": "8160",
-                    "bytes_sent": 131506176,
-                    "unit_of_measurement": "Mbit/s",
-                    "friendly_name": "SpeedTest Upload",
-                    "icon": "mdi:speedometer"
-                },
-                "last_changed": "2020-10-21T19:46:42.756918+00:00",
-                "last_updated": "2020-10-21T19:46:42.756918+00:00",
-                "context": {
-                    "id": "24e0b70113d611ebbee9239b07a3fde5",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2020-10-21T20:46:16.303500+00:00"
+            "last_seen": "2020-11-15T21:09:13.295590+00:00"
         },
         {
             "state": {
@@ -345,23 +216,23 @@
                 "state": "home",
                 "attributes": {
                     "source_type": "gps",
-                    "battery_level": 53,
-                    "latitude": 38.791168212890625,
-                    "longitude": -9.188117475445653,
+                    "battery_level": 41,
+                    "latitude": 38.791229248046875,
+                    "longitude": -9.18811133940114,
                     "gps_accuracy": 65,
-                    "altitude": 87.34171197119244,
-                    "vertical_accuracy": 4,
+                    "altitude": 87.15636825561523,
+                    "vertical_accuracy": 10,
                     "friendly_name": "JP iPhone"
                 },
-                "last_changed": "2020-10-21T20:02:55.644970+00:00",
-                "last_updated": "2020-10-21T20:02:55.644970+00:00",
+                "last_changed": "2020-11-15T21:02:29.183085+00:00",
+                "last_updated": "2020-11-15T21:02:29.183085+00:00",
                 "context": {
-                    "id": "68c3a49d13d811eb8effdd1f59a93c7b",
+                    "id": "fdb55762c236ce067db9625b65693855",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2020-10-21T20:46:16.303500+00:00"
+            "last_seen": "2020-11-15T21:09:13.295590+00:00"
         },
         {
             "state": {
@@ -369,468 +240,335 @@
                 "state": "home",
                 "attributes": {
                     "source_type": "gps",
-                    "battery_level": 41,
-                    "latitude": 38.79123353602886,
-                    "longitude": -9.18806317272127,
+                    "battery_level": 85,
+                    "latitude": 38.7912032716964,
+                    "longitude": -9.188095398202108,
                     "gps_accuracy": 65,
-                    "altitude": 88.7417984008789,
+                    "altitude": 67.17686080932617,
                     "vertical_accuracy": 10,
                     "friendly_name": "JP iPad"
                 },
-                "last_changed": "2020-10-21T20:41:41.578583+00:00",
-                "last_updated": "2020-10-21T20:41:41.578583+00:00",
+                "last_changed": "2020-11-15T20:46:43.776746+00:00",
+                "last_updated": "2020-11-15T20:46:43.776746+00:00",
                 "context": {
-                    "id": "d320f25e13dd11ebb875ebb05542a6fe",
+                    "id": "dd44845dad27df851e72b467d495f8f9",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2020-10-21T20:46:16.303500+00:00"
+            "last_seen": "2020-11-15T21:09:13.295590+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.shelly_plug_s_9dda6c_relay_0",
+                "state": "unavailable",
+                "attributes": {
+                    "friendly_name": "Shelly Plug S 9DDA6C Relay 0"
+                },
+                "last_changed": "2020-11-15T20:13:46.011486+00:00",
+                "last_updated": "2020-11-15T20:13:46.011486+00:00",
+                "context": {
+                    "id": "6faccadee0e563590b06b8237f27b113",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2020-11-15T21:09:13.295590+00:00"
         },
         {
             "state": {
                 "entity_id": "switch.pihole02_2",
                 "state": "on",
                 "attributes": {
-                    "power": "3.66",
+                    "power": "5.10",
                     "switch": "e0:63:da:2d:0d:9e",
                     "port": 4,
                     "poe_mode": "auto",
-                    "friendly_name": "PiHole02"
+                    "friendly_name": "pihole02"
                 },
-                "last_changed": "2020-10-20T14:13:41.813981+00:00",
-                "last_updated": "2020-10-21T20:43:36.994153+00:00",
+                "last_changed": "2020-11-15T17:54:08.386598+00:00",
+                "last_updated": "2020-11-15T21:08:52.321871+00:00",
                 "context": {
-                    "id": "17ebf9a013de11eb806bb3e8b30d91ee",
+                    "id": "9b4f7f8073485eec54e546c2f440a11b",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2020-10-21T20:46:16.303500+00:00"
+            "last_seen": "2020-11-15T21:09:13.295590+00:00"
         },
         {
             "state": {
-                "entity_id": "switch.uvc_g3_pro_efa0",
+                "entity_id": "switch.garage",
                 "state": "on",
                 "attributes": {
-                    "power": "7.34",
+                    "power": "7.38",
                     "switch": "e0:63:da:2d:0d:9e",
                     "port": 3,
                     "poe_mode": "auto",
                     "friendly_name": "Garage"
                 },
-                "last_changed": "2020-10-20T14:13:41.814482+00:00",
-                "last_updated": "2020-10-21T20:45:01.233093+00:00",
+                "last_changed": "2020-11-15T17:54:08.387315+00:00",
+                "last_updated": "2020-11-15T21:08:52.328153+00:00",
                 "context": {
-                    "id": "4a21d1bf13de11ebb399c117de534696",
+                    "id": "ba6c5809a1450d24ac3dc84c6141e9b6",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2020-10-21T20:46:16.303500+00:00"
+            "last_seen": "2020-11-15T21:09:13.295590+00:00"
         },
         {
             "state": {
                 "entity_id": "switch.hass",
                 "state": "on",
                 "attributes": {
-                    "power": "5.41",
+                    "power": "5.56",
                     "switch": "e0:63:da:2d:0d:9e",
                     "port": 16,
                     "poe_mode": "auto",
                     "friendly_name": "hass"
                 },
-                "last_changed": "2020-10-20T14:13:41.814931+00:00",
-                "last_updated": "2020-10-21T20:45:01.235395+00:00",
+                "last_changed": "2020-11-15T17:54:08.388024+00:00",
+                "last_updated": "2020-11-15T21:08:52.322504+00:00",
                 "context": {
-                    "id": "4a222b6613de11eba2546d7821d9e5a2",
+                    "id": "efbf25c50fe2a06807404e4a3b712694",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2020-10-21T20:46:16.303500+00:00"
+            "last_seen": "2020-11-15T21:09:13.295590+00:00"
         },
         {
             "state": {
                 "entity_id": "switch.pihole01_2",
                 "state": "on",
                 "attributes": {
-                    "power": "4.07",
+                    "power": "4.66",
                     "switch": "e0:63:da:2d:0d:9e",
                     "port": 2,
                     "poe_mode": "auto",
-                    "friendly_name": "PiHole01"
+                    "friendly_name": "pihole01"
                 },
-                "last_changed": "2020-10-20T14:13:41.815300+00:00",
-                "last_updated": "2020-10-21T20:45:01.230908+00:00",
+                "last_changed": "2020-11-15T17:54:08.388767+00:00",
+                "last_updated": "2020-11-15T21:07:38.397673+00:00",
                 "context": {
-                    "id": "4a2179e713de11eb821357f1762edfee",
+                    "id": "021e721d2004e22b6b3245f5917124fc",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2020-10-21T20:46:16.303500+00:00"
+            "last_seen": "2020-11-15T21:09:13.295590+00:00"
         },
         {
             "state": {
-                "entity_id": "switch.unifi_poe_e4_2d_1d_20_34_41",
+                "entity_id": "automation.turn_on_living_room_lamp_when_we_arrive",
+                "state": "off",
+                "attributes": {
+                    "last_triggered": "2020-11-10T21:20:00.007126+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "id": "1600973987921",
+                    "friendly_name": "Turn Living Room Desk Lamp on when we arrive"
+                },
+                "last_changed": "2020-11-15T19:05:45.524916+00:00",
+                "last_updated": "2020-11-15T19:05:45.524916+00:00",
+                "context": {
+                    "id": "1989b295b14fdbab62143892b691a7e9",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2020-11-15T21:09:13.295590+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.turn_living_room_lamp_on_at_sunset_or_20_00",
                 "state": "on",
                 "attributes": {
-                    "power": "6.85",
+                    "last_triggered": "2020-11-15T20:00:00.011476+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "id": "1595358403462",
+                    "friendly_name": "Turn Living Room Desk Lamp on at sunset or 20:00"
+                },
+                "last_changed": "2020-11-15T19:05:45.538548+00:00",
+                "last_updated": "2020-11-15T20:00:00.327677+00:00",
+                "context": {
+                    "id": "1de3b7056ac4247c4b12d5090f26ea78",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2020-11-15T21:09:13.295590+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.turn_off_living_room_light_at_01_00",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2020-11-15T01:00:00.005803+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "id": "1595359336010",
+                    "friendly_name": "Turn Living Room Desk Lamp off at 01:00"
+                },
+                "last_changed": "2020-11-15T19:05:45.538969+00:00",
+                "last_updated": "2020-11-15T19:05:45.538969+00:00",
+                "context": {
+                    "id": "5af1237224aa3972fd392755bd751f3b",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2020-11-15T21:09:13.295590+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.turn_off_living_room_lamp_if_no_one_at_home",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2020-10-02T22:01:49.285594+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "id": "1595547109688",
+                    "friendly_name": "Turn Living Room Desk Lamp off if no one at home"
+                },
+                "last_changed": "2020-11-15T19:05:45.539291+00:00",
+                "last_updated": "2020-11-15T19:05:45.539291+00:00",
+                "context": {
+                    "id": "ba2feb774067b82dafae1aae8ed1afca",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2020-11-15T21:09:13.295590+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.shellies_announce",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2020-11-15T21:00:00.009779+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "id": "shellies_announce",
+                    "friendly_name": "Shellies Announce"
+                },
+                "last_changed": "2020-11-15T19:05:45.539869+00:00",
+                "last_updated": "2020-11-15T21:00:00.052081+00:00",
+                "context": {
+                    "id": "43f9b45cf19dc222cf79781ab86c32f6",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2020-11-15T21:09:13.295590+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.turn_on_carol_lights_on_sunset_and_when_blinds_are_closed",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2020-11-15T17:59:36.021472+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "id": "1603977617607",
+                    "friendly_name": "Turn Carol Lights on when blinds are closed"
+                },
+                "last_changed": "2020-11-15T19:05:45.540361+00:00",
+                "last_updated": "2020-11-15T19:05:45.540361+00:00",
+                "context": {
+                    "id": "3de73da42bfa68c7030f35771e98fb0d",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2020-11-15T21:09:13.295590+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.turn_off_carol_lights_in_sunrise_after_the_blinds_are_opened",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2020-11-15T15:56:38.056280+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "id": "1603977690271",
+                    "friendly_name": "Turn Carol Lights off after the blinds are opened"
+                },
+                "last_changed": "2020-11-15T19:05:45.540717+00:00",
+                "last_updated": "2020-11-15T19:05:45.540717+00:00",
+                "context": {
+                    "id": "116ec6d92ac6ea5214590106b994e91f",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2020-11-15T21:09:13.295590+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.shellies_discovery",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2020-11-15T21:01:46.331050+00:00",
+                    "mode": "queued",
+                    "current": 0,
+                    "max": 999,
+                    "id": "shellies_discovery",
+                    "friendly_name": "Shellies Discovery"
+                },
+                "last_changed": "2020-11-15T19:05:45.552306+00:00",
+                "last_updated": "2020-11-15T21:01:46.707744+00:00",
+                "context": {
+                    "id": "cdb1c662acfc8095ee0bc949a34843aa",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2020-11-15T21:09:13.295590+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.homeassistant",
+                "state": "on",
+                "attributes": {
+                    "power": "5.67",
+                    "switch": "e0:63:da:2d:0d:9e",
+                    "port": 16,
+                    "poe_mode": "auto",
+                    "friendly_name": "hass"
+                },
+                "last_changed": "2020-11-15T13:38:06.722122+00:00",
+                "last_updated": "2020-11-15T14:09:47.104528+00:00",
+                "context": {
+                    "id": "6085e6d0d12ae37362c68ba9cc2c5434",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2020-11-15T14:10:59.936264+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.unifi_poe_e4_2d_1d_20_2c_2b",
+                "state": "on",
+                "attributes": {
+                    "power": "6.73",
                     "switch": "b4:fb:e4:b4:ff:08",
                     "port": 2,
                     "poe_mode": "auto",
                     "friendly_name": ""
                 },
-                "last_changed": "2020-10-20T14:13:41.815660+00:00",
-                "last_updated": "2020-10-20T14:13:41.815660+00:00",
+                "last_changed": "2020-11-15T13:38:06.723289+00:00",
+                "last_updated": "2020-11-15T13:38:06.723289+00:00",
                 "context": {
-                    "id": "74e54c7e12de11eb8fd3e565fb26dcf3",
+                    "id": "8467ac22b61bca0b08241b98c5a9fbb1",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2020-10-21T20:46:16.303500+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "switch.shelly_1pm_68c63afad357_relay_0",
-                "state": "on",
-                "attributes": {
-                    "friendly_name": "Shelly 1PM 68C63AFAD357 Relay 0"
-                },
-                "last_changed": "2020-10-21T17:31:13.065010+00:00",
-                "last_updated": "2020-10-21T17:31:13.065010+00:00",
-                "context": {
-                    "id": "37342cea13c311ebb79641eab26e81f1",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2020-10-21T20:46:16.303500+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "switch.shelly_1pm_68c63afad467_relay_0",
-                "state": "on",
-                "attributes": {
-                    "friendly_name": "Shelly 1PM 68C63AFAD467 Relay 0"
-                },
-                "last_changed": "2020-10-20T05:02:42.355936+00:00",
-                "last_updated": "2020-10-20T05:02:42.355936+00:00",
-                "context": {
-                    "id": "7bec124e129111ebbcbc2d6b2e926e51",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2020-10-21T20:46:16.303500+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "switch.shelly_1pm_68c63afae9ff_relay_0",
-                "state": "on",
-                "attributes": {
-                    "friendly_name": "Shelly 1PM 68C63AFAE9FF Relay 0"
-                },
-                "last_changed": "2020-10-20T05:02:42.356393+00:00",
-                "last_updated": "2020-10-20T05:02:42.356393+00:00",
-                "context": {
-                    "id": "7bec242a129111eba6bc83ce4e52da65",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2020-10-21T20:46:16.303500+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "switch.shelly_2_5_d8f15b131f36_relay_0",
-                "state": "off",
-                "attributes": {
-                    "friendly_name": "Shelly 2.5 D8F15B131F36 Relay 0"
-                },
-                "last_changed": "2020-10-20T05:04:30.788749+00:00",
-                "last_updated": "2020-10-20T05:04:30.788749+00:00",
-                "context": {
-                    "id": "bc8d99ec129111ebbc049f5bbe0ddeb5",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2020-10-21T20:46:16.303500+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "switch.shelly_2_5_d8f15b131f36_relay_1",
-                "state": "off",
-                "attributes": {
-                    "friendly_name": "Shelly 2.5 D8F15B131F36 Relay 1"
-                },
-                "last_changed": "2020-10-20T05:04:30.789395+00:00",
-                "last_updated": "2020-10-20T05:04:30.789395+00:00",
-                "context": {
-                    "id": "bc8db46e129111ebb69f9923d13218c6",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2020-10-21T20:46:16.303500+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "switch.shelly_2_5_d8f15b12ff4e_relay_0",
-                "state": "off",
-                "attributes": {
-                    "friendly_name": "Shelly 2.5 D8F15B12FF4E Relay 0"
-                },
-                "last_changed": "2020-10-20T05:04:28.169971+00:00",
-                "last_updated": "2020-10-20T05:04:28.169971+00:00",
-                "context": {
-                    "id": "bafe01b1129111eb8b8177b92759ba33",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2020-10-21T20:46:16.303500+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "switch.shelly_2_5_d8f15b12ff4e_relay_1",
-                "state": "off",
-                "attributes": {
-                    "friendly_name": "Shelly 2.5 D8F15B12FF4E Relay 1"
-                },
-                "last_changed": "2020-10-20T05:04:28.170566+00:00",
-                "last_updated": "2020-10-20T05:04:28.170566+00:00",
-                "context": {
-                    "id": "bafe1a9e129111ebba2173ebe2759828",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2020-10-21T20:46:16.303500+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "switch.shelly_1_98f4abf3243a_relay_0",
-                "state": "off",
-                "attributes": {
-                    "friendly_name": "Shelly 1 98F4ABF3243A Relay 0"
-                },
-                "last_changed": "2020-10-20T05:02:51.396125+00:00",
-                "last_updated": "2020-10-20T05:02:51.396125+00:00",
-                "context": {
-                    "id": "814f7d5b129111eba2c6058429b5902c",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2020-10-21T20:46:16.303500+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "switch.shelly_2_5_d8f15b1321c4_relay_0",
-                "state": "off",
-                "attributes": {
-                    "friendly_name": "Shelly 2.5 D8F15B1321C4 Relay 0"
-                },
-                "last_changed": "2020-10-20T05:04:33.876338+00:00",
-                "last_updated": "2020-10-20T05:04:33.876338+00:00",
-                "context": {
-                    "id": "be64bad1129111eba0e399b8683fb302",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2020-10-21T20:46:16.303500+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "switch.shelly_2_5_d8f15b1321c4_relay_1",
-                "state": "off",
-                "attributes": {
-                    "friendly_name": "Shelly 2.5 D8F15B1321C4 Relay 1"
-                },
-                "last_changed": "2020-10-20T05:04:33.876968+00:00",
-                "last_updated": "2020-10-20T05:04:33.876968+00:00",
-                "context": {
-                    "id": "be64d4c1129111eb8956cb1cc7d9f57a",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2020-10-21T20:46:16.303500+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "switch.shelly_2_5_68c63af99fdd_relay_0",
-                "state": "off",
-                "attributes": {
-                    "friendly_name": "Shelly 2.5 68C63AF99FDD Relay 0"
-                },
-                "last_changed": "2020-10-20T05:04:30.130217+00:00",
-                "last_updated": "2020-10-20T05:04:30.130217+00:00",
-                "context": {
-                    "id": "bc291dc7129111eba2bf8918ed248bba",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2020-10-21T20:46:16.303500+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "switch.shelly_2_5_68c63af99fdd_relay_1",
-                "state": "off",
-                "attributes": {
-                    "friendly_name": "Shelly 2.5 68C63AF99FDD Relay 1"
-                },
-                "last_changed": "2020-10-20T05:04:30.130904+00:00",
-                "last_updated": "2020-10-20T05:04:30.130904+00:00",
-                "context": {
-                    "id": "bc293a0e129111eb93f219422f06241b",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2020-10-21T20:46:16.303500+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "switch.shelly_2_5_d8f15b13186f_relay_0",
-                "state": "off",
-                "attributes": {
-                    "friendly_name": "Shelly 2.5 D8F15B13186F Relay 0"
-                },
-                "last_changed": "2020-10-20T05:04:28.639256+00:00",
-                "last_updated": "2020-10-20T05:04:28.639256+00:00",
-                "context": {
-                    "id": "bb459d9f129111eb92e7e534dd786bc5",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2020-10-21T20:46:16.303500+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "switch.shelly_2_5_d8f15b13186f_relay_1",
-                "state": "off",
-                "attributes": {
-                    "friendly_name": "Shelly 2.5 D8F15B13186F Relay 1"
-                },
-                "last_changed": "2020-10-20T05:04:28.639786+00:00",
-                "last_updated": "2020-10-20T05:04:28.639786+00:00",
-                "context": {
-                    "id": "bb45b385129111eb9377cda17241218c",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2020-10-21T20:46:16.303500+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "switch.shelly_1_98f4abf32318_relay_0",
-                "state": "off",
-                "attributes": {
-                    "friendly_name": "Shelly 1 98F4ABF32318 Relay 0"
-                },
-                "last_changed": "2020-10-21T16:35:30.863411+00:00",
-                "last_updated": "2020-10-21T16:35:30.863411+00:00",
-                "context": {
-                    "id": "6f18b00a13bb11ebb16d579d98b25b9d",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2020-10-21T20:46:16.303500+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "switch.shelly_2_5_d8f15b132c1b_relay_0",
-                "state": "off",
-                "attributes": {
-                    "friendly_name": "Shelly 2.5 D8F15B132C1B Relay 0"
-                },
-                "last_changed": "2020-10-20T05:04:33.186737+00:00",
-                "last_updated": "2020-10-20T05:04:33.186737+00:00",
-                "context": {
-                    "id": "bdfb80fa129111ebae792f7839ef0ad1",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2020-10-21T20:46:16.303500+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "switch.shelly_2_5_d8f15b132c1b_relay_1",
-                "state": "off",
-                "attributes": {
-                    "friendly_name": "Shelly 2.5 D8F15B132C1B Relay 1"
-                },
-                "last_changed": "2020-10-20T05:04:33.187405+00:00",
-                "last_updated": "2020-10-20T05:04:33.187405+00:00",
-                "context": {
-                    "id": "bdfb9c96129111eba73a9d2bd62c8738",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2020-10-21T20:46:16.303500+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "switch.shelly_1pm_68c63afaed87_relay_0",
-                "state": "off",
-                "attributes": {
-                    "friendly_name": "Shelly 1PM 68C63AFAED87 Relay 0"
-                },
-                "last_changed": "2020-10-21T20:17:40.355983+00:00",
-                "last_updated": "2020-10-21T20:17:40.355983+00:00",
-                "context": {
-                    "id": "7817d7c013da11ebaab1d50243574a21",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2020-10-21T20:46:16.303500+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "switch.shelly_plug_s_9779b9_relay_0",
-                "state": "on",
-                "attributes": {
-                    "friendly_name": "Shelly Plug S 9779B9 Relay 0"
-                },
-                "last_changed": "2020-10-21T11:39:50.625288+00:00",
-                "last_updated": "2020-10-21T11:39:50.625288+00:00",
-                "context": {
-                    "id": "21172b2d139211ebae820dcf4ca0b8e1",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2020-10-21T20:46:16.303500+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "switch.shelly_1pm_68c63afadbff_relay_0",
-                "state": "on",
-                "attributes": {
-                    "friendly_name": "Shelly 1PM 68C63AFADBFF Relay 0"
-                },
-                "last_changed": "2020-10-20T06:00:00.284850+00:00",
-                "last_updated": "2020-10-20T06:00:00.284850+00:00",
-                "context": {
-                    "id": "7d166341129911ebaca30316989f1321",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2020-10-21T20:46:16.303500+00:00"
+            "last_seen": "2020-11-15T14:10:59.937123+00:00"
         }
     ]
 }

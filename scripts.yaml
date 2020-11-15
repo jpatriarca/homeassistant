@@ -36,3 +36,8 @@ close_bedroom_blinds:
     type: set_position
     position: 0
   mode: single
+toggle_fox_garage_door:
+  alias: Toggle Fox Garage Door
+  sequence: []
+  mode: single
+  icon: mdi:garage
