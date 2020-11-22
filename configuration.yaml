@@ -249,18 +249,6 @@ sensor:
     scan_interval: 120
     device_class: voltage
 
-# Binary Sensor configuration
-
-#binary_sensor:
-#  - platform: mqtt
-#    name: Garage Motion
-#    state_topic: "camera/motion/Garage"
-#    payload_on: "ON"
-#    payload_off: "OFF"
-#    device_class: motion
-  
-# Utility Meter configuration
-
 utility_meter:
   hall_plug_daily_energy:
     source: sensor.shelly_hall_switch_power
@@ -302,9 +290,8 @@ monitor_docker:
       - pihole02-poller
       - observium
       - tautulli
-      - unifi-video
-      - unifi-video-mqtt
       - portainer
+      - ntp
     rename:
       hass: HomeAssist
       hydra2: Hydra2
@@ -330,9 +317,8 @@ monitor_docker:
       pihole02-poller: "PiHole02-Poller"
       observium: Observium
       tautulli: Tautulli
-      unifi-video: "UniFi Video"
-      unifi-video-mqtt: "UniFi Video MQTT"
       portainer: "Portainer"
+      ntp: "ntp"
     monitored_conditions:
       - version
       - containers_running
