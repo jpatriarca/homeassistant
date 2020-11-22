@@ -42,6 +42,16 @@
                 "url": "/hacsfiles/lovelace-auto-entities/auto-entities.js",
                 "type": "module",
                 "id": "5dc68730433f4081ada24ace016570b3"
+            },
+            {
+                "url": "/hacsfiles/numberbox-card/numberbox-card.js",
+                "type": "module",
+                "id": "06edbc77665e4cd78fc171b6d1272026"
+            },
+            {
+                "url": "/hacsfiles/gallery-card/gallery-card.js",
+                "type": "module",
+                "id": "577facce617b4d0e8616351960ef4cce"
             }
         ]
     }

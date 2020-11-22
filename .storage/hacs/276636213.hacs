@@ -12,7 +12,7 @@
         "description": "Cover card with homekit style vertical position slider (best with panel-mode but normal-mode works also)",
         "domain": "",
         "domains": [],
-        "downloads": 832,
+        "downloads": 897,
         "file_name": "vertical-slider-cover-card.js",
         "filename": "vertical-slider-cover-card.js",
         "first_install": false,

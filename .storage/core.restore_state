@@ -9,22 +9,22 @@
                 "attributes": {
                     "editable": true,
                     "id": "jorge_patriarca",
-                    "latitude": 38.791229248046875,
-                    "longitude": -9.18811133940114,
+                    "latitude": 38.791961669921875,
+                    "longitude": -9.187916334657467,
                     "gps_accuracy": 65,
                     "source": "device_tracker.jp_iphone",
                     "user_id": "d39ca003bd3e4e259a7b58f4fde05048",
                     "friendly_name": "Jorge Patriarca"
                 },
-                "last_changed": "2020-11-15T17:53:48.187184+00:00",
-                "last_updated": "2020-11-15T21:02:29.184171+00:00",
+                "last_changed": "2020-11-22T12:15:11.984587+00:00",
+                "last_updated": "2020-11-22T13:32:03.873025+00:00",
                 "context": {
-                    "id": "af34f0e1485000ec24fba73f506dc761",
+                    "id": "7340a5755b6b96f3a9bf06040a9888b5",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2020-11-15T21:09:13.295590+00:00"
+            "last_seen": "2020-11-22T16:47:26.991852+00:00"
         },
         {
             "state": {
@@ -35,15 +35,15 @@
                     "id": "claudia_ribeiro",
                     "friendly_name": "Cl\u00e1udia Ribeiro"
                 },
-                "last_changed": "2020-11-15T17:53:48.188242+00:00",
-                "last_updated": "2020-11-15T17:54:13.297628+00:00",
+                "last_changed": "2020-11-20T22:44:05.229161+00:00",
+                "last_updated": "2020-11-20T22:47:13.105902+00:00",
                 "context": {
-                    "id": "73d79af20aef4f2621cb953f90a2b061",
+                    "id": "f3e38855d2ece05e20d50d0f04016be0",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2020-11-15T21:09:13.295590+00:00"
+            "last_seen": "2020-11-22T16:47:26.991852+00:00"
         },
         {
             "state": {
@@ -54,373 +54,57 @@
                     "id": "carolina_patriarca",
                     "friendly_name": "Carolina Patriarca"
                 },
-                "last_changed": "2020-11-15T17:53:48.188795+00:00",
-                "last_updated": "2020-11-15T17:54:13.297775+00:00",
+                "last_changed": "2020-11-20T22:44:05.229685+00:00",
+                "last_updated": "2020-11-20T22:47:13.106050+00:00",
                 "context": {
-                    "id": "a91edc47f3378a8a77cfa96e7c9d48d9",
+                    "id": "a20a232cbfe42dec1bc18dbcedf13663",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2020-11-15T21:09:13.295590+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "sensor.speedtest_ping",
-                "state": "5.251",
-                "attributes": {
-                    "attribution": "Data retrieved from Speedtest.net by Ookla",
-                    "server_name": "Lisbon",
-                    "server_country": "Portugal",
-                    "server_id": "32773",
-                    "unit_of_measurement": "ms",
-                    "friendly_name": "SpeedTest Ping",
-                    "icon": "mdi:speedometer"
-                },
-                "last_changed": "2020-11-15T20:55:40.238205+00:00",
-                "last_updated": "2020-11-15T20:55:40.238205+00:00",
-                "context": {
-                    "id": "9a0985e45af9a9d27a69516428e70624",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2020-11-15T21:09:13.295590+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "sensor.speedtest_download",
-                "state": "422.22",
-                "attributes": {
-                    "attribution": "Data retrieved from Speedtest.net by Ookla",
-                    "server_name": "Lisbon",
-                    "server_country": "Portugal",
-                    "server_id": "32773",
-                    "bytes_received": 409373932,
-                    "unit_of_measurement": "Mbit/s",
-                    "friendly_name": "SpeedTest Download",
-                    "icon": "mdi:speedometer"
-                },
-                "last_changed": "2020-11-15T20:55:40.238448+00:00",
-                "last_updated": "2020-11-15T20:55:40.238448+00:00",
-                "context": {
-                    "id": "3f7dd269c154409ad4cf913640c54987",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2020-11-15T21:09:13.295590+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "sensor.speedtest_upload",
-                "state": "104.24",
-                "attributes": {
-                    "attribution": "Data retrieved from Speedtest.net by Ookla",
-                    "server_name": "Lisbon",
-                    "server_country": "Portugal",
-                    "server_id": "32773",
-                    "bytes_sent": 131678208,
-                    "unit_of_measurement": "Mbit/s",
-                    "friendly_name": "SpeedTest Upload",
-                    "icon": "mdi:speedometer"
-                },
-                "last_changed": "2020-11-15T20:55:40.238711+00:00",
-                "last_updated": "2020-11-15T20:55:40.238711+00:00",
-                "context": {
-                    "id": "b2ea6c0de36fb7e791203a043fd6337c",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2020-11-15T21:09:13.295590+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "sensor.hall_plug_daily_energy",
-                "state": "245.1",
-                "attributes": {
-                    "source": "sensor.shelly_hall_switch_power",
-                    "status": "collecting",
-                    "last_period": "212.1",
-                    "last_reset": "2020-11-15T00:00:00.021801+00:00",
-                    "meter_period": "daily",
-                    "unit_of_measurement": "Wh",
-                    "friendly_name": "Hall Plug Daily Energy",
-                    "icon": "mdi:counter",
-                    "device_class": "energy"
-                },
-                "last_changed": "2020-11-15T21:08:33.028475+00:00",
-                "last_updated": "2020-11-15T21:08:33.028475+00:00",
-                "context": {
-                    "id": "5e94cf1d8c0221a35f1ba04387ac371d",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2020-11-15T21:09:13.295590+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "sensor.hall_plug_monthly_energy",
-                "state": "20248.5",
-                "attributes": {
-                    "source": "sensor.shelly_hall_switch_power",
-                    "status": "collecting",
-                    "last_period": "56145.2",
-                    "last_reset": "2020-11-01T00:00:00.024570+00:00",
-                    "meter_period": "monthly",
-                    "unit_of_measurement": "Wh",
-                    "friendly_name": "Hall Plug Monthly Energy",
-                    "icon": "mdi:counter",
-                    "device_class": "energy"
-                },
-                "last_changed": "2020-11-15T21:08:33.028709+00:00",
-                "last_updated": "2020-11-15T21:08:33.028709+00:00",
-                "context": {
-                    "id": "14a471fe1a6f114a70cf813004cf6a6d",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2020-11-15T21:09:13.295590+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "sensor.hall_plug_yearly_energy",
-                "state": "114224.6",
-                "attributes": {
-                    "source": "sensor.shelly_hall_switch_power",
-                    "status": "collecting",
-                    "last_period": 0,
-                    "last_reset": "2020-08-13T10:44:32.109584+01:00",
-                    "meter_period": "yearly",
-                    "unit_of_measurement": "Wh",
-                    "friendly_name": "Hall Plug Yearly Energy",
-                    "icon": "mdi:counter",
-                    "device_class": "energy"
-                },
-                "last_changed": "2020-11-15T21:08:33.028876+00:00",
-                "last_updated": "2020-11-15T21:08:33.028876+00:00",
-                "context": {
-                    "id": "a38ffb5436617ce48db93b0603428f72",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2020-11-15T21:09:13.295590+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "device_tracker.jp_iphone",
-                "state": "home",
-                "attributes": {
-                    "source_type": "gps",
-                    "battery_level": 41,
-                    "latitude": 38.791229248046875,
-                    "longitude": -9.18811133940114,
-                    "gps_accuracy": 65,
-                    "altitude": 87.15636825561523,
-                    "vertical_accuracy": 10,
-                    "friendly_name": "JP iPhone"
-                },
-                "last_changed": "2020-11-15T21:02:29.183085+00:00",
-                "last_updated": "2020-11-15T21:02:29.183085+00:00",
-                "context": {
-                    "id": "fdb55762c236ce067db9625b65693855",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2020-11-15T21:09:13.295590+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "device_tracker.jp_ipad",
-                "state": "home",
-                "attributes": {
-                    "source_type": "gps",
-                    "battery_level": 85,
-                    "latitude": 38.7912032716964,
-                    "longitude": -9.188095398202108,
-                    "gps_accuracy": 65,
-                    "altitude": 67.17686080932617,
-                    "vertical_accuracy": 10,
-                    "friendly_name": "JP iPad"
-                },
-                "last_changed": "2020-11-15T20:46:43.776746+00:00",
-                "last_updated": "2020-11-15T20:46:43.776746+00:00",
-                "context": {
-                    "id": "dd44845dad27df851e72b467d495f8f9",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2020-11-15T21:09:13.295590+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "switch.shelly_plug_s_9dda6c_relay_0",
-                "state": "unavailable",
-                "attributes": {
-                    "friendly_name": "Shelly Plug S 9DDA6C Relay 0"
-                },
-                "last_changed": "2020-11-15T20:13:46.011486+00:00",
-                "last_updated": "2020-11-15T20:13:46.011486+00:00",
-                "context": {
-                    "id": "6faccadee0e563590b06b8237f27b113",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2020-11-15T21:09:13.295590+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "switch.pihole02_2",
-                "state": "on",
-                "attributes": {
-                    "power": "5.10",
-                    "switch": "e0:63:da:2d:0d:9e",
-                    "port": 4,
-                    "poe_mode": "auto",
-                    "friendly_name": "pihole02"
-                },
-                "last_changed": "2020-11-15T17:54:08.386598+00:00",
-                "last_updated": "2020-11-15T21:08:52.321871+00:00",
-                "context": {
-                    "id": "9b4f7f8073485eec54e546c2f440a11b",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2020-11-15T21:09:13.295590+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "switch.garage",
-                "state": "on",
-                "attributes": {
-                    "power": "7.38",
-                    "switch": "e0:63:da:2d:0d:9e",
-                    "port": 3,
-                    "poe_mode": "auto",
-                    "friendly_name": "Garage"
-                },
-                "last_changed": "2020-11-15T17:54:08.387315+00:00",
-                "last_updated": "2020-11-15T21:08:52.328153+00:00",
-                "context": {
-                    "id": "ba6c5809a1450d24ac3dc84c6141e9b6",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2020-11-15T21:09:13.295590+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "switch.hass",
-                "state": "on",
-                "attributes": {
-                    "power": "5.56",
-                    "switch": "e0:63:da:2d:0d:9e",
-                    "port": 16,
-                    "poe_mode": "auto",
-                    "friendly_name": "hass"
-                },
-                "last_changed": "2020-11-15T17:54:08.388024+00:00",
-                "last_updated": "2020-11-15T21:08:52.322504+00:00",
-                "context": {
-                    "id": "efbf25c50fe2a06807404e4a3b712694",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2020-11-15T21:09:13.295590+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "switch.pihole01_2",
-                "state": "on",
-                "attributes": {
-                    "power": "4.66",
-                    "switch": "e0:63:da:2d:0d:9e",
-                    "port": 2,
-                    "poe_mode": "auto",
-                    "friendly_name": "pihole01"
-                },
-                "last_changed": "2020-11-15T17:54:08.388767+00:00",
-                "last_updated": "2020-11-15T21:07:38.397673+00:00",
-                "context": {
-                    "id": "021e721d2004e22b6b3245f5917124fc",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2020-11-15T21:09:13.295590+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "automation.turn_on_living_room_lamp_when_we_arrive",
-                "state": "off",
-                "attributes": {
-                    "last_triggered": "2020-11-10T21:20:00.007126+00:00",
-                    "mode": "single",
-                    "current": 0,
-                    "id": "1600973987921",
-                    "friendly_name": "Turn Living Room Desk Lamp on when we arrive"
-                },
-                "last_changed": "2020-11-15T19:05:45.524916+00:00",
-                "last_updated": "2020-11-15T19:05:45.524916+00:00",
-                "context": {
-                    "id": "1989b295b14fdbab62143892b691a7e9",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2020-11-15T21:09:13.295590+00:00"
+            "last_seen": "2020-11-22T16:47:26.991852+00:00"
         },
         {
             "state": {
                 "entity_id": "automation.turn_living_room_lamp_on_at_sunset_or_20_00",
                 "state": "on",
                 "attributes": {
-                    "last_triggered": "2020-11-15T20:00:00.011476+00:00",
+                    "last_triggered": "2020-11-21T20:00:00.005936+00:00",
                     "mode": "single",
                     "current": 0,
                     "id": "1595358403462",
                     "friendly_name": "Turn Living Room Desk Lamp on at sunset or 20:00"
                 },
-                "last_changed": "2020-11-15T19:05:45.538548+00:00",
-                "last_updated": "2020-11-15T20:00:00.327677+00:00",
+                "last_changed": "2020-11-20T22:44:06.345811+00:00",
+                "last_updated": "2020-11-21T20:00:00.289315+00:00",
                 "context": {
-                    "id": "1de3b7056ac4247c4b12d5090f26ea78",
+                    "id": "3233eed1192641efc7b78e6d3e7b6579",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2020-11-15T21:09:13.295590+00:00"
+            "last_seen": "2020-11-22T16:47:26.991852+00:00"
         },
         {
             "state": {
                 "entity_id": "automation.turn_off_living_room_light_at_01_00",
                 "state": "on",
                 "attributes": {
-                    "last_triggered": "2020-11-15T01:00:00.005803+00:00",
+                    "last_triggered": "2020-11-22T01:00:00.003178+00:00",
                     "mode": "single",
                     "current": 0,
                     "id": "1595359336010",
                     "friendly_name": "Turn Living Room Desk Lamp off at 01:00"
                 },
-                "last_changed": "2020-11-15T19:05:45.538969+00:00",
-                "last_updated": "2020-11-15T19:05:45.538969+00:00",
+                "last_changed": "2020-11-20T22:44:06.346439+00:00",
+                "last_updated": "2020-11-22T01:00:00.351677+00:00",
                 "context": {
-                    "id": "5af1237224aa3972fd392755bd751f3b",
+                    "id": "1b6725259c3e0a331d19ab74e4850787",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2020-11-15T21:09:13.295590+00:00"
+            "last_seen": "2020-11-22T16:47:26.991852+00:00"
         },
         {
             "state": {
@@ -433,142 +117,437 @@
                     "id": "1595547109688",
                     "friendly_name": "Turn Living Room Desk Lamp off if no one at home"
                 },
-                "last_changed": "2020-11-15T19:05:45.539291+00:00",
-                "last_updated": "2020-11-15T19:05:45.539291+00:00",
+                "last_changed": "2020-11-20T22:44:06.347211+00:00",
+                "last_updated": "2020-11-20T22:44:06.347211+00:00",
                 "context": {
-                    "id": "ba2feb774067b82dafae1aae8ed1afca",
+                    "id": "b7622d16075ebab5dd5d8a51aa4861b3",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2020-11-15T21:09:13.295590+00:00"
+            "last_seen": "2020-11-22T16:47:26.991852+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.turn_on_living_room_lamp_when_we_arrive",
+                "state": "off",
+                "attributes": {
+                    "last_triggered": "2020-11-10T21:20:00.007126+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "id": "1600973987921",
+                    "friendly_name": "Turn Living Room Desk Lamp on when we arrive"
+                },
+                "last_changed": "2020-11-20T22:44:06.347775+00:00",
+                "last_updated": "2020-11-20T22:44:06.347775+00:00",
+                "context": {
+                    "id": "8679deed966063dc1982d5bda3212f14",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2020-11-22T16:47:26.991852+00:00"
         },
         {
             "state": {
                 "entity_id": "automation.shellies_announce",
                 "state": "on",
                 "attributes": {
-                    "last_triggered": "2020-11-15T21:00:00.009779+00:00",
+                    "last_triggered": "2020-11-22T16:00:00.030790+00:00",
                     "mode": "single",
                     "current": 0,
                     "id": "shellies_announce",
                     "friendly_name": "Shellies Announce"
                 },
-                "last_changed": "2020-11-15T19:05:45.539869+00:00",
-                "last_updated": "2020-11-15T21:00:00.052081+00:00",
+                "last_changed": "2020-11-20T22:44:06.348254+00:00",
+                "last_updated": "2020-11-22T16:00:00.064321+00:00",
                 "context": {
-                    "id": "43f9b45cf19dc222cf79781ab86c32f6",
+                    "id": "99c50b922a0b51d9192b74821a1b6d3c",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2020-11-15T21:09:13.295590+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "automation.turn_on_carol_lights_on_sunset_and_when_blinds_are_closed",
-                "state": "on",
-                "attributes": {
-                    "last_triggered": "2020-11-15T17:59:36.021472+00:00",
-                    "mode": "single",
-                    "current": 0,
-                    "id": "1603977617607",
-                    "friendly_name": "Turn Carol Lights on when blinds are closed"
-                },
-                "last_changed": "2020-11-15T19:05:45.540361+00:00",
-                "last_updated": "2020-11-15T19:05:45.540361+00:00",
-                "context": {
-                    "id": "3de73da42bfa68c7030f35771e98fb0d",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2020-11-15T21:09:13.295590+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "automation.turn_off_carol_lights_in_sunrise_after_the_blinds_are_opened",
-                "state": "on",
-                "attributes": {
-                    "last_triggered": "2020-11-15T15:56:38.056280+00:00",
-                    "mode": "single",
-                    "current": 0,
-                    "id": "1603977690271",
-                    "friendly_name": "Turn Carol Lights off after the blinds are opened"
-                },
-                "last_changed": "2020-11-15T19:05:45.540717+00:00",
-                "last_updated": "2020-11-15T19:05:45.540717+00:00",
-                "context": {
-                    "id": "116ec6d92ac6ea5214590106b994e91f",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2020-11-15T21:09:13.295590+00:00"
+            "last_seen": "2020-11-22T16:47:26.991852+00:00"
         },
         {
             "state": {
                 "entity_id": "automation.shellies_discovery",
                 "state": "on",
                 "attributes": {
-                    "last_triggered": "2020-11-15T21:01:46.331050+00:00",
+                    "last_triggered": "2020-11-22T16:39:54.933277+00:00",
                     "mode": "queued",
                     "current": 0,
                     "max": 999,
                     "id": "shellies_discovery",
                     "friendly_name": "Shellies Discovery"
                 },
-                "last_changed": "2020-11-15T19:05:45.552306+00:00",
-                "last_updated": "2020-11-15T21:01:46.707744+00:00",
+                "last_changed": "2020-11-20T22:44:06.348820+00:00",
+                "last_updated": "2020-11-22T16:39:55.623049+00:00",
                 "context": {
-                    "id": "cdb1c662acfc8095ee0bc949a34843aa",
+                    "id": "525e5d7971965dda3110aba8c5569296",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2020-11-15T21:09:13.295590+00:00"
+            "last_seen": "2020-11-22T16:47:26.991852+00:00"
         },
         {
             "state": {
-                "entity_id": "switch.homeassistant",
+                "entity_id": "automation.turn_on_carol_lights_on_sunset_and_when_blinds_are_closed",
                 "state": "on",
                 "attributes": {
-                    "power": "5.67",
+                    "last_triggered": "2020-11-21T18:19:54.331163+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "id": "1603977617607",
+                    "friendly_name": "Turn Carol Lights on when blinds are closed"
+                },
+                "last_changed": "2020-11-20T22:44:06.349334+00:00",
+                "last_updated": "2020-11-21T18:19:54.375020+00:00",
+                "context": {
+                    "id": "f6fcfaaedc61f4f21338bbfc5db9ef38",
+                    "parent_id": "e4108495ecaddb5d05dc83c1f1bafd27",
+                    "user_id": null
+                }
+            },
+            "last_seen": "2020-11-22T16:47:26.991852+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.turn_off_carol_lights_in_sunrise_after_the_blinds_are_opened",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2020-11-20T07:46:21.064844+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "id": "1603977690271",
+                    "friendly_name": "Turn Carol Lights off after the blinds are opened"
+                },
+                "last_changed": "2020-11-20T22:44:06.349930+00:00",
+                "last_updated": "2020-11-20T22:44:06.349930+00:00",
+                "context": {
+                    "id": "3592bf407de923888ecb5e5950791a5a",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2020-11-22T16:47:26.991852+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.hall_plug_daily_energy",
+                "state": "182.5",
+                "attributes": {
+                    "source": "sensor.shelly_hall_switch_power",
+                    "status": "collecting",
+                    "last_period": "295.2",
+                    "last_reset": "2020-11-22T00:00:00.021416+00:00",
+                    "meter_period": "daily",
+                    "unit_of_measurement": "Wh",
+                    "friendly_name": "Hall Plug Daily Energy",
+                    "icon": "mdi:counter",
+                    "device_class": "energy"
+                },
+                "last_changed": "2020-11-22T16:47:10.030371+00:00",
+                "last_updated": "2020-11-22T16:47:10.030371+00:00",
+                "context": {
+                    "id": "41c212ff82b394c04e735791a4369ff1",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2020-11-22T16:47:26.991852+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.hall_plug_monthly_energy",
+                "state": "22219.9",
+                "attributes": {
+                    "source": "sensor.shelly_hall_switch_power",
+                    "status": "collecting",
+                    "last_period": "56145.2",
+                    "last_reset": "2020-11-01T00:00:00.024570+00:00",
+                    "meter_period": "monthly",
+                    "unit_of_measurement": "Wh",
+                    "friendly_name": "Hall Plug Monthly Energy",
+                    "icon": "mdi:counter",
+                    "device_class": "energy"
+                },
+                "last_changed": "2020-11-22T16:47:10.030604+00:00",
+                "last_updated": "2020-11-22T16:47:10.030604+00:00",
+                "context": {
+                    "id": "589291cad2222a8e724ecbcd81a5ea61",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2020-11-22T16:47:26.991852+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.hall_plug_yearly_energy",
+                "state": "116196.0",
+                "attributes": {
+                    "source": "sensor.shelly_hall_switch_power",
+                    "status": "collecting",
+                    "last_period": 0,
+                    "last_reset": "2020-08-13T10:44:32.109584+01:00",
+                    "meter_period": "yearly",
+                    "unit_of_measurement": "Wh",
+                    "friendly_name": "Hall Plug Yearly Energy",
+                    "icon": "mdi:counter",
+                    "device_class": "energy"
+                },
+                "last_changed": "2020-11-22T16:47:10.031049+00:00",
+                "last_updated": "2020-11-22T16:47:10.031049+00:00",
+                "context": {
+                    "id": "2109e78eee366d57809d631bf9578879",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2020-11-22T16:47:26.991852+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.speedtest_ping",
+                "state": "23.084",
+                "attributes": {
+                    "attribution": "Data retrieved from Speedtest.net by Ookla",
+                    "server_name": "Lisbon",
+                    "server_country": "Portugal",
+                    "server_id": "34065",
+                    "unit_of_measurement": "ms",
+                    "friendly_name": "SpeedTest Ping",
+                    "icon": "mdi:speedometer"
+                },
+                "last_changed": "2020-11-22T16:04:15.730938+00:00",
+                "last_updated": "2020-11-22T16:04:15.730938+00:00",
+                "context": {
+                    "id": "8c482c7e427572e96adcdd65fa1faf14",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2020-11-22T16:47:26.991852+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.speedtest_download",
+                "state": "196.83",
+                "attributes": {
+                    "attribution": "Data retrieved from Speedtest.net by Ookla",
+                    "server_name": "Lisbon",
+                    "server_country": "Portugal",
+                    "server_id": "34065",
+                    "bytes_received": 256756284,
+                    "unit_of_measurement": "Mbit/s",
+                    "friendly_name": "SpeedTest Download",
+                    "icon": "mdi:speedometer"
+                },
+                "last_changed": "2020-11-22T16:04:15.731617+00:00",
+                "last_updated": "2020-11-22T16:04:15.731617+00:00",
+                "context": {
+                    "id": "8b84853f5e5aa123a3dfd54a27923346",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2020-11-22T16:47:26.991852+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.speedtest_upload",
+                "state": "106.2",
+                "attributes": {
+                    "attribution": "Data retrieved from Speedtest.net by Ookla",
+                    "server_name": "Lisbon",
+                    "server_country": "Portugal",
+                    "server_id": "34065",
+                    "bytes_sent": 133070848,
+                    "unit_of_measurement": "Mbit/s",
+                    "friendly_name": "SpeedTest Upload",
+                    "icon": "mdi:speedometer"
+                },
+                "last_changed": "2020-11-22T16:04:15.731991+00:00",
+                "last_updated": "2020-11-22T16:04:15.731991+00:00",
+                "context": {
+                    "id": "acf251c712907386fe7e6b3506844c76",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2020-11-22T16:47:26.991852+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "device_tracker.jp_iphone",
+                "state": "home",
+                "attributes": {
+                    "source_type": "gps",
+                    "battery_level": 87,
+                    "latitude": 38.791961669921875,
+                    "longitude": -9.187916334657467,
+                    "gps_accuracy": 65,
+                    "altitude": 93.72117951471557,
+                    "vertical_accuracy": 2,
+                    "friendly_name": "JP iPhone"
+                },
+                "last_changed": "2020-11-22T13:32:03.727275+00:00",
+                "last_updated": "2020-11-22T13:32:03.727275+00:00",
+                "context": {
+                    "id": "27ce47dc771ee467d5cdf99abc52951d",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2020-11-22T16:47:26.991852+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "device_tracker.jp_ipad",
+                "state": "home",
+                "attributes": {
+                    "source_type": "gps",
+                    "battery_level": 98,
+                    "latitude": 38.791203283264934,
+                    "longitude": -9.188079908590598,
+                    "gps_accuracy": 65,
+                    "altitude": 86.03690338134766,
+                    "vertical_accuracy": 10,
+                    "friendly_name": "JP iPad"
+                },
+                "last_changed": "2020-11-21T21:11:01.666100+00:00",
+                "last_updated": "2020-11-21T21:11:01.666100+00:00",
+                "context": {
+                    "id": "52d0a67c59c09ae028c2ba7ade21de21",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2020-11-22T16:47:26.991852+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.pihole02_2",
+                "state": "on",
+                "attributes": {
+                    "power": "4.67",
+                    "switch": "e0:63:da:2d:0d:9e",
+                    "port": 4,
+                    "poe_mode": "auto",
+                    "friendly_name": "pihole02"
+                },
+                "last_changed": "2020-11-21T04:02:55.031281+00:00",
+                "last_updated": "2020-11-22T16:47:13.980150+00:00",
+                "context": {
+                    "id": "d606307e9d72ff84a0721ff2cac8b3e0",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2020-11-22T16:47:26.991852+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.garage",
+                "state": "on",
+                "attributes": {
+                    "power": "7.28",
+                    "switch": "e0:63:da:2d:0d:9e",
+                    "port": 3,
+                    "poe_mode": "auto",
+                    "friendly_name": "Garage"
+                },
+                "last_changed": "2020-11-21T04:02:55.031457+00:00",
+                "last_updated": "2020-11-22T16:47:13.982352+00:00",
+                "context": {
+                    "id": "2006d42c168c3dfe9347189781a9ecf3",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2020-11-22T16:47:26.991852+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.hass",
+                "state": "on",
+                "attributes": {
+                    "power": "7.48",
                     "switch": "e0:63:da:2d:0d:9e",
                     "port": 16,
                     "poe_mode": "auto",
                     "friendly_name": "hass"
                 },
-                "last_changed": "2020-11-15T13:38:06.722122+00:00",
-                "last_updated": "2020-11-15T14:09:47.104528+00:00",
+                "last_changed": "2020-11-21T04:02:55.031624+00:00",
+                "last_updated": "2020-11-22T16:47:13.980811+00:00",
                 "context": {
-                    "id": "6085e6d0d12ae37362c68ba9cc2c5434",
+                    "id": "20513d0a3893a74f029c205854b84fe9",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2020-11-15T14:10:59.936264+00:00"
+            "last_seen": "2020-11-22T16:47:26.991852+00:00"
         },
         {
             "state": {
-                "entity_id": "switch.unifi_poe_e4_2d_1d_20_2c_2b",
+                "entity_id": "switch.pihole01_2",
                 "state": "on",
                 "attributes": {
-                    "power": "6.73",
+                    "power": "5.08",
+                    "switch": "e0:63:da:2d:0d:9e",
+                    "port": 2,
+                    "poe_mode": "auto",
+                    "friendly_name": "pihole01"
+                },
+                "last_changed": "2020-11-21T04:02:55.031787+00:00",
+                "last_updated": "2020-11-22T16:47:13.979277+00:00",
+                "context": {
+                    "id": "5442829b230d191232349e389668c333",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2020-11-22T16:47:26.991852+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.unifi_poe_e4_2d_1d_20_34_41",
+                "state": "on",
+                "attributes": {
+                    "power": "6.81",
                     "switch": "b4:fb:e4:b4:ff:08",
                     "port": 2,
                     "poe_mode": "auto",
                     "friendly_name": ""
                 },
-                "last_changed": "2020-11-15T13:38:06.723289+00:00",
-                "last_updated": "2020-11-15T13:38:06.723289+00:00",
+                "last_changed": "2020-11-21T04:02:55.031953+00:00",
+                "last_updated": "2020-11-21T04:02:55.031953+00:00",
                 "context": {
-                    "id": "8467ac22b61bca0b08241b98c5a9fbb1",
+                    "id": "9865e1b2143df53d582294addb4c2941",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2020-11-15T14:10:59.937123+00:00"
+            "last_seen": "2020-11-22T16:47:26.991852+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.shelly_plug_s_9dda6c_relay_0",
+                "state": "unavailable",
+                "attributes": {
+                    "friendly_name": "Shelly Plug S 9DDA6C Relay 0"
+                },
+                "last_changed": "2020-11-15T21:23:49.499572+00:00",
+                "last_updated": "2020-11-15T21:23:49.499572+00:00",
+                "context": {
+                    "id": "126fadbfa124d2ff9f2460fd6e467dd9",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2020-11-18T10:41:31.273704+00:00"
         }
     ]
 }

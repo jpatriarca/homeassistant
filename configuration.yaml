@@ -29,6 +29,7 @@ frontend:
 # Homeassist Configuration
 homeassistant:
   customize: !include customize.yaml
+  external_url: https://hass.patriarca.pt
 
 # Python Scripts - Shelly Automatic Integration
 python_script:

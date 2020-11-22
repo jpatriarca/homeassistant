@@ -956,3 +956,15 @@ monitor_docker:
       - network_speed_down
       - network_total_up
       - network_total_down
+
+# Binary Sensor configuration
+
+#binary_sensor:
+#  - platform: mqtt
+#    name: Garage Motion
+#    state_topic: "camera/motion/Garage"
+#    payload_on: "ON"
+#    payload_off: "OFF"
+#    device_class: motion
+  
+# Utility Meter configuration

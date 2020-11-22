@@ -12,7 +12,7 @@
         "description": "A Raspberry Pi status display Card for Home Assistant Lovelace",
         "domain": "",
         "domains": [],
-        "downloads": 2362,
+        "downloads": 2553,
         "file_name": "rpi-monitor-card.js",
         "filename": "rpi-monitor-card.js",
         "first_install": false,
@@ -46,7 +46,7 @@
         ],
         "selected_tag": null,
         "show_beta": false,
-        "stargazers_count": 24,
+        "stargazers_count": 25,
         "topics": [
             "hassio",
             "home-assistant",

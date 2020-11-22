@@ -12,7 +12,7 @@
         "description": "Show battery states or attributes with dynamic icon on entity rows in Home Assistant's Lovelace UI",
         "domain": "",
         "domains": [],
-        "downloads": 1434,
+        "downloads": 1734,
         "file_name": "battery-entity-row.js",
         "filename": "battery-entity-row.js",
         "first_install": false,

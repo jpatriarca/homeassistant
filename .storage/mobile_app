@@ -30,9 +30,9 @@
                     "Low Power Mode": false
                 },
                 "device_class": "battery",
-                "icon": "mdi:battery-40",
+                "icon": "mdi:battery-80",
                 "name": "Battery Level",
-                "state": 41,
+                "state": 87,
                 "type": "sensor",
                 "unique_id": "battery_level",
                 "unit_of_measurement": "%",
@@ -41,11 +41,11 @@
             "2ba803730cfef09189419d22d6db7d1432345f145cb1c95a5fa9d8d8e2a286cb_battery_state": {
                 "added": true,
                 "attributes": {
-                    "Battery Level": 41,
+                    "Battery Level": 87,
                     "Low Power Mode": false
                 },
                 "device_class": "battery",
-                "icon": "mdi:battery-40",
+                "icon": "mdi:battery-80",
                 "name": "Battery State",
                 "state": "Not Charging",
                 "type": "sensor",
@@ -57,7 +57,7 @@
                 "attributes": {},
                 "icon": "mdi:wifi-star",
                 "name": "BSSID",
-                "state": "b4:fb:e4:2d:1d:20",
+                "state": "18:2:2d:2d:2:34",
                 "type": "sensor",
                 "unique_id": "connectivity_bssid",
                 "webhook_id": "2ba803730cfef09189419d22d6db7d1432345f145cb1c95a5fa9d8d8e2a286cb"
@@ -112,7 +112,7 @@
                 "attributes": {},
                 "icon": "mdi:wifi",
                 "name": "SSID",
-                "state": "CJWiFi",
+                "state": "Vodafone-2D022B",
                 "type": "sensor",
                 "unique_id": "connectivity_ssid",
                 "webhook_id": "2ba803730cfef09189419d22d6db7d1432345f145cb1c95a5fa9d8d8e2a286cb"
@@ -127,16 +127,16 @@
                     "ISO Country Code": "PT",
                     "Locality": "Odivelas",
                     "Location": [
-                        38.791229248046875,
-                        -9.18811133940114
+                        38.791961669921875,
+                        -9.187916334657467
                     ],
-                    "Name": "Rua Pulido Valente 35\u201339",
+                    "Name": "Avenida Reinaldo dos Santos",
                     "Ocean": "N/A",
-                    "Postal Code": "2675",
+                    "Postal Code": "2675-531",
                     "Sub Administrative Area": "N/A",
                     "Sub Locality": "Odivelas",
-                    "Sub Thoroughfare": "35\u201339",
-                    "Thoroughfare": "Rua Pulido Valente",
+                    "Sub Thoroughfare": "N/A",
+                    "Thoroughfare": "Avenida Reinaldo dos Santos",
                     "Time Zone": "Europe/Lisbon",
                     "Zones": [
                         "Home"
@@ -144,7 +144,7 @@
                 },
                 "icon": "mdi:map",
                 "name": "Geocoded Location",
-                "state": "Rua Pulido Valente 35\u201339\n2675 Odivelas\nPortugal",
+                "state": "Avenida Reinaldo dos Santos\n2675-531 Odivelas\nPortugal",
                 "type": "sensor",
                 "unique_id": "geocoded_location",
                 "webhook_id": "2ba803730cfef09189419d22d6db7d1432345f145cb1c95a5fa9d8d8e2a286cb"
@@ -175,7 +175,7 @@
                 "attributes": {},
                 "icon": "mdi:hiking",
                 "name": "Distance",
-                "state": 791,
+                "state": 3420,
                 "type": "sensor",
                 "unique_id": "pedometer_distance",
                 "unit_of_measurement": "m",
@@ -186,7 +186,7 @@
                 "attributes": {},
                 "icon": "mdi:stairs-up",
                 "name": "Floors Ascended",
-                "state": 2,
+                "state": 4,
                 "type": "sensor",
                 "unique_id": "pedometer_floors_ascended",
                 "unit_of_measurement": "floors",
@@ -197,7 +197,7 @@
                 "attributes": {},
                 "icon": "mdi:stairs-down",
                 "name": "Floors Descended",
-                "state": 3,
+                "state": 0,
                 "type": "sensor",
                 "unique_id": "pedometer_floors_descended",
                 "unit_of_measurement": "floors",
@@ -208,7 +208,7 @@
                 "attributes": {},
                 "icon": "mdi:walk",
                 "name": "Steps",
-                "state": 986,
+                "state": 4394,
                 "type": "sensor",
                 "unique_id": "pedometer_steps",
                 "unit_of_measurement": "steps",
@@ -217,14 +217,14 @@
             "2ba803730cfef09189419d22d6db7d1432345f145cb1c95a5fa9d8d8e2a286cb_storage": {
                 "added": true,
                 "attributes": {
-                    "Available": "98,74 GB",
-                    "Available (Important)": "185,49 GB",
-                    "Available (Opportunistic)": "184,21 GB",
+                    "Available": "97,64 GB",
+                    "Available (Important)": "183,11 GB",
+                    "Available (Opportunistic)": "181,83 GB",
                     "Total": "255,88 GB"
                 },
                 "icon": "mdi:database",
                 "name": "Storage",
-                "state": "71.99",
+                "state": "71.06",
                 "type": "sensor",
                 "unique_id": "storage",
                 "unit_of_measurement": "% available",
@@ -459,9 +459,9 @@
                     "Low Power Mode": false
                 },
                 "device_class": "battery",
-                "icon": "mdi:battery-80",
+                "icon": "mdi:battery-90",
                 "name": "Battery Level",
-                "state": 85,
+                "state": 94,
                 "type": "sensor",
                 "unique_id": "battery_level",
                 "unit_of_measurement": "%",
@@ -470,11 +470,11 @@
             "93ec1d92bc241ac1b57c0f888f98aad5de97c4763b04601941f4a63d985b14a1_battery_state": {
                 "added": true,
                 "attributes": {
-                    "Battery Level": 85,
+                    "Battery Level": 94,
                     "Low Power Mode": false
                 },
                 "device_class": "battery",
-                "icon": "mdi:battery-80",
+                "icon": "mdi:battery-90",
                 "name": "Battery State",
                 "state": "Not Charging",
                 "type": "sensor",
@@ -521,8 +521,8 @@
                     "ISO Country Code": "PT",
                     "Locality": "Odivelas",
                     "Location": [
-                        38.7912032716964,
-                        -9.188095398202108
+                        38.791203283264934,
+                        -9.188079908590598
                     ],
                     "Name": "Rua Pulido Valente 35\u201339",
                     "Ocean": "N/A",
@@ -548,7 +548,7 @@
                 "attributes": {},
                 "icon": "mdi:cellphone-wireless",
                 "name": "Last Update Trigger",
-                "state": "Background Fetch",
+                "state": "Launch",
                 "type": "sensor",
                 "unique_id": "last_update_trigger",
                 "webhook_id": "93ec1d92bc241ac1b57c0f888f98aad5de97c4763b04601941f4a63d985b14a1"
@@ -556,14 +556,14 @@
             "93ec1d92bc241ac1b57c0f888f98aad5de97c4763b04601941f4a63d985b14a1_storage": {
                 "added": true,
                 "attributes": {
-                    "Available": "6,22 GB",
-                    "Available (Important)": "6,45 GB",
-                    "Available (Opportunistic)": "5,17 GB",
+                    "Available": "5,98 GB",
+                    "Available (Important)": "8,47 GB",
+                    "Available (Opportunistic)": "7,19 GB",
                     "Total": "31,98 GB"
                 },
                 "icon": "mdi:database",
                 "name": "Storage",
-                "state": "16.16",
+                "state": "22.47",
                 "type": "sensor",
                 "unique_id": "storage",
                 "unit_of_measurement": "% available",

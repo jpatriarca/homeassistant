@@ -32,7 +32,7 @@
         "installed": true,
         "installed_commit": "0b4c5d1",
         "installed_version": "1.5",
-        "open_issues": 8,
+        "open_issues": 11,
         "last_commit": "0b4c5d1",
         "last_version": "1.5",
         "last_updated": "2020-10-26T11:02:48Z",
@@ -51,7 +51,7 @@
         ],
         "selected_tag": null,
         "show_beta": false,
-        "stargazers_count": 48,
+        "stargazers_count": 49,
         "topics": [
             "custom-component",
             "docker",

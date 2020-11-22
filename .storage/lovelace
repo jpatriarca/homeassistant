@@ -976,10 +976,10 @@
                                     "type": "entities",
                                     "entities": [
                                         {
-                                            "entity": "switch.shelly_garage_rack"
+                                            "entity": "switch.shelly_datacenter_rack"
                                         },
                                         {
-                                            "entity": "switch.shelly_garage_rack_fan"
+                                            "entity": "switch.shelly_datacenter_rack_fan"
                                         }
                                     ],
                                     "title": "Garage Plugs",
@@ -1011,7 +1011,7 @@
                                     "type": "custom:mini-graph-card",
                                     "entities": [
                                         {
-                                            "entity": "sensor.shelly_garage_rack_fan_power"
+                                            "entity": "sensor.shelly_datacenter_rack_fan_power"
                                         }
                                     ],
                                     "aggregate_func": "max",
@@ -1264,30 +1264,6 @@
                         {
                             "entities": [
                                 {
-                                    "entity": "sensor.docker_cpu"
-                                },
-                                {
-                                    "entity": "sensor.docker_memory"
-                                },
-                                {
-                                    "entity": "sensor.docker_memory_percent"
-                                },
-                                {
-                                    "entity": "sensor.docker_containers_total"
-                                },
-                                {
-                                    "entity": "sensor.docker_containers_running"
-                                },
-                                {
-                                    "entity": "sensor.docker_version"
-                                }
-                            ],
-                            "title": "Docker",
-                            "type": "entities"
-                        },
-                        {
-                            "entities": [
-                                {
                                     "entity": "switch.docker_bazarr"
                                 },
                                 {
@@ -1313,6 +1289,9 @@
                                 },
                                 {
                                     "entity": "switch.docker_netatmo_poller"
+                                },
+                                {
+                                    "entity": "switch.docker_ntp"
                                 },
                                 {
                                     "entity": "switch.docker_nzbget"
@@ -1355,9 +1334,6 @@
                                 },
                                 {
                                     "entity": "switch.docker_unifi_poller"
-                                },
-                                {
-                                    "entity": "switch.docker_unifi_video"
                                 }
                             ],
                             "title": "Docker Container Switches",
@@ -1365,24 +1341,46 @@
                             "show_header_toggle": false
                         },
                         {
-                            "type": "entities",
-                            "entities": [
+                            "type": "vertical-stack",
+                            "cards": [
                                 {
-                                    "entity": "sensor.speedtest_download"
+                                    "type": "custom:rpi-monitor-card",
+                                    "entity": "sensor.rpi_monitor_pihole01",
+                                    "card_style": "full"
                                 },
                                 {
-                                    "entity": "sensor.speedtest_upload"
+                                    "type": "custom:rpi-monitor-card",
+                                    "entity": "sensor.rpi_monitor_pihole02",
+                                    "card_style": "full"
                                 },
                                 {
-                                    "entity": "sensor.speedtest_ping"
+                                    "type": "entities",
+                                    "entities": [
+                                        {
+                                            "entity": "sensor.speedtest_download"
+                                        },
+                                        {
+                                            "entity": "sensor.speedtest_upload"
+                                        },
+                                        {
+                                            "entity": "sensor.speedtest_ping"
+                                        }
+                                    ],
+                                    "title": "Speedtest"
+                                },
+                                {
+                                    "type": "entities",
+                                    "entities": [
+                                        "sensor.docker_cpu",
+                                        "sensor.docker_memory",
+                                        "sensor.docker_memory_percent",
+                                        "sensor.docker_containers_total",
+                                        "sensor.docker_containers_running",
+                                        "sensor.docker_version"
+                                    ],
+                                    "title": "Docker"
                                 }
-                            ],
-                            "title": "Speedtest Info"
-                        },
-                        {
-                            "type": "custom:rpi-monitor-card",
-                            "entity": "sensor.rpi_monitor_pihole01",
-                            "card_style": "full"
+                            ]
                         }
                     ],
                     "icon": "mdi:database",
@@ -1450,156 +1448,6 @@
                                 }
                             ],
                             "title": "Crashplan",
-                            "type": "entities"
-                        },
-                        {
-                            "entities": [
-                                {
-                                    "entity": "sensor.docker_radarr_cpu"
-                                },
-                                {
-                                    "entity": "sensor.docker_radarr_memory"
-                                },
-                                {
-                                    "entity": "sensor.docker_radarr_memory_percent"
-                                },
-                                {
-                                    "entity": "sensor.docker_radarr_network_speed_down"
-                                },
-                                {
-                                    "entity": "sensor.docker_radarr_network_speed_up"
-                                },
-                                {
-                                    "entity": "sensor.docker_radarr_network_total_down"
-                                },
-                                {
-                                    "entity": "sensor.docker_radarr_network_total_up"
-                                },
-                                {
-                                    "entity": "sensor.docker_radarr_status"
-                                }
-                            ],
-                            "title": "Radarr",
-                            "type": "entities"
-                        },
-                        {
-                            "entities": [
-                                {
-                                    "entity": "sensor.docker_sonarr_cpu"
-                                },
-                                {
-                                    "entity": "sensor.docker_sonarr_memory"
-                                },
-                                {
-                                    "entity": "sensor.docker_sonarr_memory_percent"
-                                },
-                                {
-                                    "entity": "sensor.docker_sonarr_network_speed_down"
-                                },
-                                {
-                                    "entity": "sensor.docker_sonarr_network_speed_up"
-                                },
-                                {
-                                    "entity": "sensor.docker_sonarr_network_total_down"
-                                },
-                                {
-                                    "entity": "sensor.docker_sonarr_network_total_up"
-                                },
-                                {
-                                    "entity": "sensor.docker_sonarr_status"
-                                }
-                            ],
-                            "title": "Sonarr",
-                            "type": "entities"
-                        },
-                        {
-                            "entities": [
-                                {
-                                    "entity": "sensor.docker_qbittorrent_cpu"
-                                },
-                                {
-                                    "entity": "sensor.docker_qbittorrent_memory"
-                                },
-                                {
-                                    "entity": "sensor.docker_qbittorrent_memory_percent"
-                                },
-                                {
-                                    "entity": "sensor.docker_qbittorrent_network_speed_down"
-                                },
-                                {
-                                    "entity": "sensor.docker_qbittorrent_network_speed_up"
-                                },
-                                {
-                                    "entity": "sensor.docker_qbittorrent_network_total_down"
-                                },
-                                {
-                                    "entity": "sensor.docker_qbittorrent_network_total_up"
-                                },
-                                {
-                                    "entity": "sensor.docker_qbittorrent_status"
-                                }
-                            ],
-                            "title": "qbittorrent",
-                            "type": "entities"
-                        },
-                        {
-                            "entities": [
-                                {
-                                    "entity": "sensor.docker_nzbget_cpu"
-                                },
-                                {
-                                    "entity": "sensor.docker_nzbget_memory"
-                                },
-                                {
-                                    "entity": "sensor.docker_nzbget_memory_percent"
-                                },
-                                {
-                                    "entity": "sensor.docker_nzbget_network_speed_down"
-                                },
-                                {
-                                    "entity": "sensor.docker_nzbget_network_speed_up"
-                                },
-                                {
-                                    "entity": "sensor.docker_nzbget_network_total_down"
-                                },
-                                {
-                                    "entity": "sensor.docker_nzbget_network_total_up"
-                                },
-                                {
-                                    "entity": "sensor.docker_nzbget_status"
-                                }
-                            ],
-                            "title": "NZBget",
-                            "type": "entities"
-                        },
-                        {
-                            "entities": [
-                                {
-                                    "entity": "sensor.docker_observium_cpu"
-                                },
-                                {
-                                    "entity": "sensor.docker_observium_memory"
-                                },
-                                {
-                                    "entity": "sensor.docker_observium_memory_percent"
-                                },
-                                {
-                                    "entity": "sensor.docker_observium_network_speed_down"
-                                },
-                                {
-                                    "entity": "sensor.docker_observium_network_speed_up"
-                                },
-                                {
-                                    "entity": "sensor.docker_observium_network_total_down"
-                                },
-                                {
-                                    "entity": "sensor.docker_observium_network_total_up"
-                                },
-                                {
-                                    "entity": "sensor.docker_observium_status"
-                                }
-                            ],
-                            "title": "Observium",
                             "type": "entities"
                         },
                         {
@@ -1815,6 +1663,96 @@
                         {
                             "entities": [
                                 {
+                                    "entity": "sensor.docker_ntp_cpu"
+                                },
+                                {
+                                    "entity": "sensor.docker_ntp_memory"
+                                },
+                                {
+                                    "entity": "sensor.docker_ntp_memory_percent"
+                                },
+                                {
+                                    "entity": "sensor.docker_ntp_network_speed_down"
+                                },
+                                {
+                                    "entity": "sensor.docker_ntp_network_speed_up"
+                                },
+                                {
+                                    "entity": "sensor.docker_ntp_network_total_down"
+                                },
+                                {
+                                    "entity": "sensor.docker_ntp_network_total_up"
+                                },
+                                {
+                                    "entity": "sensor.docker_ntp_status"
+                                }
+                            ],
+                            "title": "NTP",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.docker_nzbget_cpu"
+                                },
+                                {
+                                    "entity": "sensor.docker_nzbget_memory"
+                                },
+                                {
+                                    "entity": "sensor.docker_nzbget_memory_percent"
+                                },
+                                {
+                                    "entity": "sensor.docker_nzbget_network_speed_down"
+                                },
+                                {
+                                    "entity": "sensor.docker_nzbget_network_speed_up"
+                                },
+                                {
+                                    "entity": "sensor.docker_nzbget_network_total_down"
+                                },
+                                {
+                                    "entity": "sensor.docker_nzbget_network_total_up"
+                                },
+                                {
+                                    "entity": "sensor.docker_nzbget_status"
+                                }
+                            ],
+                            "title": "NZBget",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.docker_observium_cpu"
+                                },
+                                {
+                                    "entity": "sensor.docker_observium_memory"
+                                },
+                                {
+                                    "entity": "sensor.docker_observium_memory_percent"
+                                },
+                                {
+                                    "entity": "sensor.docker_observium_network_speed_down"
+                                },
+                                {
+                                    "entity": "sensor.docker_observium_network_speed_up"
+                                },
+                                {
+                                    "entity": "sensor.docker_observium_network_total_down"
+                                },
+                                {
+                                    "entity": "sensor.docker_observium_network_total_up"
+                                },
+                                {
+                                    "entity": "sensor.docker_observium_status"
+                                }
+                            ],
+                            "title": "Observium",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
                                     "entity": "sensor.docker_oscam_cpu"
                                 },
                                 {
@@ -1965,6 +1903,96 @@
                         {
                             "entities": [
                                 {
+                                    "entity": "sensor.docker_qbittorrent_cpu"
+                                },
+                                {
+                                    "entity": "sensor.docker_qbittorrent_memory"
+                                },
+                                {
+                                    "entity": "sensor.docker_qbittorrent_memory_percent"
+                                },
+                                {
+                                    "entity": "sensor.docker_qbittorrent_network_speed_down"
+                                },
+                                {
+                                    "entity": "sensor.docker_qbittorrent_network_speed_up"
+                                },
+                                {
+                                    "entity": "sensor.docker_qbittorrent_network_total_down"
+                                },
+                                {
+                                    "entity": "sensor.docker_qbittorrent_network_total_up"
+                                },
+                                {
+                                    "entity": "sensor.docker_qbittorrent_status"
+                                }
+                            ],
+                            "title": "qbittorrent",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.docker_radarr_cpu"
+                                },
+                                {
+                                    "entity": "sensor.docker_radarr_memory"
+                                },
+                                {
+                                    "entity": "sensor.docker_radarr_memory_percent"
+                                },
+                                {
+                                    "entity": "sensor.docker_radarr_network_speed_down"
+                                },
+                                {
+                                    "entity": "sensor.docker_radarr_network_speed_up"
+                                },
+                                {
+                                    "entity": "sensor.docker_radarr_network_total_down"
+                                },
+                                {
+                                    "entity": "sensor.docker_radarr_network_total_up"
+                                },
+                                {
+                                    "entity": "sensor.docker_radarr_status"
+                                }
+                            ],
+                            "title": "Radarr",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.docker_sonarr_cpu"
+                                },
+                                {
+                                    "entity": "sensor.docker_sonarr_memory"
+                                },
+                                {
+                                    "entity": "sensor.docker_sonarr_memory_percent"
+                                },
+                                {
+                                    "entity": "sensor.docker_sonarr_network_speed_down"
+                                },
+                                {
+                                    "entity": "sensor.docker_sonarr_network_speed_up"
+                                },
+                                {
+                                    "entity": "sensor.docker_sonarr_network_total_down"
+                                },
+                                {
+                                    "entity": "sensor.docker_sonarr_network_total_up"
+                                },
+                                {
+                                    "entity": "sensor.docker_sonarr_status"
+                                }
+                            ],
+                            "title": "Sonarr",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
                                     "entity": "sensor.docker_swag_cpu"
                                 },
                                 {
@@ -2080,36 +2108,6 @@
                                 }
                             ],
                             "title": "UniFi-Poller",
-                            "type": "entities"
-                        },
-                        {
-                            "entities": [
-                                {
-                                    "entity": "sensor.docker_unifi_video_cpu"
-                                },
-                                {
-                                    "entity": "sensor.docker_unifi_video_memory"
-                                },
-                                {
-                                    "entity": "sensor.docker_unifi_video_memory_percent"
-                                },
-                                {
-                                    "entity": "sensor.docker_unifi_video_network_speed_down"
-                                },
-                                {
-                                    "entity": "sensor.docker_unifi_video_network_speed_up"
-                                },
-                                {
-                                    "entity": "sensor.docker_unifi_video_network_total_down"
-                                },
-                                {
-                                    "entity": "sensor.docker_unifi_video_network_total_up"
-                                },
-                                {
-                                    "entity": "sensor.docker_unifi_video_status"
-                                }
-                            ],
-                            "title": "UniFi Video",
                             "type": "entities"
                         }
                     ],

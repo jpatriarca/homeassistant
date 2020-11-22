@@ -31,8 +31,8 @@
         "IsOnline": true,
         "Name": "HP Printer",
         "Printer": {
-            "Total": "461",
-            "Color": "173",
+            "Total": "467",
+            "Color": "176",
             "Monochrome": "0",
             "Jams": "8",
             "Cancelled": "3"
